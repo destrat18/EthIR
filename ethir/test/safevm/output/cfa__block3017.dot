@@ -1,0 +1,15 @@
+digraph block3017 {
+2999 [shape="circle" label="N2999\n9"]
+3000 [shape="circle" label="N3000\n8"]
+3006 [shape="circle" label="N3006\n2"]
+3007 [shape="circle" label="N3007\n1"]
+2998 [shape="circle" label="N2998\n0"]
+3000 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">3000</td><td align="left">s4 = s2;</td></tr><tr><td align="right">3001</td><td align="left">s2 = s3;</td></tr><tr><td align="right">3002</td><td align="left">s3 = s4;</td></tr><tr><td align="right">3003</td><td align="left">s3 = s1;</td></tr><tr><td align="right">3004</td><td align="left">s1 = s2;</td></tr><tr><td align="right">3005</td><td align="left">s2 = s3;</td></tr></table>>]
+3000 -> 3006[label=""]
+2999 -> 3000 [label="Function start dummy edge" fontname="Courier New"]
+100127 [shape="component" label="block888"]
+3006 -> 100127 [label="block888(s1, s0);" fontname="Courier New"]
+100127 -> 3007 [label="" fontname="Courier New"]
+3006 -> 3007 [label="block888(s1, s0);" fontname="Courier New"]
+3007 -> 2998 [label="default return" fontname="Courier New"]
+}

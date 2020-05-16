@@ -1,0 +1,12 @@
+digraph block2927 {
+2946 [shape="circle" label="N2946\n2"]
+2947 [shape="circle" label="N2947\n1"]
+2925 [shape="circle" label="N2925\n0"]
+2926 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">2926</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">2927</td><td align="left">int s9;</td></tr><tr><td align="right">2928</td><td align="left">s9 = 32;</td></tr><tr><td align="right">2929</td><td align="left">s8 = s9 * s8;</td></tr><tr><td align="right">2930</td><td align="left">s9 = s6;</td></tr><tr><td align="right">2931</td><td align="left">s8 = s9 + s8;</td></tr><tr><td align="right">2932</td><td align="left">s9 = s6;</td></tr><tr><td align="right">2933</td><td align="left">s6 = s8;</td></tr><tr><td align="right">2934</td><td align="left">s8 = s9;</td></tr><tr><td align="right">2935</td><td align="left">s9 = s7;</td></tr><tr><td align="right">2936</td><td align="left">s7 = s8;</td></tr><tr><td align="right">2937</td><td align="left">s8 = s9;</td></tr><tr><td align="right">2938</td><td align="left">s9 = 0;</td></tr><tr><td align="right">2939</td><td align="left">l2 = s8;</td></tr><tr><td align="right">2940</td><td align="left">s8 = 32;</td></tr><tr><td align="right">2941</td><td align="left">s9 = 0;</td></tr><tr><td align="right">2942</td><td align="left">s8 = __VERIFIER_nondet_int();</td></tr><tr><td align="right">2943</td><td align="left">s9 = s7;</td></tr><tr><td align="right">2944</td><td align="left">s7 = s8;</td></tr><tr><td align="right">2945</td><td align="left">s8 = s9;</td></tr></table>>]
+2926 -> 2946[label=""]
+100226 [shape="component" label="block2943"]
+2946 -> 100226 [label="block2943(s8, s7, s6, s5, s4, s3, s2, s1, s0);" fontname="Courier New"]
+100226 -> 2947 [label="" fontname="Courier New"]
+2946 -> 2947 [label="block2943(s8, s7, s6, s5, s4, s3, s2, s1, s0);" fontname="Courier New"]
+2947 -> 2925 [label="default return" fontname="Courier New"]
+}

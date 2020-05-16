@@ -1,0 +1,12 @@
+digraph block3506 {
+3290 [shape="circle" label="N3290\n2"]
+3291 [shape="circle" label="N3291\n1"]
+3279 [shape="circle" label="N3279\n0"]
+3280 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">3280</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">3281</td><td align="left">int s3;</td></tr><tr><td align="right">3282</td><td align="left">int s4;</td></tr><tr><td align="right">3283</td><td align="left">int s5;</td></tr><tr><td align="right">3284</td><td align="left">int s6;</td></tr><tr><td align="right">3285</td><td align="left">s3 = 1;</td></tr><tr><td align="right">3286</td><td align="left">s4 = s2;</td></tr><tr><td align="right">3287</td><td align="left">s5 = s3;</td></tr><tr><td align="right">3288</td><td align="left">s5 = g1;</td></tr><tr><td align="right">3289</td><td align="left">s6 = s4;</td></tr></table>>]
+3280 -> 3290[label=""]
+100002 [shape="component" label="jump3506"]
+3290 -> 100002 [label="jump3506(s6, s5, s4, s3, s2, s1, s0);" fontname="Courier New"]
+100002 -> 3291 [label="" fontname="Courier New"]
+3290 -> 3291 [label="jump3506(s6, s5, s4, s3, s2, s1, s0);" fontname="Courier New"]
+3291 -> 3279 [label="default return" fontname="Courier New"]
+}

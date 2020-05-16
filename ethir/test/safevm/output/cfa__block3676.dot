@@ -1,0 +1,15 @@
+digraph block3676 {
+3459 [shape="circle" label="N3459\n9"]
+3460 [shape="circle" label="N3460\n8"]
+3466 [shape="circle" label="N3466\n2"]
+3467 [shape="circle" label="N3467\n1"]
+3458 [shape="circle" label="N3458\n0"]
+3460 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">3460</td><td align="left">s4 = s2;</td></tr><tr><td align="right">3461</td><td align="left">s2 = s3;</td></tr><tr><td align="right">3462</td><td align="left">s3 = s4;</td></tr><tr><td align="right">3463</td><td align="left">s3 = s1;</td></tr><tr><td align="right">3464</td><td align="left">s1 = s2;</td></tr><tr><td align="right">3465</td><td align="left">s2 = s3;</td></tr></table>>]
+3460 -> 3466[label=""]
+3459 -> 3460 [label="Function start dummy edge" fontname="Courier New"]
+100292 [shape="component" label="block1471"]
+3466 -> 100292 [label="block1471(s1, s0);" fontname="Courier New"]
+100292 -> 3467 [label="" fontname="Courier New"]
+3466 -> 3467 [label="block1471(s1, s0);" fontname="Courier New"]
+3467 -> 3458 [label="default return" fontname="Courier New"]
+}

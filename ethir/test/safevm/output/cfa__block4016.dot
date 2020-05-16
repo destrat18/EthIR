@@ -1,0 +1,12 @@
+digraph block4016 {
+3745 [shape="circle" label="N3745\n2"]
+3746 [shape="circle" label="N3746\n1"]
+3743 [shape="circle" label="N3743\n0"]
+3744 [shape="circle" label="N3744\n3"]
+100072 [shape="component" label="block4017"]
+3745 -> 100072 [label="block4017(s1, s0);" fontname="Courier New"]
+100072 -> 3746 [label="" fontname="Courier New"]
+3745 -> 3746 [label="block4017(s1, s0);" fontname="Courier New"]
+3746 -> 3743 [label="default return" fontname="Courier New"]
+3744 -> 3745 [label="Function start dummy edge" fontname="Courier New"]
+}

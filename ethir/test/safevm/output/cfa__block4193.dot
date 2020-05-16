@@ -1,0 +1,7 @@
+digraph block4193 {
+3875 [shape="circle" label="N3875\n6"]
+3876 [shape="circle" label="N3876\n5"]
+3876 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">3876</td><td align="left">int s9;</td></tr><tr><td align="right">3877</td><td align="left">int s10;</td></tr><tr><td align="right">3878</td><td align="left">s9 = 0;</td></tr><tr><td align="right">3879</td><td align="left">s10 = s9;</td></tr><tr><td align="right">3880</td><td align="left">default return</td></tr></table>>]
+3876 -> 3874[label=""]
+3875 -> 3876 [label="Function start dummy edge" fontname="Courier New"]
+}

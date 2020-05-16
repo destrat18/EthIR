@@ -1,0 +1,12 @@
+digraph block4470_0_1 {
+4965 [shape="circle" label="N4965\n2"]
+4966 [shape="circle" label="N4966\n1"]
+4960 [shape="circle" label="N4960\n0"]
+4961 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">4961</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">4962</td><td align="left">s7 = s5;</td></tr><tr><td align="right">4963</td><td align="left">s5 = s6;</td></tr><tr><td align="right">4964</td><td align="left">s6 = s7;</td></tr></table>>]
+4961 -> 4965[label=""]
+100368 [shape="component" label="block4474_0_1"]
+4965 -> 100368 [label="block4474_0_1(s5, s4, s3, s2, s1, s0);" fontname="Courier New"]
+100368 -> 4966 [label="" fontname="Courier New"]
+4965 -> 4966 [label="block4474_0_1(s5, s4, s3, s2, s1, s0);" fontname="Courier New"]
+4966 -> 4960 [label="default return" fontname="Courier New"]
+}

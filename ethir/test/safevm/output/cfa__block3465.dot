@@ -1,0 +1,15 @@
+digraph block3465 {
+3230 [shape="circle" label="N3230\n7"]
+3231 [shape="circle" label="N3231\n6"]
+3235 [shape="circle" label="N3235\n2"]
+3236 [shape="circle" label="N3236\n1"]
+3229 [shape="circle" label="N3229\n0"]
+3231 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">3231</td><td align="left">s12 = gas;</td></tr><tr><td align="right">3232</td><td align="left">s6 = 1;</td></tr><tr><td align="right">3233</td><td align="left">s6 = s6 == 0;</td></tr><tr><td align="right">3234</td><td align="left">s7 = s6;</td></tr></table>>]
+3231 -> 3235[label=""]
+3230 -> 3231 [label="Function start dummy edge" fontname="Courier New"]
+100240 [shape="component" label="jump3465"]
+3235 -> 100240 [label="jump3465(s7, s6, s5, s4, s3, s2, s1, s0);" fontname="Courier New"]
+100240 -> 3236 [label="" fontname="Courier New"]
+3235 -> 3236 [label="jump3465(s7, s6, s5, s4, s3, s2, s1, s0);" fontname="Courier New"]
+3236 -> 3229 [label="default return" fontname="Courier New"]
+}

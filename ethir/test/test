@@ -1,0 +1,20 @@
+#!/bin/csh
+
+#set files = `ls ../../examples/`
+
+set COSTABSHOME = /home/pablo/Systems/costa/costabs/
+
+set files = `ls ../../examples/code/prueba/`
+set names = `echo $files:q | sed 's/ /  /g'`
+
+
+rm -f ../../examples/code/prueba/*.disasm
+rm -f ../../examples/code/prueba/*.evm
+
+    rm -rf *.csv
+    # foreach contract ($names)
+ #        python ../oyente-ethir.py -s ../../examples/code/prueba/$contract -saco -eop -cfg
+                    
+         python exe_several.py
+    # end
+

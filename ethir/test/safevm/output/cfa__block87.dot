@@ -1,0 +1,12 @@
+digraph block87 {
+91 [shape="circle" label="N91\n2"]
+92 [shape="circle" label="N92\n1"]
+85 [shape="circle" label="N85\n0"]
+86 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">86</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">87</td><td align="left">int s1;</td></tr><tr><td align="right">88</td><td align="left">int s2;</td></tr><tr><td align="right">89</td><td align="left">s1 = s0;</td></tr><tr><td align="right">90</td><td align="left">s2 = 832031670;</td></tr></table>>]
+86 -> 91[label=""]
+100190 [shape="component" label="jump87"]
+91 -> 100190 [label="jump87(s2, s1, s0);" fontname="Courier New"]
+100190 -> 92 [label="" fontname="Courier New"]
+91 -> 92 [label="jump87(s2, s1, s0);" fontname="Courier New"]
+92 -> 85 [label="default return" fontname="Courier New"]
+}

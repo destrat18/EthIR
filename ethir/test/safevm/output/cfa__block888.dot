@@ -1,0 +1,12 @@
+digraph block888 {
+1192 [shape="circle" label="N1192\n2"]
+1193 [shape="circle" label="N1193\n1"]
+1139 [shape="circle" label="N1139\n0"]
+1140 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label="Long linear chain of edges between nodes 1140 and 1191"]
+1140 -> 1192[label=""]
+100352 [shape="component" label="block928"]
+1192 -> 100352 [label="block928(s10, s9, s8, s7, s6, s5, s4, s3, s2, s1, s0);" fontname="Courier New"]
+100352 -> 1193 [label="" fontname="Courier New"]
+1192 -> 1193 [label="block928(s10, s9, s8, s7, s6, s5, s4, s3, s2, s1, s0);" fontname="Courier New"]
+1193 -> 1139 [label="default return" fontname="Courier New"]
+}

@@ -1,0 +1,15 @@
+digraph block1795 {
+1993 [shape="circle" label="N1993\n13"]
+1994 [shape="circle" label="N1994\n12"]
+2004 [shape="circle" label="N2004\n2"]
+2005 [shape="circle" label="N2005\n1"]
+1992 [shape="circle" label="N1992\n0"]
+1994 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">1994</td><td align="left">int s4;</td></tr><tr><td align="right">1995</td><td align="left">int s5;</td></tr><tr><td align="right">1996</td><td align="left">s4 = 0;</td></tr><tr><td align="right">1997</td><td align="left">s5 = s2;</td></tr><tr><td align="right">1998</td><td align="left">s2 = s4;</td></tr><tr><td align="right">1999</td><td align="left">s4 = s5;</td></tr><tr><td align="right">2000</td><td align="left">s4 = callvalue;</td></tr><tr><td align="right">2001</td><td align="left">s5 = s3;</td></tr><tr><td align="right">2002</td><td align="left">s3 = s4;</td></tr><tr><td align="right">2003</td><td align="left">s4 = s5;</td></tr></table>>]
+1994 -> 2004[label=""]
+1993 -> 1994 [label="Function start dummy edge" fontname="Courier New"]
+100017 [shape="component" label="block1803"]
+2004 -> 100017 [label="block1803(s3, s2, s1, s0);" fontname="Courier New"]
+100017 -> 2005 [label="" fontname="Courier New"]
+2004 -> 2005 [label="block1803(s3, s2, s1, s0);" fontname="Courier New"]
+2005 -> 1992 [label="default return" fontname="Courier New"]
+}

@@ -1,0 +1,29 @@
+TACAS19 Artifact
+RESULTS
+	Files analyzed: 64
+	Smart Contracts analyzed: 177
+	Public functions analyzed: 1551
+
+MEMORY GAS RESULTS
+	Constant bounds:1394
+	Parametric bounds:107
+	Time out:7
+	Finite gas bound (maximization error):43
+	Termination unknown (ranking function error):0
+	Complex control flow (cover point error):0
+OPCODE GAS RESULTS
+	Constant bounds:1401
+	Parametric bounds:136
+	Time out:0
+	Finite gas bound (maximization error):10
+	Termination unknown (ranking function error):2
+	Complex control flow (cover point error):2
+TIME RESULTS
+	 CFG Generation (OYENTE*):770.335101843
+	 RBR Generation (EthIR*):3.94245505333
+	 Size Analysis (SACO):485.372
+	 Generation of gas equations (Memory):581.403
+	 Generation of gas equations (Opcodes):671.239
+	 Solving of gas equations (PUBS)(Memory):1910.209
+	 Solving of gas equations (PUBS)(Opcodes):1788.04
+	 Total time GASTAP:6210.5405569

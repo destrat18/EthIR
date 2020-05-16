@@ -1,0 +1,15 @@
+digraph block3521 {
+3296 [shape="circle" label="N3296\n32"]
+3297 [shape="circle" label="N3297\n31"]
+3326 [shape="circle" label="N3326\n2"]
+3327 [shape="circle" label="N3327\n1"]
+3295 [shape="circle" label="N3295\n0"]
+3297 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label="Long linear chain of edges between nodes 3297 and 3325"]
+3297 -> 3326[label=""]
+3296 -> 3297 [label="Function start dummy edge" fontname="Courier New"]
+100339 [shape="component" label="block1341"]
+3326 -> 100339 [label="block1341(s2, s1, s0);" fontname="Courier New"]
+100339 -> 3327 [label="" fontname="Courier New"]
+3326 -> 3327 [label="block1341(s2, s1, s0);" fontname="Courier New"]
+3327 -> 3295 [label="default return" fontname="Courier New"]
+}

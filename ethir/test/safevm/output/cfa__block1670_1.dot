@@ -1,0 +1,7 @@
+digraph block1670_1 {
+4135 [shape="circle" label="N4135\n4"]
+4136 [shape="circle" label="N4136\n3"]
+4136 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">4136</td><td align="left">Label: ERROR</td></tr><tr><td align="right">4137</td><td align="left">__VERIFIER_error();</td></tr><tr><td align="right">4138</td><td align="left">default return</td></tr></table>>]
+4136 -> 4134[label=""]
+4135 -> 4136 [label="Function start dummy edge" fontname="Courier New"]
+}

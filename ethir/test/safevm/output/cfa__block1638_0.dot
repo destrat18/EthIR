@@ -1,0 +1,15 @@
+digraph block1638_0 {
+4024 [shape="circle" label="N4024\n9"]
+4025 [shape="circle" label="N4025\n8"]
+4031 [shape="circle" label="N4031\n2"]
+4032 [shape="circle" label="N4032\n1"]
+4023 [shape="circle" label="N4023\n0"]
+4025 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">4025</td><td align="left">int s5;</td></tr><tr><td align="right">4026</td><td align="left">int s6;</td></tr><tr><td align="right">4027</td><td align="left">s5 = 0;</td></tr><tr><td align="right">4028</td><td align="left">s6 = s4;</td></tr><tr><td align="right">4029</td><td align="left">s4 = s5;</td></tr><tr><td align="right">4030</td><td align="left">s5 = s6;</td></tr></table>>]
+4025 -> 4031[label=""]
+4024 -> 4025 [label="Function start dummy edge" fontname="Courier New"]
+100092 [shape="component" label="block1643_0"]
+4031 -> 100092 [label="block1643_0(s4, s3, s2, s1, s0);" fontname="Courier New"]
+100092 -> 4032 [label="" fontname="Courier New"]
+4031 -> 4032 [label="block1643_0(s4, s3, s2, s1, s0);" fontname="Courier New"]
+4032 -> 4023 [label="default return" fontname="Courier New"]
+}

@@ -1,0 +1,4 @@
+digraph block527 {
+647 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label="Long linear chain of edges between nodes 647 and 673"]
+647 -> 646[label=""]
+}

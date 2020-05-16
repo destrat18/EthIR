@@ -1,0 +1,17 @@
+digraph main {
+4962 [shape="circle" label="N4962\n4"]
+4963 [shape="circle" label="N4963\n3"]
+4964 [shape="circle" label="N4964\n2"]
+4965 [shape="circle" label="N4965\n1"]
+4961 [shape="circle" label="N4961\n0"]
+4962 -> 4963 [label="Function start dummy edge" fontname="Courier New"]
+100288 [shape="component" label="init_globals"]
+4963 -> 100288 [label="init_globals();" fontname="Courier New"]
+100288 -> 4964 [label="" fontname="Courier New"]
+4963 -> 4964 [label="init_globals();" fontname="Courier New"]
+100289 [shape="component" label="block0"]
+4964 -> 100289 [label="block0();" fontname="Courier New"]
+100289 -> 4965 [label="" fontname="Courier New"]
+4964 -> 4965 [label="block0();" fontname="Courier New"]
+4965 -> 4961 [label="return 0;" fontname="Courier New"]
+}

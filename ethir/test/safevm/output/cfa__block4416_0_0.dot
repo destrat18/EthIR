@@ -1,0 +1,12 @@
+digraph block4416_0_0 {
+4677 [shape="circle" label="N4677\n2"]
+4678 [shape="circle" label="N4678\n1"]
+4666 [shape="circle" label="N4666\n0"]
+4667 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">4667</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">4668</td><td align="left">int s10;</td></tr><tr><td align="right">4669</td><td align="left">int s11;</td></tr><tr><td align="right">4670</td><td align="left">s10 = 4450;</td></tr><tr><td align="right">4671</td><td align="left">s11 = s8;</td></tr><tr><td align="right">4672</td><td align="left">s8 = s10;</td></tr><tr><td align="right">4673</td><td align="left">s10 = s11;</td></tr><tr><td align="right">4674</td><td align="left">s11 = s9;</td></tr><tr><td align="right">4675</td><td align="left">s9 = s10;</td></tr><tr><td align="right">4676</td><td align="left">s10 = s11;</td></tr></table>>]
+4667 -> 4677[label=""]
+100054 [shape="component" label="block4422_0_0"]
+4677 -> 100054 [label="block4422_0_0(s10, s9, s8, s7, s6, s5, s4, s3, s2, s1, s0);" fontname="Courier New"]
+100054 -> 4678 [label="" fontname="Courier New"]
+4677 -> 4678 [label="block4422_0_0(s10, s9, s8, s7, s6, s5, s4, s3, s2, s1, s0);" fontname="Courier New"]
+4678 -> 4666 [label="default return" fontname="Courier New"]
+}

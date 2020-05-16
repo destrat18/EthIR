@@ -1,0 +1,12 @@
+digraph block3900 {
+3741 [shape="circle" label="N3741\n2"]
+3742 [shape="circle" label="N3742\n1"]
+3697 [shape="circle" label="N3697\n0"]
+3698 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label="Long linear chain of edges between nodes 3698 and 3740"]
+3698 -> 3741[label=""]
+100225 [shape="component" label="block4219_1"]
+3741 -> 100225 [label="block4219_1(s2, s1, s0);" fontname="Courier New"]
+100225 -> 3742 [label="" fontname="Courier New"]
+3741 -> 3742 [label="block4219_1(s2, s1, s0);" fontname="Courier New"]
+3742 -> 3697 [label="default return" fontname="Courier New"]
+}

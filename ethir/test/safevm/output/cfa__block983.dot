@@ -1,0 +1,4 @@
+digraph block983 {
+1275 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">1275</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">1276</td><td align="left">int s2;</td></tr><tr><td align="right">1277</td><td align="left">int s3;</td></tr><tr><td align="right">1278</td><td align="left">s2 = 0;</td></tr><tr><td align="right">1279</td><td align="left">s3 = s2;</td></tr><tr><td align="right">1280</td><td align="left">default return</td></tr></table>>]
+1275 -> 1274[label=""]
+}

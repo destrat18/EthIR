@@ -1,0 +1,7 @@
+digraph init_globals {
+4927 [shape="circle" label="N4927\n34"]
+4928 [shape="circle" label="N4928\n33"]
+4928 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label="Long linear chain of edges between nodes 4928 and 4960"]
+4928 -> 4926[label=""]
+4927 -> 4928 [label="Function start dummy edge" fontname="Courier New"]
+}

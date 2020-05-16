@@ -1,0 +1,41 @@
+2019-02-03 20:30:26:167	INFO	CPAchecker.run	CPAchecker 1.8 (OpenJDK 64-Bit Server VM 1.8.0_191) started
+
+2019-02-03 20:30:28:061	INFO	CoreComponentsFactory.createAlgorithm	Using heuristics to select analysis
+
+2019-02-03 20:30:28:072	WARNING	CPAchecker.printConfigurationWarnings	The following configuration options were specified but are not used:
+ cpa.callstack.unsupportedFunctions
+ cpa.predicate.memoryAllocationsAlwaysSucceed
+ cpa.callstack.skipFunctionPointerRecursion
+ cpa.composite.aggregateBasicBlocks 
+
+
+2019-02-03 20:30:28:072	INFO	CPAchecker.runAlgorithm	Starting analysis ...
+
+2019-02-03 20:30:28:087	INFO	SelectionAlgorithm.chooseConfig	Performing heuristic ...
+
+2019-02-03 20:30:28:093	INFO	Analysis /home/pablo/Descargas/CPAchecker-1.8-unix/config/components/configselection-restart-bmc-fallbacks.properties:CoreComponentsFactory.createAlgorithm	Using Restarting Algorithm
+
+2019-02-03 20:30:28:106	INFO	Analysis /home/pablo/Descargas/CPAchecker-1.8-unix/config/components/configselection-restart-bmc-fallbacks.properties:RestartAlgorithm.run	Loading analysis 1 from file /home/pablo/Descargas/CPAchecker-1.8-unix/config/components/configselection-singleconfig-bmc.properties ...
+
+2019-02-03 20:30:28:111	INFO	Analysis /home/pablo/Descargas/CPAchecker-1.8-unix/config/components/configselection-restart-bmc-fallbacks.properties:NestingAlgorithm.checkConfigs	Mismatch of configuration options when loading from '/home/pablo/Descargas/CPAchecker-1.8-unix/config/components/configselection-singleconfig-bmc.properties': 'specification' has two values 'specification/sv-comp-reachability.spc' and '../specification/default.spc'. Using '../specification/default.spc'.
+
+2019-02-03 20:30:28:113	INFO	Analysis /home/pablo/Descargas/CPAchecker-1.8-unix/config/components/configselection-restart-bmc-fallbacks.properties:Analysis /home/pablo/Descargas/CPAchecker-1.8-unix/config/components/configselection-singleconfig-bmc.properties:ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 900s
+
+2019-02-03 20:30:28:375	WARNING	Analysis /home/pablo/Descargas/CPAchecker-1.8-unix/config/components/configselection-restart-bmc-fallbacks.properties:Analysis /home/pablo/Descargas/CPAchecker-1.8-unix/config/components/configselection-singleconfig-bmc.properties:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2019-02-03 20:30:28:428	INFO	Analysis /home/pablo/Descargas/CPAchecker-1.8-unix/config/components/configselection-restart-bmc-fallbacks.properties:Analysis /home/pablo/Descargas/CPAchecker-1.8-unix/config/components/configselection-singleconfig-bmc.properties:PredicateCPA:PredicateCPA.<init>	Using predicate analysis with MathSAT5 version 5.5.3 (9dddce7e8e79) (Nov 20 2018 09:56:20, gmp 6.1.0, gcc 4.8.5, 64-bit, reentrant).
+
+2019-02-03 20:30:28:462	WARNING	Analysis /home/pablo/Descargas/CPAchecker-1.8-unix/config/components/configselection-restart-bmc-fallbacks.properties:Analysis /home/pablo/Descargas/CPAchecker-1.8-unix/config/components/configselection-singleconfig-bmc.properties:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2019-02-03 20:30:28:530	WARNING	Analysis /home/pablo/Descargas/CPAchecker-1.8-unix/config/components/configselection-restart-bmc-fallbacks.properties:Analysis /home/pablo/Descargas/CPAchecker-1.8-unix/config/components/configselection-singleconfig-bmc.properties:ARGCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2019-02-03 20:30:28:538	WARNING	Analysis /home/pablo/Descargas/CPAchecker-1.8-unix/config/components/configselection-restart-bmc-fallbacks.properties:Analysis /home/pablo/Descargas/CPAchecker-1.8-unix/config/components/configselection-singleconfig-bmc.properties:ARGCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2019-02-03 20:30:28:626	WARNING	Analysis /home/pablo/Descargas/CPAchecker-1.8-unix/config/components/configselection-restart-bmc-fallbacks.properties:Analysis /home/pablo/Descargas/CPAchecker-1.8-unix/config/components/configselection-singleconfig-bmc.properties:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2019-02-03 20:30:28:656	INFO	Analysis /home/pablo/Descargas/CPAchecker-1.8-unix/config/components/configselection-restart-bmc-fallbacks.properties:RestartAlgorithm.run	Starting analysis 1 ...
+
+2019-02-03 20:30:28:811	WARNING	Analysis /home/pablo/Descargas/CPAchecker-1.8-unix/config/components/configselection-restart-bmc-fallbacks.properties:Analysis /home/pablo/Descargas/CPAchecker-1.8-unix/config/components/configselection-singleconfig-bmc.properties:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge	Skipping recursive function call from block1731_0 to block1619_0
+
+2019-02-03 20:30:28:819	INFO	CPAchecker.runAlgorithm	Stopping analysis ...
+

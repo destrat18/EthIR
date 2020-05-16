@@ -1,0 +1,15 @@
+digraph block4173 {
+3873 [shape="circle" label="N3873\n39"]
+3874 [shape="circle" label="N3874\n38"]
+3910 [shape="circle" label="N3910\n2"]
+3911 [shape="circle" label="N3911\n1"]
+3872 [shape="circle" label="N3872\n0"]
+3874 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label="Long linear chain of edges between nodes 3874 and 3909"]
+3874 -> 3910[label=""]
+3873 -> 3874 [label="Function start dummy edge" fontname="Courier New"]
+100332 [shape="component" label="block2195"]
+3910 -> 100332 [label="block2195(s5, s4, s3, s2, s1, s0);" fontname="Courier New"]
+100332 -> 3911 [label="" fontname="Courier New"]
+3910 -> 3911 [label="block2195(s5, s4, s3, s2, s1, s0);" fontname="Courier New"]
+3911 -> 3872 [label="default return" fontname="Courier New"]
+}

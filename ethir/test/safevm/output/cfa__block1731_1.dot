@@ -1,0 +1,12 @@
+digraph block1731_1 {
+4256 [shape="circle" label="N4256\n2"]
+4257 [shape="circle" label="N4257\n1"]
+4243 [shape="circle" label="N4243\n0"]
+4244 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">4244</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">4245</td><td align="left">int s9;</td></tr><tr><td align="right">4246</td><td align="left">int s10;</td></tr><tr><td align="right">4247</td><td align="left">int s11;</td></tr><tr><td align="right">4248</td><td align="left">s9 = s8;</td></tr><tr><td align="right">4249</td><td align="left">s10 = s9;</td></tr><tr><td align="right">4250</td><td align="left">s11 = 1;</td></tr><tr><td align="right">4251</td><td align="left">s10 = s11 + s10;</td></tr><tr><td align="right">4252</td><td align="left">s11 = s8;</td></tr><tr><td align="right">4253</td><td align="left">s8 = s10;</td></tr><tr><td align="right">4254</td><td align="left">s10 = s11;</td></tr><tr><td align="right">4255</td><td align="left">s9 = 1619;</td></tr></table>>]
+4244 -> 4256[label=""]
+100317 [shape="component" label="block1619_1"]
+4256 -> 100317 [label="block1619_1(s8, s7, s6, s5, s4, s3, s2, s1, s0);" fontname="Courier New"]
+100317 -> 4257 [label="" fontname="Courier New"]
+4256 -> 4257 [label="block1619_1(s8, s7, s6, s5, s4, s3, s2, s1, s0);" fontname="Courier New"]
+4257 -> 4243 [label="default return" fontname="Courier New"]
+}

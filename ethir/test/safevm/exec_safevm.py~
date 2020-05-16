@@ -1,0 +1,11 @@
+import shlex
+import subprocess
+import os
+import csv
+import sys
+
+global d
+d = "/tmp/costabs/"
+
+global func_verified
+func_verified = []

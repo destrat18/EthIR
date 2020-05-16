@@ -1,0 +1,15 @@
+digraph block1745_0 {
+4267 [shape="circle" label="N4267\n9"]
+4268 [shape="circle" label="N4268\n8"]
+4274 [shape="circle" label="N4274\n2"]
+4275 [shape="circle" label="N4275\n1"]
+4266 [shape="circle" label="N4266\n0"]
+4268 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">4268</td><td align="left">s4 = s1;</td></tr><tr><td align="right">4269</td><td align="left">s1 = s3;</td></tr><tr><td align="right">4270</td><td align="left">s3 = s4;</td></tr><tr><td align="right">4271</td><td align="left">s4 = s2;</td></tr><tr><td align="right">4272</td><td align="left">s2 = s3;</td></tr><tr><td align="right">4273</td><td align="left">s3 = s4;</td></tr></table>>]
+4268 -> 4274[label=""]
+4267 -> 4268 [label="Function start dummy edge" fontname="Courier New"]
+100132 [shape="component" label="block322"]
+4274 -> 100132 [label="block322(s1, s0);" fontname="Courier New"]
+100132 -> 4275 [label="" fontname="Courier New"]
+4274 -> 4275 [label="block322(s1, s0);" fontname="Courier New"]
+4275 -> 4266 [label="default return" fontname="Courier New"]
+}
