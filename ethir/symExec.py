@@ -15,7 +15,7 @@ import logging
 import six
 from collections import namedtuple
 #from z3 import *
-import gasol
+#import gasol
 
 from vargenerator import *
 from basicblock import BasicBlock
@@ -3355,7 +3355,7 @@ def run(disasm_file=None,disasm_file_init=None, source_map=None , source_file=No
             # print function_block_map
             f = opt['block']
             #block = function_block_map[f]
-            gasol.optimize_solidity(int(opt["block"]),source_map,opt["fields"],opt["c_source"],rbr_rules,component_of_blocks)
+            #gasol.optimize_solidity(int(opt["block"]),source_map,opt["fields"],opt["c_source"],rbr_rules,component_of_blocks)
 
     except Exception as e:
         traceback.print_exc()
