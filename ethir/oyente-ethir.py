@@ -132,14 +132,15 @@ We believe that source is a dissasembly evm file
 def analyze_disasm_bytecode():
     global args
 
-    r = check_c_translation_dependencies()
-    
+    #r = check_c_translation_dependencies()
+    r = True
+
     if r:
         svc_options={}
-        if args.verify:
-            svc_options["verify"]=args.verify
-        if args.invalid:
-            svc_options["invalid"]=args.invalid
+        # if args.verify:
+        #     svc_options["verify"]=args.verify
+        # if args.invalid:
+        #     svc_options["invalid"]=args.invalid
 
         result, exit_code = symExec.run(disasm_file=args.source,cfg = args.control_flow_graph,saco = args.saco,debug = args.debug,evm_version = evm_version_modifications,cfile = args.cfile,svc=svc_options,go = args.goto)
     else:
@@ -161,14 +162,15 @@ def analyze_bytecode():
     print("Compilation time: "+str(y-x)+"s")
     print("*************************************************************")
 
-    r = check_c_translation_dependencies()
+    #r = check_c_translation_dependencies()
+    r = True
     
     if r:
         svc_options={}
-        if args.verify:
-            svc_options["verify"]=args.verify
-        if args.invalid:
-            svc_options["invalid"]=args.invalid
+        # if args.verify:
+        #     svc_options["verify"]=args.verify
+        # if args.invalid:
+        #     svc_options["invalid"]=args.invalid
         
         result, exit_code = symExec.run(disasm_file=inp['disasm_file'],cfg = args.control_flow_graph,saco = args.saco,debug = args.debug,evm_version = evm_version_modifications,cfile = args.cfile,svc=svc_options,go = args.goto)
         helper.rm_tmp_files()
@@ -186,13 +188,14 @@ def run_solidity_analysis(inputs,hashes):
     returns = []
     
     i = 0
-    r = check_c_translation_dependencies()
+    #r = check_c_translation_dependencies()
+    r = True
     svc_options={}
-    if args.verify:
-        svc_options["verify"]=args.verify
-    if args.invalid:
-        svc_options["invalid"]=args.invalid
-
+    # if args.verify:
+    #     svc_options["verify"]=args.verify
+    # if args.invalid:
+    #     svc_options["invalid"]=args.invalid
+    
     if len(inputs) == 1 and r:
         inp = inputs[0]
         function_names = hashes[inp["c_name"]]
@@ -339,18 +342,18 @@ def analyze_solidity(input_type='solidity'):
     print("Compilation time: "+str(y-x)+"s")
     print("*************************************************************")
 
-    if check_optimize_dependencies():
-        i = 0
-        found = False
-        while(i<len(inputs) and (not found)):
-            if inputs[i]["c_name"]==args.contract_name:
-                inp = inputs[i]
-                found = True
-            i+=1
-        results, exit_code = run_solidity_analysis_optimized(inp,hashes)
-    else:
-        results, exit_code = run_solidity_analysis(inputs,hashes)
-        helper.rm_tmp_files()
+    # if check_optimize_dependencies():
+    #     i = 0
+    #     found = False
+    #     while(i<len(inputs) and (not found)):
+    #         if inputs[i]["c_name"]==args.contract_name:
+    #             inp = inputs[i]
+    #             found = True
+    #         i+=1
+    #     results, exit_code = run_solidity_analysis_optimized(inp,hashes)
+    # else:
+    results, exit_code = run_solidity_analysis(inputs,hashes)
+    helper.rm_tmp_files()
 
     if global_params.WEB:
         six.print_(json.dumps(results))
@@ -410,17 +413,19 @@ def main():
     parser.add_argument( "-cfg", "--control-flow-graph",    help="Store the CFG", action="store_true")
     # parser.add_argument( "-eop", "--evm-opcodes",           help="Include the EVM opcodes in the translation", action="store_true")
     parser.add_argument( "-saco", "--saco",                 help="Translate EthIR RBR to SACO RBR", action="store_true")
-    parser.add_argument( "-c", "--cfile",                 help="Translate EthIR RBR to SACO RBR", choices = ["int","uint"])
-    parser.add_argument("-v", "--verify",             help="Applies abstraction depending on the verifier (CPAchecker, VeryMax or SeaHorn). Use with -c flag", choices = ["cpa","verymax","seahorn"])
-    parser.add_argument("-i", "--invalid",             help="Translate the specified invalid bytecodes into SV-COMP error labels. Use with -c flag", choices = ["array","div0","all"])
-    parser.add_argument("-g", "--goto",             help="Transform recursive rules into iterative rules using gotos. Use with -c flag", action="store_true")
-    parser.add_argument("-opt", "--optimize",             help="Fields to be optimized by Gasol", action="store_true")
-    parser.add_argument("-f", "--fields", type=str, help="Fields to be optimized by Gasol")
-    parser.add_argument("-cname", "--contract_name", type=str, help="Name of the contract that is going to be optimized")
-    parser.add_argument("-bl", "--block", type=str, help="block to be optimized")
+    # parser.add_argument( "-c", "--cfile",                 help="Translate EthIR RBR to SACO RBR", choices = ["int","uint"])
+    # parser.add_argument("-v", "--verify",             help="Applies abstraction depending on the verifier (CPAchecker, VeryMax or SeaHorn). Use with -c flag", choices = ["cpa","verymax","seahorn"])
+    # parser.add_argument("-i", "--invalid",             help="Translate the specified invalid bytecodes into SV-COMP error labels. Use with -c flag", choices = ["array","div0","all"])
+    # parser.add_argument("-g", "--goto",             help="Transform recursive rules into iterative rules using gotos. Use with -c flag", action="store_true")
+    # parser.add_argument("-opt", "--optimize",             help="Fields to be optimized by Gasol", action="store_true")
+    # parser.add_argument("-f", "--fields", type=str, help="Fields to be optimized by Gasol")
+    # parser.add_argument("-cname", "--contract_name", type=str, help="Name of the contract that is going to be optimized")
+    # parser.add_argument("-bl", "--block", type=str, help="block to be optimized")
     parser.add_argument( "-hashes", "--hashes",             help="Generate a file that contains the functions of the solidity file", action="store_true")
     args = parser.parse_args()
 
+    args.cfile = None
+    args.goto = False
     # if args.root_path:
     #     if args.root_path[-1] != '/':
     #         args.root_path += '/'
