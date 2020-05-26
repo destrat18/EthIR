@@ -26,7 +26,6 @@ from vulnerability import CallStack, TimeDependency, MoneyConcurrency, Reentranc
 import global_params
 
 import rbr
-from clone import compute_cloning
 from utils import cfg_dot, write_cfg, update_map, get_public_fields, getLevel, update_sstore_map,correct_map_fields1, get_push_value, get_initial_block_address, check_graph_consistency, find_first_closing_parentheses, check_if_same_stack
 from opcodes import get_opcode
 from graph_scc import Graph_SCC, get_entry_all,filter_nested_scc
