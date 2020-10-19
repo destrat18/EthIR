@@ -2,8 +2,7 @@
 
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-// pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 // helper methods for interacting with ERC20 tokens and sending ETH that do not consistently return true/false
 library TransferHelper {
     function safeApprove(address token, address to, uint value) internal {
@@ -33,8 +32,7 @@ library TransferHelper {
 
 // Root file: contracts/DemaxConvert.sol
 
-pragma solidity >=0.5.16;
-
+pragma solidity ^0.5.16;
 // import 'contracts/libraries/TransferHelper.sol';
 
 interface IERC20 {

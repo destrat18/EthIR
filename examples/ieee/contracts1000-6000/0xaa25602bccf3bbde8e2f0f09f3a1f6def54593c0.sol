@@ -1,7 +1,6 @@
 // File: contracts/dev/BlockhashStore.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 /**
  * @title BlockhashStore
  * @notice This contract provides a way to access blockhashes older than

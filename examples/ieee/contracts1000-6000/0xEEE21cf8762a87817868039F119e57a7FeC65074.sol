@@ -1,8 +1,7 @@
 // File: contracts/interfaces/IOneSwapRouter.sol
 
 // SPDX-License-Identifier: MIT
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 interface IOneSwapRouter {
     event AddLiquidity(uint stockAmount, uint moneyAmount, uint liquidity);
     event PairCreated(address indexed pair, address stock, address money, bool isOnlySwap);
@@ -54,8 +53,7 @@ interface IOneSwapRouter {
 
 // File: contracts/interfaces/IOneSwapFactory.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 interface IOneSwapFactory {
     event PairCreated(address indexed pair, address stock, address money, bool isOnlySwap);
 
@@ -76,8 +74,7 @@ interface IOneSwapFactory {
 
 // File: contracts/interfaces/IOneSwapPair.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 interface IOneSwapERC20 {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -160,8 +157,7 @@ interface IOneSwapPair {
 
 // File: contracts/interfaces/IERC20.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -180,8 +176,7 @@ interface IERC20 {
 
 // File: contracts/libraries/SafeMath256.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 library SafeMath256 {
     /**
      * @dev Returns the addition of two unsigned integers, reverting on
@@ -327,8 +322,7 @@ library SafeMath256 {
 
 // File: contracts/libraries/DecFloat32.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 /*
 This library defines a decimal floating point number. It has 8 decimal significant digits. Its maximum value is 9.9999999e+15.
 And its minimum value is 1.0e-16. The following golang code explains its detail implementation.
@@ -438,8 +432,7 @@ library DecFloat32 {
 
 // File: contracts/OneSwapRouter.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

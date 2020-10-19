@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 // Interface to represent a portion of HolyKnight onlyOwner methods 
 // does not include add pool

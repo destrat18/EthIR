@@ -665,8 +665,7 @@ contract ERC20Burnable is Context, ERC20 {
 // File: contracts/MyToken.sol
 
 // SPDX-License-Identifier: MIT
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 
 
 

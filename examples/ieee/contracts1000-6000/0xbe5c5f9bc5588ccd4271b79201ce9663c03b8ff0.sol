@@ -1,6 +1,5 @@
 // File: @openzeppelin/contracts/math/SafeMath.sol
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
  * checks.

@@ -1116,8 +1116,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/HippoToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -1362,8 +1361,7 @@ contract HippoToken is ERC20("HippoFinance", "HIPPO"), Ownable {
 
 // File: contracts/MasterChef.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

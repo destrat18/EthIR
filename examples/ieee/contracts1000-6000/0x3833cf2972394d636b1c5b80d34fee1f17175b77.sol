@@ -30,8 +30,7 @@ contract Context {
 
 // Dependency file: contracts/interfaces/IKULAPDex.sol
 
-// pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 // import "../helper/ERC20Interface.sol";
 // import "./IKULAPTradingProxy.sol";
 
@@ -170,8 +169,7 @@ interface IKULAPDex {
 
 // Dependency file: contracts/interfaces/IKULAPTradingProxy.sol
 
-// pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 // import "../helper/ERC20Interface.sol";
 
 /**
@@ -240,8 +238,7 @@ interface IKULAPTradingProxy {
 }
 // Dependency file: contracts/helper/ERC20Interface.sol
 
-// pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 /**
  * @title ERC20
  * @dev The ERC20 interface has an standard functions and event
@@ -554,8 +551,7 @@ contract ReentrancyGuard {
     }
 }
 
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 // import '@openzeppelin/contracts/utils/ReentrancyGuard.sol';
 // import "@openzeppelin/contracts/math/SafeMath.sol";
 // import "@openzeppelin/contracts/ownership/Ownable.sol";

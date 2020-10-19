@@ -778,8 +778,7 @@ contract Ownable is Context {
 
 // File: contracts/NekoToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 // NekoToken with Governance.

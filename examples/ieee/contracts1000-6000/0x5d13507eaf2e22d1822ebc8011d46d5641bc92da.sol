@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.7.0;
-
+pragma solidity ^0.7.0;
 interface IUSDT {
     function transferFrom(address _from, address _to, uint _value) external;
 }

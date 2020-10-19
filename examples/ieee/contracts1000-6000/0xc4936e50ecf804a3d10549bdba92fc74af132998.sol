@@ -731,8 +731,7 @@ library SafeERC20 {
 
 // File: contracts/utils/Withdrawable.sol
 
-pragma solidity >=0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -835,8 +834,7 @@ interface ILendingPool {
 
 // File: contracts/utils/Ownable.sol
 
-pragma solidity >=0.4.24;
-
+pragma solidity ^0.4.24;
 contract Ownable {
     address payable private _owner;
 

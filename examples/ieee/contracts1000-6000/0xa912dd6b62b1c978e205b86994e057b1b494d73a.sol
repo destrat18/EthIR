@@ -64,8 +64,7 @@ contract Owned {
 
 // File: contracts/interfaces/AggregatorInterface.sol
 
-pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 interface AggregatorInterface {
   function latestAnswer() external view returns (int256);
   function latestTimestamp() external view returns (uint256);
@@ -79,8 +78,7 @@ interface AggregatorInterface {
 
 // File: contracts/interfaces/AggregatorV3Interface.sol
 
-pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 interface AggregatorV3Interface {
 
   function decimals() external view returns (uint8);
@@ -115,8 +113,7 @@ interface AggregatorV3Interface {
 
 // File: contracts/interfaces/AggregatorV2V3Interface.sol
 
-pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 
 
 interface AggregatorV2V3Interface is AggregatorInterface, AggregatorV3Interface
@@ -125,8 +122,7 @@ interface AggregatorV2V3Interface is AggregatorInterface, AggregatorV3Interface
 
 // File: contracts/AggregatorProxy.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 /**
@@ -579,8 +575,7 @@ interface AccessControllerInterface {
 
 // File: contracts/EACAggregatorProxy.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 /**

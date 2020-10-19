@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity 0.6.8;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.6.8;pragma experimental ABIEncoderV2;
 
 interface iERC20 {
     function name() external view returns (string memory);

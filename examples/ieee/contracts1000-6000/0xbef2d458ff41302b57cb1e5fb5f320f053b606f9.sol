@@ -78,8 +78,7 @@ contract Ownable {
 
 // File: contracts/BankConfig.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface BankConfig {
     /// @dev Return minimum ETH debt size per position.
     function minDebtSize() external view returns (uint256);
@@ -108,8 +107,7 @@ interface BankConfig {
 
 // File: contracts/SimpleBankConfig.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 contract SimpleBankConfig is BankConfig, Ownable {

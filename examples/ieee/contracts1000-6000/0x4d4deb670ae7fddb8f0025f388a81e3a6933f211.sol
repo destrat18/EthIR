@@ -109,8 +109,7 @@ contract Ownable is Context {
 
 // File: contracts/interfaces/IWETH9.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IWETH {
     function deposit() external payable;
     function transfer(address to, uint value) external returns (bool);
@@ -147,8 +146,7 @@ interface IFeeApprover {
 
 // File: @uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2Pair {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -281,8 +279,7 @@ interface IERC20 {
 
 // File: contracts/libraries/Math.sol
 
-pragma solidity =0.5.16;
-
+pragma solidity ^0.5.16;
 // a library for performing various math operations
 
 library Math {
@@ -466,8 +463,7 @@ library SafeMath {
 
 // File: contracts/libraries/UniswapV2Library.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 library UniswapV2Library {
@@ -549,8 +545,7 @@ library UniswapV2Library {
 
 // File: contracts/COREv1Router.sol
 
-pragma solidity >=0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

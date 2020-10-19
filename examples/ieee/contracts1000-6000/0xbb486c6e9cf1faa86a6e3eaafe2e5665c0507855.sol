@@ -314,8 +314,7 @@ interface LinkTokenInterface {
 
 // File: contracts/util/ERC677Receiver.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 contract ERC677Receiver {
     /**
     * @dev Method invoked when tokens transferred via transferAndCall method
@@ -423,8 +422,7 @@ contract IERC721Metadata is IERC721 {
 
 // File: contracts/IRegistry.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 contract IRegistry is IERC721Metadata {
 
@@ -583,8 +581,7 @@ contract IRegistry is IERC721Metadata {
 
 // File: contracts/IResolver.sol
 
-pragma solidity 0.5.12;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.5.12;pragma experimental ABIEncoderV2;
 
 contract IResolver {
     /**
@@ -620,8 +617,7 @@ contract IResolver {
 
 // File: contracts/operators/TwitterValidationOperator.sol
 
-pragma solidity 0.5.12;
-// pragma experimental ABIEncoderV2;
+pragma solidity ^0.5.12;// pragma experimental ABIEncoderV2;
 
 
 

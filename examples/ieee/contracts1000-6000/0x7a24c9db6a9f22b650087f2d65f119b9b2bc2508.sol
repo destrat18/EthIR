@@ -155,8 +155,7 @@ library SafeMath {
 
 // File: contracts\EgorasMicrofinanceInterface.sol
 
-pragma solidity >=0.4.0 <0.7.0;
-// SPDX-License-Identifier: MIT
+pragma solidity ^0.4.0;// SPDX-License-Identifier: MIT
 interface EgorasMicrofinanceInterface {
     struct Loan{
         uint amount;
@@ -274,8 +273,7 @@ string _image_url, string _companyName, uint getTotalWeeks, uint _loanFee, uint 
 // File: contracts\EgorasLending.sol
 
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.4.0 <0.7.0;
-
+pragma solidity ^0.4.0;
 
 
 

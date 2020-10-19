@@ -2,8 +2,7 @@
 
 // File: contracts/SafeMath.sol
 
-pragma solidity >=0.6 <0.7.0;
-
+pragma solidity ^0.6;
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
  * checks.
@@ -162,8 +161,7 @@ library SafeMath {
 
 // File: contracts/IERC20.sol
 
-pragma solidity >=0.6 <0.7.0;
-
+pragma solidity ^0.6;
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
  */
@@ -240,8 +238,7 @@ interface IERC20 {
 
 // File: contracts/Context.sol
 
-pragma solidity >=0.6 <0.7.0;
-
+pragma solidity ^0.6;
 /*
  * @dev Provides information about the current execution context, including the
  * sender of the transaction and its data. While these are generally available
@@ -265,16 +262,14 @@ abstract contract Context {
 
 // File: contracts/TiGasFactory.sol
 
-pragma solidity >=0.6.0 <0.7.0;
-
+pragma solidity ^0.6.0;
 interface TiGasFactory {
     function useTiGas(uint256 tiCount) external;
 }
 
 // File: contracts/Leopard.sol
 
-pragma solidity >=0.6 <0.7.0;
-
+pragma solidity ^0.6;
 
 
 

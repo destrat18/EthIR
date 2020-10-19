@@ -792,8 +792,7 @@ contract Ownable is Context {
 
 // File: contracts/YFETHToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

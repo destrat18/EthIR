@@ -1,5 +1,4 @@
-pragma solidity 0.5.13;
-
+pragma solidity ^0.5.13;
 contract TimeFarmer {
 
 	uint256 constant public TOKEN_PRECISION = 1e6;

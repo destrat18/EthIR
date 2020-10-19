@@ -1,5 +1,4 @@
-pragma solidity 0.5.12;
-// https://github.com/dapphub/ds-pause
+pragma solidity ^0.5.12;// https://github.com/dapphub/ds-pause
 contract DSPauseAbstract {
     function setOwner(address) public;
     function setAuthority(address) public;

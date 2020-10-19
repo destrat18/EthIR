@@ -1066,8 +1066,7 @@ contract CDelegateInterface is CDelegationStorage {
 
 // File: contracts/hardworkInterface/IStrategy.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 interface IStrategy {
     
@@ -1113,8 +1112,7 @@ interface IStrategy {
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 contract WETH9 {
 
     function balanceOf(address target) public view returns (uint256); 
@@ -1827,8 +1825,7 @@ contract ICEther {
 
 // File: contracts/strategies/compound/CompoundInteractor.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 
@@ -1962,16 +1959,14 @@ contract CompoundInteractor is ReentrancyGuard {
 
 // File: contracts/strategies/compound/CompleteCToken.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 contract CompleteCToken is CErc20Interface, CTokenInterface {}
 
 // File: contracts/Storage.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 contract Storage {
 
   address public governance;
@@ -2007,8 +2002,7 @@ contract Storage {
 
 // File: contracts/Governable.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract Governable {
 
@@ -2036,8 +2030,7 @@ contract Governable {
 
 // File: contracts/Controllable.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract Controllable is Governable {
 
@@ -2062,8 +2055,7 @@ contract Controllable is Governable {
 
 // File: contracts/hardworkInterface/IController.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface IController {
     // [Grey list]
     // An EOA can safely interact with the system no matter what.
@@ -2091,8 +2083,7 @@ interface IController {
 
 // File: contracts/strategies/ProfitNotifier.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 
@@ -2144,8 +2135,7 @@ contract ProfitNotifier is Controllable {
 
 // File: contracts/uniswap/interfaces/IUniswapV2Router01.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2Router01 {
     function factory() external pure returns (address);
     function WETH() external pure returns (address);
@@ -2242,8 +2232,7 @@ interface IUniswapV2Router01 {
 
 // File: contracts/uniswap/interfaces/IUniswapV2Router02.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 interface IUniswapV2Router02 {
     function factory() external pure returns (address);
@@ -2380,8 +2369,7 @@ interface IUniswapV2Router02 {
 
 // File: contracts/strategies/compound/WETHCreamNoFoldStrategy.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

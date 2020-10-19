@@ -916,8 +916,7 @@ abstract contract ERC20Pausable is ERC20, Pausable {
 
 // contracts/ExNetworkEXNT.sol
 // SPDX-License-Identifier: Apache 2.0
-pragma solidity 0.6.2;
-
+pragma solidity ^0.6.2;
 
 
 contract ExNetworkEXNT is ERC20Pausable, Ownable {

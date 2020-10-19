@@ -1112,8 +1112,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/CornFinance.sol
 
-pragma solidity 0.6.5;
-
+pragma solidity ^0.6.5;
 
 
 
@@ -1358,8 +1357,7 @@ contract CornFinance is ERC20("CornFinance", "CFI"), Ownable {
 
 // File: contracts/CornFarm.sol
 
-pragma solidity 0.6.5;
-
+pragma solidity ^0.6.5;
 
 interface IMigratorChef {
     // Perform LP token migration from legacy UniswapV2 to CornSwap.

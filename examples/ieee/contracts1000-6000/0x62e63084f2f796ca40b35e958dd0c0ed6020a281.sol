@@ -1114,8 +1114,7 @@ contract ERC20 is Context, IERC20 {
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual { }
 }
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 contract DollarToken is ERC20("0xDollar.Finance", "0xDollar"), Ownable {
@@ -1136,8 +1135,7 @@ interface ICurveFiCurve {
 
 // File: contracts/MasterChef.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

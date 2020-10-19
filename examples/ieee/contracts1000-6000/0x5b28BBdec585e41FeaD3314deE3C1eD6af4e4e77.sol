@@ -1,8 +1,7 @@
 // Dependency file: contracts/interface/IERC20.sol
 
 //SPDX-License-Identifier: MIT
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -22,8 +21,7 @@ interface IERC20 {
 
 // Dependency file: contracts/interface/ERC2917-Interface.sol
 
-// pragma solidity >=0.6.6;
-// import 'contracts/interface/IERC20.sol';
+pragma solidity ^0.6.6;// import 'contracts/interface/IERC20.sol';
 
 interface IERC2917 is IERC20 {
 
@@ -83,8 +81,7 @@ interface IERC2917 is IERC20 {
 
 // Dependency file: contracts/libraries/Upgradable.sol
 
-// pragma solidity >=0.5.16;
-
+pragma solidity ^0.5.16;
 contract UpgradableProduct {
     address public impl;
 
@@ -295,8 +292,7 @@ library SafeMath {
 
 // Dependency file: contracts/WasabiToken.sol
 
-// pragma solidity >=0.6.6;
-
+pragma solidity ^0.6.6;
 // import 'contracts/interface/ERC2917-Interface.sol';
 // import 'contracts/libraries/Upgradable.sol';
 // import 'contracts/libraries/SafeMath.sol';
@@ -567,8 +563,7 @@ contract WasabiToken is IERC2917, UpgradableProduct, UpgradableGovernance {
 // Dependency file: contracts/libraries/TransferHelper.sol
 
 
-// pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 library SushiHelper {
     function deposit(address masterChef, uint256 pid, uint256 amount) internal {
         (bool success, bytes memory data) = masterChef.call(abi.encodeWithSelector(0xe2bbb158, pid, amount));
@@ -621,8 +616,7 @@ library TransferHelper {
 
 // Dependency file: contracts/interface/IWasabi.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IWasabi {
     function getOffer(address  _lpToken,  uint index) external view returns (address offer);
     function getOfferLength(address _lpToken) external view returns (uint length);
@@ -652,8 +646,7 @@ interface IWasabi {
 
 // Dependency file: contracts/WasabiOffer.sol
 
-// pragma solidity >=0.5.16;
-// import "contracts/libraries/SafeMath.sol";
+pragma solidity ^0.5.16;// import "contracts/libraries/SafeMath.sol";
 // import "contracts/libraries/TransferHelper.sol";
 // import "contracts/interface/IERC20.sol";
 // import "contracts/interface/IWasabi.sol";
@@ -810,8 +803,7 @@ contract Offer {
 
 // Root file: contracts/Wasabi.sol
 
-pragma solidity >=0.5.16;
-// import 'contracts/interface/IERC20.sol';
+pragma solidity ^0.5.16;// import 'contracts/interface/IERC20.sol';
 // import 'contracts/WasabiToken.sol';
 // import 'contracts/WasabiOffer.sol';
 // import 'contracts/libraries/TransferHelper.sol';

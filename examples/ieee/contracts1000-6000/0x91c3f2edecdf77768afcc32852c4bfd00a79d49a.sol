@@ -1115,8 +1115,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/XdexToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -1366,8 +1365,7 @@ contract XdexToken is ERC20("XdexToken", "XDEX"), Ownable {
 
 // File: contracts/MasterChef.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

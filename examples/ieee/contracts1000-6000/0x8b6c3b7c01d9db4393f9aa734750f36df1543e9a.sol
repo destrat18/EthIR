@@ -792,8 +792,7 @@ contract ERC20Capped is ERC20Mintable {
 
 // File: contracts/VIToken.sol
 
-pragma solidity >=0.4.25 <0.7.0;
-
+pragma solidity ^0.4.25;
 contract VIToken is ERC20Detailed, ERC20Capped {
     uint8 public constant DECIMALS = 18;
     uint256 public constant INITIAL_SUPPLY = 888888888 *

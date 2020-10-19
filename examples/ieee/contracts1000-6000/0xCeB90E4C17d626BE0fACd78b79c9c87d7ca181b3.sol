@@ -1,7 +1,6 @@
 // File: swap-contracts-core/contracts/interfaces/ICroDefiSwapFactory.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface ICroDefiSwapFactory {
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
 
@@ -28,8 +27,7 @@ interface ICroDefiSwapFactory {
 
 // File: @uniswap/lib/contracts/libraries/TransferHelper.sol
 
-pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 // helper methods for interacting with ERC20 tokens and sending ETH that do not consistently return true/false
 library TransferHelper {
     function safeApprove(address token, address to, uint value) internal {
@@ -58,8 +56,7 @@ library TransferHelper {
 
 // File: contracts/interfaces/ICroDefiSwapRouter01.sol
 
-pragma solidity >=0.6.2;
-
+pragma solidity ^0.6.2;
 interface ICroDefiSwapRouter01 {
     function factory() external pure returns (address);
     function WETH() external pure returns (address);
@@ -156,8 +153,7 @@ interface ICroDefiSwapRouter01 {
 
 // File: contracts/interfaces/ICroDefiSwapRouter02.sol
 
-pragma solidity >=0.6.2;
-
+pragma solidity ^0.6.2;
 
 interface ICroDefiSwapRouter02 is ICroDefiSwapRouter01 {
     function removeLiquidityETHSupportingFeeOnTransferTokens(
@@ -202,8 +198,7 @@ interface ICroDefiSwapRouter02 is ICroDefiSwapRouter01 {
 
 // File: swap-contracts-core/contracts/interfaces/ICroDefiSwapPair.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface ICroDefiSwapPair {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -257,8 +252,7 @@ interface ICroDefiSwapPair {
 
 // File: contracts/libraries/SafeMath.sol
 
-pragma solidity =0.6.6;
-
+pragma solidity ^0.6.6;
 // a library for performing overflow-safe math, courtesy of DappHub (https://github.com/dapphub/ds-math)
 
 library SafeMath {
@@ -277,8 +271,7 @@ library SafeMath {
 
 // File: contracts/libraries/CroDefiSwapLibrary.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 library CroDefiSwapLibrary {
@@ -360,8 +353,7 @@ library CroDefiSwapLibrary {
 
 // File: contracts/interfaces/IERC20.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -380,8 +372,7 @@ interface IERC20 {
 
 // File: contracts/interfaces/IWETH.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IWETH {
     function deposit() external payable;
     function transfer(address to, uint value) external returns (bool);
@@ -390,8 +381,7 @@ interface IWETH {
 
 // File: contracts/CroDefiSwapRouter02.sol
 
-pragma solidity =0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 

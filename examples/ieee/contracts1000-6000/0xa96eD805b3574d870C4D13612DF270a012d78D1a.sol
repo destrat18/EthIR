@@ -30,8 +30,7 @@ contract ResolverBase {
 }
 
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface ENS {
 
     // Logged when the owner of a node assigns a new owner to a subnode.
@@ -376,8 +375,7 @@ contract ContentHashResolver is ResolverBase {
     }
 }
 
-pragma solidity >0.4.23;
-
+pragma solidity ^0.4.23;
 library BytesUtils {
     /*
     * @dev Returns the keccak-256 hash of a byte range.
@@ -678,8 +676,7 @@ library BytesUtils {
     }
 }
 
-pragma solidity >0.4.18;
-
+pragma solidity ^0.4.18;
 /**
 * @dev A library for working with mutable byte buffers in Solidity.
 *
@@ -980,8 +977,7 @@ library Buffer {
     }
 }
 
-pragma solidity >0.4.23;
-
+pragma solidity ^0.4.23;
 /**
 * @dev RRUtils is a library that provides utilities for parsing DNS resource records.
 */

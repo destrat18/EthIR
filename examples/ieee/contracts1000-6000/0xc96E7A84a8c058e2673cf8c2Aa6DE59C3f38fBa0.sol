@@ -183,8 +183,7 @@ interface IERC20 {
  * @dev Locks WOM specific ERC20 tokens for a particular duration of time.
 */
 
-pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 
 
 

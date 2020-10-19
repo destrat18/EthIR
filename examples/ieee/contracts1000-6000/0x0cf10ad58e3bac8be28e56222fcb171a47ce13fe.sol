@@ -1481,8 +1481,7 @@ abstract contract AccessControl is Context {
     }
 }
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 contract QXToken is Context, AccessControl, ERC20Snapshot {
     bytes32 public constant SNAPSHOT_ROLE = keccak256("SNAPSHOT_ROLE");
 

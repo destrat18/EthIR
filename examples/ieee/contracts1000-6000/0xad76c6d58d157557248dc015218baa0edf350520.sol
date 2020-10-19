@@ -2,8 +2,7 @@
  *Submitted for verification at Etherscan.io on 2020-10-03
 */
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 /*
  * @dev Provides information about the current execution context, including the

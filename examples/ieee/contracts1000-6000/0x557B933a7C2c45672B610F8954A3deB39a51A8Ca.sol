@@ -99,8 +99,7 @@ contract Ownable is Context {
 
 // File @animoca/ethereum-contracts-core_library/contracts/access/WhitelistedOperators.sol@v3.0.0
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 contract WhitelistedOperators is Ownable {
 
@@ -539,8 +538,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
  */
@@ -654,8 +652,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 /**
  * @dev Interface for commonly used additional ERC20 interfaces
  */
@@ -690,8 +687,7 @@ interface IERC20Detailed {
 
 // File @animoca/ethereum-contracts-erc20_base/contracts/token/ERC20/IERC20Allowance.sol@v3.0.0
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 /**
  * @dev Interface for additional ERC20 allowance features
  */
@@ -759,8 +755,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 
 
@@ -1014,8 +1009,7 @@ abstract contract ERC20 is ERC165, Context, IERC20, IERC20Detailed, IERC20Allowa
 
 // File @animoca/ethereum-contracts-erc20_base/contracts/token/ERC20/ERC20WithOperators.sol@v3.0.0
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 
 abstract contract ERC20WithOperators is ERC20, WhitelistedOperators {
@@ -1095,8 +1089,7 @@ abstract contract ERC20WithOperators is ERC20, WhitelistedOperators {
 
 // File @animoca/f1dt-ethereum-contracts/contracts/token/ERC20/REVV.sol@v0.1.0
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 contract REVV is ERC20WithOperators {
 

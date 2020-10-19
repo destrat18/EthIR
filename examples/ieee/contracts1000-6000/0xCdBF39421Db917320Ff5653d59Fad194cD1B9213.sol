@@ -1413,8 +1413,7 @@ contract Ownable is Context {
 
 // File: contracts/ChickenToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -1662,8 +1661,7 @@ contract ChickenToken is ERC20Capped, Ownable {
 
 // File: contracts/FryCook.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

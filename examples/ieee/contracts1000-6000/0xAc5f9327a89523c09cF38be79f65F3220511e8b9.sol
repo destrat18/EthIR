@@ -1,5 +1,4 @@
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 /**
  * @title SafeMath
  * @dev Math operations with safety checks that revert on error
@@ -69,8 +68,7 @@ library SafeMath {
 //pragma solidity ^0.4.24;
 
 //import "zos-lib/contracts/Initializable.sol";
-//pragma solidity >=0.4.24 <0.6.0;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Initializable
@@ -315,8 +313,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-//pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title SafeMathInt
@@ -672,8 +669,7 @@ contract UFragments is ERC20Detailed, Ownable {
 }
 
 //import "./RebaseDelta.sol";
-//pragma solidity >=0.4.24;
-
+pragma solidity ^0.4.24;
 //import '@uniswap/v2-periphery/contracts/libraries/SafeMath.sol';
 
 // a library for performing overflow-safe math, courtesy of DappHub (https://github.com/dapphub/ds-math)

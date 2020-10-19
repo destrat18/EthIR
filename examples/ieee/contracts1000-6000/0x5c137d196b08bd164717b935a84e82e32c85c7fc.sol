@@ -796,8 +796,7 @@ contract Ownable is Context {
 
 // File: contracts/SushiToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

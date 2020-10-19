@@ -96,8 +96,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title SafeMathInt
@@ -188,8 +187,7 @@ library SafeMathInt {
 
 
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Various utilities useful for uint256.
@@ -212,8 +210,7 @@ library UInt256Lib {
 }
 
 
-pragma solidity >=0.4.24 <0.6.0;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Initializable
@@ -441,8 +438,7 @@ contract ERC20Detailed is Initializable, IERC20 {
 
 
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -752,8 +748,7 @@ contract UFragments is ERC20Detailed, Ownable {
 
 
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 

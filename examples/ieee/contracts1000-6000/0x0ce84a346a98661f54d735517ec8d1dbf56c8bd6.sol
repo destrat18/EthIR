@@ -1,5 +1,4 @@
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 interface ZOMBIE {
         function rebase(uint256 epoch, uint256 indexDelta, bool positive) external returns (uint256);
 }

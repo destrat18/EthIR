@@ -5,8 +5,7 @@
 /* solhint-disable no-mix-tabs-and-spaces */
 /* solhint-disable indent */
 
-pragma solidity 0.5.15;
-
+pragma solidity ^0.5.15;
 
 
 /**

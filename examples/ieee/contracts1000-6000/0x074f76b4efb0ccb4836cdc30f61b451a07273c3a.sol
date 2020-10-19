@@ -241,8 +241,7 @@ interface IERC20 {
 
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 abstract contract AbstractFiatTokenV1 is IERC20 {
     function _approve(
@@ -261,8 +260,7 @@ abstract contract AbstractFiatTokenV1 is IERC20 {
 // File: contracts/v1/Ownable.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 /**
  * @notice The Ownable contract has an owner address, and provides basic
  * authorization control functions
@@ -331,8 +329,7 @@ contract Ownable {
 
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 /**
  * @notice Base contract which allows children to implement an emergency stop
@@ -404,8 +401,7 @@ contract Pausable is Ownable {
 
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 /**
  * @title Blacklistable Token
@@ -482,8 +478,7 @@ contract Blacklistable is Ownable {
 
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

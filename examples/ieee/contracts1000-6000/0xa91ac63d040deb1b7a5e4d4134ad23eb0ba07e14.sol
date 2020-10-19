@@ -162,8 +162,7 @@ library SafeMath {
 
 // File: contracts/ERC20.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 /**
  * @title Standard ERC20 token
@@ -367,8 +366,7 @@ contract ERC20 {
 
 // File: contracts/Ownable.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @title Ownable
  * @dev The Ownable contract has an owner address, and provides basic authorization control
@@ -444,8 +442,7 @@ contract Ownable {
 
 // File: contracts/Bella.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 
 

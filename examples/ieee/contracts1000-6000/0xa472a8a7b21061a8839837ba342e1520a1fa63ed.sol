@@ -97,8 +97,7 @@ interface IERC20 {
 
 
 */
-// pragma solidity 0.6.10;
-// pragma experimental "ABIEncoderV2";
+pragma solidity ^0.6.10;// pragma experimental "ABIEncoderV2";
 
 // import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
@@ -233,8 +232,7 @@ interface ISetToken is IERC20 {
 
 
 */
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 // import { ISetToken } from "../interfaces/ISetToken.sol";
 
 interface ISetValuer {
@@ -259,8 +257,7 @@ interface ISetValuer {
 
 
 */
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 interface IIntegrationRegistry {
     function addIntegration(address _module, string memory _id, address _wrapper) external;
     function getIntegrationAdapter(address _module, string memory _id) external view returns(address);
@@ -553,8 +550,7 @@ abstract contract Context {
 
 */
 
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 // import { IController } from "../../interfaces/IController.sol";
 // import { IIntegrationRegistry } from "../../interfaces/IIntegrationRegistry.sol";
 // import { IPriceOracle } from "../../interfaces/IPriceOracle.sol";
@@ -619,8 +615,7 @@ library ResourceIdentifier {
 
 */
 
-// pragma solidity 0.6.10;
-// pragma experimental ABIEncoderV2;
+pragma solidity ^0.6.10;// pragma experimental ABIEncoderV2;
 
 // import { SafeMath } from "@openzeppelin/contracts/math/SafeMath.sol";
 // import { SignedSafeMath } from "@openzeppelin/contracts/math/SignedSafeMath.sol";
@@ -793,8 +788,7 @@ library PreciseUnitMath {
 }
 // Dependency file: external/contracts/uniswap/lib/UniswapV2Library.sol
 
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 // import "../../../../contracts/interfaces/external/IUniswapV2Pair.sol";
 
 // import { SafeMath } from "@openzeppelin/contracts/math/SafeMath.sol";
@@ -843,8 +837,7 @@ library UniswapV2Library {
 
 */
 
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 interface IUniswapV2Pair {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -915,8 +908,7 @@ interface IUniswapV2Pair {
 
 
 */
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @title IPriceOracle
  * @author Set Protocol
@@ -949,8 +941,7 @@ interface IPriceOracle {
 
 
 */
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 interface IController {
     function addSet(address _setToken) external;
     function feeRecipient() external view returns(address);
@@ -980,8 +971,7 @@ interface IController {
 
 */
 
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @title AddressArrayUtils
  * @author Set Protocol
@@ -1639,8 +1629,7 @@ contract ERC20 is Context, IERC20 {
 
 */
 
-pragma solidity 0.6.10;
-pragma experimental "ABIEncoderV2";
+pragma solidity ^0.6.10;pragma experimental "ABIEncoderV2";
 
 // import { ERC20 } from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 // import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";

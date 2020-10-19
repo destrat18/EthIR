@@ -793,8 +793,7 @@ contract Ownable is Context {
 
 // File: contracts/Yfinal.finance.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

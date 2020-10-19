@@ -346,8 +346,7 @@ contract Ownable is Context {
 
 // File: contracts/IStaking.sol
 
-pragma solidity 0.5.0;
-
+pragma solidity ^0.5.0;
 /**
  * @title Staking interface, as defined by EIP-900.
  * @dev https://github.com/ethereum/EIPs/blob/master/EIPS/eip-900.md
@@ -374,8 +373,7 @@ contract IStaking {
 
 // File: contracts/TokenPool.sol
 
-pragma solidity 0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 /**
@@ -401,8 +399,7 @@ contract TokenPool is Ownable {
 
 // File: contracts/TokenSpring.sol
 
-pragma solidity 0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 

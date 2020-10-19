@@ -124,8 +124,7 @@ abstract contract Context {
 
 
 */
-// pragma solidity 0.6.10;
-// pragma experimental "ABIEncoderV2";
+pragma solidity ^0.6.10;// pragma experimental "ABIEncoderV2";
 
 // import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
@@ -260,8 +259,7 @@ interface ISetToken is IERC20 {
 
 
 */
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 // import { ISetToken } from "./ISetToken.sol";
 
 interface INAVIssuanceHook {
@@ -302,8 +300,7 @@ interface INAVIssuanceHook {
 
 */
 
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @title AddressArrayUtils
  * @author Set Protocol
@@ -489,8 +486,7 @@ contract Ownable is Context {
 
 */
 
-pragma solidity 0.6.10;
-pragma experimental "ABIEncoderV2";
+pragma solidity ^0.6.10;pragma experimental "ABIEncoderV2";
 
 // import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
 

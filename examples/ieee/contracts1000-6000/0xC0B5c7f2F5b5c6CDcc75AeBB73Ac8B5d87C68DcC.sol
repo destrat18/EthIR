@@ -808,8 +808,7 @@ contract Ownable is Context {
 
 // File: contracts/IMigrator.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 interface IMigrator {
@@ -827,8 +826,7 @@ interface IMigrator {
 
 // File: contracts/Checkpoints.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 contract Checkpoints {
     /// @notice Official record of token balances for each account
     mapping (address => uint96) internal balances;
@@ -968,8 +966,7 @@ contract Checkpoints {
 
 // File: contracts/LPMining.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

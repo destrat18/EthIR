@@ -1,5 +1,4 @@
-pragma solidity >=0.4.22 <0.6.0;
-
+pragma solidity ^0.4.22;
 contract SushiSwap {
 
     string public constant name = "Sushi Swap v2";

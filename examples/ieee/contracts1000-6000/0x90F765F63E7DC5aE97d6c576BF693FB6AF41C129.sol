@@ -161,8 +161,7 @@ library Address {
 
 
 */
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 // import { ISetToken } from "../interfaces/ISetToken.sol";
 
 interface ISetValuer {
@@ -187,8 +186,7 @@ interface ISetValuer {
 
 
 */
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @title IPriceOracle
  * @author Set Protocol
@@ -395,8 +393,7 @@ library SignedSafeMath {
 
 */
 
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 // import { IController } from "../../interfaces/IController.sol";
 // import { IIntegrationRegistry } from "../../interfaces/IIntegrationRegistry.sol";
 // import { IPriceOracle } from "../../interfaces/IPriceOracle.sol";
@@ -460,8 +457,7 @@ library ResourceIdentifier {
 
 
 */
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 /**
  * @title IModule
@@ -496,8 +492,7 @@ interface IModule {
 
 */
 
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 // import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 // import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
 // import { SafeMath } from "@openzeppelin/contracts/math/SafeMath.sol";
@@ -570,8 +565,7 @@ library ExplicitERC20 {
 
 */
 
-// pragma solidity 0.6.10;
-// pragma experimental ABIEncoderV2;
+pragma solidity ^0.6.10;// pragma experimental ABIEncoderV2;
 
 // import { SafeMath } from "@openzeppelin/contracts/math/SafeMath.sol";
 // import { SignedSafeMath } from "@openzeppelin/contracts/math/SignedSafeMath.sol";
@@ -762,8 +756,7 @@ library PreciseUnitMath {
 
 */
 
-// pragma solidity 0.6.10;
-// pragma experimental "ABIEncoderV2";
+pragma solidity ^0.6.10;// pragma experimental "ABIEncoderV2";
 
 // import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 // import { SafeCast } from "@openzeppelin/contracts/utils/SafeCast.sol";
@@ -1014,8 +1007,7 @@ library Position {
 
 */
 
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 // import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 // import { ExplicitERC20 } from "../../lib/ExplicitERC20.sol";
@@ -1278,8 +1270,7 @@ interface IERC20 {
 
 
 */
-// pragma solidity 0.6.10;
-// pragma experimental "ABIEncoderV2";
+pragma solidity ^0.6.10;// pragma experimental "ABIEncoderV2";
 
 // import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
@@ -1415,8 +1406,7 @@ interface ISetToken is IERC20 {
 
 */
 
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 // import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 // import { SafeMath } from "@openzeppelin/contracts/math/SafeMath.sol";
 
@@ -1553,8 +1543,7 @@ library Invoke {
 
 
 */
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 interface IIntegrationRegistry {
     function addIntegration(address _module, string memory _id, address _wrapper) external;
     function getIntegrationAdapter(address _module, string memory _id) external view returns(address);
@@ -1580,8 +1569,7 @@ interface IIntegrationRegistry {
 
 
 */
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 interface IExchangeAdapter {
     function getSpender() external view returns(address);
     function getTradeCalldata(
@@ -1616,8 +1604,7 @@ interface IExchangeAdapter {
 
 
 */
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 interface IController {
     function addSet(address _setToken) external;
     function feeRecipient() external view returns(address);

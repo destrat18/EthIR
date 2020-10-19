@@ -1,7 +1,6 @@
 // Dependency file: contracts/libraries/SafeMath.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 // a library for performing overflow-safe math, courtesy of DappHub (https://github.com/dapphub/ds-math)
 
 library SafeMath {
@@ -20,8 +19,7 @@ library SafeMath {
 
 // Dependency file: contracts/libraries/DemaxSwapLibrary.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 // import '../interfaces/IDemaxPair.sol';
 // import '../interfaces/IDemaxFactory.sol';
 // import "./SafeMath.sol";
@@ -85,8 +83,7 @@ library DemaxSwapLibrary {
 }
 // Dependency file: contracts/interfaces/IDemaxPair.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDemaxPair {
   
     event Mint(address indexed sender, uint amount0, uint amount1);
@@ -127,8 +124,7 @@ interface IDemaxPair {
 
 // Dependency file: contracts/interfaces/IERC20.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -147,8 +143,7 @@ interface IERC20 {
 
 // Dependency file: contracts/interfaces/IDemaxFactory.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDemaxFactory {
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
 
@@ -166,8 +161,7 @@ interface IDemaxFactory {
 
 // Dependency file: contracts/interfaces/IDgas.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDgas {
     function amountPerBlock() external view returns (uint);
     function changeAmountPerBlock(uint value) external returns (bool);
@@ -182,8 +176,7 @@ interface IDgas {
 }
 // Dependency file: contracts/modules/Ownable.sol
 
-// pragma solidity >=0.5.16;
-
+pragma solidity ^0.5.16;
 contract Ownable {
     address public owner;
 
@@ -207,8 +200,7 @@ contract Ownable {
 }
 
 // SPDX-License-Identifier: GPL-3.0-or-later
-pragma solidity >=0.6.6;
-// import './modules/Ownable.sol';
+pragma solidity ^0.6.6;// import './modules/Ownable.sol';
 // import './interfaces/IDgas.sol';
 // import './interfaces/IDemaxFactory.sol';
 // import './interfaces/IERC20.sol';

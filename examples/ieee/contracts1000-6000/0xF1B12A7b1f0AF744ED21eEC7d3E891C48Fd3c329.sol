@@ -49,8 +49,7 @@ abstract contract Context {
 
 */
 
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @title AddressArrayUtils
  * @author Set Protocol
@@ -316,8 +315,7 @@ interface IERC20 {
 
 */
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 // import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 // import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
 // import { AddressArrayUtils } from "../lib/AddressArrayUtils.sol";

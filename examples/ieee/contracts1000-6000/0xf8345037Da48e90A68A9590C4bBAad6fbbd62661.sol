@@ -1,5 +1,4 @@
-pragma solidity 0.6.4;
-
+pragma solidity ^0.6.4;
 library EnumerableSet {
     // To implement this library for multiple types with as little code
     // repetition as possible, we write it in terms of a generic Set type with

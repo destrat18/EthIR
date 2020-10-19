@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity >=0.4.25 <0.7.0;
-
+pragma solidity ^0.4.25;
 interface IERC20 {
   function totalSupply() external view returns (uint256);
   function balanceOf(address who) external view returns (uint256);

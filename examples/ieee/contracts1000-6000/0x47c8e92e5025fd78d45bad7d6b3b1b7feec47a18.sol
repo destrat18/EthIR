@@ -1,7 +1,6 @@
 // File: contracts/sol4/ERC20Interface.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 // https://github.com/ethereum/EIPs/issues/20
 interface ERC20 {
@@ -17,8 +16,7 @@ interface ERC20 {
 
 // File: contracts/sol4/Utils.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 
 /// @title Kyber constants contract
@@ -83,8 +81,7 @@ contract Utils {
 
 // File: contracts/sol4/PermissionGroups.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 contract PermissionGroups {
 
@@ -211,8 +208,7 @@ contract PermissionGroups {
 
 // File: contracts/sol4/Withdrawable.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 
 
@@ -248,8 +244,7 @@ contract Withdrawable is PermissionGroups {
 
 // File: contracts/sol4/ConversionRatesInterface.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 
 interface ConversionRatesInterface {
@@ -267,8 +262,7 @@ interface ConversionRatesInterface {
 
 // File: contracts/sol4/SanityRatesInterface.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 interface SanityRatesInterface {
     function getSanityRate(ERC20 src, ERC20 dest) public view returns(uint);
@@ -276,8 +270,7 @@ interface SanityRatesInterface {
 
 // File: contracts/sol4/KyberReserveInterface.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 /// @title Kyber Reserve contract
 interface KyberReserveInterface {
@@ -299,8 +292,7 @@ interface KyberReserveInterface {
 
 // File: contracts/sol4/KyberReserve.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 
 

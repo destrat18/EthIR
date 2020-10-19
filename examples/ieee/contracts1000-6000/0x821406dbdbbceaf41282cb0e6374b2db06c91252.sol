@@ -1127,8 +1127,7 @@ contract ERC20 is Context, IERC20 {
 
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 contract GEKKOToken is ERC20("GekkoFarm.com", "GEKKO"), Ownable {
     /// @notice Creates `_amount` token to `_to`. Must only be called by the owner (MasterChef).
     function mint(address _to, uint256 _amount) public onlyOwner {
@@ -1142,8 +1141,7 @@ contract GEKKOToken is ERC20("GekkoFarm.com", "GEKKO"), Ownable {
 
 // File: contracts/MasterChef.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 // MasterChef is the master of Sushi. He can make Sushi and he is a fair guy.

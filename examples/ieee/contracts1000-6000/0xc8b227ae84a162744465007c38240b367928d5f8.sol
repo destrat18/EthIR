@@ -1,8 +1,7 @@
 // File: contracts/sakeswap/interfaces/ISakeSwapRouter.sol
 
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity >=0.6.2;
-
+pragma solidity ^0.6.2;
 interface ISakeSwapRouter {
     function factory() external pure returns (address);
 
@@ -232,8 +231,7 @@ interface ISakeSwapRouter {
 
 // File: contracts/sakeswap/interfaces/IERC20.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -254,8 +252,7 @@ interface IERC20 {
 
 // File: contracts/sakeswap/interfaces/IWETH.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IWETH {
     function deposit() external payable;
     function transfer(address to, uint value) external returns (bool);
@@ -264,8 +261,7 @@ interface IWETH {
 
 // File: contracts/sakeswap/interfaces/ISakeSwapFactory.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface ISakeSwapFactory {
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
 
@@ -286,8 +282,7 @@ interface ISakeSwapFactory {
 
 // File: contracts/sakeswap/interfaces/ISakeSwapPair.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface ISakeSwapPair {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -349,8 +344,7 @@ interface ISakeSwapPair {
 
 // File: contracts/sakeswap/libraries/SafeMath.sol
 
-pragma solidity =0.6.12;
-
+pragma solidity ^0.6.12;
 // a library for performing overflow-safe math, courtesy of DappHub (https://github.com/dapphub/ds-math)
 
 library SafeMath {
@@ -369,8 +363,7 @@ library SafeMath {
 
 // File: contracts/tools/SakeSwapBatchTrade.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

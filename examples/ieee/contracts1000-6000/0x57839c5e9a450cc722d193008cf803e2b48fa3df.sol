@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: Apache-2.0
-pragma solidity 0.6.11;
-
+pragma solidity ^0.6.11;
 // File: @openzeppelin/contracts/utils/EnumerableSet.sol
 
  
@@ -635,16 +634,14 @@ abstract contract AccessControl is Context {
  
 // File: src/IFUSDSupplyOracle.sol
  
-pragma solidity 0.6.11;
- 
+pragma solidity ^0.6.11; 
 interface IFUSDSupplyOracle {
     function getSupply() external view returns (uint256, uint256);
 }
  
 // File: src/FUSDSupplyOracle.sol
  
-pragma solidity 0.6.11;
- 
+pragma solidity ^0.6.11; 
  
  
 contract FUSDSupplyOracle is AccessControl, IFUSDSupplyOracle {

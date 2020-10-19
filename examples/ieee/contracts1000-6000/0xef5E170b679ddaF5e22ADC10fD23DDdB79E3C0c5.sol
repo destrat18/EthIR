@@ -1388,8 +1388,7 @@ contract IRoundsManager {
 
 // File: contracts/bonding/BondingManager.sol
 
-pragma solidity 0.5.11;
-
+pragma solidity ^0.5.11;
 
 
 

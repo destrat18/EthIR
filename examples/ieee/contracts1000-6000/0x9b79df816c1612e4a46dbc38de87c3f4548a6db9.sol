@@ -556,8 +556,7 @@ contract ERC20Detailed is IERC20 {
 
 // File: contracts/ERC20/ERC20FixedSupply.sol
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 
 
 

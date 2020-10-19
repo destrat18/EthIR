@@ -388,8 +388,7 @@ library SafeERC20 {
 
 // File: contracts/Storage.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 contract Storage {
 
   address public governance;
@@ -425,8 +424,7 @@ contract Storage {
 
 // File: contracts/Governable.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract Governable {
 
@@ -454,8 +452,7 @@ contract Governable {
 
 // File: contracts/Controllable.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract Controllable is Governable {
 
@@ -480,8 +477,7 @@ contract Controllable is Governable {
 
 // File: contracts/hardworkInterface/IVault.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 interface IVault {
     // the IERC20 part is the share
@@ -513,8 +509,7 @@ interface IVault {
 
 // File: contracts/hardworkInterface/IController.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface IController {
     // [Grey list]
     // An EOA can safely interact with the system no matter what.
@@ -542,8 +537,7 @@ interface IController {
 
 // File: contracts/DepositHelper.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

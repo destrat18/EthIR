@@ -1,7 +1,6 @@
 // File: contracts/PriceOracle.sol
 
-pragma solidity >=0.4.24;
-
+pragma solidity ^0.4.24;
 interface PriceOracle {
     /**
      * @dev Returns the price to register or renew a name.
@@ -16,8 +15,7 @@ interface PriceOracle {
 
 // File: @ensdomains/ens/contracts/ENS.sol
 
-pragma solidity >=0.4.24;
-
+pragma solidity ^0.4.24;
 interface ENS {
 
     // Logged when the owner of a node assigns a new owner to a subnode.
@@ -621,8 +619,7 @@ contract Ownable {
 
 // File: contracts/BaseRegistrar.sol
 
-pragma solidity >=0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract BaseRegistrar is ERC721, Ownable {
     uint constant public GRACE_PERIOD = 0 days;
@@ -675,8 +672,7 @@ contract BaseRegistrar is ERC721, Ownable {
 
 // File: contracts/StringUtils.sol
 
-pragma solidity >=0.4.24;
-
+pragma solidity ^0.4.24;
 library StringUtils {
     /**
      * @dev Returns the length of a given string

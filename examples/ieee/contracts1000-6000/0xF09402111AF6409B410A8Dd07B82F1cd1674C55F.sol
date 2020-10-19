@@ -1,5 +1,4 @@
-pragma solidity >=0.4.24;
-
+pragma solidity ^0.4.24;
 //import '@uniswap/v2-periphery/contracts/libraries/SafeMath.sol';
 
 // a library for performing overflow-safe math, courtesy of DappHub (https://github.com/dapphub/ds-math)

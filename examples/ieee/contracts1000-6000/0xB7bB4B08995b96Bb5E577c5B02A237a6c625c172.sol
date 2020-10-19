@@ -915,8 +915,7 @@ contract Ownable is Context {
 
 // File: contracts/LockToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 // LockToken with Governance.
 contract LockToken is ERC20("LockToken", "LOCK"), Ownable {
     constructor() public {

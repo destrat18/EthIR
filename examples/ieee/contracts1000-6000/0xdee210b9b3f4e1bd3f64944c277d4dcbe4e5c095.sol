@@ -1,13 +1,11 @@
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 /**
  *Submitted for verification at Etherscan.io on 2020-05-04
 */
 
 // File: contracts/interfaces/IWhitelist.sol
 
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 
 /**
  * Source: https://raw.githubusercontent.com/simple-restricted-token/reference-implementation/master/contracts/token/ERC1404/ERC1404.sol
@@ -750,8 +748,7 @@ library SafeERC20 {
 
 // File: @openzeppelin/upgrades/contracts/Initializable.sol
 
-pragma solidity >=0.4.24 <0.7.0;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Initializable
@@ -1140,8 +1137,7 @@ contract ERC20Detailed is Initializable, IERC20 {
 
 // File: contracts/DecentralizedAutonomousTrust.sol
 
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 
 
 

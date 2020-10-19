@@ -4,8 +4,7 @@
 
 // SPDX-License-Identifier: MIT
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 /**
  * @title ERC721 Non-Fungible Token Standard, basic interface
  * @dev See https://eips.ethereum.org/EIPS/eip-721
@@ -148,8 +147,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
  */
@@ -263,8 +261,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 /**
  * @dev Library for managing an enumerable variant of Solidity's
  * https://solidity.readthedocs.io/en/latest/types.html#mapping-types[`mapping`]
@@ -444,8 +441,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 /**
  * @dev Library for managing
  * https://en.wikipedia.org/wiki/Set_(abstract_data_type)[sets] of primitive
@@ -669,8 +665,7 @@ contract Ownable is Context {
 
 // File @animoca/ethereum-contracts-core_library/contracts/payment/PayoutWallet.sol@v3.1.1
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 /**
     @title PayoutWallet
@@ -699,8 +694,7 @@ contract PayoutWallet is Ownable
 
 // File @animoca/ethereum-contracts-core_library/contracts/utils/Startable.sol@v3.1.1
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 /**
  * Contract module which allows derived contracts to implement a mechanism for
@@ -1155,8 +1149,7 @@ library SafeMath {
 
 // File @animoca/ethereum-contracts-sale_base/contracts/sale/interfaces/ISale.sol@v6.0.0
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 /**
  * @title ISale
  *
@@ -1330,8 +1323,7 @@ interface ISale {
 
 // File @animoca/ethereum-contracts-sale_base/contracts/sale/interfaces/IPurchaseNotificationsReceiver.sol@v6.0.0
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 /**
  * @title IPurchaseNotificationsReceiver
@@ -1373,8 +1365,7 @@ interface IPurchaseNotificationsReceiver {
 
 // File @animoca/ethereum-contracts-sale_base/contracts/sale/PurchaseLifeCycles.sol@v6.0.0
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 /**
  * @title PurchaseLifeCycles
@@ -1481,8 +1472,7 @@ abstract contract PurchaseLifeCycles {
 
 // File @animoca/ethereum-contracts-sale_base/contracts/sale/AbstractSale.sol@v6.0.0
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 
 
@@ -1890,8 +1880,7 @@ abstract contract AbstractSale is PurchaseLifeCycles, ISale, PayoutWallet, Start
 
 // File @animoca/ethereum-contracts-sale_base/contracts/sale/FixedPricesSale.sol@v6.0.0
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 
 /**
@@ -1979,8 +1968,7 @@ contract FixedPricesSale is AbstractSale {
 
 // File @animoca/f1dt-ethereum-contracts/contracts/sale/REVVSale.sol@v0.4.0
 
-pragma solidity =0.6.8;
-
+pragma solidity ^0.6.8;
 
 
 

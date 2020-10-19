@@ -20,8 +20,7 @@
  * 7- Odin by Sooho.
  */
  
-pragma solidity 0.5.11;
-
+pragma solidity ^0.5.11;
 /**
  * @title ERC20 Interface
  * @author Fabian Vogelsteller, Vitalik Buterin

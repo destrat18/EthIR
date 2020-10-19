@@ -161,8 +161,7 @@ library SafeMath {
 
 // File: contracts/Timelock.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 // COPIED FROM contracts/Timelock.sol
 // Copyright 2020 Compound Labs, Inc.
 // Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:

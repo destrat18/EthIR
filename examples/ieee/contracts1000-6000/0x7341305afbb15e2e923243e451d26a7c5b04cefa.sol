@@ -792,8 +792,7 @@ contract Ownable is Context {
 
 // File: contracts/XdexToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -1055,8 +1054,7 @@ contract XdexToken is ERC20("XdexToken", "XDEX"), Ownable {
 // uint96s are changed to uint256s for simplicity and safety.
 
 // XXX: pragma solidity ^0.5.16;
-pragma solidity 0.6.12;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.6.12;pragma experimental ABIEncoderV2;
 
 
 contract GovernorAlpha {

@@ -1,8 +1,7 @@
 // File: @nomiclabs/buidler/console.sol
 
 // SPDX-License-Identifier: MIT
-pragma solidity >= 0.4.22 <0.7.0;
-
+pragma solidity ^0.4.22;
 library console {
 	address constant CONSOLE_ADDRESS = address(0x000000000000000000636F6e736F6c652e6c6f67);
 
@@ -2979,8 +2978,7 @@ contract ERC20PresetMinterPauser is Context, AccessControl, ERC20Burnable, ERC20
 
 // File: contracts/AdrianoERC20.sol
 
-pragma solidity >=0.6.0 <0.7.0;
-
+pragma solidity ^0.6.0;
 
 
 contract AdrianoERC20 is ERC20PresetMinterPauser {
@@ -3002,8 +3000,7 @@ contract AdrianoERC20 is ERC20PresetMinterPauser {
 
 // File: contracts/AdrianoFund.sol
 
-pragma solidity >=0.6.0 <0.7.0;
-
+pragma solidity ^0.6.0;
 
 
 

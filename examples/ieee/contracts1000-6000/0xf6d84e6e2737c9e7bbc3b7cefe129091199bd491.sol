@@ -16,8 +16,7 @@
  */
 
 
-pragma solidity =0.6.6;
-
+pragma solidity ^0.6.6;
 /*
  * @dev Provides information about the current execution context, including the
  * sender of the transaction and its data. While these are generally available

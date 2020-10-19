@@ -1134,8 +1134,7 @@ contract ERC20 is Context, IERC20 {
 
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 contract VOTEToken is ERC20("VOTE2020.NETWORK", "BDN20"), Ownable {
     /// @notice Creates `_amount` token to `_to`. Must only be called by the owner (MasterChef).
     function CampaignDist(address _to, uint256 _amount) public onlyOwner {
@@ -1149,8 +1148,7 @@ contract VOTEToken is ERC20("VOTE2020.NETWORK", "BDN20"), Ownable {
 
 // File: contracts/MasterChef.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 contract MasterChef is Ownable {
     using SafeMath for uint256;

@@ -869,8 +869,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/BobaToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -1115,8 +1114,7 @@ contract BobaToken is ERC20("BobaToken", "BOBA"), Ownable {
 
 // File: contracts/MasterBarista.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

@@ -2,8 +2,7 @@
 
 // SPDX-License-Identifier: GPL-3.0-only
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2Factory {
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
 
@@ -22,8 +21,7 @@ interface IUniswapV2Factory {
 
 // File: @uniswap/lib/contracts/libraries/TransferHelper.sol
 
-pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 // helper methods for interacting with ERC20 tokens and sending ETH that do not consistently return true/false
 library TransferHelper {
     function safeApprove(address token, address to, uint value) internal {
@@ -52,8 +50,7 @@ library TransferHelper {
 
 // File: contracts/interfaces/IUniswapV2Router01.sol
 
-pragma solidity >=0.6.2;
-
+pragma solidity ^0.6.2;
 interface IUniswapV2Router01 {
     function factory() external pure returns (address);
     function WETH() external pure returns (address);
@@ -151,8 +148,7 @@ interface IUniswapV2Router01 {
 // File: contracts/interfaces/IUniswapV2Router02.sol
 
 
-pragma solidity >=0.6.2;
-
+pragma solidity ^0.6.2;
 
 interface IUniswapV2Router02 is IUniswapV2Router01 {
     function removeLiquidityETHSupportingFeeOnTransferTokens(
@@ -197,8 +193,7 @@ interface IUniswapV2Router02 is IUniswapV2Router01 {
 
 // File: @decaswap/core/contracts/interfaces/IUniswapV2Pair.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 interface IUniswapV2Pair {
@@ -256,8 +251,7 @@ interface IUniswapV2Pair {
 
 
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 // a library for performing overflow-safe math, courtesy of DappHub (https://github.com/dapphub/ds-math)
 
 library SafeMath {
@@ -278,8 +272,7 @@ library SafeMath {
 
 
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 
@@ -359,8 +352,7 @@ library UniswapV2Library {
 
 
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -381,8 +373,7 @@ interface IERC20 {
 
 
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IWETH {
     function deposit() external payable;
     function transfer(address to, uint value) external returns (bool);
@@ -391,8 +382,7 @@ interface IWETH {
 
 // File: contracts/DecaswapRouter.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 contract DecaswapRouter is IUniswapV2Router02 {
     using SafeMath for uint;
 

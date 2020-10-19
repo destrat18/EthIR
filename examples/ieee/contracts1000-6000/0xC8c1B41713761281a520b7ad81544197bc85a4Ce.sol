@@ -2,8 +2,7 @@
 
 // SPDX-License-Identifier: MIT
 
-// pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
  * checks.
@@ -164,8 +163,7 @@ library SafeMath {
 
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-// pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 // helper methods for interacting with ERC20 tokens and sending ETH that do not consistently return true/false
 library TransferHelper {
     function safeApprove(address token, address to, uint value) internal {
@@ -196,8 +194,7 @@ library TransferHelper {
 // Root file: contracts/ETH/ETHBurgerTransit.sol
 
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.5.16;
-
+pragma solidity ^0.5.16;
 // import 'contracts/ETH/libraries/SafeMath.sol';
 // import 'contracts/ETH/libraries/TransferHelper.sol';
 

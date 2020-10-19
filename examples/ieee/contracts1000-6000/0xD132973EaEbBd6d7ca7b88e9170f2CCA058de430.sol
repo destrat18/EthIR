@@ -188,8 +188,7 @@ interface IERC20 {
 
 // File: contracts/PermanentVotingPowerV1.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

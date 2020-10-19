@@ -1,7 +1,6 @@
 // File: contracts/interface/ICash.sol
 
-pragma solidity >=0.4.24;
-
+pragma solidity ^0.4.24;
 
 interface ICash {
     function claimDividends(address account) external returns (uint256);
@@ -90,8 +89,7 @@ library SafeMath {
 
 // File: zos-lib/contracts/Initializable.sol
 
-pragma solidity >=0.4.24 <0.6.0;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Initializable
@@ -347,8 +345,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-pragma solidity >=0.4.24;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title SafeMathInt
@@ -430,8 +427,7 @@ library SafeMathInt {
 
 // File: contracts/euro/seigniorageEuroShares.sol
 
-pragma solidity >=0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 

@@ -794,8 +794,7 @@ contract Ownable is Context {
     }
 }
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 contract GeomToken is ERC20("Geomart", "GEOM"), Ownable {
     /// @notice Creates `_amount` token to `_to`. Must only be called by the owner.
     function mint(address _to, uint256 _amount) public onlyOwner {

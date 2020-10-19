@@ -1,8 +1,7 @@
 // File: contracts-source/Initializable.sol
 
 // SPDX-License-Identifier: MIT
-pragma solidity >0.5.0;
-
+pragma solidity ^0.5.0;
 /**
  * @title Initializable
  *
@@ -69,8 +68,7 @@ contract Initializable {
 
 // File: contracts-source/token/ERC20/IERC20.sol
 
-pragma solidity >0.5.0;
-
+pragma solidity ^0.5.0;
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
  */
@@ -160,8 +158,7 @@ interface IERC20 {
 
 // File: contracts-source/math/SafeMath.sol
 
-pragma solidity >0.5.0;
-
+pragma solidity ^0.5.0;
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
  * checks.
@@ -325,8 +322,7 @@ library SafeMath {
 
 // File: contracts-source/utils/Address.sol
 
-pragma solidity >0.5.0;
-
+pragma solidity ^0.5.0;
 /**
  * @dev Collection of functions related to the address type
  */
@@ -396,8 +392,7 @@ library Address {
 
 // File: contracts-source/token/ERC20/SafeERC20.sol
 
-pragma solidity >0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 
@@ -527,8 +522,7 @@ library SafeERC20 {
 
 // File: contracts-source/GSN/Context.sol
 
-pragma solidity >0.5.0;
-
+pragma solidity ^0.5.0;
 
 /*
  * @dev Provides information about the current execution context, including the
@@ -564,8 +558,7 @@ contract ContextUpgradeSafe is Initializable {
 
 // File: contracts-source/token/ERC20/TokenTimelock.sol
 
-pragma solidity >0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 /**
@@ -654,8 +647,7 @@ contract TokenTimelockUpgradeSafe is Initializable {
 
 // File: contracts-source/access/Ownable.sol
 
-pragma solidity >0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 /**
@@ -738,8 +730,7 @@ contract OwnableUpgradeSafe is Initializable, ContextUpgradeSafe {
 
 // File: contracts-source/token/ERC20/ERC20.sol
 
-pragma solidity >0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 
@@ -1124,8 +1115,7 @@ contract ERC20UpgradeSafe is Initializable, ContextUpgradeSafe, IERC20 {
 
 // File: contracts-source/token/ERC20/ERC20Lockable.sol
 
-pragma solidity >0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 
@@ -1237,8 +1227,7 @@ abstract contract ERC20LockableUpgradeSafe is Initializable, ERC20UpgradeSafe, O
 
 // File: contracts-source/utils/EnumerableSet.sol
 
-pragma solidity >0.5.0;
-
+pragma solidity ^0.5.0;
 /**
  * @dev Library for managing
  * https://en.wikipedia.org/wiki/Set_(abstract_data_type)[sets] of primitive
@@ -1516,8 +1505,7 @@ library EnumerableSet {
 
 // File: contracts-source/access/AccessControl.sol
 
-pragma solidity >0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 
@@ -1750,8 +1738,7 @@ abstract contract AccessControlUpgradeSafe is
 
 // File: contracts-source/token/ERC20/ERC20Burnable.sol
 
-pragma solidity >0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 
@@ -1807,8 +1794,7 @@ abstract contract ERC20BurnableUpgradeSafe is
 
 // File: contracts-source/utils/Pausable.sol
 
-pragma solidity >0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 /**
@@ -1890,8 +1876,7 @@ contract PausableUpgradeSafe is Initializable, ContextUpgradeSafe {
 
 // File: contracts-source/token/ERC20/ERC20Pausable.sol
 
-pragma solidity >0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 
@@ -1937,8 +1922,7 @@ abstract contract ERC20PausableUpgradeSafe is
 
 // File: contracts-source/token/ERC20/ERC20Capped.sol
 
-pragma solidity >0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 /**
@@ -1997,8 +1981,7 @@ abstract contract ERC20CappedUpgradeSafe is Initializable, ERC20UpgradeSafe {
 
 // File: contracts-source/presets/ERC20PresetMinterPauser.sol
 
-pragma solidity >0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 
@@ -2142,8 +2125,7 @@ contract ERC20PresetMinterPauserUpgradeSafe is
 
 // File: contracts-source/presets/ERC20UpgradeBase.sol
 
-pragma solidity >0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 
@@ -2192,8 +2174,7 @@ contract ERC20UpgradeBase is
 
 // File: contracts-source/NextInnovation.sol
 
-pragma solidity >0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 

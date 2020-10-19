@@ -789,8 +789,7 @@ contract ReentrancyGuard {
 
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 /**
  * @dev Contract module which allows children to implement an emergency stop
@@ -851,8 +850,7 @@ contract Pausable is Context {
 
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -1030,8 +1028,7 @@ abstract contract PoolShareToken is ERC20, ReentrancyGuard, Pausable {
 
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 // Requried one small change in openzeppelin version of ownable, so imported
 // source code here. Notice line 26 for change.
@@ -1136,8 +1133,7 @@ contract Owned is Ownable {
 
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 interface ICollateralManager {
     function addGemJoin(address[] calldata gemJoins) external;
 
@@ -1188,8 +1184,7 @@ interface ICollateralManager {
 
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 interface IVPool is IERC20 {
     function approveToken(address spender) external;
@@ -1219,8 +1214,7 @@ interface IVPool is IERC20 {
 
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -1377,8 +1371,7 @@ contract Controller is Owned {
 
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 interface StrategyManager {
     function balanceOf(address pool) external view returns (uint256);
 
@@ -1399,8 +1392,7 @@ interface StrategyManager {
 
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 interface IUniswapV2Router01 {
     function factory() external pure returns (address);
 
@@ -1485,8 +1477,7 @@ interface IUniswapV2Router01 {
 
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 interface IUniswapV2Router02 is IUniswapV2Router01 {
     
@@ -1518,8 +1509,7 @@ interface IUniswapV2Router02 is IUniswapV2Router01 {
 
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -1813,8 +1803,7 @@ abstract contract VTokenBase is PoolShareToken, Owned {
 
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 interface TokenLike {
     function approve(address, uint256) external;
 
@@ -1837,8 +1826,7 @@ interface TokenLike {
 
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 contract VETH is VTokenBase {

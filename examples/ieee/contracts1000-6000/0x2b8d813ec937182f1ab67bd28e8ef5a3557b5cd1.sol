@@ -1,7 +1,6 @@
 /*! ether.chainfast.sol | (c) 2020 Develop by BelovITLab LLC (smartcontract.ru), author @stupidlovejoy | SPDX-License-Identifier: MIT License */
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 /*
  * @dev Provides information about the current execution context, including the

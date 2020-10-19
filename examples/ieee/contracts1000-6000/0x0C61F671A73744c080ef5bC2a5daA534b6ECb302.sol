@@ -1,7 +1,6 @@
 // File: @openzeppelin/contracts-ethereum-package/contracts/Initializable.sol
 
-pragma solidity >=0.4.24 <0.7.0;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Initializable
@@ -805,8 +804,7 @@ contract ERC20UpgradeSafe is Initializable, ContextUpgradeSafe, IERC20 {
  * @dev Basic ERC20 token compatible with upgradability proxy contracts.
 */
 
-pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 
 
 

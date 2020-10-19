@@ -1,8 +1,7 @@
 // File: contracts/Lend/ProtocolInterface.sol
 
 // SPDX-License-Identifier: GPL-3.0-only
-pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 abstract contract ProtocolInterface {
     function deposit(
         address _user,
@@ -22,8 +21,7 @@ abstract contract ProtocolInterface {
 // File: contracts/interfaces/ERC20.sol
 
 // SPDX-License-Identifier: GPL-3.0-only
-pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 interface ERC20 {
      event Approval(address indexed _owner, address indexed _spender, uint256 _value);
     event Transfer(address indexed _src, address indexed _dst, uint256 _amount);
@@ -51,8 +49,7 @@ interface ERC20 {
 // File: contracts/interfaces/CTokenInterface.sol
 
 // SPDX-License-Identifier: GPL-3.0-only
-pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 
 abstract contract CTokenInterface is ERC20 {
     function mint(uint256 mintAmount) external virtual returns (uint256);
@@ -106,8 +103,7 @@ abstract contract CTokenInterface is ERC20 {
 // File: contracts/Lend/compound/CompoundProtocol.sol
 
 // SPDX-License-Identifier: GPL-3.0-only
-pragma solidity >=0.6.0;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.6.0;pragma experimental ABIEncoderV2;
 
 
 

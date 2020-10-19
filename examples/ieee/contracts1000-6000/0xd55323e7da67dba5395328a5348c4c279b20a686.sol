@@ -1,7 +1,6 @@
 /*! ucap.token.sol | (c) 2018 Develop by BelovITLab LLC (smartcontract.ru), author @stupidlovejoy | License: MIT */
 
-pragma solidity 0.4.25;
-
+pragma solidity ^0.4.25;
 library SafeMath {
     function mul(uint256 a, uint256 b) internal pure returns(uint256) {
         if(a == 0) return 0;

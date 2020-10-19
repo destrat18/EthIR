@@ -7,8 +7,7 @@
 // Need help? support@proofsuite.com
 
 
-pragma solidity >= 0.6 .6;
-
+pragma solidity ^0.6;
 interface bzxRead {
 
     function getLoan(bytes32 loanId) external view returns(bytes32 loanId1, uint96 endTimestamp, address loanToken, address collateralToken, uint256 principal, uint256 collateral, uint256 interestOwedPerDay, uint256 interestDepositRemaining, uint256 startRate, uint256 startMargin, uint256 maintenanceMargin, uint256 currentMargin, uint256 maxLoanTerm, uint256 maxLiquidatable, uint256 maxSeizable);

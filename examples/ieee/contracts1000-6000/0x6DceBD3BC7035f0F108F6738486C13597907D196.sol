@@ -1,5 +1,4 @@
-pragma solidity >=0.5.22 <0.6.12;
-
+pragma solidity ^0.5.22;
 
 library SafeMath {
     /**

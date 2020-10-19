@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 contract SusafeReferral {
     mapping(address => address) public referrers; // account_address -> referrer_address
     mapping(address => uint256) public referredCount; // referrer_address -> num_of_referred

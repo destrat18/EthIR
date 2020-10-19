@@ -1,8 +1,7 @@
 // File: contracts\sakeswap\libraries\SafeMath.sol
 
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity =0.6.12;
-
+pragma solidity ^0.6.12;
 // a library for performing overflow-safe math, courtesy of DappHub (https://github.com/dapphub/ds-math)
 
 library SafeMath {
@@ -21,8 +20,7 @@ library SafeMath {
 
 // File: contracts\sakeswap\SakeSwapSlippageToken.sol
 
-pragma solidity =0.6.12;
-
+pragma solidity ^0.6.12;
 
 contract SakeSwapSlippageToken {
     using SafeMath for uint;

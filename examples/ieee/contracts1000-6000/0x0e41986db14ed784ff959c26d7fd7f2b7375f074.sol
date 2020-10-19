@@ -1323,8 +1323,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/LockToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 // LockToken with Governance.
 contract LockToken is ERC20("LockToken", "LOCK"), Ownable {
     constructor() public {
@@ -1593,8 +1592,7 @@ contract LockToken is ERC20("LockToken", "LOCK"), Ownable {
 
 // File: contracts/KeyMaster.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 interface IMigratorMaster {
     // Perform LP token migration from legacy UniswapV2 to KeyKeySwap.
     // Take the current LP token address and return the new LP token address.

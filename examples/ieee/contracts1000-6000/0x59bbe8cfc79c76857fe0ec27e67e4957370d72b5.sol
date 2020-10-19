@@ -1552,8 +1552,7 @@ contract SimpleWriteAccessController is AccessControllerInterface, Owned {
 
 // File: contracts/PreCoordinator.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 

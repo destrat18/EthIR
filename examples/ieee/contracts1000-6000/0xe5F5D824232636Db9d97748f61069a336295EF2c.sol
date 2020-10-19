@@ -1791,8 +1791,7 @@ library SafeMath {
 
 /* solium-disable function-order */
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -2216,8 +2215,7 @@ interface IACLOracle {
 
 // File @aragon/os/contracts/acl/ACL.sol@v4.4.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -2686,8 +2684,7 @@ contract ACL is IACL, TimeHelpers, AragonApp, ACLHelpers {
 
 // File @aragon/os/contracts/kernel/KernelStorage.sol@v4.4.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract KernelStorage {
     // namespace => app id => address
@@ -2716,8 +2713,7 @@ contract ERCProxy {
 
 // File @aragon/os/contracts/common/DelegateProxy.sol@v4.4.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -2750,8 +2746,7 @@ contract DelegateProxy is ERCProxy, IsContract {
 
 // File @aragon/os/contracts/common/DepositableStorage.sol@v4.4.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 contract DepositableStorage {
@@ -2772,8 +2767,7 @@ contract DepositableStorage {
 
 // File @aragon/os/contracts/common/DepositableDelegateProxy.sol@v4.4.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -2819,8 +2813,7 @@ contract DepositableDelegateProxy is DepositableStorage, DelegateProxy {
 
 // File @aragon/os/contracts/apps/AppProxyBase.sol@v4.4.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -2860,8 +2853,7 @@ contract AppProxyBase is AppStorage, DepositableDelegateProxy, KernelNamespaceCo
 
 // File @aragon/os/contracts/apps/AppProxyUpgradeable.sol@v4.4.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 contract AppProxyUpgradeable is AppProxyBase {
@@ -2896,8 +2888,7 @@ contract AppProxyUpgradeable is AppProxyBase {
 
 // File @aragon/os/contracts/apps/AppProxyPinned.sol@v4.4.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -2948,8 +2939,7 @@ contract AppProxyPinned is IsContract, AppProxyBase {
 
 // File @aragon/os/contracts/factory/AppProxyFactory.sol@v4.4.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -3005,8 +2995,7 @@ contract AppProxyFactory {
 
 // File @aragon/os/contracts/kernel/Kernel.sol@v4.4.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -3246,8 +3235,7 @@ contract Kernel is IKernel, KernelStorage, KernelAppIds, KernelNamespaceConstant
 
 // File @aragon/os/contracts/kernel/KernelProxy.sol@v4.4.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -3341,8 +3329,7 @@ library ScriptHelpers {
 
 // File @aragon/os/contracts/evmscript/EVMScriptRegistry.sol@v4.4.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -3470,8 +3457,7 @@ contract BaseEVMScriptExecutor is IEVMScriptExecutor, Autopetrified {
 
 // File @aragon/os/contracts/evmscript/executors/CallsScript.sol@v4.4.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 // Inspired by https://github.com/reverendus/tx-manager
 
 
@@ -3574,8 +3560,7 @@ contract CallsScript is BaseEVMScriptExecutor {
 
 // File @aragon/os/contracts/factory/EVMScriptRegistryFactory.sol@v4.4.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -3620,8 +3605,7 @@ contract EVMScriptRegistryFactory is EVMScriptRegistryConstants {
 
 // File @aragon/os/contracts/factory/DAOFactory.sol@v4.4.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -3790,8 +3774,7 @@ library MerkleProof {
 
 // File contracts/VestedTokenMigration.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 

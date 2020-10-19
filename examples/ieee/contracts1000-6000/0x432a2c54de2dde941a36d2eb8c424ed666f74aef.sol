@@ -1,5 +1,4 @@
-pragma solidity >=0.4.22 <0.6.0;
-
+pragma solidity ^0.4.22;
 contract ERC20 {
     uint256 public totalSupply;
     function balanceOf(address _owner) view public  returns (uint256 balance);

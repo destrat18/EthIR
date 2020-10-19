@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: GNUV3
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 // Needed to handle structures externally
 pragma experimental ABIEncoderV2;
 

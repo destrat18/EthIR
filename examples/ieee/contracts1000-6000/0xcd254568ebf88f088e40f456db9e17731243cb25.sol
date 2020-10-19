@@ -780,8 +780,7 @@ contract Ownable is Context {
     }
 }
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 contract YFOS is ERC20("YFOS.finance", "YFOS"), Ownable {

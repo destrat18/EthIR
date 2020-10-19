@@ -239,8 +239,7 @@ library SafeERC20 {
 
 
 */
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 /**
  * @title IModule
@@ -275,8 +274,7 @@ interface IModule {
 
 */
 
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 // import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 // import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
 // import { SafeMath } from "@openzeppelin/contracts/math/SafeMath.sol";
@@ -349,8 +347,7 @@ library ExplicitERC20 {
 
 */
 
-// pragma solidity 0.6.10;
-// pragma experimental ABIEncoderV2;
+pragma solidity ^0.6.10;// pragma experimental ABIEncoderV2;
 
 // import { SafeMath } from "@openzeppelin/contracts/math/SafeMath.sol";
 // import { SignedSafeMath } from "@openzeppelin/contracts/math/SignedSafeMath.sol";
@@ -514,8 +511,7 @@ library PreciseUnitMath {
 
 */
 
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 // import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 // import { ExplicitERC20 } from "../../lib/ExplicitERC20.sol";
@@ -641,8 +637,7 @@ abstract contract ModuleBase is IModule {
 
 
 */
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 interface IController {
     function addSet(address _setToken) external;
     function feeRecipient() external view returns(address);
@@ -1288,8 +1283,7 @@ interface IERC20 {
 
 */
 
-// pragma solidity 0.6.10;
-// pragma experimental "ABIEncoderV2";
+pragma solidity ^0.6.10;// pragma experimental "ABIEncoderV2";
 
 // import { ReentrancyGuard } from "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 // import { SafeCast } from "@openzeppelin/contracts/utils/SafeCast.sol";
@@ -1589,8 +1583,7 @@ contract StreamingFeeModule is ModuleBase, ReentrancyGuard {
 
 
 */
-// pragma solidity 0.6.10;
-// pragma experimental "ABIEncoderV2";
+pragma solidity ^0.6.10;// pragma experimental "ABIEncoderV2";
 
 // import { ISetToken } from "./ISetToken.sol";
 // import { StreamingFeeModule } from "../protocol/modules/StreamingFeeModule.sol";
@@ -1602,8 +1595,7 @@ interface IStreamingFeeModule {
 // Dependency file: @nomiclabs/buidler/console.sol
 
 
-// pragma solidity >= 0.4.22 <0.7.0;
-
+pragma solidity ^0.4.22;
 library console {
 	address constant CONSOLE_ADDRESS = address(0x000000000000000000636F6e736F6c652e6c6f67);
 
@@ -3157,8 +3149,7 @@ library console {
 
 
 */
-// pragma solidity 0.6.10;
-// pragma experimental "ABIEncoderV2";
+pragma solidity ^0.6.10;// pragma experimental "ABIEncoderV2";
 
 // import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
@@ -3293,8 +3284,7 @@ interface ISetToken is IERC20 {
 
 
 */
-// pragma solidity 0.6.10;
-// pragma experimental "ABIEncoderV2";
+pragma solidity ^0.6.10;// pragma experimental "ABIEncoderV2";
 
 
 // import { ISetToken } from "../interfaces/ISetToken.sol";
@@ -3359,8 +3349,7 @@ contract StreamingFeeModuleViewer {
 
 
 */
-// pragma solidity 0.6.10;
-// pragma experimental "ABIEncoderV2";
+pragma solidity ^0.6.10;// pragma experimental "ABIEncoderV2";
 
 
 // import { ISetToken } from "../interfaces/ISetToken.sol";
@@ -3420,8 +3409,7 @@ contract SetTokenViewer {
 
 
 */
-pragma solidity 0.6.10;
-pragma experimental "ABIEncoderV2";
+pragma solidity ^0.6.10;pragma experimental "ABIEncoderV2";
 
 
 // import { SetTokenViewer } from "./SetTokenViewer.sol";

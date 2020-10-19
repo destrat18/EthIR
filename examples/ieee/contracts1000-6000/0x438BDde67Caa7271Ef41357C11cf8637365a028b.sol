@@ -26,8 +26,7 @@ https://powerpool.finance/
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 abstract contract ERC20 {
     function balanceOf(address whom) external view virtual returns (uint);
     function allowance(address, address) external view virtual returns (uint);

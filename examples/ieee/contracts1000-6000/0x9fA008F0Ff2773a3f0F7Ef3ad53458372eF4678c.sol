@@ -1,7 +1,6 @@
 // File: @openzeppelin/contracts-ethereum-package/contracts/Initializable.sol
 
-pragma solidity >=0.4.24 <0.7.0;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Initializable
@@ -187,8 +186,7 @@ contract OwnableUpgradeSafe is Initializable, ContextUpgradeSafe {
 
 // File: contracts/IDerivativeSpecification.sol
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 /// @title Derivative Specification interface
 /// @notice Immutable collection of derivative attributes
 /// @dev Created by the derivative's author and published to the DerivativeSpecificationRegistry
@@ -270,8 +268,7 @@ interface IDerivativeSpecification {
 
 // File: contracts/registries/IAddressRegistry.sol
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 interface IAddressRegistry {
     function get(bytes32 _key) external view returns(address);
     function set(bytes32 _key, address _value) external;
@@ -357,8 +354,7 @@ interface IERC20 {
 
 // File: contracts/tokens/IERC20MintedBurnable.sol
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 
 interface IERC20MintedBurnable is IERC20 {
     function mint(address to, uint256 amount) external;
@@ -368,8 +364,7 @@ interface IERC20MintedBurnable is IERC20 {
 
 // File: contracts/tokens/ITokenBuilder.sol
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 interface ITokenBuilder {
     function isTokenBuilder() external pure returns(bool);
     function buildTokens(IDerivativeSpecification derivative, uint settlement, address _collateralToken) external returns(IERC20MintedBurnable, IERC20MintedBurnable);
@@ -377,16 +372,14 @@ interface ITokenBuilder {
 
 // File: contracts/IFeeLogger.sol
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 interface IFeeLogger {
     function log(address _liquidityProvider, address _collateral, uint _protocolFee, address _author) external;
 }
 
 // File: contracts/IVaultBuilder.sol
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 interface IVaultBuilder {
     function buildVault(
         uint _initializationTime,
@@ -407,8 +400,7 @@ interface IVaultBuilder {
 
 // "SPDX-License-Identifier: GNU General Public License v3.0"
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 /// @title Vault Factory implementation contract
 /// @notice Creates new vaults and registers them in internal storage
 contract VaultFactory is OwnableUpgradeSafe {

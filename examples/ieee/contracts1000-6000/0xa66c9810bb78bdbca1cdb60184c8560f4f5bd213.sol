@@ -347,8 +347,7 @@ contract Ownable is Context {
 
 // File: contracts\TTTdefiFundV2.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 
@@ -508,8 +507,7 @@ contract TTTdefiFundV2 is Ownable {
 
 // File: contracts\TTTdefiFundFactoryV2.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract TTTdefiFundFactoryV2 {
   /*** STORAGE VARIABLES ***/

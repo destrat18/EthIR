@@ -688,8 +688,7 @@ contract Ownable is Context {
 
 // File: contracts/TelemediERC20.sol
 
-pragma solidity 0.5.9;
-
+pragma solidity ^0.5.9;
 
 
 
@@ -766,8 +765,7 @@ contract TelemediERC20 is Context, Ownable, ERC20, ERC20Detailed {
 
 // File: contracts/TelemediERC20Locker.sol
 
-pragma solidity 0.5.9;
-
+pragma solidity ^0.5.9;
 
 
 

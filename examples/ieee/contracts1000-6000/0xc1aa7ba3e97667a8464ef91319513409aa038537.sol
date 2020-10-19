@@ -464,8 +464,7 @@ library SafeERC20 {
 // File: contracts/crowdsale/crowdsale.sol
 
 // SPDX-License-Identifier: MIT
-pragma solidity 0.6.2;
-
+pragma solidity ^0.6.2;
 
 interface ERCMintable {
     //function crowdSaleMint(address to, uint256 amount) external returns(bool);

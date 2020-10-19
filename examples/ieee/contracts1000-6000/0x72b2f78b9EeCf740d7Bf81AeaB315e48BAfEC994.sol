@@ -1,8 +1,7 @@
 // File: contracts/Lend/ProtocolInterface.sol
 
 // SPDX-License-Identifier: GPL-3.0-only
-pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 abstract contract ProtocolInterface {
     function deposit(
         address _user,
@@ -22,8 +21,7 @@ abstract contract ProtocolInterface {
 // File: contracts/interfaces/LendingPoolAddressesProviderInterface.sol
 
 // SPDX-License-Identifier: GPL-3.0-only
-pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 abstract contract LendingPoolAddressesProviderInterface {
     function getLendingPool() external virtual returns (address);
 
@@ -33,8 +31,7 @@ abstract contract LendingPoolAddressesProviderInterface {
 // File: contracts/interfaces/LendingPool.sol
 
 // SPDX-License-Identifier: GPL-3.0-only
-pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 abstract contract LendingPool {
     function deposit(
         address,
@@ -156,8 +153,7 @@ abstract contract LendingPool {
 // File: contracts/interfaces/ERC20.sol
 
 // SPDX-License-Identifier: GPL-3.0-only
-pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 interface ERC20 {
      event Approval(address indexed _owner, address indexed _spender, uint256 _value);
     event Transfer(address indexed _src, address indexed _dst, uint256 _amount);
@@ -185,8 +181,7 @@ interface ERC20 {
 // File: contracts/interfaces/ATokenInterface.sol
 
 // SPDX-License-Identifier: GPL-3.0-only
-pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 
 abstract contract ATokenInterface is ERC20 {
     function principalBalanceOf(address _user) external virtual view returns (uint256 balance);
@@ -232,8 +227,7 @@ abstract contract ATokenInterface is ERC20 {
 // File: contracts/Lend/aave/AaveProtocol.sol
 
 // SPDX-License-Identifier: GPL-3.0-only
-pragma solidity >=0.6.0;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.6.0;pragma experimental ABIEncoderV2;
 
 
 

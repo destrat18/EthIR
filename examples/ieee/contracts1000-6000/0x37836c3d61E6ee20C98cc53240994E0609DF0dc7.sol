@@ -648,8 +648,7 @@ contract ProxyAdmin is Ownable {
  * @author WOM Protocol <info@womprotocol.io>
  * @dev Proxy admin contract.
 */
-pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 
 
 contract WOMProxyAdmin is ProxyAdmin {

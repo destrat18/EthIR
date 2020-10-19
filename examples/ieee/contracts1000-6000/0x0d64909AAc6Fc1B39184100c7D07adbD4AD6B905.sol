@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-only
-pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 contract Logger {
     event Deposit(
         address indexed sender,

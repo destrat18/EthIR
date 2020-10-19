@@ -472,8 +472,7 @@ contract TransparentUpgradeableProxy is UpgradeableProxy {
  * @author WOM Protocol <info@womprotocol.io>
  * @dev Proxies WOMToken calls and enables WOMToken upgradability.
 */
-pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 
 
 contract WOMTokenProxy is TransparentUpgradeableProxy {

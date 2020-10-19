@@ -6,8 +6,7 @@
 
  //This contract can be stopped. Once stopped, the remaining KRK tokens will be burned or taken from a contract.
 
- pragma solidity = 0.7.0;
-
+pragma solidity ^0.7.0;
  library SafeMath {
 
    function add(uint256 a, uint256 b) internal pure returns(uint256) {

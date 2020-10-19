@@ -791,8 +791,7 @@ contract Ownable is Context {
 
 // File: contracts/SHROOMToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 // ShroomToken with Governance.
 contract SHROOMToken is ERC20("shroom.finance", "SHROOM"), Ownable {

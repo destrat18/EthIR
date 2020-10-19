@@ -790,8 +790,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: browser/LongToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

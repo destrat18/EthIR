@@ -1,7 +1,6 @@
 // File: ens.sol
 
-pragma solidity >=0.4.24;
-
+pragma solidity ^0.4.24;
 interface ENS {
 
     // Logged when the owner of a node assigns a new owner to a subnode.

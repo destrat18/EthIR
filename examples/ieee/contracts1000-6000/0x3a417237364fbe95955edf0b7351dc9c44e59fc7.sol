@@ -550,8 +550,7 @@ contract Ownable is Context {
 
 // File: contracts\SakeToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -1058,8 +1057,7 @@ contract SakeToken is Context, IERC20, Ownable {
 
 // File: contracts\STokenMaster.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

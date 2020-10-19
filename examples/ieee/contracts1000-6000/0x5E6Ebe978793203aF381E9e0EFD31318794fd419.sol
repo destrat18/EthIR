@@ -414,8 +414,7 @@ contract ReentrancyGuard {
 
 
 /// SWC-103:  Floating Pragma
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 // import "../node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol";
 // import "../node_modules/openzeppelin-solidity/contracts/ownership/Ownable.sol";
 // import "../node_modules/openzeppelin-solidity/contracts/lifecycle/Pausable.sol";
@@ -574,8 +573,7 @@ interface ISparkleTimestamp {
 
 
 /// SWC-103:  Floating Pragma
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

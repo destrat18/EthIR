@@ -594,8 +594,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
  */
@@ -763,8 +762,7 @@ contract ERC165 is IERC165 {
 
 // File @animoca/ethereum-contracts-assets_inventory/contracts/token/ERC1155/IERC1155TokenReceiver.sol@v5.0.0
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 /**
  * @title ERC-1155 Multi Token Standard, token receiver
  * @dev See https://eips.ethereum.org/EIPS/eip-1155
@@ -819,8 +817,7 @@ interface IERC1155TokenReceiver {
 
 // File @animoca/ethereum-contracts-assets_inventory/contracts/token/ERC1155/ERC1155TokenReceiver.sol@v5.0.0
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 
 abstract contract ERC1155TokenReceiver is IERC1155TokenReceiver, ERC165 {
@@ -841,8 +838,7 @@ abstract contract ERC1155TokenReceiver is IERC1155TokenReceiver, ERC165 {
 
 // File @animoca/ethereum-contracts-nft_staking/contracts/staking/NftStaking.sol@v3.0.4
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 
 
@@ -1597,8 +1593,7 @@ interface IWhitelistedNftContract {
 
 // File @animoca/f1dt-ethereum-contracts/contracts/staking/DeltaTimeStakingBeta.sol@v0.4.0
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 /**
  * @title Delta Time Staking Beta
@@ -1657,8 +1652,7 @@ contract DeltaTimeStakingBeta is NftStaking {
 
 // File contracts/Contracts.sol
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 // import "@animoca/ethereum-contracts-erc20_base/contracts/mocks/token/ERC20/ERC20Mock.sol";
 // import "@animoca/f1dt-ethereum-contracts/contracts/token/ERC20/REVV.sol";
 // import "@animoca/f1dt-ethereum-contracts/contracts/token/ERC1155721/DeltaTimeInventoryV2.sol";

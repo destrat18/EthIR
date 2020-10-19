@@ -119,8 +119,7 @@ contract Ownable is Context {
 
 
 */
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 interface IController {
     function addSet(address _setToken) external;
     function getModuleFee(address _module, uint256 _feeType) external view returns(uint256);
@@ -148,8 +147,7 @@ interface IController {
 
 */
 
-pragma solidity 0.6.10;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.6.10;pragma experimental ABIEncoderV2;
 
 // import { IController } from "../interfaces/IController.sol";
 // import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";

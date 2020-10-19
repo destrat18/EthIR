@@ -1,5 +1,4 @@
-pragma solidity 0.6.9;
-
+pragma solidity ^0.6.9;
 interface ISDCP {
   function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
 }

@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: Apache-2.0
-pragma solidity 0.6.11;
-
+pragma solidity ^0.6.11;
 // File: @openzeppelin/contracts/GSN/Context.sol
 
 
@@ -98,16 +97,14 @@ contract Ownable is Context {
 
 // File: src/IFUSDSupplyOracle.sol
 
-pragma solidity 0.6.11;
-
+pragma solidity ^0.6.11;
 interface IFUSDSupplyOracle {
     function getSupply() external view returns (uint256, uint256);
 }
 
 // File: src/FUSDSupplyOracleProxy.sol
 
-pragma solidity 0.6.11;
-
+pragma solidity ^0.6.11;
 
 contract FUSDSupplyOracleProxy is Ownable {
     IFUSDSupplyOracle public supplyOracle;

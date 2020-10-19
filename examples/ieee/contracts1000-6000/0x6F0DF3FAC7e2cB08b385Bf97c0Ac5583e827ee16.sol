@@ -555,8 +555,7 @@ library SafeERC20 {
 
 // File: contracts/uniswapv2/interfaces/IUniswapV2Pair.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 interface IUniswapV2Pair {
     event Approval(address indexed owner, address indexed spender, uint value);
@@ -611,8 +610,7 @@ interface IUniswapV2Pair {
 
 // File: contracts/uniswapv2/interfaces/IUniswapV2Factory.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 interface IUniswapV2Factory {
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
@@ -943,8 +941,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/EqualToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 // EqualToken with Governance.
 contract EqualToken is ERC20("Equalizer", "EQL"), Ownable {
@@ -1224,8 +1221,7 @@ contract EqualToken is ERC20("Equalizer", "EQL"), Ownable {
 
 // File: contracts/EqualBurner.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 contract EqualBurner is Ownable {
 

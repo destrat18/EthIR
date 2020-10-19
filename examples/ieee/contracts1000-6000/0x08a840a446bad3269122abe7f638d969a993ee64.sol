@@ -685,8 +685,7 @@ contract ERC20Burnable is Context, ERC20 {
 }
 
 
-pragma solidity >=0.4.25 <0.7.0;
-
+pragma solidity ^0.4.25;
 contract Clover42Token is
     ERC20,
     ERC20Detailed,

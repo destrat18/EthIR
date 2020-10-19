@@ -1092,8 +1092,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/NekoToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 // NekoToken with Governance.
@@ -1359,8 +1358,7 @@ contract NekoToken is ERC20("NekoToken", "NEKO"), Ownable {
 
 // File: contracts/MasterChef.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

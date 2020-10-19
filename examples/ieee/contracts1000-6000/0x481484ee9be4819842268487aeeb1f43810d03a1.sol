@@ -1,8 +1,7 @@
 // File: contracts/interfaces/IERC20.sol
 
 // SPDX-License-Identifier: agpl-3.0
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
  * From https://github.com/OpenZeppelin/openzeppelin-contracts
@@ -85,8 +84,7 @@ interface IERC20 {
 // File: contracts/interfaces/IStakedAave.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 interface IStakedAave {
   function stake(address to, uint256 amount) external;
 
@@ -100,8 +98,7 @@ interface IStakedAave {
 // File: contracts/interfaces/ITransferHook.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 interface ITransferHook {
     function onTransfer(address from, address to, uint256 amount) external;
 }
@@ -110,8 +107,7 @@ interface ITransferHook {
 
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 /**
  * @dev From https://github.com/OpenZeppelin/openzeppelin-contracts
  * Provides information about the current execution context, including the
@@ -137,8 +133,7 @@ abstract contract Context {
 // File: contracts/interfaces/IERC20Detailed.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 /**
  * @dev Interface for ERC20 including metadata
@@ -152,8 +147,7 @@ interface IERC20Detailed is IERC20 {
 // File: contracts/lib/SafeMath.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 /**
  * @dev From https://github.com/OpenZeppelin/openzeppelin-contracts
  * Wrappers over Solidity's arithmetic operations with added overflow
@@ -319,8 +313,7 @@ library SafeMath {
 // File: contracts/lib/ERC20.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -545,8 +538,7 @@ contract ERC20 is Context, IERC20, IERC20Detailed {
 // File: contracts/lib/ERC20WithSnapshot.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 /**
@@ -634,8 +626,7 @@ contract ERC20WithSnapshot is ERC20 {
 // File: contracts/lib/Address.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 /**
  * @dev Collection of functions related to the address type
  * From https://github.com/OpenZeppelin/openzeppelin-contracts
@@ -700,8 +691,7 @@ library Address {
 
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -751,8 +741,7 @@ library SafeERC20 {
 // File: contracts/utils/VersionedInitializable.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 /**
  * @title VersionedInitializable
  *
@@ -799,8 +788,7 @@ abstract contract VersionedInitializable {
 // File: contracts/lib/DistributionTypes.sol
 
 
-pragma solidity 0.6.12;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.6.12;pragma experimental ABIEncoderV2;
 
 library DistributionTypes {
   struct AssetConfigInput {
@@ -819,8 +807,7 @@ library DistributionTypes {
 // File: contracts/interfaces/IAaveDistributionManager.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 interface IAaveDistributionManager {
   function configureAssets(DistributionTypes.AssetConfigInput[] calldata assetsConfigInput) external;
@@ -829,8 +816,7 @@ interface IAaveDistributionManager {
 // File: contracts/stake/AaveDistributionManager.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -1077,8 +1063,7 @@ contract AaveDistributionManager is IAaveDistributionManager {
 // File: contracts/stake/StakedToken.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -1376,8 +1361,7 @@ contract StakedToken is IStakedAave, ERC20WithSnapshot, VersionedInitializable, 
 // File: contracts/stake/StakedAave.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 /**

@@ -240,8 +240,7 @@ interface IERC20 {
 
 // File: contracts/registry/Registry.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 interface RegistryClone {
     function syncAttributeValue(
         address _who,
@@ -431,8 +430,7 @@ contract Registry {
 
 // File: contracts/truecurrencies/proxy/OwnedUpgradeabilityProxy.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @title OwnedUpgradeabilityProxy
  * @dev This contract combines an upgradeability proxy with basic authorization control functionalities
@@ -608,8 +606,7 @@ contract OwnedUpgradeabilityProxy {
 
 // File: contracts/true-currencies-new/ProxyStorage.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 // solhint-disable max-states-count, var-name-mixedcase
 
 /**
@@ -686,8 +683,7 @@ contract ProxyStorage {
 
 // File: contracts/true-currencies-new/ClaimableOwnable.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 /**
  * @title ClamableOwnable
@@ -930,8 +926,7 @@ library Address {
  * See also: ClaimableOwnable.sol and ProxyStorage.sol
  */
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @dev Implementation of the {IERC20} interface.
  *
@@ -1194,8 +1189,7 @@ abstract contract ERC20 is ClaimableOwnable, Context, IERC20 {
 
 // File: contracts/true-currencies-new/ReclaimerToken.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @title ReclaimerToken
  * @dev ERC20 token which allows owner to reclaim ERC20 tokens
@@ -1224,8 +1218,7 @@ abstract contract ReclaimerToken is ERC20 {
 
 // File: contracts/true-currencies-new/BurnableTokenWithBounds.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @title BurnableTokenWithBounds
  * @dev Burning functions as redeeming money from the system.
@@ -1302,8 +1295,7 @@ abstract contract BurnableTokenWithBounds is ReclaimerToken {
 
 // File: contracts/true-currencies-new/GasRefund.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @title Gas Reclaim Legacy
  *
@@ -1414,8 +1406,7 @@ abstract contract GasRefund {
 
 // File: contracts/true-currencies-new/TrueCurrency.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @title TrueCurrency
  * @dev TrueCurrency is an ERC20 with blacklist & redemption addresses
@@ -1598,8 +1589,7 @@ abstract contract TrueCurrency is BurnableTokenWithBounds, GasRefund {
 
 // File: contracts/true-currencies-new/TokenControllerV2.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @dev Contract that can be called with a gas refund
  */

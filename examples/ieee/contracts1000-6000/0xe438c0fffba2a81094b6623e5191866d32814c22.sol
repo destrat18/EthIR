@@ -1,7 +1,6 @@
 // File: contracts/hardworkInterface/IUpgradeSource.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface IUpgradeSource {
   function shouldUpgrade() external view returns (bool, address);
   function finalizeUpgrade() external;
@@ -174,8 +173,7 @@ contract BaseUpgradeabilityProxy is Proxy {
 
 // File: contracts/VaultProxy.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 contract VaultProxy is BaseUpgradeabilityProxy {

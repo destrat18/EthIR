@@ -1,5 +1,4 @@
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract IERC20WithCheckpointing {
     function balanceOf(address _owner) public view returns (uint256);

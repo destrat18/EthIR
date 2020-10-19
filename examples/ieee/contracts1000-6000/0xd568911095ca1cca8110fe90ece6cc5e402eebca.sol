@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @title SafeMath
  * @dev Unsigned math operations with safety checks that revert on error.

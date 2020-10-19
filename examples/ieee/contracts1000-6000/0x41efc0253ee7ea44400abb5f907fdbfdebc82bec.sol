@@ -93,8 +93,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title SafeMathInt
@@ -177,8 +176,7 @@ library SafeMathInt {
 
 // File contracts/v4/lib/UInt256Lib.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Various utilities useful for uint256.
@@ -203,8 +201,7 @@ library UInt256Lib {
 
 // File zos-lib/contracts/Initializable.sol@v2.1.0
 
-pragma solidity >=0.4.24 <0.6.0;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Initializable
@@ -436,8 +433,7 @@ contract ERC20Detailed is Initializable, IERC20 {
 
 // File contracts/v4/UFragments.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 

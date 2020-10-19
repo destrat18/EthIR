@@ -1,7 +1,6 @@
 // Dependency file: contracts/modules/BaseToken.sol
 
-// pragma solidity >=0.5.16;
-
+pragma solidity ^0.5.16;
 contract BaseToken {
     address public baseToken;
 
@@ -14,8 +13,7 @@ contract BaseToken {
 }
 // Dependency file: contracts/interfaces/IERC20.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -34,8 +32,7 @@ interface IERC20 {
 
 // Dependency file: contracts/libraries/SafeMath.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 // a library for performing overflow-safe math, courtesy of DappHub (https://github.com/dapphub/ds-math)
 
 library SafeMath {
@@ -54,8 +51,7 @@ library SafeMath {
 
 // Dependency file: contracts/modules/Ownable.sol
 
-// pragma solidity >=0.5.16;
-
+pragma solidity ^0.5.16;
 contract Ownable {
     address public owner;
 
@@ -80,8 +76,7 @@ contract Ownable {
 
 // Dependency file: contracts/modules/DgasStaking.sol
 
-// pragma solidity >=0.5.16;
-
+pragma solidity ^0.5.16;
 // import '../libraries/TransferHelper.sol';
 // import '../libraries/SafeMath.sol';
 // import '../interfaces/IERC20.sol';
@@ -136,8 +131,7 @@ contract DgasStaking is BaseToken {
 
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-// pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 // helper methods for interacting with ERC20 tokens and sending ETH that do not consistently return true/false
 library TransferHelper {
     function safeApprove(address token, address to, uint value) internal {
@@ -166,8 +160,7 @@ library TransferHelper {
 
 // Dependency file: contracts/libraries/ConfigNames.sol
 
-// pragma solidity >=0.5.16;
-
+pragma solidity ^0.5.16;
 library ConfigNames {
     bytes32 public constant PRODUCE_DGAS_RATE = bytes32('PRODUCE_DGAS_RATE');
     bytes32 public constant SWAP_FEE_PERCENT = bytes32('SWAP_FEE_PERCENT');
@@ -185,8 +178,7 @@ library ConfigNames {
 }
 // Dependency file: contracts/interfaces/ITokenRegistry.sol
 
-// pragma solidity >=0.5.16;
-
+pragma solidity ^0.5.16;
 interface ITokenRegistry {
     function tokenStatus(address _token) external view returns(uint);
     function pairStatus(address tokenA, address tokenB) external view returns (uint);
@@ -205,8 +197,7 @@ interface ITokenRegistry {
 }
 // Dependency file: contracts/interfaces/IDgas.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDgas {
     function amountPerBlock() external view returns (uint);
     function changeAmountPerBlock(uint value) external returns (bool);
@@ -222,8 +213,7 @@ interface IDgas {
 }
 // Dependency file: contracts/interfaces/IDemaxBallot.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDemaxBallot {
     function proposer() external view returns(address);
     function endBlockNumber() external view returns(uint);
@@ -236,8 +226,7 @@ interface IDemaxBallot {
 
 // Dependency file: contracts/interfaces/IDemaxBallotFactory.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDemaxBallotFactory {
     function create(
         address _proposer,
@@ -250,8 +239,7 @@ interface IDemaxBallotFactory {
 
 // Dependency file: contracts/interfaces/IDemaxConfig.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDemaxConfig {
     function governor() external view returns (address);
     function PERCENT_DENOMINATOR() external view returns (uint);
@@ -264,8 +252,7 @@ interface IDemaxConfig {
     function getDefaultListTokens() external returns (address[] memory);
     function platform() external view returns  (address);
 }
-pragma solidity >=0.6.6;
-
+pragma solidity ^0.6.6;
 // import './interfaces/IDemaxConfig.sol';
 // import './interfaces/IDemaxBallotFactory.sol';
 // import './interfaces/IDemaxBallot.sol';

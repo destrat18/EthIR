@@ -1,5 +1,4 @@
-pragma solidity =0.6.6;
-
+pragma solidity ^0.6.6;
 interface IUniSlurmFactory {
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
 

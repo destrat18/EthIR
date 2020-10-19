@@ -18,8 +18,7 @@
 
 // File: openzeppelin-solidity/contracts/math/SafeMath.sol
 
-pragma solidity 0.5.7;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.5.7;pragma experimental ABIEncoderV2;
 
 /**
  * @title SafeMath

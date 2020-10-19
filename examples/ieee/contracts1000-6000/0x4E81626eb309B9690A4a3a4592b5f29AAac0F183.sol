@@ -1,7 +1,6 @@
 // File: @openzeppelin/contracts/math/Math.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 /**
  * @dev Standard math utilities missing in the Solidity language.
  */
@@ -32,8 +31,7 @@ library Math {
 
 // File: @openzeppelin/contracts/math/SafeMath.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
  * checks.
@@ -191,8 +189,7 @@ library SafeMath {
 
 // File: @openzeppelin/contracts/GSN/Context.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 /*
  * @dev Provides information about the current execution context, including the
  * sender of the transaction and its data. While these are generally available
@@ -221,8 +218,7 @@ contract Context {
 
 // File: @openzeppelin/contracts/ownership/Ownable.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 /**
  * @dev Contract module which provides a basic access control mechanism, where
  * there is an account (an owner) that can be granted exclusive access to
@@ -299,8 +295,7 @@ contract Ownable is Context {
 
 // File: @openzeppelin/contracts/token/ERC20/IERC20.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP. Does not include
  * the optional functions; to access them see {ERC20Detailed}.
@@ -379,8 +374,7 @@ interface IERC20 {
 
 // File: @openzeppelin/contracts/utils/Address.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 /**
  * @dev Collection of functions related to the address type
  */
@@ -450,8 +444,7 @@ library Address {
 
 // File: @openzeppelin/contracts/token/ERC20/SafeERC20.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 
@@ -528,8 +521,7 @@ library SafeERC20 {
 /**
  * Reward Amount Interface
  */
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 contract IRewardDistributionRecipient is Ownable {
     address rewardDistribution;
 
@@ -551,8 +543,7 @@ contract IRewardDistributionRecipient is Ownable {
 /**
  * Staking Token Wrapper
  */
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 contract GOFTokenWrapper {
     using SafeMath for uint256;
     using SafeERC20 for IERC20;
@@ -586,8 +577,7 @@ contract GOFTokenWrapper {
 /**
  * YFII Pool
  */
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 contract GOFYFIIPool is GOFTokenWrapper, IRewardDistributionRecipient {
     IERC20 public gof = IERC20(0x488E0369f9BC5C40C002eA7c1fe4fd01A198801c);
     uint256 public constant DURATION = 7 days;

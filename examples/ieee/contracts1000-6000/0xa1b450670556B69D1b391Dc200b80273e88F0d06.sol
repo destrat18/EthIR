@@ -1,5 +1,4 @@
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 library Math {
     function max(uint256 a, uint256 b) internal pure returns (uint256) {
@@ -246,8 +245,7 @@ contract IRewardDistributionRecipient is Ownable {
 /**
  * Staking Token Wrapper
  */
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 contract GOFTokenWrapper {
     using SafeMath for uint256;
     using SafeERC20 for IERC20;

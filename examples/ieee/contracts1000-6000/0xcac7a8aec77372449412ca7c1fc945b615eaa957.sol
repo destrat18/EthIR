@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.4.21 <0.7.0;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.4.21;pragma experimental ABIEncoderV2;
 
 
 library SafeMath {

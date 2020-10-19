@@ -1115,8 +1115,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/SandwichToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -1361,8 +1360,7 @@ contract SandwichToken is ERC20("SandwichToken", "SWH"), Ownable {
 
 // File: contracts/MasterChef.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

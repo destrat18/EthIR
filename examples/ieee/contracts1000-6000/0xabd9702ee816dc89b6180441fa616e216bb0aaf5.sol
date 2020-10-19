@@ -78,8 +78,7 @@ interface IERC20 {
 
 // File: contracts/tokens/IERC20MintedBurnable.sol
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 
 interface IERC20MintedBurnable is IERC20 {
     function mint(address to, uint256 amount) external;
@@ -89,8 +88,7 @@ interface IERC20MintedBurnable is IERC20 {
 
 // File: contracts/IDerivativeSpecification.sol
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 /// @title Derivative Specification interface
 /// @notice Immutable collection of derivative attributes
 /// @dev Created by the derivative's author and published to the DerivativeSpecificationRegistry
@@ -172,8 +170,7 @@ interface IDerivativeSpecification {
 
 // File: contracts/tokens/ITokenBuilder.sol
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 interface ITokenBuilder {
     function isTokenBuilder() external pure returns(bool);
     function buildTokens(IDerivativeSpecification derivative, uint settlement, address _collateralToken) external returns(IERC20MintedBurnable, IERC20MintedBurnable);
@@ -1366,8 +1363,7 @@ contract ERC20PresetMinter is Context, AccessControl, ERC20Burnable {
 
 // File: contracts/tokens/IERC20Metadata.sol
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 interface IERC20Metadata {
     function name() external view returns (string memory);
     function symbol() external view returns (string memory);
@@ -1681,8 +1677,7 @@ library BokkyPooBahsDateTimeLibrary {
 
 // "SPDX-License-Identifier: GNU General Public License v3.0"
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 contract TokenBuilder is ITokenBuilder{
     string public constant PRIMARY_TOKEN_NAME_POSTFIX = " PRIMARY TOKEN";
     string public constant COMPLEMENT_TOKEN_NAME_POSTFIX = " COMPLEMENT TOKEN";

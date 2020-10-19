@@ -464,8 +464,7 @@ library SafeERC20 {
 // File: contracts/libraries/curve/ICurveFi.sol
 
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 /**
  * @notice Interface for Curve.fi's REN pool.
  * Note that we are using array of 2 as Curve's REN pool contains only WBTC and renBTC.
@@ -494,8 +493,7 @@ interface ICurveFi {
 // File: contracts/libraries/curve/ICurveGauge.sol
 
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 /**
  * @notice Interface for Curve.fi's liquidity guage.
  */
@@ -510,8 +508,7 @@ interface ICurveGauge {
 // File: contracts/libraries/curve/ICurveMinter.sol
 
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 /**
  * @notice Interface for Curve.fi's CRV minter.
  */
@@ -522,8 +519,7 @@ interface ICurveMinter {
 // File: contracts/libraries/uniswap/IUniswapRouter.sol
 
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 /**
  * @notice Interface for Uniswap's router.
  */
@@ -540,8 +536,7 @@ interface IUniswapRouter {
 // File: contracts/libraries/vaults/IStrategy.sol
 
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 /**
  * @notice Interface for Strategies.
  */
@@ -581,8 +576,7 @@ interface IStrategy {
 // File: contracts/libraries/vaults/StrategyCurveRenBTC.sol
 
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 
 

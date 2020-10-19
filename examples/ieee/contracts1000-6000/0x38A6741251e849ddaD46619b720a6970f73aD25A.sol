@@ -2,8 +2,7 @@
 
 // SPDX-License-Identifier: MIT
 
-pragma solidity 0.6.2;
-
+pragma solidity ^0.6.2;
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
  */
@@ -82,8 +81,7 @@ interface IERC20 {
 
 // SPDX-License-Identifier: MIT
 
-pragma solidity 0.6.2;
-
+pragma solidity ^0.6.2;
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
  * checks.
@@ -390,8 +388,7 @@ library Address {
 
 // SPDX-License-Identifier: MIT
 
-pragma solidity 0.6.2;
-
+pragma solidity ^0.6.2;
 /**
  * @dev Contract module that helps prevent reentrant calls to a function.
  *
@@ -455,8 +452,7 @@ contract ReentrancyGuard {
 
 // SPDX-License-Identifier: MIT
 
-pragma solidity 0.6.2;
-
+pragma solidity ^0.6.2;
 /*
  * @dev Provides information about the current execution context, including the
  * sender of the transaction and its data. While these are generally available
@@ -483,8 +479,7 @@ abstract contract Context {
 
 // SPDX-License-Identifier: MIT
 
-pragma solidity 0.6.2;
-
+pragma solidity ^0.6.2;
 /**
  * @dev Contract module which provides a basic access control mechanism, where
  * there is an account (an owner) that can be granted exclusive access to
@@ -553,8 +548,7 @@ contract Ownable is Context {
 
 // SPDX-License-Identifier: MIT
 
-pragma solidity 0.6.2;
-
+pragma solidity ^0.6.2;
 
 
 
@@ -863,8 +857,7 @@ contract ERC20 is Context, IERC20 {
 
 // SPDX-License-Identifier: MIT
 
-pragma solidity 0.6.2;
-
+pragma solidity ^0.6.2;
 
 
 /**
@@ -905,8 +898,7 @@ abstract contract ERC20Burnable is Context, ERC20 {
 
 // File: browser/TRAMS.sol
 
-pragma solidity 0.6.2;
-
+pragma solidity ^0.6.2;
 
 
 contract TRAMS is  ERC20,ERC20Burnable, Ownable, ReentrancyGuard {

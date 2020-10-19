@@ -6,8 +6,7 @@
  *Submitted for verification at Etherscan.io on 2020-09-13
 */
 
-pragma solidity 0.7.1;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.7.1;pragma experimental ABIEncoderV2;
 
 // SPDX-License-Identifier: MIT
 

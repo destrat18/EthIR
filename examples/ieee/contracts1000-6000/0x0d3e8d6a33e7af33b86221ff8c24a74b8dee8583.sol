@@ -163,8 +163,7 @@ interface IAdmin {
     function admin() external view returns (address);
 }
 
-pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 interface AggregatorV3Interface {
 
     function decimals() external view returns (uint8);

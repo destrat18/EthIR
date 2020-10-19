@@ -791,8 +791,7 @@ contract Ownable is Context {
 
 // File: contracts/XdexToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

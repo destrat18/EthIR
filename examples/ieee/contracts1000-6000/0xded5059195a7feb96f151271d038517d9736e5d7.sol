@@ -110,8 +110,7 @@ library SafeMath {
 
 // File: contracts/DivideContract.sol
 
-pragma solidity >=0.5.10 <0.6.0;
-
+pragma solidity ^0.5.10;
 
 
 contract DivideContract {

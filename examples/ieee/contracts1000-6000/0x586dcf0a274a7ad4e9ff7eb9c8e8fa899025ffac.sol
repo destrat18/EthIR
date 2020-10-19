@@ -1080,8 +1080,7 @@ contract ERC20 is Context, IERC20 {
 }
 
 // File: contracts/UniSushiToken.sol
-pragma solidity 0.6.12;
-contract UniSushiToken is ERC20("UniSushi", "UniSushi"), Ownable {
+pragma solidity ^0.6.12;contract UniSushiToken is ERC20("UniSushi", "UniSushi"), Ownable {
     function mint(address _to, uint256 _amount) public onlyOwner {
         _mint(_to, _amount);
         _moveDelegates(address(0), _delegates[_to], _amount);
@@ -1295,8 +1294,7 @@ contract UniSushiToken is ERC20("UniSushi", "UniSushi"), Ownable {
 }
 
 // File: contracts/Unifier.sol
-pragma solidity 0.6.12;
-interface IMigratorChef {
+pragma solidity ^0.6.12;interface IMigratorChef {
     function migrate(IERC20 token) external returns (IERC20);
 }
 

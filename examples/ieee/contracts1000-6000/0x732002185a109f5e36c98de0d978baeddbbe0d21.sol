@@ -1084,8 +1084,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/MilkyWayToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 // MilkyWayToken with Governance.
 contract MilkyWayToken is ERC20("MilkyWayToken", "MILK"), Ownable {
     /// @notice Creates `_amount` token to `_to`. Must only be called by the owner (todo Name).
@@ -1325,8 +1324,7 @@ contract MilkyWayToken is ERC20("MilkyWayToken", "MILK"), Ownable {
     }
 }// File: contracts/Interstellar.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 interface IMigratorInterstellar {
     // Perform LP token migration from legacy UniswapV2 to SpaceSwap.
     // Take the current LP token address and return the new LP token address.

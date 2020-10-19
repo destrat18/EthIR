@@ -1,8 +1,7 @@
 // File: contracts/libs/Proxy.sol
 
 // SPDX-License-Identifier: MIT
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 /**
  * @title Proxy
  * @dev Implements delegation of calls to other contracts, with proper
@@ -75,8 +74,7 @@ abstract contract Proxy {
 // File: contracts/libs/Address.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 /**
  * @dev Collection of functions related to the address type
  */
@@ -139,8 +137,7 @@ library Address {
 // File: contracts/libs/BaseUpgradeabilityProxy.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 /**
@@ -205,8 +202,7 @@ contract BaseUpgradeabilityProxy is Proxy {
 // File: contracts/libs/UpgradeabilityProxy.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 /**
  * @title UpgradeabilityProxy
@@ -235,8 +231,7 @@ contract UpgradeabilityProxy is BaseUpgradeabilityProxy {
 // File: contracts/libs/BaseAdminUpgradeabilityProxy.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 /**
  * @title BaseAdminUpgradeabilityProxy
@@ -363,8 +358,7 @@ contract BaseAdminUpgradeabilityProxy is BaseUpgradeabilityProxy {
 // File: contracts/libs/InitializableUpgradeabilityProxy.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 /**
  * @title InitializableUpgradeabilityProxy
@@ -394,8 +388,7 @@ contract InitializableUpgradeabilityProxy is BaseUpgradeabilityProxy {
 // File: contracts/libs/InitializableAdminUpgradeabilityProxy.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 /**

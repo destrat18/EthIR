@@ -1,5 +1,4 @@
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 contract Proxy {
     
     // Code position in storage is:

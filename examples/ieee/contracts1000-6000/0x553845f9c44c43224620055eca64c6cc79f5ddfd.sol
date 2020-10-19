@@ -416,8 +416,7 @@ library SafeERC20 {
 
 // File: @openzeppelin/upgrades/contracts/Initializable.sol
 
-pragma solidity >=0.4.24 <0.7.0;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Initializable
@@ -481,8 +480,7 @@ contract Initializable {
 
 // File: contracts/interfaces/IStrategy.sol
 
-pragma solidity 0.5.11;
-
+pragma solidity ^0.5.11;
 /**
  * @title Platform interface to integrate with lending platform like Compound, AAVE etc.
  */
@@ -538,8 +536,7 @@ interface IStrategy {
 
 // File: contracts/governance/Governable.sol
 
-pragma solidity 0.5.11;
-
+pragma solidity ^0.5.11;
 /**
  * @title OUSD Governable Contract
  * @dev Copy of the openzeppelin Ownable.sol contract with nomenclature change
@@ -926,8 +923,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/utils/InitializableERC20Detailed.sol
 
-pragma solidity 0.5.11;
-
+pragma solidity ^0.5.11;
 
 /**
  * @dev Optional functions from the ERC20 standard.
@@ -988,8 +984,7 @@ contract InitializableERC20Detailed is IERC20 {
 
 // File: contracts/utils/InitializableToken.sol
 
-pragma solidity 0.5.11;
-
+pragma solidity ^0.5.11;
 
 
 contract InitializableToken is ERC20, InitializableERC20Detailed {
@@ -1006,8 +1001,7 @@ contract InitializableToken is ERC20, InitializableERC20Detailed {
 
 // File: contracts/utils/StableMath.sol
 
-pragma solidity 0.5.11;
-
+pragma solidity ^0.5.11;
 
 // Based on StableMath from Stability Labs Pty. Ltd.
 // https://github.com/mstable/mStable-contracts/blob/master/contracts/shared/StableMath.sol
@@ -1120,8 +1114,7 @@ library StableMath {
 
 // File: contracts/token/OUSD.sol
 
-pragma solidity 0.5.11;
-
+pragma solidity ^0.5.11;
 /**
  * @title OUSD Token Contract
  * @notice ERC20 compatible contract for OUSD
@@ -1425,8 +1418,7 @@ contract OUSD is Initializable, InitializableToken, Governable {
 
 // File: contracts/interfaces/IBasicToken.sol
 
-pragma solidity 0.5.11;
-
+pragma solidity ^0.5.11;
 interface IBasicToken {
     function symbol() external view returns (string memory);
 
@@ -1435,8 +1427,7 @@ interface IBasicToken {
 
 // File: contracts/utils/Helpers.sol
 
-pragma solidity 0.5.11;
-
+pragma solidity ^0.5.11;
 
 library Helpers {
     /**
@@ -1470,8 +1461,7 @@ library Helpers {
 
 // File: contracts/vault/VaultStorage.sol
 
-pragma solidity 0.5.11;
-
+pragma solidity ^0.5.11;
 /**
  * @title OUSD VaultStorage Contract
  * @notice The VaultStorage contract defines the storage for the Vault contracts
@@ -1553,8 +1543,7 @@ contract VaultStorage is Initializable, Governable {
 
 // File: contracts/interfaces/IMinMaxOracle.sol
 
-pragma solidity 0.5.11;
-
+pragma solidity ^0.5.11;
 interface IMinMaxOracle {
     //Assuming 8 decimals
     function priceMin(string calldata symbol) external returns (uint256);
@@ -1570,16 +1559,14 @@ interface IViewMinMaxOracle {
 
 // File: contracts/interfaces/IRebaseHooks.sol
 
-pragma solidity 0.5.11;
-
+pragma solidity ^0.5.11;
 interface IRebaseHooks {
     function postRebase(bool sync) external;
 }
 
 // File: contracts/vault/VaultCore.sol
 
-pragma solidity 0.5.11;
-
+pragma solidity ^0.5.11;
 /**
  * @title OUSD Vault Contract
  * @notice The Vault contract stores assets. On a deposit, OUSD will be minted

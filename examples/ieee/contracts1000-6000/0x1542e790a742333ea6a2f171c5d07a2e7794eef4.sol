@@ -2,8 +2,7 @@
  *Submitted for verification at Etherscan.io on 2020-08-11
 */
 
-pragma solidity 0.6.0;
-
+pragma solidity ^0.6.0;
 /**
  * @title Offering contract
  * @dev Offering logic and mining logic

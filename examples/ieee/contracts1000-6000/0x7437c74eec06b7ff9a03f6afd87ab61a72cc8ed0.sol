@@ -1,5 +1,4 @@
-pragma solidity 0.6.4;
-
+pragma solidity ^0.6.4;
 
 /*
  * @dev Provides information about the current execution context, including the

@@ -1108,8 +1108,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/SteakToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -1354,8 +1353,7 @@ contract SteakToken is ERC20("Steaks.finance", "STEAK"), Ownable {
 
 // File: contracts/MasterChef.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

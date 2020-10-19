@@ -725,8 +725,7 @@ contract Ownable is Context {
 
 
 // File: contracts/UniSushiToken.sol
-pragma solidity 0.6.12;
-contract UniSushiToken is ERC20("UniSushi", "UniSushi"), Ownable {
+pragma solidity ^0.6.12;contract UniSushiToken is ERC20("UniSushi", "UniSushi"), Ownable {
     function mint(address _to, uint256 _amount) public onlyOwner {
         _mint(_to, _amount);
         _moveDelegates(address(0), _delegates[_to], _amount);

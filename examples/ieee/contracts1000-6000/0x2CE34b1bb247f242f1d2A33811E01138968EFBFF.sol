@@ -476,8 +476,7 @@ contract ERC20Detailed is IERC20 {
 
 // File: contracts/strategies/curve/interfaces/Gauge.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface Gauge {
     function deposit(uint) external;
     function balanceOf(address) external view returns (uint);
@@ -490,8 +489,7 @@ interface Mintr {
 
 // File: contracts/strategies/curve/interfaces/ICurveFi.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface ICurveFi {
   function get_virtual_price() external view returns (uint);
   function add_liquidity(
@@ -517,8 +515,7 @@ interface ICurveFi {
 
 // File: contracts/strategies/curve/interfaces/yVault.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface yERC20 {
   function deposit(uint256 _amount) external;
   function withdraw(uint256 _amount) external;
@@ -527,16 +524,14 @@ interface yERC20 {
 
 // File: contracts/strategies/curve/interfaces/IPriceConvertor.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface IPriceConvertor {
   function yCrvToUnderlying(uint256 _token_amount, uint256 i) external view returns (uint256);
 }
 
 // File: contracts/hardworkInterface/IVault.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 interface IVault {
     // the IERC20 part is the share
@@ -568,8 +563,7 @@ interface IVault {
 
 // File: contracts/hardworkInterface/IController.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface IController {
     // [Grey list]
     // An EOA can safely interact with the system no matter what.
@@ -597,8 +591,7 @@ interface IController {
 
 // File: contracts/hardworkInterface/IStrategy.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 interface IStrategy {
     
@@ -623,8 +616,7 @@ interface IStrategy {
 
 // File: contracts/Storage.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 contract Storage {
 
   address public governance;
@@ -660,8 +652,7 @@ contract Storage {
 
 // File: contracts/Governable.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract Governable {
 
@@ -689,8 +680,7 @@ contract Governable {
 
 // File: contracts/Controllable.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract Controllable is Governable {
 
@@ -715,8 +705,7 @@ contract Controllable is Governable {
 
 // File: contracts/strategies/curve/CRVStrategyStable.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 
@@ -1027,8 +1016,7 @@ contract CRVStrategyStable is IStrategy, Controllable {
 
 // File: contracts/strategies/curve/PriceConvertor.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 interface IConvertor {
   function calc_withdraw_one_coin(uint256 _token_amount, int128 i) external view returns (uint256);
@@ -1053,8 +1041,7 @@ contract MockPriceConvertor is IPriceConvertor {
 
 // File: contracts/strategies/curve/CRVStrategyStableMainnet.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 /**

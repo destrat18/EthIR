@@ -99,8 +99,7 @@ contract Ownable is Context {
 
 
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 interface IAddressRegistry {
     function get(bytes32 _key) external view returns(address);
     function set(bytes32 _key, address _value) external;
@@ -109,8 +108,7 @@ interface IAddressRegistry {
 // File: contracts/registries/AddressRegistryParent.sol
 
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 
 
 contract AddressRegistryParent is Ownable, IAddressRegistry{
@@ -140,8 +138,7 @@ contract AddressRegistryParent is Ownable, IAddressRegistry{
 
 
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 interface IOracleIterator {
     /// @notice Proof of oracle iterator contract
     /// @dev Verifies that contract is a oracle iterator contract
@@ -166,8 +163,7 @@ interface IOracleIterator {
 
 // "SPDX-License-Identifier: GNU General Public License v3.0"
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 
 
 contract OracleIteratorRegistry is AddressRegistryParent {

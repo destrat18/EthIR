@@ -792,8 +792,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: @uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2Pair {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);

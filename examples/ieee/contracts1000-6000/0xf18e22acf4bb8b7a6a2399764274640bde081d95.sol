@@ -723,8 +723,7 @@ contract ERC20 is Context, IERC20 {
 // File: contracts/truefi/ITrueFiPool.sol
 
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 /**
  * TrueFiPool is an ERC20 which represents a share of a pool
@@ -763,8 +762,7 @@ interface ITrueFiPool is IERC20 {
 // File: contracts/truefi/TrueFiPool.sol
 
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 
 
@@ -837,8 +835,7 @@ abstract contract TrueFiPool is ITrueFiPool, ERC20 {
 // File: contracts/truefi/ICurvePool.sol
 
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 interface ICurve {
     function calc_token_amount(uint256[4] memory amounts, bool deposit) external view returns (uint256);
@@ -863,8 +860,7 @@ interface ICurvePool {
 // File: contracts/truefi/CurvePool.sol
 
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 
 contract CurvePool is TrueFiPool {

@@ -1,5 +1,4 @@
-pragma solidity >=0.4.21 <0.6.0;
-
+pragma solidity ^0.4.21;
 contract ERC20TokenBankInterface{
   function balance() public view returns(uint);
   function token() public view returns(address, string memory);

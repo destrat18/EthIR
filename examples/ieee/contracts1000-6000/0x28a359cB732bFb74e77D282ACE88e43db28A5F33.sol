@@ -1,8 +1,7 @@
 // File: contracts/interfaces/IERC20.sol
 
 // SPDX-License-Identifier: MIT
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -21,8 +20,7 @@ interface IERC20 {
 
 // File: contracts/interfaces/IOneSwapToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 interface IOneSwapBlackList {
     event OwnerChanged(address);
@@ -49,8 +47,7 @@ interface IOneSwapToken is IERC20, IOneSwapBlackList{
 
 // File: contracts/interfaces/IOneSwapFactory.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 interface IOneSwapFactory {
     event PairCreated(address indexed pair, address stock, address money, bool isOnlySwap);
 
@@ -71,8 +68,7 @@ interface IOneSwapFactory {
 
 // File: contracts/interfaces/IOneSwapRouter.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 interface IOneSwapRouter {
     event AddLiquidity(uint stockAmount, uint moneyAmount, uint liquidity);
     event PairCreated(address indexed pair, address stock, address money, bool isOnlySwap);
@@ -124,8 +120,7 @@ interface IOneSwapRouter {
 
 // File: contracts/interfaces/IOneSwapBuyback.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 interface IOneSwapBuyback {
     event BurnOnes(uint256 burntAmt);
 
@@ -145,8 +140,7 @@ interface IOneSwapBuyback {
 
 // File: contracts/OneSwapBuyback.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

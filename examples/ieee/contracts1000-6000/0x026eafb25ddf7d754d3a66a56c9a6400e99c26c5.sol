@@ -1111,8 +1111,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/SHROOMToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 // SHROOMToken with Governance.
 contract SHROOMToken is ERC20("shroom.finance", "SHROOM"), Ownable {
     /// @notice Creates `_amount` token to `_to`. Must only be called by the owner (MasterChef).
@@ -1124,8 +1123,7 @@ contract SHROOMToken is ERC20("shroom.finance", "SHROOM"), Ownable {
 
 // File: contracts/MasterChef.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 // MasterChef is the master of Shrooms.

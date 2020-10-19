@@ -1,8 +1,7 @@
 // File: contracts/interfaces/IERC20.sol
 
 // SPDX-License-Identifier: agpl-3.0
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
  * From https://github.com/OpenZeppelin/openzeppelin-contracts
@@ -84,8 +83,7 @@ interface IERC20 {
 
 // File: contracts/libs/VersionedInitializable.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 /**
  * @title VersionedInitializable
  *
@@ -128,8 +126,7 @@ abstract contract VersionedInitializable {
 
 // File: contracts/libs/SafeMath.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
  * checks.
@@ -294,8 +291,7 @@ library SafeMath {
 // File: contracts/libs/Address.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 /**
  * @dev Collection of functions related to the address type
  */
@@ -358,8 +354,7 @@ library Address {
 // File: contracts/libs/SafeERC20.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -424,8 +419,7 @@ library SafeERC20 {
 // File: contracts/AaveIncentivesVault.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

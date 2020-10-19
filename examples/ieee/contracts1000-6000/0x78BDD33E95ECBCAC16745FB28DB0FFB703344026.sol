@@ -1,5 +1,4 @@
-pragma solidity 0.5.15;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.5.15;pragma experimental ABIEncoderV2;
 
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow

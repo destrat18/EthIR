@@ -1,7 +1,6 @@
 // Dependency file: contracts/interfaces/IERC20.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -21,8 +20,7 @@ interface IERC20 {
 // Dependency file: contracts/ballots/DemaxBallot.sol
 
 // SPDX-License-Identifier: GPL-3.0-or-later
-// pragma solidity >=0.6.6;
-
+pragma solidity ^0.6.6;
 // import '../interfaces/IERC20.sol';
 
 /**
@@ -168,8 +166,7 @@ contract DemaxBallot {
 
 }
 
-pragma solidity >=0.6.6;
-
+pragma solidity ^0.6.6;
 // import "./DemaxBallot.sol";
 
 contract DemaxBallotFactory {

@@ -1,5 +1,4 @@
-pragma solidity >=0.4.21 <=0.7.0;
-
+pragma solidity ^0.4.21;
 contract election2020 {
   address payable public owner;
   uint256 constant public feePerc = 5;

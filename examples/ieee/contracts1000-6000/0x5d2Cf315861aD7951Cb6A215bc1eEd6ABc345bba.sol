@@ -787,8 +787,7 @@ contract Ownable is Context {
 
 // File: contracts/PTKToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 // PTKToken with Governance.

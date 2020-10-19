@@ -438,8 +438,7 @@ library Address {
 
 
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2Pair {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -498,8 +497,7 @@ interface IUniswapV2Pair {
 
 
 
-pragma solidity >=0.4.0;
-
+pragma solidity ^0.4.0;
 // computes square roots using the babylonian method
 // https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method
 library Babylonian {
@@ -590,8 +588,7 @@ library FixedPoint {
     }
 }
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 // library with helper methods for oracles that are concerned with computing average prices
 library UniswapV2OracleLibrary {
@@ -624,8 +621,7 @@ library UniswapV2OracleLibrary {
     }
 }
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2Factory {
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
 
@@ -642,8 +638,7 @@ interface IUniswapV2Factory {
     function setFeeToSetter(address) external;
 }
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 library UniswapV2Library {
     using SafeMath for uint;
@@ -722,8 +717,7 @@ library UniswapV2Library {
     }
 }
 
-pragma solidity =0.6.6;
-
+pragma solidity ^0.6.6;
 contract ExampleOracleSimple {
     using FixedPoint for *;
 

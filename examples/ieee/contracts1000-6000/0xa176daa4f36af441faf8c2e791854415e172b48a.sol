@@ -715,8 +715,7 @@ contract ERC20 is Context, IERC20 {
     ) internal virtual {}
 }
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 contract WHFI is ERC20("WhaleFinance", "WHFI"), Ownable {
     /// @notice Creates `_amount` token to `_to`. Must only be called by the owner (MasterChef).
     function mint(address _to, uint256 _amount) public onlyOwner {
@@ -724,8 +723,7 @@ contract WHFI is ERC20("WhaleFinance", "WHFI"), Ownable {
     }
 }
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 // MasterChef is the master of Sushi. He can make Sushi and he is a fair guy.
 //
 // Note that it's ownable and the owner wields tremendous power. The ownership

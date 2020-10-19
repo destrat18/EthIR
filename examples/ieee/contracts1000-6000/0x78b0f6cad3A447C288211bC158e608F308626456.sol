@@ -93,16 +93,14 @@ contract Ownable is Context {
 
 // File: contracts/registries/IAddressRegistry.sol
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 interface IAddressRegistry {
     function get(bytes32 _key) external view returns(address);
     function set(bytes32 _key, address _value) external;
 }
 
 // File: contracts/registries/AddressRegistryParent.sol
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 
 
 contract AddressRegistryParent is Ownable, IAddressRegistry{
@@ -130,8 +128,7 @@ contract AddressRegistryParent is Ownable, IAddressRegistry{
 
 // File: contracts/IDerivativeSpecification.sol
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 /// @title Derivative Specification interface
 /// @notice Immutable collection of derivative attributes
 /// @dev Created by the derivative's author and published to the DerivativeSpecificationRegistry
@@ -215,8 +212,7 @@ interface IDerivativeSpecification {
 
 // "SPDX-License-Identifier: GNU General Public License v3.0"
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 
 
 contract DerivativeSpecificationRegistry is AddressRegistryParent {

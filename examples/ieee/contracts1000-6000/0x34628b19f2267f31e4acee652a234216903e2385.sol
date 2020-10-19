@@ -1,8 +1,7 @@
 pragma solidity ^0.4.24;
 
 //import "zos-lib/contracts/Initializable.sol";
-//pragma solidity >=0.4.24 <0.6.0;
-
+pragma solidity ^0.4.24;
 /**
  * @title Initializable
  *

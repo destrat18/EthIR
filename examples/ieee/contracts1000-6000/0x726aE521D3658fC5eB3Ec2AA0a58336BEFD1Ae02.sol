@@ -756,8 +756,7 @@ library Math {
 
 // File: contracts/ChickenHatchery.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

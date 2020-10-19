@@ -119,8 +119,7 @@ contract ReentrancyGuard {
 
 // File: @uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2Factory {
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
 
@@ -139,8 +138,7 @@ interface IUniswapV2Factory {
 
 // File: @uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2Pair {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -194,8 +192,7 @@ interface IUniswapV2Pair {
 
 // File: contracts/uniswap/IUniswapV2Router02.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2Router02 {
     function factory() external pure returns (address);
 
@@ -402,8 +399,7 @@ interface IUniswapV2Router02 {
 
 // File: contracts/SafeToken.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface ERC20Interface {
     function balanceOf(address user) external view returns (uint256);
 }
@@ -443,8 +439,7 @@ library SafeToken {
 
 // File: contracts/Strategy.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface Strategy {
     /// @dev Execute worker strategy. Take LP tokens + ETH. Return LP tokens + ETH.
     /// @param user The original user that is interacting with the operator.
@@ -455,8 +450,7 @@ interface Strategy {
 
 // File: contracts/StrategyLiquidate.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

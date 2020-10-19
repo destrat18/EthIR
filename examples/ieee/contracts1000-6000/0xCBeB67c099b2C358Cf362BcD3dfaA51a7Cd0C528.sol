@@ -1,8 +1,7 @@
 // Dependency file: contracts/interface/IERC20.sol
 
 //SPDX-License-Identifier: MIT
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -22,8 +21,7 @@ interface IERC20 {
 
 // Dependency file: contracts/interface/IWasabi.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IWasabi {
     function getOffer(address  _lpToken,  uint index) external view returns (address offer);
     function getOfferLength(address _lpToken) external view returns (uint length);
@@ -53,8 +51,7 @@ interface IWasabi {
 
 // Dependency file: contracts/interface/IWasabiOffer.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IWasabiOffer {
     function tokenIn() external view returns (address);
     function tokenOut() external view returns (address);
@@ -75,8 +72,7 @@ interface IWasabiOffer {
 // Root file: contracts/WasabiQuery.sol
 
 pragma experimental ABIEncoderV2;
-pragma solidity >=0.6.6;
-
+pragma solidity ^0.6.6;
 // import 'contracts/interface/IERC20.sol';
 // import 'contracts/interface/IWasabi.sol';
 // import 'contracts/interface/IWasabiOffer.sol';

@@ -1,7 +1,6 @@
 // File: contracts/interfaces/ICroDefiSwapPair.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface ICroDefiSwapPair {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -55,8 +54,7 @@ interface ICroDefiSwapPair {
 
 // File: contracts/interfaces/ICroDefiSwapERC20.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface ICroDefiSwapERC20 {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -81,8 +79,7 @@ interface ICroDefiSwapERC20 {
 
 // File: contracts/libraries/SafeMath.sol
 
-pragma solidity =0.5.16;
-
+pragma solidity ^0.5.16;
 // a library for performing overflow-safe math, courtesy of DappHub (https://github.com/dapphub/ds-math)
 
 library SafeMath {
@@ -101,8 +98,7 @@ library SafeMath {
 
 // File: contracts/CroDefiSwapERC20.sol
 
-pragma solidity =0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 contract CroDefiSwapERC20 is ICroDefiSwapERC20 {
@@ -197,8 +193,7 @@ contract CroDefiSwapERC20 is ICroDefiSwapERC20 {
 
 // File: contracts/libraries/Math.sol
 
-pragma solidity =0.5.16;
-
+pragma solidity ^0.5.16;
 // a library for performing various math operations
 
 library Math {
@@ -223,8 +218,7 @@ library Math {
 
 // File: contracts/libraries/UQ112x112.sol
 
-pragma solidity =0.5.16;
-
+pragma solidity ^0.5.16;
 // a library for handling binary fixed point numbers (https://en.wikipedia.org/wiki/Q_(number_format))
 
 // range: [0, 2**112 - 1]
@@ -246,8 +240,7 @@ library UQ112x112 {
 
 // File: contracts/interfaces/IERC20.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -266,8 +259,7 @@ interface IERC20 {
 
 // File: contracts/interfaces/ICroDefiSwapFactory.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface ICroDefiSwapFactory {
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
 
@@ -294,16 +286,14 @@ interface ICroDefiSwapFactory {
 
 // File: contracts/interfaces/ICroDefiSwapCallee.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface ICroDefiSwapCallee {
     function croDefiSwapCall(address sender, uint amount0, uint amount1, bytes calldata data) external;
 }
 
 // File: contracts/CroDefiSwapPair.sol
 
-pragma solidity =0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

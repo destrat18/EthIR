@@ -1133,8 +1133,7 @@ contract ERC20 is Context, IERC20 {
 
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 contract SEPPUKUToken is ERC20("Seppuku.me", "SEPPUKU"), Ownable {
     /// @notice Creates `_amount` token to `_to`. Must only be called by the owner (MasterChef).
     function mint(address _to, uint256 _amount) public onlyOwner {
@@ -1148,8 +1147,7 @@ contract SEPPUKUToken is ERC20("Seppuku.me", "SEPPUKU"), Ownable {
 
 // File: contracts/MasterChef.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 // MasterChef is the master of SEPPUKU. He can make SEPPUKU and he is a fair guy.

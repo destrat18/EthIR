@@ -2,8 +2,7 @@
 
 // File: contracts/proxy/Proxy.sol
 
-pragma solidity >=0.6 <0.7.0;
-
+pragma solidity ^0.6;
 /**
  * @title Proxy
  * @dev Implements delegation of calls to other contracts, with proper
@@ -81,8 +80,7 @@ abstract contract Proxy {
 
 // File: contracts/proxy/UpgradeableProxy.sol
 
-pragma solidity >=0.6 <0.7.0;
-
+pragma solidity ^0.6;
 
 /**
  * @title UpgradeableProxy
@@ -189,8 +187,7 @@ contract UpgradeableProxy is Proxy {
 
 // File: contracts/utils/ICashier.sol
 
-pragma solidity >=0.6 <0.7.0;
-
+pragma solidity ^0.6;
 interface ICashier {
     function getPayee() external view returns (address payable);
     function calcFee(address addr, uint8 kind, bytes4 func) external view returns (uint256);
@@ -198,8 +195,7 @@ interface ICashier {
 
 // File: contracts/utils/Chargeable.sol
 
-pragma solidity >=0.6 <0.7.0;
-
+pragma solidity ^0.6;
 
 contract Chargeable {
     /**
@@ -262,8 +258,7 @@ contract Chargeable {
 
 // File: contracts/proxy/ManagedProxy.sol
 
-pragma solidity >=0.6 <0.7.0;
-
+pragma solidity ^0.6;
 
 
 /**
@@ -404,8 +399,7 @@ contract ManagedProxy is UpgradeableProxy, Chargeable {
 
 // File: contracts/YFIBCProxy.sol
 
-pragma solidity >=0.6.0 <0.7.0;
-
+pragma solidity ^0.6.0;
 
 /**
  * @dev Implementation of the {IERC20} interface.

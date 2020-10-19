@@ -792,8 +792,7 @@ contract Ownable is Context {
 
 // File: contracts/AgroToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -1038,8 +1037,7 @@ contract AgroToken is ERC20("AgroToken", "AGRO"), Ownable {
 
 // File: contracts/DevFunds.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 contract DevFunds {

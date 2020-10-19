@@ -617,8 +617,7 @@ library EnumerableSet {
 
 // File: @openzeppelin/contracts-ethereum-package/contracts/Initializable.sol
 
-pragma solidity >=0.4.24 <0.7.0;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Initializable
@@ -889,8 +888,7 @@ interface INBUNIERC20 {
 // File: @nomiclabs/buidler/console.sol
 
 
-pragma solidity >= 0.4.22 <0.8.0;
-
+pragma solidity ^0.4.22;
 library console {
 	address constant CONSOLE_ADDRESS = address(0x000000000000000000636F6e736F6c652e6c6f67);
 
@@ -2427,8 +2425,7 @@ library console {
 
 // File: contracts/CoreVault.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

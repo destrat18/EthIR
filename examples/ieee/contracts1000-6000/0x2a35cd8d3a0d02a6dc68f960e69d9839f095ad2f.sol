@@ -789,8 +789,7 @@ contract Ownable is Context {
 
 // File: contracts/MacToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

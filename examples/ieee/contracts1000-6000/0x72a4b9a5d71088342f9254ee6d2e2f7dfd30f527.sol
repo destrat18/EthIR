@@ -897,8 +897,7 @@ contract TokenTimelock {
 
 
 
-pragma solidity >=0.4.22 <0.8.0;
-
+pragma solidity ^0.4.22;
 contract YFRBTokenTimelock is TokenTimelock {
     constructor(IERC20 token, address beneficiary, uint256 releaseTime)
         public

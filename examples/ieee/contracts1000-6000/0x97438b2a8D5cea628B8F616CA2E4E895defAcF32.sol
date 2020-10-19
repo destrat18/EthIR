@@ -25,8 +25,7 @@
 // Private Telegram Group: https://t.me/joinchat/DQWsThP_PYUT9rL4HywAhg
 // Hashtag: #Oneid10
 */
-pragma solidity 0.5.11 - 0.6.4;
-
+pragma solidity ^0.5.11;
 contract OneID10 {
      address public ownerWallet;
       uint public currUserID = 0;

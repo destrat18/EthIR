@@ -1,7 +1,6 @@
 // File: contracts/Storage.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 contract Storage {
 
   address public governance;

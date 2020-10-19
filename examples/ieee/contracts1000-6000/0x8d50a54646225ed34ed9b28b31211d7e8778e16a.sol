@@ -6,8 +6,7 @@
  *    ===   ===  ===  ======  ========  ======  ======  ======= 
  */
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * Defines the storage layout of the token implementation contract. Any
  * newly declared state variables in future upgrades should be appended
@@ -80,8 +79,7 @@ contract ProxyStorage {
      **/
 }
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @title ClamableOwnable
  * @dev The ClamableOwnable contract is a copy of Claimable Contract by Zeppelin.
@@ -549,8 +547,7 @@ library Address {
  * See also: ClaimableOwnable.sol and ProxyStorage.sol
  */
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @dev Implementation of the {IERC20} interface.
  *
@@ -811,8 +808,7 @@ abstract contract ERC20 is ClaimableOwnable, Context, IERC20 {
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual { }
 }
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @title ReclaimerToken
  * @dev ERC20 token which allows owner to reclaim ERC20 tokens
@@ -839,8 +835,7 @@ abstract contract ReclaimerToken is ERC20 {
     }
 }
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @title BurnableTokenWithBounds
  * @dev Burning functions as redeeming money from the system.
@@ -915,8 +910,7 @@ abstract contract BurnableTokenWithBounds is ReclaimerToken {
     }
 }
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @title TrueCurrency
  * @dev TrueCurrency is an ERC20 with blacklist & redemption addresses
@@ -1084,8 +1078,7 @@ abstract contract TrueCurrency is BurnableTokenWithBounds {
     }
 }
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @title DelegateERC20
  * Accept forwarding delegation calls from the old TrueUSD (V1) contract.
@@ -1223,8 +1216,7 @@ abstract contract DelegateERC20 is TrueCurrency {
     }
 }
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @dev Contract that prevents addresses that were previously using autosweep addresses from
  * making transfers on them.
@@ -1261,8 +1253,7 @@ abstract contract TrueCurrencyWithLegacyAutosweep is DelegateERC20 {
     }
 }
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @title TrueUSD
  * @dev This is the top-level ERC20 contract, but most of the interesting functionality is

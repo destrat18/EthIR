@@ -722,8 +722,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/erc223-wrap.sol
 
-pragma solidity 0.6.2;
-
+pragma solidity ^0.6.2;
 
 contract Erc223Wrapper is ERC20 {
     ERC20 public wrapped;

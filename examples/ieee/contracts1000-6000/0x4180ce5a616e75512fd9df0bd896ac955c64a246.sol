@@ -6,8 +6,7 @@ Any other contract is external and it must be additionally registered and routed
 
 // SPDX-License-Identifier: MIT
 
-pragma solidity = 0.7 .0;
-
+pragma solidity ^0.7;
 library SafeMath {
 
 	function add(uint256 a, uint256 b) internal pure returns(uint256) {

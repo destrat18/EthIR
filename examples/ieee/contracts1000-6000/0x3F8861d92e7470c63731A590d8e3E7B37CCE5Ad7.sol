@@ -420,8 +420,7 @@ library SafeERC20 {
 
 // File: @openzeppelin/upgrades/contracts/Initializable.sol
 
-pragma solidity >=0.4.24 <0.6.0;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Initializable
@@ -809,8 +808,7 @@ contract ERC20Detailed is Initializable, IERC20 {
 
 // File: contracts/hardworkInterface/IStrategy.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface IStrategy {
     
     function unsalvagableTokens(address tokens) external view returns (bool);
@@ -834,8 +832,7 @@ interface IStrategy {
 
 // File: contracts/hardworkInterface/IController.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface IController {
     // [Grey list]
     // An EOA can safely interact with the system no matter what.
@@ -863,8 +860,7 @@ interface IController {
 
 // File: contracts/hardworkInterface/IVault.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface IVault {
 
     function underlyingBalanceInVault() external view returns (uint256);
@@ -894,8 +890,7 @@ interface IVault {
 
 // File: contracts/hardworkInterface/IUpgradeSource.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface IUpgradeSource {
   function shouldUpgrade() external view returns (bool, address);
   function finalizeUpgrade() external;
@@ -903,8 +898,7 @@ interface IUpgradeSource {
 
 // File: contracts/Storage.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 contract Storage {
 
   address public governance;
@@ -940,8 +934,7 @@ contract Storage {
 
 // File: contracts/GovernableInit.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 // A clone of Governable supporting the Initializable interface and pattern
@@ -990,8 +983,7 @@ contract GovernableInit is Initializable {
 
 // File: contracts/ControllableInit.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 // A clone of Governable supporting the Initializable interface and pattern
 contract ControllableInit is GovernableInit {
@@ -1021,8 +1013,7 @@ contract ControllableInit is GovernableInit {
 
 // File: contracts/VaultStorage.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract VaultStorage is Initializable {
 
@@ -1191,8 +1182,7 @@ contract VaultStorage is Initializable {
 
 // File: contracts/Vault.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

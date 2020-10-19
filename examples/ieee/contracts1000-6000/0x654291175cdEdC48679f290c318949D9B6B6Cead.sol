@@ -351,8 +351,7 @@ contract Pausable is Context {
 
 // File @animoca/f1dt-ethereum-contracts/contracts/game/TimeTrialEliteLeague.sol@v0.4.0
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 
 

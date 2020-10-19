@@ -1,14 +1,12 @@
 // Dependency file: contracts/interfaces/IDemaxTransferListener.sol
 
-// pragma solidity >=0.6.6;
-
+pragma solidity ^0.6.6;
 interface IDemaxTransferListener {
     function transferNotify(address from, address to, address token, uint amount)  external returns (bool);
 }
 // Dependency file: contracts/modules/Ownable.sol
 
-// pragma solidity >=0.5.16;
-
+pragma solidity ^0.5.16;
 contract Ownable {
     address public owner;
 
@@ -33,8 +31,7 @@ contract Ownable {
 
 // Dependency file: contracts/interfaces/IDemaxPair.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDemaxPair {
   
     event Mint(address indexed sender, uint amount0, uint amount1);
@@ -75,8 +72,7 @@ interface IDemaxPair {
 
 // Dependency file: contracts/interfaces/IDemaxFactory.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDemaxFactory {
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
 
@@ -94,8 +90,7 @@ interface IDemaxFactory {
 
 // Dependency file: contracts/interfaces/IERC20.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -114,8 +109,7 @@ interface IERC20 {
 
 // Dependency file: contracts/interfaces/IDemaxConfig.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDemaxConfig {
     function governor() external view returns (address);
     function PERCENT_DENOMINATOR() external view returns (uint);
@@ -130,8 +124,7 @@ interface IDemaxConfig {
 }
 // Dependency file: contracts/interfaces/IDemaxGovernance.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDemaxGovernance {
     function addPair(address _tokenA, address _tokenB) external returns (bool);
     function addReward(uint _value) external returns (bool);
@@ -140,8 +133,7 @@ interface IDemaxGovernance {
 
 // Dependency file: contracts/interfaces/IWETH.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IWETH {
     function deposit() external payable;
     function transfer(address to, uint value) external returns (bool);
@@ -150,8 +142,7 @@ interface IWETH {
 
 // Dependency file: contracts/libraries/DemaxSwapLibrary.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 // import '../interfaces/IDemaxPair.sol';
 // import '../interfaces/IDemaxFactory.sol';
 // import "./SafeMath.sol";
@@ -217,8 +208,7 @@ library DemaxSwapLibrary {
 
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-// pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 // helper methods for interacting with ERC20 tokens and sending ETH that do not consistently return true/false
 library TransferHelper {
     function safeApprove(address token, address to, uint value) internal {
@@ -247,8 +237,7 @@ library TransferHelper {
 
 // Dependency file: contracts/libraries/SafeMath.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 // a library for performing overflow-safe math, courtesy of DappHub (https://github.com/dapphub/ds-math)
 
 library SafeMath {
@@ -267,8 +256,7 @@ library SafeMath {
 
 // Dependency file: contracts/libraries/ConfigNames.sol
 
-// pragma solidity >=0.5.16;
-
+pragma solidity ^0.5.16;
 library ConfigNames {
     bytes32 public constant PRODUCE_DGAS_RATE = bytes32('PRODUCE_DGAS_RATE');
     bytes32 public constant SWAP_FEE_PERCENT = bytes32('SWAP_FEE_PERCENT');
@@ -284,8 +272,7 @@ library ConfigNames {
     bytes32 public constant TOKEN_PENGDING_SWITCH = bytes32('TOKEN_PENGDING_SWITCH');
     bytes32 public constant TOKEN_PENGDING_TIME = bytes32('TOKEN_PENGDING_TIME');
 }
-pragma solidity >=0.6.6;
-// import './libraries/ConfigNames.sol';
+pragma solidity ^0.6.6;// import './libraries/ConfigNames.sol';
 // import './libraries/SafeMath.sol';
 // import './libraries/TransferHelper.sol';
 // import './libraries/DemaxSwapLibrary.sol';

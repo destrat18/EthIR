@@ -15,8 +15,7 @@
 * stakers are not charged any fee for unstaking.
 
 */
-pragma solidity 0.6.4;
-
+pragma solidity ^0.6.4;
 interface IERC20 {
 
     function totalSupply() external view returns (uint256);

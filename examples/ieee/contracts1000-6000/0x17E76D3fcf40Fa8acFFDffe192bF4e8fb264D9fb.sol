@@ -4,8 +4,7 @@
 
 // File: nexusmutual-contracts/contracts/external/openzeppelin-solidity/math/SafeMath.sol
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 /**
  * @title SafeMath
@@ -88,8 +87,7 @@ library SafeMath {
   You should have received a copy of the GNU General Public License
     along with this program.  If not, see http://www.gnu.org/licenses/ */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 contract Aggregator {

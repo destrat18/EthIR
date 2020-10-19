@@ -138,8 +138,7 @@ interface IHandler {
 // File: contracts/interfaces/uniswapV2/IUniswapV2Pair.sol
 
 
-pragma solidity >0.5.8;
-
+pragma solidity ^0.5.8;
 interface IUniswapV2Pair {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);

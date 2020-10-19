@@ -1,5 +1,4 @@
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 /**
  * Foundation and Ecosystem
  * 2,300 Fully Locked with smart contract for 10 months

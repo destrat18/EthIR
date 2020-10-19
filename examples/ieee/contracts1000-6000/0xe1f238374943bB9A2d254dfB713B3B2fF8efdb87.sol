@@ -374,8 +374,7 @@ library SafeERC20 {
 
 // File: contracts/Token/ERC20.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 /**
@@ -668,8 +667,7 @@ contract ERC20Detailed is IERC20 {
 
 // File: contracts/Token/ERC20Permittable.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 
@@ -821,8 +819,7 @@ contract ERC20Permittable is ERC20, ERC20Detailed {
 
 // File: contracts/Token/Sacrifice.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 contract Sacrifice {
     constructor(address payable _recipient) public payable {
@@ -832,8 +829,7 @@ contract Sacrifice {
 
 // File: contracts/IDistribution.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 interface IDistribution {
     function supply() external view returns(uint256);
     function poolAddress(uint8) external view returns(address);
@@ -841,8 +837,7 @@ interface IDistribution {
 
 // File: contracts/Token/ERC677BridgeToken.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 
@@ -1096,8 +1091,7 @@ contract ERC677BridgeToken is Ownable, ERC20Permittable {
 
 // File: contracts/Token/IERC677MultiBridgeToken.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 interface IERC677MultiBridgeToken {
     function transfer(address _to, uint256 _value) external returns (bool);
     function transferDistribution(address _to, uint256 _value) external returns (bool);
@@ -1107,8 +1101,7 @@ interface IERC677MultiBridgeToken {
 
 // File: contracts/Token/ERC677MultiBridgeToken.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 

@@ -13,8 +13,7 @@
 //
 //
 
-pragma solidity 0.5.17;
-contract ReentrancyGuard {
+pragma solidity ^0.5.17;contract ReentrancyGuard {
     bool private _notEntered;
     constructor () internal {
         _notEntered = true;

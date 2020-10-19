@@ -1,7 +1,6 @@
 // File: @chainlink/contracts/src/v0.6/interfaces/AggregatorInterface.sol
 
-pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 interface AggregatorInterface {
   function latestAnswer() external view returns (int256);
   function latestTimestamp() external view returns (uint256);
@@ -17,8 +16,7 @@ interface AggregatorInterface {
 
 
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 interface IOracleIterator {
     /// @notice Proof of oracle iterator contract
     /// @dev Verifies that contract is a oracle iterator contract
@@ -43,8 +41,7 @@ interface IOracleIterator {
 
 // "SPDX-License-Identifier: GNU General Public License v3.0"
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 
 
 contract ChainlinkOracleIterator is IOracleIterator {

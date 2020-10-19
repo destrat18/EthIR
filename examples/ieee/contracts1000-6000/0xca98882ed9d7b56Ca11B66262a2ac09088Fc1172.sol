@@ -1,8 +1,7 @@
 // File: contracts\sakeswap\interfaces\ISakeSwapPair.sol
 
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface ISakeSwapPair {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -64,8 +63,7 @@ interface ISakeSwapPair {
 
 // File: contracts\sakeswap\interfaces\ISakeSwapFactory.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface ISakeSwapFactory {
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
 
@@ -86,8 +84,7 @@ interface ISakeSwapFactory {
 
 // File: contracts\Migrator.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

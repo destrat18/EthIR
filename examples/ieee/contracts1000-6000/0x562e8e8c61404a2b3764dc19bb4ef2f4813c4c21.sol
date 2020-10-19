@@ -1,5 +1,4 @@
-pragma solidity 0.6.2;
-
+pragma solidity ^0.6.2;
 /**
  * @title Dexter Capital
  * @notice Contract Publish Doc Hashes

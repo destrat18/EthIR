@@ -1115,8 +1115,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/RevolutionSoviet.sol
 
-pragma solidity 0.6.2;
-
+pragma solidity ^0.6.2;
 
 
 
@@ -1130,8 +1129,7 @@ contract RevolutionSoviet is ERC20("Revolution Soviet", "rSOV"), Ownable {
 
 // File: contracts/Uprising.sol
 
-pragma solidity 0.6.2;
-
+pragma solidity ^0.6.2;
 
 
 

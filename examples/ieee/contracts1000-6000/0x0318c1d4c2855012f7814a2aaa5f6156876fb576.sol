@@ -1,8 +1,7 @@
 // CHONK NFT
 // https://www.chonker.finance/
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 /*
  * @dev Provides information about the current execution context, including the

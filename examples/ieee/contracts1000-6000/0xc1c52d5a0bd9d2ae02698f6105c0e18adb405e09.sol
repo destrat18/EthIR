@@ -18,8 +18,7 @@
 *
 */
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 // Owner Handler
 contract ownerShip    // Auction Contract Owner and OwherShip change
 {

@@ -388,8 +388,7 @@ library SafeERC20 {
 
 // File: contracts/hardworkInterface/IController.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface IController {
     // [Grey list]
     // An EOA can safely interact with the system no matter what.
@@ -417,8 +416,7 @@ interface IController {
 
 // File: contracts/hardworkInterface/IStrategy.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 interface IStrategy {
     
@@ -443,8 +441,7 @@ interface IStrategy {
 
 // File: contracts/hardworkInterface/IVault.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 interface IVault {
     // the IERC20 part is the share
@@ -476,8 +473,7 @@ interface IVault {
 
 // File: contracts/Storage.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 contract Storage {
 
   address public governance;
@@ -513,8 +509,7 @@ contract Storage {
 
 // File: contracts/Governable.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract Governable {
 
@@ -542,8 +537,7 @@ contract Governable {
 
 // File: contracts/hardworkInterface/IRewardPool.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 // Unifying the interface with the Synthetix Reward Pool 
 interface IRewardPool {
@@ -578,8 +572,7 @@ interface IRewardPool {
 
 // File: contracts/uniswap/interfaces/IUniswapV2Router01.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2Router01 {
     function factory() external pure returns (address);
     function WETH() external pure returns (address);
@@ -676,8 +669,7 @@ interface IUniswapV2Router01 {
 
 // File: contracts/uniswap/interfaces/IUniswapV2Router02.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 interface IUniswapV2Router02 {
     function factory() external pure returns (address);
@@ -814,8 +806,7 @@ interface IUniswapV2Router02 {
 
 // File: contracts/FeeRewardForwarder.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 
@@ -914,8 +905,7 @@ contract FeeRewardForwarder is Governable {
 
 // File: contracts/Controllable.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract Controllable is Governable {
 
@@ -940,8 +930,7 @@ contract Controllable is Governable {
 
 // File: contracts/HardRewards.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 
@@ -1023,8 +1012,7 @@ contract HardRewards is Controllable {
 
 // File: contracts/Controller.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

@@ -1099,8 +1099,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/YadToken.sol
 
-pragma solidity 0.6.2;
-
+pragma solidity ^0.6.2;
 
 
 
@@ -1346,8 +1345,7 @@ contract YadToken is ERC20("YadToken", "Yad"), Ownable {
 
 // File: contracts/MasterStar.sol
 
-pragma solidity 0.6.2;
-
+pragma solidity ^0.6.2;
 
 
 

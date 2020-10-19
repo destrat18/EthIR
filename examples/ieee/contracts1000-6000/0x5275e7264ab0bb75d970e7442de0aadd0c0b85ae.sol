@@ -66,8 +66,7 @@ contract DetailedERC20 is ERC20 {
 
 // File: contracts/interfaces/IAMB.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 interface IAMB {
     function messageSender() external view returns (address);
     function maxGasPerTx() external view returns (uint256);
@@ -85,8 +84,7 @@ interface IAMB {
 
 // File: contracts/interfaces/ERC677.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract ERC677 is ERC20 {
     event Transfer(address indexed from, address indexed to, uint256 value, bytes data);
@@ -159,8 +157,7 @@ library SafeMath {
 
 // File: contracts/upgradeability/EternalStorage.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 /**
  * @title EternalStorage
  * @dev This contract holds all the necessary state variables to carry out the storage of any contract.
@@ -177,16 +174,14 @@ contract EternalStorage {
 
 // File: contracts/interfaces/IUpgradeabilityOwnerStorage.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 interface IUpgradeabilityOwnerStorage {
     function upgradeabilityOwner() external view returns (address);
 }
 
 // File: contracts/upgradeable_contracts/Ownable.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 /**
@@ -256,8 +251,7 @@ contract Ownable is EternalStorage {
 
 // File: contracts/upgradeable_contracts/multi_amb_erc20_to_erc677/BasicMultiTokenBridge.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -561,8 +555,7 @@ contract BasicMultiTokenBridge is EternalStorage, Ownable {
 
 // File: contracts/libraries/Bytes.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 /**
  * @title Bytes
  * @dev Helper methods to transform bytes to other solidity types.
@@ -631,8 +624,7 @@ library AddressUtils {
 
 // File: contracts/upgradeable_contracts/BasicAMBMediator.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -759,8 +751,7 @@ contract BasicAMBMediator is Ownable {
 
 // File: contracts/upgradeable_contracts/ChooseReceiverHelper.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract ChooseReceiverHelper {
     /**
@@ -785,8 +776,7 @@ contract ChooseReceiverHelper {
 
 // File: contracts/upgradeable_contracts/TransferInfoStorage.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract TransferInfoStorage is EternalStorage {
     /**
@@ -842,8 +832,7 @@ contract TransferInfoStorage is EternalStorage {
 
 // File: contracts/upgradeable_contracts/multi_amb_erc20_to_erc677/MultiTokenBridgeMediator.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -942,8 +931,7 @@ contract MultiTokenBridgeMediator is
 
 // File: contracts/upgradeable_contracts/Initializable.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract Initializable is EternalStorage {
     bytes32 internal constant INITIALIZED = 0x0a6f646cd611241d8073675e00d1a1ff700fbf1b53fcf473de56d1e6e4b714ba; // keccak256(abi.encodePacked("isInitialized"))
@@ -959,8 +947,7 @@ contract Initializable is EternalStorage {
 
 // File: contracts/upgradeable_contracts/ReentrancyGuard.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract ReentrancyGuard is EternalStorage {
     bytes32 internal constant LOCK = 0x6168652c307c1e813ca11cfb3a601f1cf3b22452021a5052d8b05f1f1f8a3e92; // keccak256(abi.encodePacked("lock"))
@@ -976,8 +963,7 @@ contract ReentrancyGuard is EternalStorage {
 
 // File: contracts/upgradeable_contracts/Upgradeable.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract Upgradeable {
     // Avoid using onlyUpgradeabilityOwner name to prevent issues with implementation from proxy contract
@@ -990,8 +976,7 @@ contract Upgradeable {
 
 // File: contracts/upgradeable_contracts/Sacrifice.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 contract Sacrifice {
     constructor(address _recipient) public payable {
         selfdestruct(_recipient);
@@ -1000,8 +985,7 @@ contract Sacrifice {
 
 // File: contracts/libraries/Address.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Address
@@ -1022,8 +1006,7 @@ library Address {
 
 // File: contracts/upgradeable_contracts/Claimable.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 contract Claimable {
@@ -1078,8 +1061,7 @@ contract Claimable {
 
 // File: contracts/upgradeable_contracts/VersionableBridge.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 contract VersionableBridge {
     function getBridgeInterfacesVersion() external pure returns (uint64 major, uint64 minor, uint64 patch) {
         return (5, 1, 0);
@@ -1091,8 +1073,7 @@ contract VersionableBridge {
 
 // File: contracts/upgradeable_contracts/multi_amb_erc20_to_erc677/BasicMultiAMBErc20ToErc677.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -1184,8 +1165,7 @@ contract BasicMultiAMBErc20ToErc677 is
 
 // File: contracts/upgradeability/Proxy.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 /**
  * @title Proxy
  * @dev Gives the possibility to delegate any call to a foreign implementation.
@@ -1283,8 +1263,7 @@ contract Proxy {
 
 // File: contracts/upgradeable_contracts/multi_amb_erc20_to_erc677/TokenProxy.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 interface IPermittableTokenVersion {
     function version() external pure returns (string);
@@ -1358,8 +1337,7 @@ contract TokenProxy is Proxy {
 
 // File: contracts/upgradeable_contracts/BaseRewardAddressList.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 /**
@@ -1507,8 +1485,7 @@ contract BaseRewardAddressList is EternalStorage {
 
 // File: contracts/interfaces/IBurnableMintableERC677Token.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract IBurnableMintableERC677Token is ERC677 {
     function mint(address _to, uint256 _amount) public returns (bool);
@@ -1518,8 +1495,7 @@ contract IBurnableMintableERC677Token is ERC677 {
 
 // File: contracts/upgradeable_contracts/multi_amb_erc20_to_erc677/HomeFeeManagerMultiAMBErc20ToErc677.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -1677,8 +1653,7 @@ contract HomeFeeManagerMultiAMBErc20ToErc677 is BaseRewardAddressList, Ownable, 
 
 // File: contracts/upgradeable_contracts/multi_amb_erc20_to_erc677/HomeMultiAMBErc20ToErc677.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -1965,8 +1940,7 @@ contract HomeMultiAMBErc20ToErc677 is BasicMultiAMBErc20ToErc677, HomeFeeManager
 
 // File: contracts/libraries/TokenReader.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 /**
  * @title TokenReader
  * @dev Helper methods for reading name/symbol/decimals parameters from ERC20 token contracts.
@@ -2106,8 +2080,7 @@ library TokenReader {
 
 // File: contracts/upgradeable_contracts/multi_amb_erc20_to_erc677/ForeignMultiAMBErc20ToErc677.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 

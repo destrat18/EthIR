@@ -1,7 +1,6 @@
 // File: contracts/sol6/IERC20.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 interface IERC20 {
     event Approval(address indexed _owner, address indexed _spender, uint256 _value);
@@ -33,8 +32,7 @@ abstract contract ERC20 is IERC20 {
 
 // File: contracts/sol6/reserves/IConversionRates.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 interface IConversionRates {
@@ -56,8 +54,7 @@ interface IConversionRates {
 
 // File: contracts/sol6/reserves/IWeth.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 interface IWeth is IERC20 {
@@ -67,8 +64,7 @@ interface IWeth is IERC20 {
 
 // File: contracts/sol6/IKyberSanity.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 interface IKyberSanity {
     function getSanityRate(IERC20 src, IERC20 dest) external view returns (uint256);
@@ -76,8 +72,7 @@ interface IKyberSanity {
 
 // File: contracts/sol6/IKyberReserve.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 interface IKyberReserve {
@@ -100,8 +95,7 @@ interface IKyberReserve {
 
 // File: contracts/sol6/utils/Utils5.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 /**
@@ -253,8 +247,7 @@ contract Utils5 {
 
 // File: contracts/sol6/utils/PermissionGroups3.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 contract PermissionGroups3 {
     uint256 internal constant MAX_GROUP_SIZE = 50;
 
@@ -381,8 +374,7 @@ contract PermissionGroups3 {
 
 // File: contracts/sol6/utils/Withdrawable3.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 contract Withdrawable3 is PermissionGroups3 {
@@ -417,8 +409,7 @@ contract Withdrawable3 is PermissionGroups3 {
 
 // File: contracts/sol6/utils/zeppelin/SafeMath.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
  * checks.
@@ -577,8 +568,7 @@ library SafeMath {
 
 // File: contracts/sol6/utils/zeppelin/Address.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 /**
  * @dev Collection of functions related to the address type
  */
@@ -638,8 +628,7 @@ library Address {
 
 // File: contracts/sol6/utils/zeppelin/SafeERC20.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 
@@ -716,8 +705,7 @@ library SafeERC20 {
 // File: contracts/sol6/reserves/KyberFprReserveV2.sol
 
 // SPDX-License-Identifier: MIT
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 

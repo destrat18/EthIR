@@ -782,8 +782,7 @@ contract Ownable is Context {
 
 // File: contracts/TakoToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

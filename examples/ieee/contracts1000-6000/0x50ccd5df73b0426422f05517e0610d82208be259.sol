@@ -8,8 +8,7 @@
     TODO: move roundedDiv to a sep lib? (eg. Math.sol)
     TODO: more unit tests!
 */
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 library SafeMath {
     function mul(uint256 a, uint256 b) internal pure returns (uint256) {
@@ -72,8 +71,7 @@ library SafeMath {
     * Scripts can be cancelled by an other multisig script approved and calling cancelScript()
     * Adding/removing signers is only via multisig approved scripts using addSigners / removeSigners fxs
 */
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 contract MultiSig {
@@ -257,8 +255,7 @@ contract MultiSig {
 // File: contracts/StabilityBoardProxy.sol
 
 /* allows tx to execute if 50% +1 vote of active signers signed */
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 contract StabilityBoardProxy is MultiSig {
@@ -283,8 +280,7 @@ contract StabilityBoardProxy is MultiSig {
            5. deployer account revokes its own PermissionGranter permission
 */
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract Restricted {
 
@@ -343,8 +339,7 @@ contract Restricted {
  * ERC20 interface
  * see https://github.com/ethereum/EIPs/issues/20
  */
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 interface ERC20Interface {
     event Approval(address indexed _owner, address indexed _spender, uint _value);
@@ -364,8 +359,7 @@ interface ERC20Interface {
  *  receiver contract interface
  * see https://github.com/ethereum/EIPs/issues/677
  */
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 interface TokenReceiver {
     function transferNotification(address from, uint256 amount, uint data) external;
@@ -377,8 +371,7 @@ interface TokenReceiver {
  *  transfer fee calculation interface
  *
  */
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 interface TransferFeeInterface {
     function calculateTransferFee(address from, address to, uint amount) external view returns (uint256 fee);
@@ -392,8 +385,7 @@ TODO: overload transfer() & transferFrom() instead of transferWithNarrative() & 
       when this fix available in web3& truffle also uses that web3: https://github.com/ethereum/web3.js/pull/1185
 TODO: shall we use bytes for narrative?
  */
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -465,8 +457,7 @@ contract AugmintTokenInterface is Restricted, ERC20Interface {
 
 // File: contracts/generic/ECRecovery.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Eliptic curve signature operations
@@ -552,8 +543,7 @@ library ECRecovery {
         - consider generic bytes arg instead of uint for transferAndNotify
         - consider separate transfer fee params and calculation to separate contract (to feeAccount?)
 */
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -778,8 +768,7 @@ contract AugmintToken is AugmintTokenInterface {
 // File: contracts/generic/SystemAccount.sol
 
 /* Contract to collect fees from system */
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -806,8 +795,7 @@ contract SystemAccount is Restricted {
     TODO: calculateExchangeFee + Exchange params and setters
 */
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -864,8 +852,7 @@ contract FeeAccount is SystemAccount, TransferFeeInterface {
 // File: contracts/TokenAEur.sol
 
 /* Augmint Euro token (A-EUR) implementation */
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -878,8 +865,7 @@ contract TokenAEur is AugmintToken {
 
 // File: contracts/SB_scripts/mainnet/Main0035_aeur_reserve_transfer.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 

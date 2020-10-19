@@ -1040,8 +1040,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/ShumaiFinance.sol
 
-pragma solidity 0.6.5;
-
+pragma solidity ^0.6.5;
 
 
 
@@ -1286,8 +1285,7 @@ contract ShumaiFinance is ERC20("ShumaiFinance", "SFI"), Ownable {
 
 // File: contracts/ChefTang.sol
 
-pragma solidity 0.6.5;
-
+pragma solidity ^0.6.5;
 
 interface IMigratorChef {
     // Perform LP token migration from legacy UniswapV2 to ShumaiSwap.

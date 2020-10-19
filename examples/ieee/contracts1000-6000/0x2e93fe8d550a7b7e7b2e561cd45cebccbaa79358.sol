@@ -5,8 +5,7 @@ Author: GXChain Core Team.
 Version: 1.0
 */
 
-pragma solidity 0.6.2;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.6.2;pragma experimental ABIEncoderV2;
 
 
 // 

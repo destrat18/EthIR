@@ -412,8 +412,7 @@ contract ReentrancyGuard {
 // File: contracts/ISparkleRewardTiers.sol
 
 /// SWC-103:  Floating Pragma
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 // import '../node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol';
 // import '../node_modules/openzeppelin-solidity/contracts/ownership/Ownable.sol';
 // import '../node_modules/openzeppelin-solidity/contracts/lifecycle/Pausable.sol';
@@ -549,8 +548,7 @@ interface ISparkleRewardTiers {
 // File: contracts/SparkleRewardTiers.sol
 
 /// SWC-103:  Floating Pragma
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

@@ -794,8 +794,7 @@ contract Ownable is Context {
     }
 }
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 // SkullToken with Governance.
 contract SkullToken is ERC20("SkullToken", "SKULL"), Ownable {
     /// @notice Creates `_amount` token to `_to`. Must only be called by the owner (MasterChef).

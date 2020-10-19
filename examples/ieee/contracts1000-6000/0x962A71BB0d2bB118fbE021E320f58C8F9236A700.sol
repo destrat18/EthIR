@@ -1903,8 +1903,7 @@ contract EthFighterAccessControls is AccessControl {
 
 
 
-pragma solidity 0.6.11;
-
+pragma solidity ^0.6.11;
 
 contract EthFighterCharacterDefinitionRegistry {
 

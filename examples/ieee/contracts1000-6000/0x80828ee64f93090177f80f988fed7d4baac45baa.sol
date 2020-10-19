@@ -1,7 +1,6 @@
 // File: localhost/contracts/interfaces/IWETH.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IWETH {
     function deposit() external payable;
     function transfer(address to, uint value) external returns (bool);
@@ -9,8 +8,7 @@ interface IWETH {
 }
 // File: localhost/contracts/interfaces/IERC20.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IERC20Uniswap {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -29,8 +27,7 @@ interface IERC20Uniswap {
 
 // File: localhost/contracts/interfaces/IOkswapRouterBase.sol
 
-pragma solidity >=0.6.2;
-
+pragma solidity ^0.6.2;
 interface IOkswapRouterBase {
     function factory() external pure returns (address);
     function WETH() external pure returns (address);
@@ -126,8 +123,7 @@ interface IOkswapRouterBase {
 }
 // File: localhost/contracts/interfaces/IOkswapRouter.sol
 
-pragma solidity >=0.6.2;
-
+pragma solidity ^0.6.2;
 
 interface IOkswapRouter is IOkswapRouterBase {
     function removeLiquidityETHSupportingFeeOnTransferTokens(
@@ -173,8 +169,7 @@ interface IOkswapRouter is IOkswapRouterBase {
 
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 // helper methods for interacting with ERC20 tokens and sending ETH that do not consistently return true/false
 library TransferHelper {
     function safeApprove(address token, address to, uint value) internal {
@@ -203,8 +198,7 @@ library TransferHelper {
 
 // File: localhost/contracts/libraries/SafeMath.sol
 
-pragma solidity =0.6.12;
-
+pragma solidity ^0.6.12;
 // a library for performing overflow-safe math, courtesy of DappHub (https://github.com/dapphub/ds-math)
 
 library SafeMathUniswap {
@@ -231,8 +225,7 @@ library SafeMathUniswap {
 
 // File: localhost/contracts/interfaces/IOkswapFactory.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IOkswapFactory {
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
 
@@ -264,8 +257,7 @@ interface IOkswapFactory {
 
 // File: localhost/contracts/interfaces/IUniswapV2Pair.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2Pair {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -320,8 +312,7 @@ interface IUniswapV2Pair {
 }
 // File: localhost/contracts/libraries/UniswapV2Library.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 
@@ -412,8 +403,7 @@ library UniswapV2Library {
 
 // File: localhost/contracts/OKSwapRouter.sol
 
-pragma solidity =0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

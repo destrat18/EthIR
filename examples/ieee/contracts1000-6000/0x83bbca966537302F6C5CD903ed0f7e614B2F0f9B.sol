@@ -1137,8 +1137,7 @@ contract GSNRecipient is IRelayRecipient, Context {
 }
 
 
-pragma solidity = 0.5.16;
-
+pragma solidity ^0.5.16;
 contract SimpleSale is Ownable, GSNRecipient {
     using SafeMath for uint256;
 

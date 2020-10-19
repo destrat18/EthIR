@@ -10,8 +10,7 @@ The main idea of this design was to follow the adjusted Proxy and the MVC design
 
 // SPDX-License-Identifier: MIT
 
-pragma solidity = 0.7 .0;
-
+pragma solidity ^0.7;
 abstract contract Context {
 	function _msgSender() internal view virtual returns(address payable) {
 		return msg.sender;

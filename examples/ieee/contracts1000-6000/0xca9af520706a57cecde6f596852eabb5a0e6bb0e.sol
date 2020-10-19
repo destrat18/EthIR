@@ -38,8 +38,7 @@ contract ChiGasSaver {
 
 // File: localhost/contracts/Ownable.sol
 
-pragma solidity 0.6.4;
-
+pragma solidity ^0.6.4;
 // TODO move this generic contract to a seperate repo with all generic smart contracts
 
 contract Ownable {
@@ -89,8 +88,7 @@ contract Ownable {
 }
 // File: localhost/contracts/interfaces/ISmartPoolRegistry.sol
 
-pragma solidity 0.6.4;
-
+pragma solidity ^0.6.4;
 interface ISmartPoolRegistry {
     function inRegistry(address _pool) external view returns(bool);
     function entries(uint256 _index) external view returns(address);
@@ -163,8 +161,7 @@ library SafeMath {
 }
 // File: @uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2Pair {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -218,8 +215,7 @@ interface IUniswapV2Pair {
 
 // File: localhost/contracts/recipes/UniLib.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 library UniLib {
@@ -309,8 +305,7 @@ interface IWETH is IERC20 {
 }
 // File: localhost/contracts/recipes/UniswapV2Recipe.sol
 
-pragma solidity 0.6.4;
-
+pragma solidity ^0.6.4;
 
 
 

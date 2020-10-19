@@ -1,6 +1,5 @@
 // hevm: flattened sources of src/strategies/strategy-uni-eth-usdt-lp-v1.sol
-pragma solidity >=0.4.23 >=0.6.0 <0.7.0 >=0.6.2 <0.7.0 >=0.6.7 <0.7.0;
-
+pragma solidity ^0.4.23;
 ////// src/interfaces/controller.sol
 // SPDX-License-Identifier: MIT
 

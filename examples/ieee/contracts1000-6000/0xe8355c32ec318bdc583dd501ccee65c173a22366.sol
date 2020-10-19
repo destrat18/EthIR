@@ -2,8 +2,7 @@
  *Submitted for verification at Etherscan.io on 2020-08-27
 */
 
-pragma solidity 0.6.2;
-
+pragma solidity ^0.6.2;
 // SPDX-License-Identifier: MIT
 
 /**

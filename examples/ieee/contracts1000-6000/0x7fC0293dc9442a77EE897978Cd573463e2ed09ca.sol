@@ -543,8 +543,7 @@ abstract contract AccessControl is Context {
 // File: contracts/access/OwnerRole.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 abstract contract OwnerRole is AccessControl {
 
@@ -642,8 +641,7 @@ abstract contract OwnerRole is AccessControl {
 // File: contracts/VASPContract.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 contract VASPContract is OwnerRole {
     bytes4 private _channels;

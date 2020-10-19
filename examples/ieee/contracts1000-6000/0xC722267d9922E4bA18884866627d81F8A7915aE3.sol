@@ -2,8 +2,7 @@
  *Submitted for verification at Etherscan.io on 2020-08-28
 */
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 /**

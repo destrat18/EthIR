@@ -1,7 +1,6 @@
 // File: contracts/SafeMath.sol
 
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 // Note: This file has been modified to include the sqrt function for quadratic voting
 /**
  * @dev Standard math utilities missing in the Solidity language.
@@ -203,8 +202,7 @@ library SafeMath {
 
 // File: contracts/zeppelin/Address.sol
 
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 
 /**
  * @dev Collection of functions related to the address type
@@ -277,8 +275,7 @@ library Address {
 
 //SPDX-License-Identifier: GPL-3.0-only
 
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP. Does not include
@@ -357,8 +354,7 @@ interface IERC20 {
 
 // File: contracts/zeppelin/SafeERC20.sol
 
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 
 
 
@@ -434,8 +430,7 @@ library SafeERC20 {
 
 // File: contracts/ITreasury.sol
 
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 
 
 interface ITreasury {
@@ -448,8 +443,7 @@ interface ITreasury {
 
 //SPDX-License-Identifier: GPL-3.0-only
 
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 
 interface SwapRouter {
     function WETH() external pure returns (address);
@@ -464,8 +458,7 @@ interface SwapRouter {
 
 // File: contracts/LPTokenWrapperWithSlash.sol
 
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 
 
 
@@ -534,8 +527,7 @@ contract LPTokenWrapperWithSlash {
 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 */
 
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 
 
 

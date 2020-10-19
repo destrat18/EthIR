@@ -388,8 +388,7 @@ library SafeERC20 {
 
 // File: contracts/Storage.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 contract Storage {
 
   address public governance;
@@ -425,8 +424,7 @@ contract Storage {
 
 // File: contracts/Governable.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract Governable {
 
@@ -454,8 +452,7 @@ contract Governable {
 
 // File: contracts/Controllable.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract Controllable is Governable {
 
@@ -480,8 +477,7 @@ contract Controllable is Governable {
 
 // File: contracts/HardRewards.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

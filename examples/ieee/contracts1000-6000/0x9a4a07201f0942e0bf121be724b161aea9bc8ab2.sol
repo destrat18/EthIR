@@ -792,8 +792,7 @@ contract Ownable is Context {
 
 // File: contracts/MilkyWayToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 // MilkyWayToken with Governance.
 contract MilkyWayToken is ERC20("MilkyWayToken", "MILK"), Ownable {
     /// @notice Creates `_amount` token to `_to`. Must only be called by the owner (todo Name).

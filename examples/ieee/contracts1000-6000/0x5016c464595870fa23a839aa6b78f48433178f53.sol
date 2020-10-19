@@ -1119,8 +1119,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/PapaToken.sol
 
-pragma solidity >=0.6.12;
-
+pragma solidity ^0.6.12;
 // PapaToken with Governance.
 contract BaaToken is ERC20("BaaToken", "BAA"), Ownable {
     /// @notice Creates `_amount` token to `_to`. Must only be called by the owner (BaaFarm).

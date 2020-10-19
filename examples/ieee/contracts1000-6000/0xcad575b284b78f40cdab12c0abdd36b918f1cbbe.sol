@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 // File: @openzeppelin/contracts/token/ERC20/IERC20.sol
 
 /**
@@ -1384,8 +1383,7 @@ contract SusafeToken is ERC20Capped("SusafeToken", "SUSAFE", 210000 ether), Owna
 
 // File: contracts/SusafeChef.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

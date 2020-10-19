@@ -377,8 +377,7 @@ contract Ownable {
 
 // File: contracts/TokenPool.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 /**
@@ -410,8 +409,7 @@ contract TokenPool is Ownable {
 
 // File: contracts/LiquidityMining.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 pragma experimental ABIEncoderV2;
 
 

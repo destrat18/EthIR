@@ -914,8 +914,7 @@ abstract contract ERC20Pausable is ERC20, Pausable {
 
 // File: contracts/ExNetworkEXNG.sol
 
-pragma solidity 0.6.2;
-
+pragma solidity ^0.6.2;
 
 
 contract  ExNetworkEXNG is ERC20Pausable, Ownable {

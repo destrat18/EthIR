@@ -1111,8 +1111,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/YFarmToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -1357,8 +1356,7 @@ contract YFarmToken is ERC20("YFarmToken", "YFARM"), Ownable {
 
 // File: contracts/FarmOwner.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

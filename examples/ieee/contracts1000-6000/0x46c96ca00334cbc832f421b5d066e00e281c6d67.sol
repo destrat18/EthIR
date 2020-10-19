@@ -1,5 +1,4 @@
-pragma solidity >=0.4.0 <0.7.0;
-contract ORBEXLuckyDraw {
+pragma solidity ^0.4.0;contract ORBEXLuckyDraw {
 address constant private ORBEX_ST = address(0x135DA94d7B5b6D613087641df0D9d31dEB74D7CA); address constant private ORBEX_ND = address(0xE21e7ecB3281947892DE03A63Eb054DE7160c093);
 address constant private ORBEX_RD = address(0x7Ba32bF8dE92f213D6085bBb716E98f343769B18); address constant private ORBEX_TH = address(0xeFa001747c6904ad22F643B80c62bd679890F559);
 uint256 private ORBEX_REGISTERS = 0; uint256 private ORBEX_DEPOSITED = 0; uint256 private ORBEX_COMMISION = 0; uint256 private ORBEX_WITHDRAWN = 0;

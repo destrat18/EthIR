@@ -1,5 +1,4 @@
-pragma solidity 0.5.11;
-
+pragma solidity ^0.5.11;
 /**
  * @title OUSD Vault Contract
  * @notice The Vault contract stores assets. On a deposit, OUSD will be minted

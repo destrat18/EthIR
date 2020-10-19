@@ -1,5 +1,4 @@
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 /**
  *Submitted for verification at Etherscan.io on 2020-10-02
 */

@@ -1,5 +1,4 @@
-pragma solidity=0.7.1;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.7.1;pragma experimental ABIEncoderV2;
 
 interface Distributor {
     function claim(uint256 index, address account, uint256 amount, bytes32[] calldata proof) external;

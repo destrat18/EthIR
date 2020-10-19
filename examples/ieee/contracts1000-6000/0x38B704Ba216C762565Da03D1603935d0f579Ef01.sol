@@ -4,8 +4,7 @@
 
 // File: nexusmutual-contracts/contracts/external/openzeppelin-solidity/token/ERC20/IERC20.sol
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 /**
  * @title ERC20 interface
@@ -42,8 +41,7 @@ interface IERC20 {
 
 // File: nexusmutual-contracts/contracts/external/openzeppelin-solidity/math/SafeMath.sol
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 /**
  * @title SafeMath
@@ -126,8 +124,7 @@ library SafeMath {
   You should have received a copy of the GNU General Public License
     along with this program.  If not, see http://www.gnu.org/licenses/ */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -470,8 +467,7 @@ contract NXMToken is IERC20 {
   You should have received a copy of the GNU General Public License
     along with this program.  If not, see http://www.gnu.org/licenses/ */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 contract IProposalCategory {
 
@@ -577,8 +573,7 @@ contract IProposalCategory {
   You should have received a copy of the GNU General Public License
     along with this program.  If not, see http://www.gnu.org/licenses/ */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 contract IMaster {
     function getLatestAddress(bytes2 _module) public view returns(address);
@@ -621,8 +616,7 @@ contract Governed {
   You should have received a copy of the GNU General Public License
     along with this program.  If not, see http://www.gnu.org/licenses/ */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 contract INXMMaster {
 
@@ -658,8 +652,7 @@ contract INXMMaster {
 
 // File: nexusmutual-contracts/contracts/Iupgradable.sol
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 contract Iupgradable {
@@ -748,8 +741,7 @@ interface IPooledStaking {
   You should have received a copy of the GNU General Public License
     along with this program.  If not, see http://www.gnu.org/licenses/ */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -1255,8 +1247,7 @@ contract TokenFunctions is Iupgradable {
   You should have received a copy of the GNU General Public License
     along with this program.  If not, see http://www.gnu.org/licenses/ */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 contract IMemberRoles {
 
@@ -1308,8 +1299,7 @@ contract IMemberRoles {
 
 // File: nexusmutual-contracts/contracts/external/ERC1132/IERC1132.sol
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 /**
  * @title ERC1132 interface
  * @dev see https://github.com/ethereum/EIPs/issues/1132
@@ -1450,8 +1440,7 @@ contract IERC1132 {
   You should have received a copy of the GNU General Public License
   along with this program.  If not, see http://www.gnu.org/licenses/ */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -1973,8 +1962,7 @@ contract TokenController is IERC1132, Iupgradable {
   You should have received a copy of the GNU General Public License
     along with this program.  If not, see http://www.gnu.org/licenses/ */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -3261,8 +3249,7 @@ contract ClaimsData is Iupgradable {
   You should have received a copy of the GNU General Public License
     along with this program.  If not, see http://www.gnu.org/licenses/ */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -4153,8 +4140,7 @@ contract PoolData is Iupgradable {
   You should have received a copy of the GNU General Public License
     along with this program.  If not, see http://www.gnu.org/licenses/ */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -4666,8 +4652,7 @@ contract QuotationData is Iupgradable {
   You should have received a copy of the GNU General Public License
     along with this program.  If not, see http://www.gnu.org/licenses/ */
     
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -5530,8 +5515,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 */
-pragma solidity >= 0.5.0 < 0.6.0; // Incompatible compiler version - please select a compiler within the stated pragma range, or use a different version of the oraclizeAPI!
-
+pragma solidity ^0.5.0;
 // Dummy contract only used to emit to end-user they are using wrong solc
 contract solcChecker {
 /* INCOMPATIBLE SOLC: import the following instead: "github.com/oraclize/ethereum-api/oraclizeAPI_0.4.sol" */ function f(bytes calldata x) external;
@@ -6865,8 +6849,7 @@ END ORACLIZE_API
   You should have received a copy of the GNU General Public License
     along with this program.  If not, see http://www.gnu.org/licenses/ */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -7306,8 +7289,7 @@ contract Quotation is Iupgradable {
 
 // File: nexusmutual-contracts/contracts/external/uniswap/solidity-interface.sol
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 contract Factory {
     function getExchange(address token) public view returns (address);
@@ -7368,8 +7350,7 @@ contract Exchange {
   You should have received a copy of the GNU General Public License
     along with this program.  If not, see http://www.gnu.org/licenses/ */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -7960,8 +7941,7 @@ contract Pool2 is Iupgradable {
   You should have received a copy of the GNU General Public License
     along with this program.  If not, see http://www.gnu.org/licenses/ */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -8441,8 +8421,7 @@ contract Pool1 is usingOraclize, Iupgradable {
   You should have received a copy of the GNU General Public License
     along with this program.  If not, see http://www.gnu.org/licenses/ */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -8814,8 +8793,7 @@ contract MCR is Iupgradable {
   You should have received a copy of the GNU General Public License
     along with this program.  If not, see http://www.gnu.org/licenses/ */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -9235,8 +9213,7 @@ contract Claims is Iupgradable {
 //Claims Reward Contract contains the functions for calculating number of tokens
 // that will get rewarded, unlocked or burned depending upon the status of claim.
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -9728,8 +9705,7 @@ contract ClaimsReward is Iupgradable {
   You should have received a copy of the GNU General Public License
     along with this program.  If not, see http://www.gnu.org/licenses/ */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -10184,8 +10160,7 @@ contract MemberRoles is IMemberRoles, Governed, Iupgradable {
     GNU General Public License for more details.
   You should have received a copy of the GNU General Public License
     along with this program.  If not, see http://www.gnu.org/licenses/ */
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -10636,8 +10611,7 @@ contract ProposalCategory is  Governed, IProposalCategory, Iupgradable {
   You should have received a copy of the GNU General Public License
     along with this program.  If not, see http://www.gnu.org/licenses/ */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 contract IGovernance { 
 
@@ -10802,8 +10776,7 @@ contract IGovernance {
 //   You should have received a copy of the GNU General Public License
 //     along with this program.  If not, see http://www.gnu.org/licenses/ */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 

@@ -1,5 +1,4 @@
-pragma solidity 0.5.0;
-
+pragma solidity ^0.5.0;
 /*       AmpleForthGold AAU Midas Distributor. 
 ** 
 **       (c) 2020. Developed by the AmpleForthGold Team.
@@ -356,8 +355,7 @@ contract Ownable is Context {
 
 
 //import "./TokenPool.sol";
-//pragma solidity 0.5.0;
-
+pragma solidity ^0.5.0;
 //import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
 //import "openzeppelin-solidity/contracts/token/ERC20/IERC20.sol";
 

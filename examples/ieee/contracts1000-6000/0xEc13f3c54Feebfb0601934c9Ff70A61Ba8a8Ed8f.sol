@@ -41,8 +41,7 @@ Balancer Pools 50/50
 Conract forked from UNI token
 */
 
-pragma solidity 0.7.1;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.7.1;pragma experimental ABIEncoderV2;
 
 // SPDX-License-Identifier: MIT
 

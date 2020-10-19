@@ -1,8 +1,7 @@
 // SPDX-License-Identifier: MIT
 // File: contracts/IERC20.sol
 
-pragma solidity >=0.6 <0.7.0;
-
+pragma solidity ^0.6;
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
  */
@@ -79,8 +78,7 @@ interface IERC20 {
 
 // File: contracts/utils/SafeMath.sol
 
-pragma solidity >=0.6 <0.7.0;
-
+pragma solidity ^0.6;
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
  * checks.
@@ -239,8 +237,7 @@ library SafeMath {
 
 // File: contracts/utils/Ownable.sol
 
-pragma solidity >=0.6 <0.7.0;
-
+pragma solidity ^0.6;
 /**
  * @dev Contract module which provides a basic access control mechanism, where
  * there is an account (an owner) that can be granted exclusive access to
@@ -310,8 +307,7 @@ contract Ownable {
 
 // File: contracts/YFIBMImpl.sol
 
-pragma solidity >=0.6.0 <0.7.0;
-
+pragma solidity ^0.6.0;
 
 
 

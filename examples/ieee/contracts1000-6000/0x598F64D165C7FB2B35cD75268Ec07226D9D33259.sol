@@ -1,7 +1,6 @@
 // File: @openzeppelin/contracts-ethereum-package/contracts/Initializable.sol
 
-pragma solidity >=0.4.24 <0.7.0;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Initializable
@@ -856,8 +855,7 @@ abstract contract ERC20CappedUpgradeSafe is Initializable, ERC20UpgradeSafe {
 // File: contracts/IERC20VoteableUpgradeSafe.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 interface IERC20VoteableUpgradeSafe {
     function getPriorVotes(address account, uint256 blockNumber)
         external
@@ -868,8 +866,7 @@ interface IERC20VoteableUpgradeSafe {
 // File: contracts/ERC20VoteableUpgradeSafe.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -1160,8 +1157,7 @@ abstract contract ERC20VoteableUpgradeSafe is
 // File: contracts/CF.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

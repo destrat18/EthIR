@@ -21,8 +21,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity >=0.4.23;
-
+pragma solidity ^0.4.23;
 contract DSAuthority {
     function canCall(
         address src, address dst, bytes4 sig
@@ -88,8 +87,7 @@ contract DSAuth is DSAuthEvents {
 // required for copyright to apply.  As a result, this is free and
 // unencumbered software belonging to the public domain.
 
-pragma solidity >0.4.20;
-
+pragma solidity ^0.4.20;
 contract ERC20Events {
     event Approval(address indexed src, address indexed guy, uint wad);
     event Transfer(address indexed src, address indexed dst, uint wad);
@@ -125,8 +123,7 @@ contract ERC20 is ERC20Events {
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity >0.4.13;
-
+pragma solidity ^0.4.13;
 contract DSMath {
     function add(uint x, uint y) internal pure returns (uint z) {
         require((z = x + y) >= x, "ds-math-add-overflow");
@@ -215,8 +212,7 @@ contract DSMath {
   along with The Colony Network. If not, see <http://www.gnu.org/licenses/>.
 */
 
-pragma solidity 0.5.8;
-
+pragma solidity ^0.5.8;
 
 contract ERC20Extended is ERC20 {
   event Mint(address indexed guy, uint wad);
@@ -247,8 +243,7 @@ contract ERC20Extended is ERC20 {
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity >=0.4.23;
-
+pragma solidity ^0.4.23;
 contract DSTokenBase is ERC20, DSMath {
     uint256                                            _supply;
     mapping (address => uint256)                       _balances;
@@ -319,8 +314,7 @@ contract DSTokenBase is ERC20, DSMath {
   along with The Colony Network. If not, see <http://www.gnu.org/licenses/>.
 */
 
-pragma solidity 0.5.8;
-
+pragma solidity ^0.5.8;
 contract Token is DSTokenBase(0), DSAuth, ERC20Extended {
   uint8 public decimals;
   string public symbol;
@@ -384,8 +378,7 @@ contract Token is DSTokenBase(0), DSAuth, ERC20Extended {
 }
 
 
-pragma solidity 0.5.8;
-
+pragma solidity ^0.5.8;
 /**
  * @title Vesting
  * Version of The Colony Network Vesting contract modified to include a

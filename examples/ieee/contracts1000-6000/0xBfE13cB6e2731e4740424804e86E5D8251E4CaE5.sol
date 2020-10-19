@@ -464,8 +464,7 @@ library SafeERC20 {
 // File: contracts/libraries/upgradeability/Initializable.sol
 
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 /**
  * @title Initializable
  *
@@ -531,8 +530,7 @@ contract Initializable {
 // File: contracts/account/Account.sol
 
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 
 
@@ -733,8 +731,7 @@ contract Account is Initializable {
 // File: contracts/libraries/upgradeability/Proxy.sol
 
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 /**
  * @title Proxy
  * @dev Implements delegation of calls to other contracts, with proper
@@ -815,8 +812,7 @@ abstract contract Proxy {
 // File: contracts/libraries/upgradeability/BaseUpgradeabilityProxy.sol
 
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 
 /**
@@ -874,8 +870,7 @@ contract BaseUpgradeabilityProxy is Proxy {
 // File: contracts/libraries/upgradeability/AdminUpgradeabilityProxy.sol
 
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 /**
  * @title AdminUpgradeabilityProxy
@@ -989,8 +984,7 @@ contract AdminUpgradeabilityProxy is BaseUpgradeabilityProxy {
 // File: contracts/account/AccountFactory.sol
 
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 
 /**
@@ -1435,8 +1429,7 @@ contract ERC20 is Context, IERC20 {
 // File: contracts/libraries/vaults/IStrategy.sol
 
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 /**
  * @notice Interface for Strategies.
  */
@@ -1476,8 +1469,7 @@ interface IStrategy {
 // File: contracts/libraries/vaults/Vault.sol
 
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 
 
@@ -1638,8 +1630,7 @@ contract Vault is ERC20 {
 // File: contracts/libraries/vaults/RewardedVault.sol
 
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 
 
@@ -1772,8 +1763,7 @@ contract RewardedVault is Vault {
 // File: contracts/applications/StakingApplication.sol
 
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 
 

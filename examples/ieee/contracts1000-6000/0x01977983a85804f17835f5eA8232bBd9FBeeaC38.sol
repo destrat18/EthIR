@@ -1,8 +1,7 @@
 // File: contracts/libraries/SafeMath256.sol
 
 // SPDX-License-Identifier: MIT
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 library SafeMath256 {
     /**
      * @dev Returns the addition of two unsigned integers, reverting on
@@ -148,8 +147,7 @@ library SafeMath256 {
 
 // File: contracts/interfaces/ILockSend.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 interface ILockSend {
     event Locksend(address indexed from,address indexed to,address token,uint amount,uint32 unlockTime);
     event Unlock(address indexed from,address indexed to,address token,uint amount,uint32 unlockTime);
@@ -160,8 +158,7 @@ interface ILockSend {
 
 // File: contracts/LockSend.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

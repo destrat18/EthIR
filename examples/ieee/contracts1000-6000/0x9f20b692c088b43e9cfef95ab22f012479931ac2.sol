@@ -1,7 +1,6 @@
 // File: @uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2Factory {
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
 
@@ -20,8 +19,7 @@ interface IUniswapV2Factory {
 
 // File: @uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2Pair {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -75,8 +73,7 @@ interface IUniswapV2Pair {
 
 // File: @uniswap/lib/contracts/libraries/FixedPoint.sol
 
-pragma solidity >=0.4.0;
-
+pragma solidity ^0.4.0;
 // a library for handling binary fixed point numbers (https://en.wikipedia.org/wiki/Q_(number_format))
 library FixedPoint {
     // range: [0, 2**112 - 1]
@@ -137,8 +134,7 @@ library FixedPoint {
 
 // File: contracts/libraries/UniswapV2OracleLibrary.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 // library with helper methods for oracles that are concerned with computing average prices
@@ -174,8 +170,7 @@ library UniswapV2OracleLibrary {
 
 // File: contracts/libraries/SafeMath.sol
 
-pragma solidity =0.6.6;
-
+pragma solidity ^0.6.6;
 // a library for performing overflow-safe math, courtesy of DappHub (https://github.com/dapphub/ds-math)
 
 library SafeMath {
@@ -194,8 +189,7 @@ library SafeMath {
 
 // File: contracts/libraries/UniswapV2Library.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 library UniswapV2Library {
@@ -277,8 +271,7 @@ library UniswapV2Library {
 
 // File: contracts/examples/ExampleOracleSimple.sol
 
-pragma solidity =0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 

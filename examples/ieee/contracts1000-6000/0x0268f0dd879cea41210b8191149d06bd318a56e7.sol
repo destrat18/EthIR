@@ -1,7 +1,6 @@
 // File: contracts/interfaces/IERC20Token.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 /*
     ERC20 Standard Token interface
 */
@@ -21,8 +20,7 @@ interface IERC20Token {
 // File: contracts/utility/Utils.sol
 
 // SPDX-License-Identifier: SEE LICENSE IN LICENSE
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 /**
   * @dev Utilities & Common Modifiers
 */
@@ -63,8 +61,7 @@ contract Utils {
 
 // File: contracts/utility/SafeMath.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 /**
   * @dev Library for basic math operations with overflow/underflow protection
 */
@@ -131,8 +128,7 @@ library SafeMath {
 
 // File: contracts/ERC20Token.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -266,8 +262,7 @@ contract ERC20Token is IERC20Token, Utils {
 
 // File: contracts/utility/interfaces/IOwned.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 /*
     Owned contract interface
 */
@@ -281,8 +276,7 @@ interface IOwned {
 
 // File: contracts/utility/interfaces/ITokenHolder.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 /*
@@ -294,8 +288,7 @@ interface ITokenHolder is IOwned {
 
 // File: contracts/utility/interfaces/IConverterAnchor.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 /*
@@ -306,8 +299,7 @@ interface IConverterAnchor is IOwned, ITokenHolder {
 
 // File: contracts/interfaces/ISmartToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -322,8 +314,7 @@ interface ISmartToken is IConverterAnchor, IERC20Token {
 
 // File: contracts/utility/Owned.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 /**
   * @dev Provides support and utilities for contract ownership
@@ -383,8 +374,7 @@ contract Owned is IOwned {
 
 // File: contracts/utility/TokenHandler.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 contract TokenHandler {
     bytes4 private constant APPROVE_FUNC_SELECTOR = bytes4(keccak256("approve(address,uint256)"));
@@ -437,8 +427,7 @@ contract TokenHandler {
 
 // File: contracts/utility/TokenHolder.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -479,8 +468,7 @@ contract TokenHolder is ITokenHolder, TokenHandler, Owned, Utils {
 
 // File: contracts/SmartToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

@@ -570,8 +570,7 @@ contract ReentrancyGuard {
 
 // File: contracts/BankConfig.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface BankConfig {
     /// @dev Return minimum ETH debt size per position.
     function minDebtSize() external view returns (uint256);
@@ -600,8 +599,7 @@ interface BankConfig {
 
 // File: contracts/Goblin.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface Goblin {
     /// @dev Work on a (potentially new) position. Optionally send ETH back to Bank.
     function work(uint256 id, address user, uint256 debt, bytes calldata data) external payable;
@@ -618,8 +616,7 @@ interface Goblin {
 
 // File: contracts/SafeToken.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface ERC20Interface {
     function balanceOf(address user) external view returns (uint256);
 }
@@ -659,8 +656,7 @@ library SafeToken {
 
 // File: contracts/Bank.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

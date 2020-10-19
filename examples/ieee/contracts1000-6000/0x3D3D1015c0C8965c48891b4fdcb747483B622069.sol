@@ -1,5 +1,4 @@
-pragma solidity >=0.4.0 <0.8.0;
-
+pragma solidity ^0.4.0;
 interface COMP {
     function getCurrentVotes(address account) external view returns (uint96);
 }

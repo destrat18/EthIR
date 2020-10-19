@@ -1,7 +1,6 @@
 // File: contracts/spec_interfaces/IContractRegistry.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface IContractRegistry {
 
 	event ContractAddressUpdated(string contractName, address addr);
@@ -15,8 +14,7 @@ interface IContractRegistry {
 
 // File: contracts/spec_interfaces/ICertification.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 /// @title Elections contract interface
@@ -46,8 +44,7 @@ interface ICertification /* is Ownable */ {
 
 // File: contracts/spec_interfaces/IProtocol.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface IProtocol {
     event ProtocolVersionChanged(string deploymentSubset, uint256 currentVersion, uint256 nextVersion, uint256 fromTimestamp);
 
@@ -74,8 +71,7 @@ interface IProtocol {
 
 // File: contracts/spec_interfaces/ICommittee.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 /// @title Elections contract interface
 interface ICommittee {
@@ -136,8 +132,7 @@ interface ICommittee {
 
 // File: contracts/IStakeChangeNotifier.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 /// @title An interface for notifying of stake change events (e.g., stake, unstake, partial unstake, restate, etc.).
 interface IStakeChangeNotifier {
     /// @dev Notifies of stake change event.
@@ -163,8 +158,7 @@ interface IStakeChangeNotifier {
 
 // File: contracts/interfaces/IElections.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 /// @title Elections contract interface
@@ -244,8 +238,7 @@ interface IElections /* is IStakeChangeNotifier */ {
 
 // File: contracts/spec_interfaces/IGuardiansRegistration.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 /// @title Elections contract interface
 interface IGuardiansRegistration {
@@ -315,8 +308,7 @@ interface IGuardiansRegistration {
 
 // File: contracts/spec_interfaces/ISubscriptions.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 /// @title Subscriptions contract interface
 interface ISubscriptions {
@@ -368,8 +360,7 @@ interface ISubscriptions {
 
 // File: contracts/spec_interfaces/IDelegation.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 /// @title Elections contract interface
 interface IDelegations /* is IStakeChangeNotifier */ {
@@ -494,8 +485,7 @@ interface IERC20 {
 
 // File: contracts/IMigratableStakingContract.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 /// @title An interface for staking contracts which support stake migration.
 interface IMigratableStakingContract {
@@ -514,8 +504,7 @@ interface IMigratableStakingContract {
 
 // File: contracts/IStakingContract.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 /// @title An interface for staking contracts.
 interface IStakingContract {
@@ -576,8 +565,7 @@ interface IStakingContract {
 
 // File: contracts/interfaces/IRewards.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 /// @title Rewards contract interface
@@ -718,8 +706,7 @@ contract Context {
 
 // File: contracts/WithClaimableMigrationOwnership.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 /**
  * @title Claimable
@@ -809,8 +796,7 @@ contract WithClaimableMigrationOwnership is Context{
 
 // File: contracts/Lockable.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 /**
@@ -844,12 +830,10 @@ contract Lockable is WithClaimableMigrationOwnership {
 
 // File: contracts/spec_interfaces/IProtocolWallet.sol
 
-pragma solidity 0.5.16;
+pragma solidity ^0.5.16;
 
 
-
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 /// @title Protocol Wallet interface
 interface IProtocolWallet {
     event FundsAddedToPool(uint256 added, uint256 total);
@@ -888,8 +872,7 @@ interface IProtocolWallet {
 
 // File: contracts/ContractRegistryAccessor.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 
@@ -961,8 +944,7 @@ contract ContractRegistryAccessor is WithClaimableMigrationOwnership {
 
 // File: contracts/WithClaimableFunctionalOwnership.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 /**
  * @title Claimable
@@ -1052,8 +1034,7 @@ contract WithClaimableFunctionalOwnership is Context{
 
 // File: ../contracts/Certification.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

@@ -857,8 +857,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/interfaces/IMigratorChef.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 interface IMigratorChef {
     // Perform LP token migration from legacy UniswapV2 to SakeSwap.
@@ -1119,8 +1118,7 @@ library EnumerableSet {
 
 // File: contracts/SakeToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -1627,8 +1625,7 @@ contract SakeToken is Context, IERC20, Ownable {
 
 // File: contracts/SakeMaster.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -1914,8 +1911,7 @@ contract SakeMaster is Ownable {
 
 // File: contracts/interfaces/IStakingRewards.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 // Uniswap Liquidity Mining
 interface IStakingRewards {
     function earned(address account) external view returns (uint256);
@@ -1933,8 +1929,7 @@ interface IStakingRewards {
 
 // File: contracts/SakeUniV2.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

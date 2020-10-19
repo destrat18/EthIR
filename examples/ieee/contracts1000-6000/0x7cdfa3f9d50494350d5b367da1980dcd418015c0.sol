@@ -1,5 +1,4 @@
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 contract ERC20 {
     function totalSupply() public view returns (uint supply);
     function balanceOf(address who) public view returns (uint value);

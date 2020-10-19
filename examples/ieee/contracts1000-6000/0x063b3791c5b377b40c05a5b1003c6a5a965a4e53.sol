@@ -5,8 +5,7 @@
 
 */
 
-pragma solidity 0.6.9;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.6.9;pragma experimental ABIEncoderV2;
 
 library SafeMath {
     function mul(uint256 a, uint256 b) internal pure returns (uint256) {

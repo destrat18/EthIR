@@ -80,8 +80,7 @@ interface IERC20 {
 
 // File: contracts\VampireAdapter.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 contract Victim{}
 

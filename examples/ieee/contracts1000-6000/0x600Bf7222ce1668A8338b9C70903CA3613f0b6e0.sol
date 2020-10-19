@@ -1,7 +1,6 @@
 // File: @chainlink/contracts/src/v0.6/interfaces/AggregatorV3Interface.sol
 
-pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 interface AggregatorV3Interface {
 
   function decimals() external view returns (uint8);
@@ -405,8 +404,7 @@ library SafeERC20 {
 
 // File: @openzeppelin/contracts-ethereum-package/contracts/Initializable.sol
 
-pragma solidity >=0.4.24 <0.7.0;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Initializable

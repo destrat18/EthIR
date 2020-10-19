@@ -1,7 +1,6 @@
 // File: contracts/zeppelin/SafeMath.sol
 
-pragma solidity >= 0.5.0 < 0.7.0;
-
+pragma solidity ^0.5.0;
 /**
  * @title SafeMath
  * @dev Math operations with safety checks that throw on error
@@ -60,8 +59,7 @@ library SafeMath {
 // File: contracts/MWGImplementation.sol
 
 //SPDX-License-Identifier: MIT
-pragma solidity >= 0.5.0 < 0.7.0;
-
+pragma solidity ^0.5.0;
 
 contract MWGImplementation {
     /**

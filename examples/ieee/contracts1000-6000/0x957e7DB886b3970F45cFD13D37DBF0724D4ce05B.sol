@@ -1,7 +1,6 @@
 // File: @uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2Factory {
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
 
@@ -20,8 +19,7 @@ interface IUniswapV2Factory {
 
 // File: @uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2Pair {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -75,8 +73,7 @@ interface IUniswapV2Pair {
 
 // File: @uniswap/lib/contracts/libraries/Babylonian.sol
 
-pragma solidity >=0.4.0;
-
+pragma solidity ^0.4.0;
 // computes square roots using the babylonian method
 // https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method
 library Babylonian {
@@ -97,8 +94,7 @@ library Babylonian {
 
 // File: @uniswap/lib/contracts/libraries/FixedPoint.sol
 
-pragma solidity >=0.4.0;
-
+pragma solidity ^0.4.0;
 
 // a library for handling binary fixed point numbers (https://en.wikipedia.org/wiki/Q_(number_format))
 library FixedPoint {
@@ -173,8 +169,7 @@ library FixedPoint {
 
 // File: contracts/decentralizedOracle.sol
 
-pragma solidity =0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 

@@ -1,5 +1,4 @@
-pragma solidity >=0.4.22 <0.7.0;
-
+pragma solidity ^0.4.22;
 /**
  * website: https://govm.net
  * be owner of contract 0xaC5d7dFF150B195C97Fca77001f8AD596eda1761

@@ -3,8 +3,7 @@
  *Submitted for verification at Etherscan.io on 2020-08-20
 */
 
-pragma solidity >= 0.6.0 < 0.8.0;
-
+pragma solidity ^0.6.0;
 interface ERC20 {
     function balanceOf(address _owner) external view returns (uint256);
     function allowance(address _owner, address _spender) external view returns (uint256);

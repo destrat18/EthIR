@@ -1,7 +1,6 @@
 // File: contracts/sol4/ERC20Interface.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 // https://github.com/ethereum/EIPs/issues/20
 interface ERC20 {
@@ -17,8 +16,7 @@ interface ERC20 {
 
 // File: contracts/sol4/ConversionRatesInterface.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 
 interface ConversionRatesInterface {
@@ -36,8 +34,7 @@ interface ConversionRatesInterface {
 
 // File: contracts/sol4/PermissionGroups.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 contract PermissionGroups {
 
@@ -164,8 +161,7 @@ contract PermissionGroups {
 
 // File: contracts/sol4/Withdrawable.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 
 
@@ -201,8 +197,7 @@ contract Withdrawable is PermissionGroups {
 
 // File: contracts/sol4/Utils.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 
 /// @title Kyber constants contract
@@ -267,8 +262,7 @@ contract Utils {
 
 // File: contracts/sol4/reserves/aprConversionRate/LiquidityFormula.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 contract UtilMath {
     uint public constant BIG_NUMBER = (uint(1)<<uint(200));
@@ -435,8 +429,7 @@ contract LiquidityFormula is UtilMath {
 
 // File: contracts/sol4/reserves/aprConversionRate/LiquidityConversionRates.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 
 

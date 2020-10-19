@@ -1,8 +1,7 @@
 // File: contracts/interfaces/IERC20.sol
 
 // SPDX-License-Identifier: MIT
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -21,8 +20,7 @@ interface IERC20 {
 
 // File: contracts/interfaces/IOneSwapToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 interface IOneSwapBlackList {
     event OwnerChanged(address);
@@ -49,8 +47,7 @@ interface IOneSwapToken is IERC20, IOneSwapBlackList{
 
 // File: contracts/libraries/SafeMath256.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 library SafeMath256 {
     /**
      * @dev Returns the addition of two unsigned integers, reverting on
@@ -196,8 +193,7 @@ library SafeMath256 {
 
 // File: contracts/OneSwapBlackList.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 abstract contract OneSwapBlackList is IOneSwapBlackList {
@@ -262,8 +258,7 @@ abstract contract OneSwapBlackList is IOneSwapBlackList {
 
 // File: contracts/OneSwapToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

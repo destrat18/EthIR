@@ -825,8 +825,7 @@ abstract contract ERC20Capped is ERC20 {
 
 // File: contracts/IERC20Voteable.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 interface IERC20Voteable {
     function getPriorVotes(address account, uint256 blockNumber)
         external
@@ -836,8 +835,7 @@ interface IERC20Voteable {
 
 // File: contracts/ERC20Voteable.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -1118,8 +1116,7 @@ abstract contract ERC20Voteable is ERC20, IERC20Voteable {
 
 // File: contracts/CF.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 contract CF is ERC20, ERC20Voteable, ERC20Capped, Ownable {
     event AuthorizeMinter(address minter, address operator);

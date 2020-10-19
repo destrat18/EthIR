@@ -2,8 +2,7 @@
 
 // File: contracts/IERC20.sol
 
-pragma solidity >=0.6 <0.7.0;
-
+pragma solidity ^0.6;
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
  */
@@ -80,8 +79,7 @@ interface IERC20 {
 
 // File: contracts/utils/SafeMath.sol
 
-pragma solidity >=0.6 <0.7.0;
-
+pragma solidity ^0.6;
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
  * checks.
@@ -240,8 +238,7 @@ library SafeMath {
 
 // File: contracts/utils/Ownable.sol
 
-pragma solidity >=0.6 <0.7.0;
-
+pragma solidity ^0.6;
 /**
  * @dev Contract module which provides a basic access control mechanism, where
  * there is an account (an owner) that can be granted exclusive access to
@@ -311,8 +308,7 @@ contract Ownable {
 
 // File: contracts/utils/ICashier.sol
 
-pragma solidity >=0.6 <0.7.0;
-
+pragma solidity ^0.6;
 interface ICashier {
     function getPayee() external view returns (address payable);
     function calcFee(address addr, uint8 kind, bytes4 func) external view returns (uint256);
@@ -320,8 +316,7 @@ interface ICashier {
 
 // File: contracts/utils/Chargeable.sol
 
-pragma solidity >=0.6 <0.7.0;
-
+pragma solidity ^0.6;
 
 contract Chargeable {
     /**
@@ -384,8 +379,7 @@ contract Chargeable {
 
 // File: contracts/YFIBC.sol
 
-pragma solidity >=0.6.0 <0.7.0;
-
+pragma solidity ^0.6.0;
 
 
 

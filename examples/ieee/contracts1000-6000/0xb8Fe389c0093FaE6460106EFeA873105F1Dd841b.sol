@@ -75,8 +75,7 @@ contract Ownable {
 }
 // File: StringUtils.sol
 
-pragma solidity >=0.4.24;
-
+pragma solidity ^0.4.24;
 library StringUtils {
     /**
      * @dev Returns the length of a given string
@@ -176,8 +175,7 @@ library SafeMath {
 }
 // File: PriceOracle.sol
 
-pragma solidity >=0.4.24;
-
+pragma solidity ^0.4.24;
 interface PriceOracle {
     /**
      * @dev Returns the price to register or renew a name.
@@ -191,8 +189,7 @@ interface PriceOracle {
 // File: browser/StablePriceOracle.sol
 
   
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 interface AggregatorInterface {
   function latestAnswer() external view returns (int256);

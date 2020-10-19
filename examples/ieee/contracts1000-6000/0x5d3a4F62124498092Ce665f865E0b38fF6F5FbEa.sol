@@ -1,6 +1,5 @@
 //SPDX-License-Identifier: UNLICENSE
-pragma solidity 0.7.0;
-
+pragma solidity ^0.7.0;
 //SafeMath library for calculations.
 contract SafeMath {
     function safeAdd(uint a, uint b) internal pure returns (uint c){

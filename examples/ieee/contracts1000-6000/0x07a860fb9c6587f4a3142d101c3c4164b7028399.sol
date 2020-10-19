@@ -1,8 +1,7 @@
 // SPDX-License-Identifier: MIT
 // File: contracts/uniswapv2/interfaces/IUniswapV2Factory.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2Factory {
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
 
@@ -23,8 +22,7 @@ interface IUniswapV2Factory {
 
 // File: contracts/uniswapv2/libraries/SafeMath.sol
 
-pragma solidity =0.6.12;
-
+pragma solidity ^0.6.12;
 // a library for performing overflow-safe math, courtesy of DappHub (https://github.com/dapphub/ds-math)
 
 library SafeMathUniswap {
@@ -43,8 +41,7 @@ library SafeMathUniswap {
 
 // File: contracts/uniswapv2/UniswapV2ERC20.sol
 
-pragma solidity =0.6.12;
-
+pragma solidity ^0.6.12;
 
 contract UniswapV2ERC20 {
     using SafeMathUniswap for uint;
@@ -138,8 +135,7 @@ contract UniswapV2ERC20 {
 
 // File: contracts/uniswapv2/libraries/Math.sol
 
-pragma solidity =0.6.12;
-
+pragma solidity ^0.6.12;
 // a library for performing various math operations
 
 library Math {
@@ -164,8 +160,7 @@ library Math {
 
 // File: contracts/uniswapv2/libraries/UQ112x112.sol
 
-pragma solidity =0.6.12;
-
+pragma solidity ^0.6.12;
 // a library for handling binary fixed point numbers (https://en.wikipedia.org/wiki/Q_(number_format))
 
 // range: [0, 2**112 - 1]
@@ -187,8 +182,7 @@ library UQ112x112 {
 
 // File: contracts/uniswapv2/interfaces/IERC20.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IERC20Uniswap {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -207,16 +201,14 @@ interface IERC20Uniswap {
 
 // File: contracts/uniswapv2/interfaces/IUniswapV2Callee.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2Callee {
     function uniswapV2Call(address sender, uint amount0, uint amount1, bytes calldata data) external;
 }
 
 // File: contracts/uniswapv2/UniswapV2Pair.sol
 
-pragma solidity =0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -430,8 +422,7 @@ contract UniswapV2Pair is UniswapV2ERC20 {
 
 // File: contracts/uniswapv2/UniswapV2Factory.sol
 
-pragma solidity =0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 contract UniswapV2Factory is IUniswapV2Factory {

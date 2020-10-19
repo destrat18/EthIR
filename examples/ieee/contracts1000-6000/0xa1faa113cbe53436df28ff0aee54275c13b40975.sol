@@ -786,8 +786,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/distribution/AlphaToken.sol
 
-pragma solidity 0.6.11;
-
+pragma solidity ^0.6.11;
 
 
 /**

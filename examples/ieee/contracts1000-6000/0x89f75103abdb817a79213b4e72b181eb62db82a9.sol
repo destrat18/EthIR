@@ -798,8 +798,7 @@ contract Ownable is Context {
 
 // File: contracts/TRADETestToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

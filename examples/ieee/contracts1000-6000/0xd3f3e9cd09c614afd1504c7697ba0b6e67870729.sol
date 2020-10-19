@@ -1134,8 +1134,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/GoldMining.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -1380,8 +1379,7 @@ contract GoldMining is ERC20("GoldMining Token", "GMT"), Ownable {
 
 // File: contracts/MiningRig.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

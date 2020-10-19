@@ -13,8 +13,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-//pragma solidity >0.4.13;
-
+pragma solidity ^0.4.13;
 contract DSMath {
     function add(uint x, uint y) internal pure returns (uint z) {
         require((z = x + y) >= x, "ds-math-add-overflow");
@@ -100,8 +99,7 @@ contract DSMath {
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-//pragma solidity >=0.4.23;
-
+pragma solidity ^0.4.23;
 interface DSAuthority {
     function canCall(
         address src, address dst, bytes4 sig
@@ -171,8 +169,7 @@ contract DSAuth is DSAuthEvents {
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-//pragma solidity >=0.4.23;
-
+pragma solidity ^0.4.23;
 contract DSNote {
     event LogNote(
         bytes4   indexed  sig,
@@ -219,8 +216,7 @@ contract DSNote {
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-//pragma solidity >=0.4.23;
-
+pragma solidity ^0.4.23;
 //import 'ds-auth/auth.sol';
 //import 'ds-note/note.sol';
 //import 'ds-math/math.sol';
@@ -249,8 +245,7 @@ contract DSThing is DSAuth, DSNote, DSMath {
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-//pragma solidity >=0.4.23;
-
+pragma solidity ^0.4.23;
 //import 'ds-thing/thing.sol';
 
 contract DSValue is DSThing {

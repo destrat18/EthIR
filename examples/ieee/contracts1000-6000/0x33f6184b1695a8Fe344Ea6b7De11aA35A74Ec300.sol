@@ -93,8 +93,7 @@ library SafeERC20 {
     See the License for the specific language governing permissions and
     limitations under the License.
 */
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 // import { ISetToken } from "../interfaces/ISetToken.sol";
 
 interface ISetValuer {
@@ -117,8 +116,7 @@ interface ISetValuer {
     See the License for the specific language governing permissions and
     limitations under the License.
 */
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @title IPriceOracle
  * @author Set Protocol
@@ -149,8 +147,7 @@ interface IPriceOracle {
     See the License for the specific language governing permissions and
     limitations under the License.
 */
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 interface IIntegrationRegistry {
     function addIntegration(address _module, string memory _id, address _wrapper) external;
     function getIntegrationAdapter(address _module, string memory _id) external view returns(address);
@@ -174,8 +171,7 @@ interface IIntegrationRegistry {
     See the License for the specific language governing permissions and
     limitations under the License.
 */
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 /**
  * @title IModule
@@ -208,8 +204,7 @@ interface IModule {
     limitations under the License.
 */
 
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 // import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 // import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
 // import { SafeMath } from "@openzeppelin/contracts/math/SafeMath.sol";
@@ -447,8 +442,7 @@ abstract contract Context {
     limitations under the License.
 */
 
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 // import { IController } from "../../interfaces/IController.sol";
 // import { IIntegrationRegistry } from "../../interfaces/IIntegrationRegistry.sol";
 // import { IPriceOracle } from "../../interfaces/IPriceOracle.sol";
@@ -511,8 +505,7 @@ library ResourceIdentifier {
     limitations under the License.
 */
 
-// pragma solidity 0.6.10;
-// pragma experimental ABIEncoderV2;
+pragma solidity ^0.6.10;// pragma experimental ABIEncoderV2;
 
 // import { SafeMath } from "@openzeppelin/contracts/math/SafeMath.sol";
 // import { SignedSafeMath } from "@openzeppelin/contracts/math/SignedSafeMath.sol";
@@ -701,8 +694,7 @@ library PreciseUnitMath {
     limitations under the License.
 */
 
-// pragma solidity 0.6.10;
-// pragma experimental "ABIEncoderV2";
+pragma solidity ^0.6.10;// pragma experimental "ABIEncoderV2";
 
 // import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 // import { SafeCast } from "@openzeppelin/contracts/utils/SafeCast.sol";
@@ -974,8 +966,7 @@ library Position {
     limitations under the License.
 */
 
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 // import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 // import { ExplicitERC20 } from "../../lib/ExplicitERC20.sol";
@@ -1236,8 +1227,7 @@ interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 // import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 /**
@@ -1274,8 +1264,7 @@ interface IWETH is IERC20{
     See the License for the specific language governing permissions and
     limitations under the License.
 */
-// pragma solidity 0.6.10;
-// pragma experimental "ABIEncoderV2";
+pragma solidity ^0.6.10;// pragma experimental "ABIEncoderV2";
 
 // import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
@@ -1409,8 +1398,7 @@ interface ISetToken is IERC20 {
     limitations under the License.
 */
 
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 // import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 // import { SafeMath } from "@openzeppelin/contracts/math/SafeMath.sol";
 
@@ -1545,8 +1533,7 @@ library Invoke {
     See the License for the specific language governing permissions and
     limitations under the License.
 */
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 // import { ISetToken } from "./ISetToken.sol";
 
 interface INAVIssuanceHook {
@@ -1584,8 +1571,7 @@ interface INAVIssuanceHook {
     See the License for the specific language governing permissions and
     limitations under the License.
 */
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 interface IController {
     function addSet(address _setToken) external;
     function feeRecipient() external view returns(address);
@@ -1613,8 +1599,7 @@ interface IController {
     limitations under the License.
 */
 
-// pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @title AddressArrayUtils
  * @author Set Protocol
@@ -2563,8 +2548,7 @@ contract ERC20 is Context, IERC20 {
     limitations under the License.
 */
 
-pragma solidity 0.6.10;
-pragma experimental "ABIEncoderV2";
+pragma solidity ^0.6.10;pragma experimental "ABIEncoderV2";
 
 // import { ERC20 } from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 // import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";

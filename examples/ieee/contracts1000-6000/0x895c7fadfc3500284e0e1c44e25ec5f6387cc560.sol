@@ -1,5 +1,4 @@
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 contract Context {
     constructor () internal { }
     // solhint-disable-previous-line no-empty-blocks

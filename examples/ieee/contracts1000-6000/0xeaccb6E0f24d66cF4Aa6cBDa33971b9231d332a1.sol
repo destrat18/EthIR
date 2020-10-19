@@ -723,8 +723,7 @@ contract ERC20 is Context, IERC20 {
 // File: contracts/PGT.sol
 
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.4.22 <0.8.0;
-
+pragma solidity ^0.4.22;
 
 contract PGT is ERC20 {
 

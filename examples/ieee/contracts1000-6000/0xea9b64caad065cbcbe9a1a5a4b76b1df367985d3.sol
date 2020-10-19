@@ -1,5 +1,4 @@
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 interface IERC20 {
     /**
      * @dev Returns the amount of tokens in existence.

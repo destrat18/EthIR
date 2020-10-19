@@ -2,8 +2,7 @@
 
 //SPDX-License-Identifier: MIT
 
-// pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 library SushiHelper {
     function deposit(address masterChef, uint256 pid, uint256 amount) internal {
         (bool success, bytes memory data) = masterChef.call(abi.encodeWithSelector(0xe2bbb158, pid, amount));
@@ -57,8 +56,7 @@ library TransferHelper {
 // Dependency file: contracts/interface/IWasabi.sol
 
 //SPDX-License-Identifier: MIT
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IWasabi {
     function getOffer(address  _lpToken,  uint index) external view returns (address offer);
     function getOfferLength(address _lpToken) external view returns (uint length);
@@ -90,8 +88,7 @@ interface IWasabi {
 // Dependency file: contracts/interface/IERC20.sol
 
 //SPDX-License-Identifier: MIT
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -111,8 +108,7 @@ interface IERC20 {
 
 // Root file: contracts/WasabiGovernance.sol
 
-pragma solidity >=0.6.6;
-
+pragma solidity ^0.6.6;
 // import 'contracts/libraries/TransferHelper.sol';
 // import 'contracts/interface/IWasabi.sol';
 // import 'contracts/interface/IERC20.sol';

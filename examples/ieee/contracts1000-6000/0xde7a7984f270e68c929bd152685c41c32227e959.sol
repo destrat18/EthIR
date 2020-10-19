@@ -1121,8 +1121,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/EggToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -1367,8 +1366,7 @@ contract EggToken is ERC20("Eggy.Finance", "EGG"), Ownable {
 
 // File: contracts/MasterChef.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

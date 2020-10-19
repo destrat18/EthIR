@@ -27,8 +27,7 @@ SOFTWARE.
 
 */
 
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 /**
  * @title SafeMath
  * @dev Math operations with safety checks that revert on error

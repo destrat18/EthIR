@@ -1,8 +1,7 @@
 // File: contracts/interfaces/IERC20.sol
 
 // SPDX-License-Identifier: MIT
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -21,8 +20,7 @@ interface IERC20 {
 
 // File: contracts/interfaces/IOneSwapToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 interface IOneSwapBlackList {
     event OwnerChanged(address);
@@ -49,8 +47,7 @@ interface IOneSwapToken is IERC20, IOneSwapBlackList{
 
 // File: contracts/interfaces/IOneSwapGov.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 interface IOneSwapGov {
     event NewFundsProposal  (uint64 proposalID, string title, string desc, string url, uint32 deadline, address beneficiary, uint256 amount);
     event NewParamProposal  (uint64 proposalID, string title, string desc, string url, uint32 deadline, address factory, uint32 feeBPS);
@@ -79,8 +76,7 @@ interface IOneSwapGov {
 
 // File: contracts/interfaces/IOneSwapFactory.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 interface IOneSwapFactory {
     event PairCreated(address indexed pair, address stock, address money, bool isOnlySwap);
 
@@ -101,8 +97,7 @@ interface IOneSwapFactory {
 
 // File: contracts/OneSwapGov.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

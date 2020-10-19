@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.5.0 <=0.7.0;
-
+pragma solidity ^0.5.0;
 contract Owned {
     address public owner;
     address public nominatedOwner;

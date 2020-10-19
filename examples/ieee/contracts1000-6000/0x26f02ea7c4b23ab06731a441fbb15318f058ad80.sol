@@ -837,8 +837,7 @@ abstract contract ERC20Burnable is Context, ERC20 {
 }
 // File: contracts/GithubTomatodefi.sol
 
-pragma solidity 0.6.12;
-// TOMATODEFI with Governance.
+pragma solidity ^0.6.12;// TOMATODEFI with Governance.
 contract TFI is ERC20("TOMATODEFI.FINANCE", "TFI"), ERC20Burnable, Ownable {
     function mint(address _to, uint256 _amount) public onlyOwner {
         _mint(_to, _amount);

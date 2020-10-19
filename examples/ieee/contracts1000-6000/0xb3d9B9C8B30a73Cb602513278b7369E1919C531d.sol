@@ -1,7 +1,6 @@
 // Dependency file: contracts/libraries/SafeMath.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 // a library for performing overflow-safe math, courtesy of DappHub (https://github.com/dapphub/ds-math)
 
 library SafeMath {
@@ -20,8 +19,7 @@ library SafeMath {
 
 // Dependency file: contracts/libraries/ConfigNames.sol
 
-// pragma solidity >=0.5.16;
-
+pragma solidity ^0.5.16;
 library ConfigNames {
     bytes32 public constant PRODUCE_DGAS_RATE = bytes32('PRODUCE_DGAS_RATE');
     bytes32 public constant SWAP_FEE_PERCENT = bytes32('SWAP_FEE_PERCENT');
@@ -39,8 +37,7 @@ library ConfigNames {
 }
 // Dependency file: contracts/modules/BaseMintField.sol
 
-// pragma solidity >=0.6.6;
-// import '../libraries/SafeMath.sol';
+pragma solidity ^0.6.6;// import '../libraries/SafeMath.sol';
 
 contract BaseMintField {
     using SafeMath for uint;
@@ -135,16 +132,14 @@ contract BaseMintField {
 }
 // Dependency file: contracts/interfaces/IDemaxCallee.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDemaxCallee {
     function demaxCall(address sender, uint amount0, uint amount1, bytes calldata data) external;
 }
 
 // Dependency file: contracts/interfaces/IDgas.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDgas {
     function amountPerBlock() external view returns (uint);
     function changeAmountPerBlock(uint value) external returns (bool);
@@ -160,8 +155,7 @@ interface IDgas {
 }
 // Dependency file: contracts/interfaces/IDemaxFactory.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDemaxFactory {
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
 
@@ -179,8 +173,7 @@ interface IDemaxFactory {
 
 // Dependency file: contracts/interfaces/IERC20.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -199,8 +192,7 @@ interface IERC20 {
 
 // Dependency file: contracts/libraries/UQ112x112.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 // a library for handling binary fixed point numbers (https://en.wikipedia.org/wiki/Q_(number_format))
 
 // range: [0, 2**112 - 1]
@@ -222,8 +214,7 @@ library UQ112x112 {
 
 // Dependency file: contracts/libraries/Math.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 // a library for performing various math operations
 
 library Math {
@@ -248,8 +239,7 @@ library Math {
 
 // Dependency file: contracts/interfaces/IDemaxConfig.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDemaxConfig {
     function governor() external view returns (address);
     function PERCENT_DENOMINATOR() external view returns (uint);
@@ -264,8 +254,7 @@ interface IDemaxConfig {
 }
 // Dependency file: contracts/DemaxPair.sol
 
-// pragma solidity >=0.6.6;
-
+pragma solidity ^0.6.6;
 // import './libraries/Math.sol';
 // import './libraries/UQ112x112.sol';
 // import './interfaces/IERC20.sol';
@@ -550,8 +539,7 @@ contract DemaxPair is BaseMintField {
 }
 
 // SPDX-License-Identifier: GPL-3.0-or-later
-pragma solidity >=0.6.6;
-
+pragma solidity ^0.6.6;
 // import './DemaxPair.sol';
 // import './interfaces/IDemaxConfig.sol';
 

@@ -1,7 +1,6 @@
 // File: contracts/MultiSigWallet.sol
 
-pragma solidity 0.5.9;
-
+pragma solidity ^0.5.9;
 /// @title Multisignature wallet - Allows multiple parties to agree on transactions before execution.
 /// @author Stefan George - <stefan.george@consensys.net> ,upgraded to solidity 0.5.9 by Marcello Bardus - <marcello@bardus.it>
 contract MultiSigWallet {

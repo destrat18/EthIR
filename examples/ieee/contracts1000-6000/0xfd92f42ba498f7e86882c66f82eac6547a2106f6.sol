@@ -80,8 +80,7 @@ interface IERC20 {
 
 // File: contracts\interfaces\IUniswapV2Pair.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2Pair {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -135,8 +134,7 @@ interface IUniswapV2Pair {
 
 // File: contracts\interfaces\IUniswapV2Factory.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2Factory {
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
 
@@ -157,8 +155,7 @@ interface IUniswapV2Factory {
 
 // File: contracts\libraries\SafeMath.sol
 
-pragma solidity =0.6.12;
-
+pragma solidity ^0.6.12;
 // a library for performing overflow-safe math, courtesy of DappHub (https://github.com/dapphub/ds-math)
 
 library SafeMathUniswap {
@@ -177,8 +174,7 @@ library SafeMathUniswap {
 
 // File: contracts\libraries\UniswapV2Library.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 library UniswapV2Library {
@@ -261,8 +257,7 @@ library UniswapV2Library {
 // File: contracts\IVampireAdapter.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 interface IVampireAdapter {
     // Victim info
@@ -297,8 +292,7 @@ interface IVampireAdapter {
 // File: contracts\adapters\yfv\IValueMasterPool.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 interface IValueMasterPool{
     function poolInfo(uint256) external view returns (IERC20,uint256,uint256,uint256,bool);
@@ -312,8 +306,7 @@ interface IValueMasterPool{
 // File: contracts\adapters\yfv\YfvAdapter.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

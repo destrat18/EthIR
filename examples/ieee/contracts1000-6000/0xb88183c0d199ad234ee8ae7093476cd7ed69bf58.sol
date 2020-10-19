@@ -1,5 +1,4 @@
-pragma solidity 0.4.25;
-
+pragma solidity ^0.4.25;
 // File: contracts/contract_address_locator/interfaces/IContractAddressLocator.sol
 
 /**

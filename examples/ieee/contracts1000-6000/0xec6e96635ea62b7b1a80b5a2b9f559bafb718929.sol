@@ -568,8 +568,7 @@ library SafeERC20 {
 
 // Dependency file: @uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2Pair {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -624,8 +623,7 @@ interface IUniswapV2Pair {
 
 // Dependency file: contracts/libraries2/UniswapV2Library.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 // import '/Users/Roger/projects/ethereum/projects-my/20200919_waffle_flattener/node_modules/@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol';
 
 library UniswapV2Library {
@@ -658,8 +656,7 @@ library UniswapV2Library {
 
 // Dependency file: contracts/libraries2/Math.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 // a library for performing various math operations
 
 library Math {
@@ -681,8 +678,7 @@ library Math {
 
 // Dependency file: contracts/interfaces/IUniswapV2Router01.sol
 
-// pragma solidity >=0.6.2;
-
+pragma solidity ^0.6.2;
 interface IUniswapV2Router01 {
     function factory() external pure returns (address);
     function WETH() external pure returns (address);
@@ -780,8 +776,7 @@ interface IUniswapV2Router01 {
 
 // Dependency file: contracts/interfaces/IUniswapV2Router02.sol
 
-// pragma solidity >=0.6.2;
-
+pragma solidity ^0.6.2;
 // import 'contracts/interfaces/IUniswapV2Router01.sol';
 
 interface IUniswapV2Router02 is IUniswapV2Router01 {
@@ -828,8 +823,7 @@ interface IUniswapV2Router02 is IUniswapV2Router01 {
 
 // Dependency file: contracts/interfaces/IWETH.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IWETH {
     function deposit() external payable;
     function transfer(address to, uint value) external returns (bool);
@@ -840,8 +834,7 @@ interface IWETH {
 // Root file: contracts/UniswapV2AddLiquidityHelperV1.sol
 
 //SPDX-License-Identifier: MIT
-pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 // import "@openzeppelin/contracts/access/Ownable.sol";
 // import "@openzeppelin/contracts/math/SafeMath.sol";
 // import "@openzeppelin/contracts/token/ERC20/IERC20.sol";

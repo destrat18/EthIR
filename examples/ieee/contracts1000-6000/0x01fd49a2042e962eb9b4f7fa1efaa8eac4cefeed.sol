@@ -1,5 +1,4 @@
-pragma solidity 0.4.25;
-
+pragma solidity ^0.4.25;
 /**
 *
 * Finplether is a financial hedging instrument to mitigate any cryptocurrency risks.

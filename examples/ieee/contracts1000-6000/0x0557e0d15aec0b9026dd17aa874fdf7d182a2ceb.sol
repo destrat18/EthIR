@@ -1,5 +1,4 @@
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 /**
  * @title ERC20Basic
  * @dev Simpler version of ERC20 interface

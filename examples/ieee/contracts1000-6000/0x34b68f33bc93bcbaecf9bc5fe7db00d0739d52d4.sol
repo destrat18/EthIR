@@ -1,7 +1,6 @@
 // File: contracts/lib/UInt256Lib.sol
 
-pragma solidity >=0.4.24;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Various utilities useful for uint256.
@@ -49,8 +48,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-pragma solidity >=0.4.24;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title SafeMathInt
@@ -132,8 +130,7 @@ library SafeMathInt {
 
 // File: contracts/interface/ISeigniorageShares.sol
 
-pragma solidity >=0.4.24;
-
+pragma solidity ^0.4.24;
 
 interface ISeigniorageShares {
     function setDividendPoints(address account, uint256 totalDividends) external returns (bool);
@@ -214,8 +211,7 @@ library SafeMath {
 
 // File: zos-lib/contracts/Initializable.sol
 
-pragma solidity >=0.4.24 <0.6.0;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Initializable
@@ -447,8 +443,7 @@ contract Ownable is Initializable {
 
 // File: contracts/dollars.sol
 
-pragma solidity >=0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 

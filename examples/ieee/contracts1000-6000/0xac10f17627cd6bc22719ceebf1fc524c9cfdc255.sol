@@ -1,8 +1,7 @@
 // File: contracts\sakeswap\libraries\SafeMath.sol
 
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity =0.6.12;
-
+pragma solidity ^0.6.12;
 // a library for performing overflow-safe math, courtesy of DappHub (https://github.com/dapphub/ds-math)
 
 library SafeMath {
@@ -21,8 +20,7 @@ library SafeMath {
 
 // File: contracts\sakeswap\SakeSwapERC20.sol
 
-pragma solidity =0.6.12;
-
+pragma solidity ^0.6.12;
 
 contract SakeSwapERC20 {
     using SafeMath for uint;
@@ -116,8 +114,7 @@ contract SakeSwapERC20 {
 
 // File: contracts\sakeswap\libraries\Math.sol
 
-pragma solidity =0.6.12;
-
+pragma solidity ^0.6.12;
 // a library for performing various math operations
 
 library Math {
@@ -142,8 +139,7 @@ library Math {
 
 // File: contracts\sakeswap\libraries\UQ112x112.sol
 
-pragma solidity =0.6.12;
-
+pragma solidity ^0.6.12;
 // a library for handling binary fixed point numbers (https://en.wikipedia.org/wiki/Q_(number_format))
 
 // range: [0, 2**112 - 1]
@@ -165,8 +161,7 @@ library UQ112x112 {
 
 // File: contracts\sakeswap\interfaces\IERC20.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -187,8 +182,7 @@ interface IERC20 {
 
 // File: contracts\sakeswap\interfaces\ISakeSwapFactory.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface ISakeSwapFactory {
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
 
@@ -209,16 +203,14 @@ interface ISakeSwapFactory {
 
 // File: contracts\sakeswap\interfaces\ISakeSwapCallee.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface ISakeSwapCallee {
     function SakeSwapCall(address sender, uint amount0, uint amount1, bytes calldata data) external;
 }
 
 // File: contracts\sakeswap\interfaces\ISakeSwapPair.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface ISakeSwapPair {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -280,8 +272,7 @@ interface ISakeSwapPair {
 
 // File: contracts\sakeswap\SakeSwapSlippageToken.sol
 
-pragma solidity =0.6.12;
-
+pragma solidity ^0.6.12;
 
 contract SakeSwapSlippageToken {
     using SafeMath for uint;
@@ -361,8 +352,7 @@ contract SakeSwapSlippageToken {
 
 // File: contracts\sakeswap\SakeSwapPair.sol
 
-pragma solidity =0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

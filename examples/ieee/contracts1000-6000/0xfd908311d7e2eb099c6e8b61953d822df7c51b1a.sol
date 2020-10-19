@@ -2,8 +2,7 @@
  *Submitted for verification at Etherscan.io on 2020-09-14
 */
 
-pragma solidity 0.6.4;
-library SafeMath {
+pragma solidity ^0.6.4;library SafeMath {
     /**
      * @dev Returns the addition of two unsigned integers, reverting on
      * overflow.

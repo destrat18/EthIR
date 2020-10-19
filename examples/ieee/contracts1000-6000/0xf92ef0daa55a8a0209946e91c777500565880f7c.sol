@@ -1,5 +1,4 @@
-pragma solidity 0.6.9;
-
+pragma solidity ^0.6.9;
 library SafeMath {
     /**
      * @dev Returns the addition of two unsigned integers, reverting on

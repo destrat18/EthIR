@@ -238,8 +238,7 @@ interface IERC20 {
 
 // File: contracts/tokens/EIP20NonStandardInterface.sol
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 /// @title EIP20NonStandardInterface
 /// @dev Version of ERC20 with no return values for `transfer` and `transferFrom`
 /// See https://medium.com/coinmonks/missing-return-value-bug-at-least-130-tokens-affected-d67bf08521ca
@@ -296,8 +295,7 @@ interface EIP20NonStandardInterface {
 
 // File: contracts/IDerivativeSpecification.sol
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 /// @title Derivative Specification interface
 /// @notice Immutable collection of derivative attributes
 /// @dev Created by the derivative's author and published to the DerivativeSpecificationRegistry
@@ -379,8 +377,7 @@ interface IDerivativeSpecification {
 
 // File: contracts/collateralSplits/ICollateralSplit.sol
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 /// @title Collateral Split interface
 /// @notice Contains mathematical functions used to calculate relative claim
 /// on collateral of primary and complement assets after settlement.
@@ -416,8 +413,7 @@ interface ICollateralSplit {
 
 // File: contracts/tokens/IERC20MintedBurnable.sol
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 
 interface IERC20MintedBurnable is IERC20 {
     function mint(address to, uint256 amount) external;
@@ -427,8 +423,7 @@ interface IERC20MintedBurnable is IERC20 {
 
 // File: contracts/tokens/ITokenBuilder.sol
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 
 
 interface ITokenBuilder {
@@ -438,16 +433,14 @@ interface ITokenBuilder {
 
 // File: contracts/IFeeLogger.sol
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 interface IFeeLogger {
     function log(address _liquidityProvider, address _collateral, uint _protocolFee, address _author) external;
 }
 
 // File: contracts/Vault.sol
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 /// @title Derivative implementation Vault
 /// @notice A smart contract that references derivative specification and enables users to mint and redeem the derivative
 contract Vault {
@@ -806,8 +799,7 @@ contract Vault {
 
 // File: contracts/IVaultBuilder.sol
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 
 interface IVaultBuilder {
     function buildVault(
@@ -829,8 +821,7 @@ interface IVaultBuilder {
 
 // "SPDX-License-Identifier: GNU General Public License v3.0"
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 contract VaultBuilder is IVaultBuilder{
     function buildVault(
         uint _initializationTime,

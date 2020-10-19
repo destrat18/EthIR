@@ -1119,8 +1119,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/SushiToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -1365,8 +1364,7 @@ contract SushiToken is ERC20("SushiToken", "SUSHI"), Ownable {
 
 // File: contracts/MasterChef.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

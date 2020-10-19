@@ -6,8 +6,7 @@
 Frontier Contracts
 */
 
-pragma solidity 0.6.2;
-
+pragma solidity ^0.6.2;
 
 // SPDX-License-Identifier: MIT
 /*

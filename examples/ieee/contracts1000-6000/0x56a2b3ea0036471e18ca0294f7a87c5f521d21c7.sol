@@ -865,8 +865,7 @@ contract ERC20Pausable is ERC20, Pausable {
 
 // File: contracts\IDF.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract IDF is ERC20Detailed, ERC20Capped, ERC20Pausable {
     constructor()

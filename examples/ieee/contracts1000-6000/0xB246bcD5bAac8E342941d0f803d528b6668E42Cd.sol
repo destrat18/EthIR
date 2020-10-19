@@ -58,8 +58,7 @@ Forked from SushiSwap project, YAM and UNI
 // SPDX-License-Identifier: MIT
 
 // File: @openzeppelin/contracts/token/ERC20/IERC20.sol
-pragma solidity 0.7.1;
-
+pragma solidity ^0.7.1;
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
  */
@@ -94,8 +93,7 @@ interface IERC20 {
 
 // File: @openzeppelin/contracts/math/SafeMath.sol
 
-pragma solidity 0.7.1;
-
+pragma solidity ^0.7.1;
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
  * checks.
@@ -224,8 +222,7 @@ library SafeMath {
 
 
 
-pragma solidity 0.7.1;
-
+pragma solidity ^0.7.1;
 /**
  * @dev Collection of functions related to the address type
  */
@@ -316,8 +313,7 @@ library Address {
 
 // File: @openzeppelin/contracts/token/ERC20/SafeERC20.sol
 
-pragma solidity 0.7.1;
-
+pragma solidity ^0.7.1;
 /**
  * @title SafeERC20
  * @dev Wrappers around ERC20 operations that throw on failure (when the token
@@ -361,8 +357,7 @@ library SafeERC20 {
 
 // File: @openzeppelin/contracts/GSN/Context.sol
 
-pragma solidity 0.7.1;
-
+pragma solidity ^0.7.1;
 /*
  * @dev Provides information about the current execution context, including the
  * sender of the transaction and its data. While these are generally available
@@ -382,8 +377,7 @@ abstract contract Context {
 
 // File: @openzeppelin/contracts/access/Ownable.sol
 
-pragma solidity 0.7.1;
-
+pragma solidity ^0.7.1;
 /**
  * @dev Contract module which provides a basic access control mechanism, where
  * there is an account (an owner) that can be granted exclusive access to
@@ -451,8 +445,7 @@ abstract contract Ownable is Context {
 
 // File: contracts/UniCat.sol
 
-pragma solidity 0.7.1;
-
+pragma solidity ^0.7.1;
 interface UniCat {
     
     function mint(address dst, uint rawAmount) external;
@@ -463,8 +456,7 @@ interface UniCat {
 }
 // File: contracts/UniCatFarm.sol
 
-pragma solidity 0.7.1;
-
+pragma solidity ^0.7.1;
 
 // UniCatFarm is the master of MEOW. He can make MEOW and he is a fair cat.
 //

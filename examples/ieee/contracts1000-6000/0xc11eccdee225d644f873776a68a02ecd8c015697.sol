@@ -7,8 +7,7 @@
 
 */
 
-pragma solidity 0.6.9;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.6.9;pragma experimental ABIEncoderV2;
 
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.

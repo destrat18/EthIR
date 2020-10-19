@@ -35,8 +35,7 @@
 
 // File: @openzeppelin/contracts/math/Math.sol
 
-pragma solidity 0.5.15;
-
+pragma solidity ^0.5.15;
 /**
  * @dev Standard math utilities missing in the Solidity language.
  */
@@ -67,8 +66,7 @@ library Math {
 
 // File: @openzeppelin/contracts/math/SafeMath.sol
 
-pragma solidity 0.5.15;
-
+pragma solidity ^0.5.15;
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
  * checks.
@@ -226,8 +224,7 @@ library SafeMath {
 
 // File: @openzeppelin/contracts/GSN/Context.sol
 
-pragma solidity 0.5.15;
-
+pragma solidity ^0.5.15;
 /*
  * @dev Provides information about the current execution context, including the
  * sender of the transaction and its data. While these are generally available
@@ -256,8 +253,7 @@ contract Context {
 
 // File: @openzeppelin/contracts/ownership/Ownable.sol
 
-pragma solidity 0.5.15;
-
+pragma solidity ^0.5.15;
 /**
  * @dev Contract module which provides a basic access control mechanism, where
  * there is an account (an owner) that can be granted exclusive access to
@@ -334,8 +330,7 @@ contract Ownable is Context {
 
 // File: @openzeppelin/contracts/token/ERC20/IERC20.sol
 
-pragma solidity 0.5.15;
-
+pragma solidity ^0.5.15;
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP. Does not include
  * the optional functions; to access them see {ERC20Detailed}.
@@ -414,8 +409,7 @@ interface IERC20 {
 
 // File: @openzeppelin/contracts/utils/Address.sol
 
-pragma solidity 0.5.15;
-
+pragma solidity ^0.5.15;
 /**
  * @dev Collection of functions related to the address type
  */
@@ -485,8 +479,7 @@ library Address {
 
 // File: @openzeppelin/contracts/token/ERC20/SafeERC20.sol
 
-pragma solidity 0.5.15;
-
+pragma solidity ^0.5.15;
 
 
 
@@ -562,8 +555,7 @@ library SafeERC20 {
 
 // File: contracts/IRewardDistributionRecipient.sol
 
-pragma solidity 0.5.15;
-
+pragma solidity ^0.5.15;
 
 
 contract IRewardDistributionRecipient is Ownable {
@@ -586,8 +578,7 @@ contract IRewardDistributionRecipient is Ownable {
 
 // File: contracts/CurveRewards.sol
 
-pragma solidity 0.5.15;
-
+pragma solidity ^0.5.15;
 
 
 

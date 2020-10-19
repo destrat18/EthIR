@@ -1,5 +1,4 @@
-pragma solidity 0.5.0;
-
+pragma solidity ^0.5.0;
 // File: @openzeppelin/upgrades/contracts/upgradeability/Proxy.sol
 
 pragma solidity ^0.5.0;

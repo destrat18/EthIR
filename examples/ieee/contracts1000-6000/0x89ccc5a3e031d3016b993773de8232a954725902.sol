@@ -1,7 +1,6 @@
 // File: contracts/IERC20.sol
 
-pragma solidity >=0.6 <0.7.0;
-
+pragma solidity ^0.6;
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
  */
@@ -78,8 +77,7 @@ interface IERC20 {
 
 // File: contracts/utils/SafeMath.sol
 
-pragma solidity >=0.6 <0.7.0;
-
+pragma solidity ^0.6;
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
  * checks.

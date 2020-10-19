@@ -1,5 +1,4 @@
-pragma solidity 0.4.25;
-
+pragma solidity ^0.4.25;
 // File: contracts/wallet_trading_limiter/interfaces/IWalletsTradingLimiter.sol
 
 /**

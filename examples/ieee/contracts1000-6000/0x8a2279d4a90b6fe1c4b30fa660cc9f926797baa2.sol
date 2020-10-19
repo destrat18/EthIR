@@ -339,8 +339,7 @@ contract ERC20Detailed is IERC20 {
 
 // Copyright (C) Chromapolis Devcenter OU 2019
 
-pragma solidity 0.5.8;
-
+pragma solidity ^0.5.8;
 
 
 contract Chromia is ERC20, ERC20Detailed {

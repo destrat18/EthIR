@@ -6,8 +6,7 @@
 //        \/_/\/_/\/_____/  \/_/  \/___/  \/_/\/ /
 // ASTER PROJECT - ASTER-6H 
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 library SafeMath {
    
     function add(uint256 a, uint256 b) internal pure returns (uint256) {

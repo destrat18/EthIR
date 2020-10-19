@@ -711,8 +711,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/acoconut/IPoolToken.sol
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 /**
  * @notice Interface for the pool token.
  */
@@ -725,8 +724,7 @@ interface IPoolToken is IERC20 {
 
 // File: contracts/acoconut/ACoconutBTC.sol
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 /**
  * @dev ACoconut BTC token.
  */

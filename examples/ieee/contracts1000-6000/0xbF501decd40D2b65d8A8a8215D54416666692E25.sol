@@ -5,8 +5,7 @@
  * @dev The Ownable contract has an owner address, and provides basic authorization control
  * functions, this simplifies the implementation of "user permissions".
  */
-pragma solidity 0.5.12;
- 
+pragma solidity ^0.5.12; 
  
 contract Ownable {
   address public owner;
@@ -68,8 +67,7 @@ contract Ownable {
  * @dev Simpler version of ERC20 interface
  * @dev see https://github.com/ethereum/EIPs/issues/179
  */
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 contract ERC20Basic {
   uint256 public totalSupply;
@@ -84,8 +82,7 @@ contract ERC20Basic {
  * @title ERC20 interface
  * @dev see https://github.com/ethereum/EIPs/issues/20
  */
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 contract ERC20 is ERC20Basic {
@@ -101,8 +98,7 @@ contract ERC20 is ERC20Basic {
  * @title SafeMath
  * @dev Math operations with safety checks that throw on error
  */
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 library SafeMath {
   function mul(uint256 a, uint256 b) internal pure returns (uint256) {
@@ -136,8 +132,7 @@ library SafeMath {
  * @title Basic token
  * @dev Basic version of StandardToken, with no allowances.
  */
- pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 
@@ -179,8 +174,7 @@ contract BasicToken is ERC20Basic {
  * @dev Implementation of the basic standard token.
  * @dev https://github.com/ethereum/EIPs/issues/20
  */
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 
@@ -265,8 +259,7 @@ contract StandardToken is ERC20, BasicToken {
 
 // File: @openzeppelin/upgrades/contracts/Initializable.sol
 
-pragma solidity >=0.4.24 <0.7.0;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Initializable
@@ -330,8 +323,7 @@ contract Initializable {
 
 // File: contracts/WOMToken.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 

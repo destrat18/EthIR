@@ -162,8 +162,7 @@ library SafeMath {
 
 // File: contracts/token/DMCTokenStorage.sol
 
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 
 // Storage for a DMC token
 contract DMCTokenStorage {
@@ -212,8 +211,7 @@ contract DMCTokenStorage {
 
 // File: contracts/token/DMCGovernanceStorage.sol
 
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 contract DMCGovernanceStorage {
     /// @notice A record of each accounts delegate
     mapping (address => address) internal _delegates;
@@ -242,8 +240,7 @@ contract DMCGovernanceStorage {
 
 // File: contracts/token/DMCTokenInterface.sol
 
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 
 
 contract DMCTokenInterface is DMCTokenStorage, DMCGovernanceStorage {
@@ -306,8 +303,7 @@ contract DMCTokenInterface is DMCTokenStorage, DMCGovernanceStorage {
 
 // File: contracts/token/DMCGovernance.sol
 
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 contract DMCGovernanceToken is DMCTokenInterface {
 
       /// @notice An event thats emitted when an account changes its delegate
@@ -513,8 +509,7 @@ contract DMCGovernanceToken is DMCTokenInterface {
 
 // File: contracts/token/DMC.sol
 
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 
 contract DMCToken is DMCGovernanceToken {
     // Modifiers
@@ -758,8 +753,7 @@ contract DMC is DMCToken {
 
 // File: contracts/token/DMCDelegate.sol
 
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 
 contract DMCDelegationStorage {
     /**
@@ -835,8 +829,7 @@ contract DMCDelegate is DMC, DMCDelegateInterface {
 
 // File: contracts/token/DMCDelegator.sol
 
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 
 
 contract DMCDelegator is DMCTokenInterface, DMCDelegatorInterface {

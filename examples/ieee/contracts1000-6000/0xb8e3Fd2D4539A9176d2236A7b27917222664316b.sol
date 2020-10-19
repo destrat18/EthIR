@@ -1,5 +1,4 @@
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface IERC20 {
     function totalSupply() external view returns (uint);
     function balanceOf(address account) external view returns (uint);
@@ -225,8 +224,7 @@ library SafeERC20 {
 /**
  * AVO Token
  */
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 contract AVO is ERC20, ERC20Detailed {
     using SafeERC20 for IERC20;
     using Address for address;

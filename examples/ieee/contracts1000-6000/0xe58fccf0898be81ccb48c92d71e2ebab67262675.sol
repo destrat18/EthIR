@@ -1,5 +1,4 @@
-pragma solidity >=0.5.0 <0.6.0;
-
+pragma solidity ^0.5.0;
 /**
  * @title ERC20 interface
  * @dev see https://eips.ethereum.org/EIPS/eip-20

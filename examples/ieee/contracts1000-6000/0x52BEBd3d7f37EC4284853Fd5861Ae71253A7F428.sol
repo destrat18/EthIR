@@ -1,5 +1,4 @@
-pragma solidity >=0.4.24 <0.7.0;
-/*
+pragma solidity ^0.4.24;/*
  * Origin Protocol
  * https://originprotocol.com
  *

@@ -1,7 +1,6 @@
 // Dependency file: contracts/libraries/SafeMath.sol
 
-// pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 // a library for performing overflow-safe math, courtesy of DappHub (https://github.com/dapphub/ds-math)
 
 library SafeMath {
@@ -20,8 +19,7 @@ library SafeMath {
 
 // Dependency file: contracts/modules/Upgradable.sol
 
-// pragma solidity >=0.5.16;
-
+pragma solidity ^0.5.16;
 contract UpgradableProduct {
     address public impl;
 
@@ -70,8 +68,7 @@ contract UpgradableGovernance {
 
 // Dependency file: contracts/modules/ERC20Token.sol
 
-// pragma solidity >=0.5.16;
-
+pragma solidity ^0.5.16;
 // import '../libraries/SafeMath.sol';
 
 contract ERC20Token {
@@ -120,8 +117,7 @@ contract ERC20Token {
 // Dependency file: contracts/modules/MintToken.sol
 
 // SPDX-License-Identifier: GPL-3.0-or-later
-// pragma solidity >=0.5.16;
-
+pragma solidity ^0.5.16;
 // import './ERC20Token.sol';
 // import './Upgradable.sol';
 
@@ -312,8 +308,7 @@ contract MintToken is ERC20Token, UpgradableProduct, UpgradableGovernance {
     }
 }
 
-pragma solidity >=0.5.16;
-
+pragma solidity ^0.5.16;
 // import './modules/MintToken.sol';
 
 contract Dgas is MintToken {

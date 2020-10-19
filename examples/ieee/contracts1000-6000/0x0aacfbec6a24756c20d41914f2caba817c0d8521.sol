@@ -1,5 +1,4 @@
-pragma solidity 0.5.15;
-
+pragma solidity ^0.5.15;
 
 // YAM v3 Token Proxy
 

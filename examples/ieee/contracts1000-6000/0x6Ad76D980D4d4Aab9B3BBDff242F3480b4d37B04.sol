@@ -1,5 +1,4 @@
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
  * checks.
@@ -169,8 +168,7 @@ library SafeMath {
 // Ctrl+f for XXX to see all the modifications.
 
 // XXX: pragma solidity ^0.5.16;
-//pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 // XXX: import "./SafeMath.sol";
 
 

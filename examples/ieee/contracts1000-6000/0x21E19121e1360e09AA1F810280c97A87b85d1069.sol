@@ -795,8 +795,7 @@ contract Ownable is Context {
 }
 
 //SPDX-License-Identifier: MIT
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 // GriffinToken with Governance.
 contract GriffinToken is ERC20("GriffinToken", "GFIN"), Ownable {
     /// @notice Creates `_amount` token to `_to`. Must only be called by the owner (Arimaspian).

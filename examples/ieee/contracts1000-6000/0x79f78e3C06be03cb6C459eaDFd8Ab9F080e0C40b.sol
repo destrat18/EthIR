@@ -1,8 +1,7 @@
 // File: contracts/upgradeability/Proxy.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 /**
  * @notice Implements delegation of calls to other contracts, with proper
  * forwarding of return values and bubbling of failures.
@@ -226,8 +225,7 @@ library Address {
 // File: contracts/upgradeability/UpgradeabilityProxy.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 /**
@@ -308,8 +306,7 @@ contract UpgradeabilityProxy is Proxy {
 // File: contracts/upgradeability/AdminUpgradeabilityProxy.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 /**
  * @notice This contract combines an upgradeability proxy with an authorization
@@ -460,8 +457,7 @@ contract AdminUpgradeabilityProxy is UpgradeabilityProxy {
 // File: contracts/v1/FiatTokenProxy.sol
 
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 /**
  * @title FiatTokenProxy

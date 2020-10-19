@@ -684,8 +684,7 @@ contract EthFighterAccessControls is AccessControl {
 
 // File: contracts/EthFighterCharacterDefinitionRegistry.sol
 
-pragma solidity 0.6.11;
-
+pragma solidity ^0.6.11;
 
 contract EthFighterCharacterDefinitionRegistry {
 

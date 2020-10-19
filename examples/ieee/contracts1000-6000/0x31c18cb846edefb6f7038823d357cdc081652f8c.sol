@@ -1,8 +1,7 @@
 // SPDX-License-Identifier: MIT
 // File: contracts/proxy/Proxy.sol
 
-pragma solidity >=0.6 <0.7.0;
-
+pragma solidity ^0.6;
 /**
  * @title Proxy
  * @dev Implements delegation of calls to other contracts, with proper
@@ -80,8 +79,7 @@ abstract contract Proxy {
 
 // File: contracts/proxy/UpgradeableProxy.sol
 
-pragma solidity >=0.6 <0.7.0;
-
+pragma solidity ^0.6;
 
 /**
  * @title UpgradeableProxy
@@ -188,8 +186,7 @@ contract UpgradeableProxy is Proxy {
 
 // File: contracts/proxy/ManagedProxy.sol
 
-pragma solidity >=0.6 <0.7.0;
-
+pragma solidity ^0.6;
 
 /**
  * @title ManagedProxy
@@ -327,8 +324,7 @@ contract ManagedProxy is UpgradeableProxy {
 
 // File: contracts/YFIBM.sol
 
-pragma solidity >=0.6.0 <0.7.0;
-
+pragma solidity ^0.6.0;
 
 /**
  * @dev Implementation of the {IERC20} interface.

@@ -798,8 +798,7 @@ contract Ownable is Context {
 
 // File: contracts/HotdogFiClub.sol
 
-pragma solidity 0.6.2;
-
+pragma solidity ^0.6.2;
 
 
 

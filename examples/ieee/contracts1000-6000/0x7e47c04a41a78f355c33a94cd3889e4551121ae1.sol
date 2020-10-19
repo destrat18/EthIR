@@ -1,9 +1,7 @@
 // hevm: flattened sources of src/DssSpell.sol
-pragma solidity =0.5.12 >0.4.13 >=0.4.23 >=0.5.12;
-
+pragma solidity ^0.5.12;
 ////// lib/dss-interfaces/src/dapp/DSPauseAbstract.sol
-/* pragma solidity >=0.5.12; */
-
+pragma solidity ^0.5.12;
 // https://github.com/dapphub/ds-pause
 interface DSPauseAbstract {
     function setOwner(address) external;
@@ -18,8 +16,7 @@ interface DSPauseAbstract {
 }
 
 ////// lib/dss-interfaces/src/dss/JugAbstract.sol
-/* pragma solidity >=0.5.12; */
-
+pragma solidity ^0.5.12;
 // https://github.com/makerdao/dss/blob/master/src/jug.sol
 interface JugAbstract {
     function wards(address) external view returns (uint256);
@@ -37,8 +34,7 @@ interface JugAbstract {
 }
 
 ////// lib/dss-interfaces/src/dss/MedianAbstract.sol
-/* pragma solidity >=0.5.12; */
-
+pragma solidity ^0.5.12;
 // https://github.com/makerdao/median
 interface MedianAbstract {
     function wards(address) external view returns (uint256);
@@ -63,8 +59,7 @@ interface MedianAbstract {
 }
 
 ////// lib/dss-interfaces/src/dss/SpotAbstract.sol
-/* pragma solidity >=0.5.12; */
-
+pragma solidity ^0.5.12;
 // https://github.com/makerdao/dss/blob/master/src/spot.sol
 interface SpotAbstract {
     function wards(address) external view returns (uint256);
@@ -82,8 +77,7 @@ interface SpotAbstract {
 }
 
 ////// lib/dss-interfaces/src/dss/VatAbstract.sol
-/* pragma solidity >=0.5.12; */
-
+pragma solidity ^0.5.12;
 // https://github.com/makerdao/dss/blob/master/src/vat.sol
 interface VatAbstract {
     function wards(address) external view returns (uint256);
@@ -132,8 +126,7 @@ interface VatAbstract {
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-/* pragma solidity 0.5.12; */
-
+pragma solidity ^0.5.12;
 /* import "lib/dss-interfaces/src/dapp/DSPauseAbstract.sol"; */
 
 /* import "lib/dss-interfaces/src/dss/JugAbstract.sol"; */

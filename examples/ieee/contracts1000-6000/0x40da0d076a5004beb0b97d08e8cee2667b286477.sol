@@ -110,8 +110,7 @@ library SafeMath {
 
 // File: browser/ReserveBuyBackManager.sol
 
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 
 /// @title ReserveBuyBack Limit
 /// @author github:AugustoL

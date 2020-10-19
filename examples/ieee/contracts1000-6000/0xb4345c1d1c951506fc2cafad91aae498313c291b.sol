@@ -1,5 +1,4 @@
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 contract MolochMysticsMagick { // based on GAMMA nft - 0xeF0ff94B152C00ED4620b149eE934f2F4A526387
     address public mystic;
     uint256 public totalSupply;

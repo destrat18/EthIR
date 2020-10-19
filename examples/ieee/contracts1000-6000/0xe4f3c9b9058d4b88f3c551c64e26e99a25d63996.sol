@@ -432,8 +432,7 @@ contract ERC165 is IERC165 {
 
 // File @animoca/ethereum-contracts-assets_inventory/contracts/token/ERC1155/IERC1155TokenReceiver.sol@v5.0.0
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 /**
  * @title ERC-1155 Multi Token Standard, token receiver
  * @dev See https://eips.ethereum.org/EIPS/eip-1155
@@ -488,8 +487,7 @@ interface IERC1155TokenReceiver {
 
 // File @animoca/ethereum-contracts-assets_inventory/contracts/token/ERC1155/ERC1155TokenReceiver.sol@v5.0.0
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 
 abstract contract ERC1155TokenReceiver is IERC1155TokenReceiver, ERC165 {

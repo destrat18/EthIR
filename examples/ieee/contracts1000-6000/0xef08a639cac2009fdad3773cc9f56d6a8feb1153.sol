@@ -1,7 +1,6 @@
 // File: contracts/Storage.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 contract Storage {
 
   address public governance;
@@ -37,8 +36,7 @@ contract Storage {
 
 // File: contracts/Governable.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract Governable {
 
@@ -454,8 +452,7 @@ library SafeERC20 {
 
 // File: contracts/hardworkInterface/IRewardPool.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 // Unifying the interface with the Synthetix Reward Pool 
 interface IRewardPool {
@@ -490,8 +487,7 @@ interface IRewardPool {
 
 // File: contracts/uniswap/interfaces/IUniswapV2Router01.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2Router01 {
     function factory() external pure returns (address);
     function WETH() external pure returns (address);
@@ -588,8 +584,7 @@ interface IUniswapV2Router01 {
 
 // File: contracts/uniswap/interfaces/IUniswapV2Router02.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 interface IUniswapV2Router02 {
     function factory() external pure returns (address);
@@ -726,8 +721,7 @@ interface IUniswapV2Router02 {
 
 // File: contracts/FeeRewardForwarder.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

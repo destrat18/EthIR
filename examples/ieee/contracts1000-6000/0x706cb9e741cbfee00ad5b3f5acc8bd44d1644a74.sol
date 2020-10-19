@@ -1,5 +1,4 @@
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
     // Telegram News : https://t.me/YFOX_Announcement
     // Twitter : https://twitter.com/yfoxfinance
     // Website : https://yfox.finance

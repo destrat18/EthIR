@@ -1,7 +1,6 @@
 // File: contracts/CloneFactory.sol
 
-pragma solidity 0.6.2;
-
+pragma solidity ^0.6.2;
 contract CloneFactory {
 
     function createClone(address target) internal returns (address result) {
@@ -725,8 +724,7 @@ contract Identity is ERC734, IIdentity {
 
 // File: contracts/IdentityFactory.sol
 
-pragma solidity 0.6.2;
-
+pragma solidity ^0.6.2;
 contract IdentityFactory is CloneFactory {
     address public libraryAddress;
 

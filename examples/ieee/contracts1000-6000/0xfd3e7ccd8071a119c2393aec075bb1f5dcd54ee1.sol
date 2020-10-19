@@ -895,8 +895,7 @@ contract ERC20Burnable is Context, ERC20 {
 
 // File: contracts\IDF.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

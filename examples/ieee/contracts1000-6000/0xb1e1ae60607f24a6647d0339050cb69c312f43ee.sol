@@ -6,8 +6,7 @@
  *Submitted for verification at Etherscan.io on 2020-08-25
 */
 
-pragma solidity >= 0.5.0 < 0.7.0;
-
+pragma solidity ^0.5.0;
 
 /// @title IProxy - Helper interface to access masterCopy of the Proxy on-chain
 /// @author Richard Meissner - <richard@gnosis.io>

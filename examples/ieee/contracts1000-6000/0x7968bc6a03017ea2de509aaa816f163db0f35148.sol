@@ -714,8 +714,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/HedgetToken.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 contract HedgetToken is ERC20 {
     address private _minter;

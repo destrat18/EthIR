@@ -1,7 +1,6 @@
 // Dependency file: contracts/modules/Governable.sol
 
-// pragma solidity >=0.5.16;
-
+pragma solidity ^0.5.16;
 contract Governable {
     address public governor;
 
@@ -35,8 +34,7 @@ contract Governable {
 
 // Dependency file: contracts/modules/Ownable.sol
 
-// pragma solidity >=0.5.16;
-
+pragma solidity ^0.5.16;
 contract Ownable {
     address public owner;
 
@@ -61,8 +59,7 @@ contract Ownable {
 
 // Dependency file: contracts/modules/TokenRegistry.sol
 
-// pragma solidity >=0.5.16;
-
+pragma solidity ^0.5.16;
 // import './Governable.sol';
 
 /**
@@ -176,8 +173,7 @@ contract TokenRegistry is Governable {
 
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-// pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 // helper methods for interacting with ERC20 tokens and sending ETH that do not consistently return true/false
 library TransferHelper {
     function safeApprove(address token, address to, uint value) internal {
@@ -206,8 +202,7 @@ library TransferHelper {
 
 // Dependency file: contracts/libraries/ConfigNames.sol
 
-// pragma solidity >=0.5.16;
-
+pragma solidity ^0.5.16;
 library ConfigNames {
     bytes32 public constant PRODUCE_DGAS_RATE = bytes32('PRODUCE_DGAS_RATE');
     bytes32 public constant SWAP_FEE_PERCENT = bytes32('SWAP_FEE_PERCENT');
@@ -224,8 +219,7 @@ library ConfigNames {
     bytes32 public constant TOKEN_PENGDING_SWITCH = bytes32('TOKEN_PENGDING_SWITCH');
     bytes32 public constant TOKEN_PENGDING_TIME = bytes32('TOKEN_PENGDING_TIME');
 }
-pragma solidity >=0.6.6;
-
+pragma solidity ^0.6.6;
 // import './libraries/ConfigNames.sol';
 // import './libraries/TransferHelper.sol';
 // import './modules/TokenRegistry.sol';

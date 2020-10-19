@@ -2,8 +2,7 @@
  *Submitted for verification at Etherscan.io on 2020-09-23
 */
 
-pragma solidity 0.5.11;
-
+pragma solidity ^0.5.11;
 /**
  * @title Proxy
  * @dev Implements delegation of calls to other contracts, with proper

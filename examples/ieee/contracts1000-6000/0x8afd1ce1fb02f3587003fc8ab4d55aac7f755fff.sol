@@ -2,8 +2,7 @@
  *Submitted for verification at Etherscan.io on 2020-09-22
 */
 
-pragma solidity >=0.4.22 <0.6.0;
-
+pragma solidity ^0.4.22;
 contract HACKUcontract {
 
     string public constant name = "$HACKU";

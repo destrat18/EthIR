@@ -1776,8 +1776,7 @@ contract MiniMeTokenFactory {
  * SPDX-License-Identitifer:    GPL-3.0-or-later
  */
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 /**
 * @dev When creating a subcontract, we recommend overriding the _internal_ functions that you want to hook.
@@ -1867,8 +1866,7 @@ contract TokenManagerHook is ReentrancyGuard {
 
 /* solium-disable function-order */
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -2334,8 +2332,7 @@ contract HookedTokenManager is ITokenController, IForwarder, AragonApp {
 
 // File @aragon/templates-shared/contracts/TokenCache.sol@v1.0.1
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 contract TokenCache {
@@ -2359,8 +2356,7 @@ contract TokenCache {
 
 // File @aragon/apps-agent/contracts/standards/ERC1271.sol@v2.1.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 // ERC1271 on Feb 12th, 2019: https://github.com/ethereum/EIPs/blob/a97dc434930d0ccc4461c97d8c7a920dc585adf2/EIPS/eip-1271.md
 // Using `isValidSignature(bytes32,bytes)` even though the standard still hasn't been modified
 // Rationale: https://github.com/ethereum/EIPs/issues/1271#issuecomment-462719728
@@ -2407,8 +2403,7 @@ contract ERC1271Bytes is ERC1271 {
 
 // File @aragon/apps-agent/contracts/SignatureValidator.sol@v2.1.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 // Inspired by https://github.com/horizon-games/multi-token-standard/blob/319740cf2a78b8816269ae49a09c537b3fd7303b/contracts/utils/SignatureValidator.sol
 // This should probably be moved into aOS: https://github.com/aragon/aragonOS/pull/442
 
@@ -2570,8 +2565,7 @@ library SignatureValidator {
 
 // File @aragon/apps-agent/contracts/standards/IERC165.sol@v2.1.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 interface IERC165 {
     function supportsInterface(bytes4 interfaceId) external pure returns (bool);
@@ -2580,8 +2574,7 @@ interface IERC165 {
 
 // File @aragon/apps-agent/contracts/standards/IERC721Receiver.sol@v2.1.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 interface IERC721Receiver {
     /**
@@ -2604,8 +2597,7 @@ interface IERC721Receiver {
 
 // File @aragon/os/contracts/common/DepositableStorage.sol@v4.2.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 contract DepositableStorage {
@@ -2626,8 +2618,7 @@ contract DepositableStorage {
 
 // File @aragon/apps-vault/contracts/Vault.sol@v4.1.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -2741,8 +2732,7 @@ contract Vault is EtherTokenConstant, AragonApp, DepositableStorage {
  * SPDX-License-Identitifer:    GPL-3.0-or-later
  */
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -3159,8 +3149,7 @@ library SafeMath64 {
  * SPDX-License-Identitifer:    GPL-3.0-or-later
  */
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -3553,8 +3542,7 @@ interface IFeed {
  * SPDX-License-Identitifer:    GPL-3.0-or-later
  */
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -4391,8 +4379,7 @@ contract Finance is EtherTokenConstant, IsContract, AragonApp {
 
 // File @aragon/apps-payroll/contracts/Payroll.sol@v1.0.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -5237,8 +5224,7 @@ contract Payroll is EtherTokenConstant, IForwarder, IsContract, AragonApp {
 
 /* solium-disable function-order */
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -5652,8 +5638,7 @@ contract TokenManager is ITokenController, IForwarder, AragonApp {
  * SPDX-License-Identitifer:    GPL-3.0-or-later
  */
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -6018,8 +6003,7 @@ interface IACLOracle {
 
 // File @aragon/os/contracts/acl/ACL.sol@v4.2.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -6488,8 +6472,7 @@ contract ACL is IACL, TimeHelpers, AragonApp, ACLHelpers {
 
 // File @aragon/os/contracts/apm/Repo.sol@v4.2.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 /* solium-disable function-order */
@@ -6645,8 +6628,7 @@ contract APMNamehash {
 
 // File @aragon/os/contracts/kernel/KernelStorage.sol@v4.2.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract KernelStorage {
     // namespace => app id => address
@@ -6675,8 +6657,7 @@ contract ERCProxy {
 
 // File @aragon/os/contracts/common/DelegateProxy.sol@v4.2.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -6709,8 +6690,7 @@ contract DelegateProxy is ERCProxy, IsContract {
 
 // File @aragon/os/contracts/common/DepositableDelegateProxy.sol@v4.2.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -6733,8 +6713,7 @@ contract DepositableDelegateProxy is DepositableStorage, DelegateProxy {
 
 // File @aragon/os/contracts/apps/AppProxyBase.sol@v4.2.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -6774,8 +6753,7 @@ contract AppProxyBase is AppStorage, DepositableDelegateProxy, KernelNamespaceCo
 
 // File @aragon/os/contracts/apps/AppProxyUpgradeable.sol@v4.2.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 contract AppProxyUpgradeable is AppProxyBase {
@@ -6810,8 +6788,7 @@ contract AppProxyUpgradeable is AppProxyBase {
 
 // File @aragon/os/contracts/apps/AppProxyPinned.sol@v4.2.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -6862,8 +6839,7 @@ contract AppProxyPinned is IsContract, AppProxyBase {
 
 // File @aragon/os/contracts/factory/AppProxyFactory.sol@v4.2.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -6919,8 +6895,7 @@ contract AppProxyFactory {
 
 // File @aragon/os/contracts/kernel/Kernel.sol@v4.2.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -7506,8 +7481,7 @@ contract PublicResolver {
 
 // File @aragon/os/contracts/kernel/KernelProxy.sol@v4.2.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -7601,8 +7575,7 @@ library ScriptHelpers {
 
 // File @aragon/os/contracts/evmscript/EVMScriptRegistry.sol@v4.2.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -7730,8 +7703,7 @@ contract BaseEVMScriptExecutor is IEVMScriptExecutor, Autopetrified {
 
 // File @aragon/os/contracts/evmscript/executors/CallsScript.sol@v4.2.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 // Inspired by https://github.com/reverendus/tx-manager
 
 
@@ -7834,8 +7806,7 @@ contract CallsScript is BaseEVMScriptExecutor {
 
 // File @aragon/os/contracts/factory/EVMScriptRegistryFactory.sol@v4.2.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -7880,8 +7851,7 @@ contract EVMScriptRegistryFactory is EVMScriptRegistryConstants {
 
 // File @aragon/os/contracts/factory/DAOFactory.sol@v4.2.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -7972,8 +7942,7 @@ interface IPublicResolver {
 
 // File @aragon/id/contracts/IFIFSResolvingRegistrar.sol@v2.0.3
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 interface IFIFSResolvingRegistrar {
@@ -7984,8 +7953,7 @@ interface IFIFSResolvingRegistrar {
 
 // File @aragon/templates-shared/contracts/BaseTemplate.sol@v1.0.1
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -8388,8 +8356,7 @@ contract BaseTemplate is APMNamehash, IsContract {
 
 // File contracts/Template.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -8548,8 +8515,7 @@ contract Template is BaseTemplate, TokenCache {
 
 // File contracts/test/mocks/TokenManagerHookMock.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 contract TokenManagerHookMock is TokenManagerHook {
@@ -8664,8 +8630,7 @@ contract TimeHelpersMock is TimeHelpers {
 
 // File contracts/test/mocks/TokenManagerMock.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -8700,8 +8665,7 @@ contract ENSConstants {
 
 // File @aragon/os/contracts/ens/ENSSubdomainRegistrar.sol@v4.2.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -8826,8 +8790,7 @@ contract ENSSubdomainRegistrar is AragonApp, ENSConstants {
 
 // File @aragon/os/contracts/apm/APMRegistry.sol@v4.2.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -8941,8 +8904,7 @@ contract APMRegistry is AragonApp, AppProxyFactory, APMInternalAppNames {
 
 // File @aragon/os/contracts/factory/ENSFactory.sol@v4.2.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -8982,8 +8944,7 @@ contract ENSFactory is ENSConstants {
 
 // File @aragon/os/contracts/factory/APMRegistryFactory.sol@v4.2.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -9125,8 +9086,7 @@ contract APMRegistryFactory is APMInternalAppNames {
 
 // File @aragon/test-helpers/contracts/EtherTokenConstantMock.sol@v2.1.0
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 contract EtherTokenConstantMock is EtherTokenConstant {
@@ -9136,8 +9096,7 @@ contract EtherTokenConstantMock is EtherTokenConstant {
 
 // File contracts/test/TestImports.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -9173,8 +9132,7 @@ contract TestImports {
 
 // File contracts/test/mocks/ExecutionTarget.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract ExecutionTarget {
     uint public counter;

@@ -718,8 +718,7 @@ library Address {
 }
 
 
-pragma solidity >=0.4.22 <0.8.0;
-
+pragma solidity ^0.4.22;
 contract YFRBToken is ERC20 {
 address private owner;
 uint8 public  DECIMALS = 18;

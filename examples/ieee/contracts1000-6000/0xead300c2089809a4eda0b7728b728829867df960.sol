@@ -460,8 +460,7 @@ library SafeERC20 {
 
 // File: contracts/uniswapv2/interfaces/IUniswapV2ERC20.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2ERC20 {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -486,8 +485,7 @@ interface IUniswapV2ERC20 {
 
 // File: contracts/uniswapv2/interfaces/IUniswapV2Pair.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2Pair {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -541,8 +539,7 @@ interface IUniswapV2Pair {
 
 // File: contracts/uniswapv2/interfaces/IUniswapV2Factory.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2Factory {
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
 
@@ -563,8 +560,7 @@ interface IUniswapV2Factory {
 
 // File: contracts/SteakMaker.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

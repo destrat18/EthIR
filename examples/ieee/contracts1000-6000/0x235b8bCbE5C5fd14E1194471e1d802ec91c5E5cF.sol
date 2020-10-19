@@ -347,8 +347,7 @@ contract AdminUpgradeabilityProxy is BaseAdminUpgradeabilityProxy, Upgradeabilit
  * @author WOM Protocol <info@womprotocol.io>
  * @dev Proxies WOMToken calls and enables WOMToken upgradability.
 */
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 contract WOMTokenProxy is AdminUpgradeabilityProxy {

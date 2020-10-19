@@ -1,7 +1,6 @@
 // File: contracts/ChiGasSaver.sol
 
-pragma solidity >=0.4.22 <0.8.0;
-
+pragma solidity ^0.4.22;
 interface IFreeFromUpTo {
    function freeFromUpTo(address from, uint256 value) external returns(uint256 freed);
 }

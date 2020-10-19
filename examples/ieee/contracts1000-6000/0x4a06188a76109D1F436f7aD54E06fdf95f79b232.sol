@@ -849,8 +849,7 @@ contract ERC20 is Context, IERC20 {
 // File: contracts/SushiToken.sol
 
 // SPDX-License-Identifier: MIT
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 // SushiToken with Governance.
 contract ZooToken is ERC20("ZooToken", "Zoo"), Ownable {
     /// notice Creates `_amount` token to `_to`. Must only be called by the owner (MasterChef).
@@ -1091,8 +1090,7 @@ contract ZooToken is ERC20("ZooToken", "Zoo"), Ownable {
 
 // File: contracts/MasterChef.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 // MasterChef is the master of Sushi. He can make Sushi and he is a fair guy.
 //
 // Note that it's ownable and the owner wields tremendous power. The ownership

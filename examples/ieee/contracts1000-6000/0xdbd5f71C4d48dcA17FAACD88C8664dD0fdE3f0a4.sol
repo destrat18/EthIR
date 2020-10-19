@@ -497,8 +497,7 @@ contract ProxyAdmin is OpenZeppelinUpgradesOwnable {
  * @author WOM Protocol <info@womprotocol.io>
  * @dev Proxy admin contract.
 */
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 contract WOMProxyAdmin is ProxyAdmin {

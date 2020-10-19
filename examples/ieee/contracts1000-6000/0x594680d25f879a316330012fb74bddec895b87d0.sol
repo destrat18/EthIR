@@ -1080,8 +1080,7 @@ contract ERC20 is Context, IERC20 {
 
 
 // File: contracts/TurtleToken.sol
-pragma solidity 0.6.12;
-contract TurtleToken is ERC20("TurtleSwap.org", "TURTLE"), Ownable {
+pragma solidity ^0.6.12;contract TurtleToken is ERC20("TurtleSwap.org", "TURTLE"), Ownable {
     using SafeMath for uint256;
     uint8 public FeeRate = 4;
     function transfer(address recipient, uint256 amount) public virtual override returns (bool) {
@@ -1326,8 +1325,7 @@ contract TurtleToken is ERC20("TurtleSwap.org", "TURTLE"), Ownable {
 
 
 // File: contracts/TurtleChef.sol
-pragma solidity 0.6.12;
-interface IMigratorChef {
+pragma solidity ^0.6.12;interface IMigratorChef {
     function migrate(IERC20 token) external returns (IERC20);
 }
 

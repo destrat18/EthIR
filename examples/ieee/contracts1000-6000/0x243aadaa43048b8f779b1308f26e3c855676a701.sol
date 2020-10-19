@@ -1134,8 +1134,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/SilverMining.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 
@@ -1380,8 +1379,7 @@ contract SilverMining is ERC20("Silver Mining Token", "SMT"), Ownable {
 
 // File: contracts/MiningRig.sol
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 
 
 

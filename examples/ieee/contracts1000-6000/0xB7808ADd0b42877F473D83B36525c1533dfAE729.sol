@@ -2,8 +2,7 @@
 
 
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 /// @title Collateral Split interface
 /// @notice Contains mathematical functions used to calculate relative claim
 /// on collateral of primary and complement assets after settlement.
@@ -41,8 +40,7 @@ interface ICollateralSplit {
 
 
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 interface IOracleIterator {
     /// @notice Proof of oracle iterator contract
     /// @dev Verifies that contract is a oracle iterator contract
@@ -67,8 +65,7 @@ interface IOracleIterator {
 
 
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 
 
 abstract contract CollateralSplitParent is ICollateralSplit {
@@ -133,8 +130,7 @@ abstract contract CollateralSplitParent is ICollateralSplit {
 
 // "SPDX-License-Identifier: GNU General Public License v3.0"
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 
 contract x5Split is CollateralSplitParent{
     function symbol() external override view returns (string memory) {

@@ -466,8 +466,7 @@ contract Ownable is Context {
 
 // File: contracts/interfaces/IEpochUtils.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 interface IEpochUtils {
     function epochPeriodInSeconds() external view returns (uint256);
 
@@ -480,8 +479,7 @@ interface IEpochUtils {
 
 // File: contracts/interfaces/IKyberDao.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 interface IKyberDao is IEpochUtils {
     event Voted(
@@ -541,8 +539,7 @@ interface IKyberDao is IEpochUtils {
 
 // File: contracts/interfaces/IExtendedKyberDao.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 interface IExtendedKyberDao is IKyberDao {
     function kncToken() external view returns (address);
@@ -554,8 +551,7 @@ interface IExtendedKyberDao is IKyberDao {
 
 // File: contracts/interfaces/IKyberFeeHandler.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 interface IKyberFeeHandler {
     event RewardPaid(
@@ -600,8 +596,7 @@ interface IKyberFeeHandler {
 
 // File: contracts/interfaces/IExtendedKyberFeeHandler.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 interface IExtendedKyberFeeHandler is IKyberFeeHandler {
     function rewardsPerEpoch(uint256) external view returns (uint256);
@@ -609,8 +604,7 @@ interface IExtendedKyberFeeHandler is IKyberFeeHandler {
 
 // File: contracts/interfaces/IKyberStaking.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 interface IKyberStaking is IEpochUtils {
     event Delegated(
@@ -680,8 +674,7 @@ interface IKyberStaking is IEpochUtils {
 
 // File: contracts/KyberPoolMaster.sol
 
-pragma solidity 0.6.6;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.6.6;pragma experimental ABIEncoderV2;
 
 
 
