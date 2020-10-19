@@ -3,8 +3,7 @@
  and the property of EthSkyTrix Exhange Copy-righted
 */
 
-pragma solidity 0.5.11;
-
+pragma solidity ^0.5.11;
 /**
  * @title SafeMath
  * @dev Math operations with safety checks that throw on error

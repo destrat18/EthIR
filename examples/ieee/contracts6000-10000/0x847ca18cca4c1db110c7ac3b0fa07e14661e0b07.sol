@@ -1,5 +1,4 @@
-pragma solidity 0.5.17; // optimization runs: 200, evm version: istanbul
-// WARNING - `executeActionWithAtomicBatchCalls` has a `bytes[]` argument that
+pragma solidity ^0.5.17;// WARNING - `executeActionWithAtomicBatchCalls` has a `bytes[]` argument that
 // requires ABIEncoderV2. Exercise caution when calling that specific function.
 pragma experimental ABIEncoderV2;
 

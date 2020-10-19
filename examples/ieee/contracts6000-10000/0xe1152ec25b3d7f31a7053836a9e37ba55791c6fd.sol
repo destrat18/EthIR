@@ -2,8 +2,7 @@
  *Submitted for verification at Etherscan.io on 2018-09-20
 */
 
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 // File: contracts/lib/openzeppelin-solidity/contracts/access/Roles.sol
 
 /**

@@ -1,5 +1,4 @@
-pragma solidity >=0.6.0 <0.7.0;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.6.0;pragma experimental ABIEncoderV2;
 
 interface ERC721 {
     function tokenOfOwnerByIndex(address _owner, uint256 _index) external view returns (uint256);

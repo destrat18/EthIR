@@ -2,8 +2,7 @@
  *Submitted for verification at Etherscan.io on 2020-08-06
 */
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 /**
  * @title The Owned contract

@@ -1,5 +1,4 @@
-pragma solidity 0.5.14;
-
+pragma solidity ^0.5.14;
 
 contract ERC20 {
     function balanceOf(address account) external view returns (uint256);

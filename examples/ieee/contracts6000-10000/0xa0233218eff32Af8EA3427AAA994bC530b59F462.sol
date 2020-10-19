@@ -108,8 +108,7 @@ contract Ownable is Context {
 
 // File: contracts/interfaces/ISwapAndDeposit.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 interface ISwapAndDeposit {
     event SwapDeposit(address loan, address guy);
@@ -127,8 +126,7 @@ interface ISwapAndDeposit {
 
 // File: contracts/interfaces/ISwapAndDepositFactory.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 interface ISwapAndDepositFactory {
     event SwapContract(address newSwap);
 
@@ -143,8 +141,7 @@ interface ISwapAndDepositFactory {
 
 // File: contracts/interfaces/IAuthorization.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 interface IAuthorization {
     function getKycAddress() external view returns (address);
 
@@ -161,8 +158,7 @@ interface IAuthorization {
 
 // File: contracts/CloneFactory.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 /*
 The MIT License (MIT)
 Copyright (c) 2018 Murray Software, LLC.
@@ -224,8 +220,7 @@ contract CloneFactory {
 
 // File: contracts/SwapAndDepositFactory.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 

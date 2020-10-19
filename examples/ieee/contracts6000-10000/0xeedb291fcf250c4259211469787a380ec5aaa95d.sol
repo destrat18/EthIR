@@ -242,8 +242,7 @@ interface IERC20 {
 
 // File: contracts/registry/Registry.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 interface RegistryClone {
     function syncAttributeValue(
@@ -434,8 +433,7 @@ contract Registry {
 
 // File: contracts/trusttokens/ProxyStorage.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 /**
  * All storage must be declared here
@@ -473,8 +471,7 @@ contract ProxyStorage {
 
 // File: contracts/trusttokens/ValSafeMath.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * Forked subset of Openzeppelin SafeMath allowing custom underflow/overflow messages
  * Useful for debugging, replaceable with standard SafeMath
@@ -522,8 +519,7 @@ library ValSafeMath {
 
 // File: contracts/trusttokens/ERC20.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 
 // Fork of OpenZeppelin's BasicToken
@@ -673,8 +669,7 @@ contract ModularStandardToken is ModularBasicToken {
 
 // File: contracts/trusttokens/RegistrySubscriber.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 abstract contract RegistrySubscriber is ProxyStorage {
     // Registry Attributes
@@ -745,16 +740,14 @@ abstract contract RegistrySubscriber is ProxyStorage {
 
 // File: contracts/trusttokens/TrueCoinReceiver.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 interface TrueCoinReceiver {
     function tokenFallback(address from, uint256 value) external;
 }
 
 // File: contracts/trusttokens/ValTokenWithHook.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 
 
@@ -851,8 +844,7 @@ abstract contract ValTokenWithHook is ModularStandardToken, RegistrySubscriber {
 
 // File: contracts/trusttokens/ClaimableContract.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 /**
  * @title ClaimableContract
@@ -917,8 +909,7 @@ contract ClaimableContract is ProxyStorage {
 
 // File: contracts/trusttokens/TimeLockedToken.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 
 
@@ -1150,8 +1141,7 @@ abstract contract TimeLockedToken is ValTokenWithHook, ClaimableContract {
 
 // File: contracts/trusttokens/TimeLockRegistry.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 
 /**

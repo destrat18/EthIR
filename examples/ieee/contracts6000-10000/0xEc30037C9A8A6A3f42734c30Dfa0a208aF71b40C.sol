@@ -1,7 +1,6 @@
 // File: contracts/sol6/IERC20.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 interface IERC20 {
     event Approval(address indexed _owner, address indexed _spender, uint256 _value);
@@ -33,8 +32,7 @@ abstract contract ERC20 is IERC20 {
 
 // File: contracts/sol6/utils/Utils5.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 /**
@@ -186,8 +184,7 @@ contract Utils5 {
 
 // File: contracts/sol6/utils/zeppelin/ReentrancyGuard.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 /**
  * @dev Contract module that helps prevent reentrant calls to a function.
  *
@@ -241,8 +238,7 @@ contract ReentrancyGuard {
 
 // File: contracts/sol6/Dao/IEpochUtils.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 interface IEpochUtils {
     function epochPeriodInSeconds() external view returns (uint256);
 
@@ -255,8 +251,7 @@ interface IEpochUtils {
 
 // File: contracts/sol6/IKyberDao.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 interface IKyberDao is IEpochUtils {
@@ -309,8 +304,7 @@ interface IKyberDao is IEpochUtils {
 
 // File: contracts/sol6/IKyberFeeHandler.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 interface IKyberFeeHandler {
@@ -340,8 +334,7 @@ interface IKyberFeeHandler {
 
 // File: contracts/sol6/IKyberNetworkProxy.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 interface IKyberNetworkProxy {
@@ -410,8 +403,7 @@ interface IKyberNetworkProxy {
 
 // File: contracts/sol6/ISimpleKyberProxy.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 /*
@@ -440,8 +432,7 @@ interface ISimpleKyberProxy {
 
 // File: contracts/sol6/IBurnableToken.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 interface IBurnableToken {
     function burn(uint256 _value) external returns (bool);
@@ -449,8 +440,7 @@ interface IBurnableToken {
 
 // File: contracts/sol6/Dao/ISanityRate.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 /// @title Sanity Rate check to prevent burning knc with too expensive or cheap price
 /// @dev Using ChainLink as the provider for current knc/eth price
@@ -461,8 +451,7 @@ interface ISanityRate {
 
 // File: contracts/sol6/utils/zeppelin/SafeMath.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
  * checks.
@@ -621,8 +610,7 @@ library SafeMath {
 
 // File: contracts/sol6/Dao/DaoOperator.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 contract DaoOperator {
     address public daoOperator;
@@ -640,8 +628,7 @@ contract DaoOperator {
 
 // File: contracts/sol6/Dao/KyberFeeHandler.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 

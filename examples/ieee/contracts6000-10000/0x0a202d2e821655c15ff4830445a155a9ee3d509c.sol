@@ -1,5 +1,4 @@
-pragma solidity 0.6.2;
-contract Owned {
+pragma solidity ^0.6.2;contract Owned {
 
   address payable public owner;
   address private pendingOwner;

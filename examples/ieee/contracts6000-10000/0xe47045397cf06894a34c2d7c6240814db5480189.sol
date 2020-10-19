@@ -817,8 +817,7 @@ interface IERC777 {
 
 // File: contracts/tokens/IWrapped777.sol
 
-pragma solidity >=0.6.2 <0.7.0;
-
+pragma solidity ^0.6.2;
 
 
 interface IWrapped777 is IERC777 {
@@ -978,8 +977,7 @@ interface IERC1820Registry {
 
 // File: contracts/Receiver.sol
 
-pragma solidity >=0.6.2 <0.7.0;
-
+pragma solidity ^0.6.2;
 
 
 
@@ -1015,8 +1013,7 @@ abstract contract Receiver is IERC777Recipient {
 
 // File: contracts/tokens/Unwrapper.sol
 
-pragma solidity >=0.6.2 <0.7.0;
-
+pragma solidity ^0.6.2;
 
 
 

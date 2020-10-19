@@ -1,5 +1,4 @@
-pragma solidity 0.5.9;
-
+pragma solidity ^0.5.9;
 interface tokenTransfer {
     function transfer(address receiver, uint amount) external;
     function transferFrom(address _from, address _to, uint256 _value) external;

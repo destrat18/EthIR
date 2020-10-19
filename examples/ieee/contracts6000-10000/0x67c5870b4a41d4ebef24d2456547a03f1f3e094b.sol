@@ -1223,8 +1223,7 @@ interface ControllerInterface {
 
 // File: contracts/dao/schemes/SchemeGuard.sol
 
-pragma solidity >0.5.4;
-
+pragma solidity ^0.5.4;
 
 
 
@@ -1304,8 +1303,7 @@ contract SchemeGuard is Ownable {
 
 // File: contracts/identity/IdentityAdminRole.sol
 
-pragma solidity >0.5.4;
-
+pragma solidity ^0.5.4;
 
 
 /**
@@ -1387,8 +1385,7 @@ contract IdentityAdminRole is Ownable {
 
 // File: contracts/identity/Identity.sol
 
-pragma solidity >0.5.4;
-
+pragma solidity ^0.5.4;
 
 
 
@@ -1683,8 +1680,7 @@ contract Identity is IdentityAdminRole, SchemeGuard, Pausable {
 
 // File: contracts/identity/IdentityGuard.sol
 
-pragma solidity >0.5.4;
-
+pragma solidity ^0.5.4;
 
 
 /* @title The IdentityGuard contract
@@ -1777,8 +1773,7 @@ contract IdentityGuard is Ownable {
 
 // File: contracts/dao/schemes/FeeFormula.sol
 
-pragma solidity >0.5.4;
-
+pragma solidity ^0.5.4;
 
 
 
@@ -1833,8 +1828,7 @@ contract FeeFormula is AbstractFees {
 
 // File: contracts/dao/schemes/FormulaHolder.sol
 
-pragma solidity >0.5.4;
-
+pragma solidity ^0.5.4;
 
 
 /* @title Contract in charge of setting registered fee formula schemes to contract
@@ -1862,8 +1856,7 @@ contract FormulaHolder is Ownable {
 
 // File: contracts/token/ERC677/ERC677.sol
 
-pragma solidity >0.5.4;
-
+pragma solidity ^0.5.4;
 /* @title ERC677 interface
  */
 interface ERC677 {
@@ -1878,8 +1871,7 @@ interface ERC677 {
 
 // File: contracts/token/ERC677/ERC677Receiver.sol
 
-pragma solidity >0.5.4;
-
+pragma solidity ^0.5.4;
 /* @title ERC677Receiver interface
  */
 interface ERC677Receiver {
@@ -1924,8 +1916,7 @@ contract ERC20Pausable is ERC20, Pausable {
 
 // File: contracts/token/ERC677Token.sol
 
-pragma solidity >0.5.4;
-
+pragma solidity ^0.5.4;
 
 
 
@@ -2037,8 +2028,7 @@ contract MinterRole {
 
 // File: contracts/token/ERC677BridgeToken.sol
 
-pragma solidity >0.5.4;
-
+pragma solidity ^0.5.4;
 
 
 contract ERC677BridgeToken is ERC677Token, MinterRole {
@@ -2061,8 +2051,7 @@ contract ERC677BridgeToken is ERC677Token, MinterRole {
 
 // File: contracts/token/GoodDollar.sol
 
-pragma solidity >0.5.4;
-
+pragma solidity ^0.5.4;
 
 
 

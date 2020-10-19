@@ -1,7 +1,6 @@
 // File: contracts/sol6/IERC20.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 interface IERC20 {
     event Approval(address indexed _owner, address indexed _spender, uint256 _value);
@@ -33,8 +32,7 @@ abstract contract ERC20 is IERC20 {
 
 // File: contracts/sol6/utils/zeppelin/ReentrancyGuard.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 /**
  * @dev Contract module that helps prevent reentrant calls to a function.
  *
@@ -88,8 +86,7 @@ contract ReentrancyGuard {
 
 // File: contracts/sol6/Dao/IEpochUtils.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 interface IEpochUtils {
     function epochPeriodInSeconds() external view returns (uint256);
 
@@ -102,8 +99,7 @@ interface IEpochUtils {
 
 // File: contracts/sol6/Dao/IKyberStaking.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 interface IKyberStaking is IEpochUtils {
@@ -170,8 +166,7 @@ interface IKyberStaking is IEpochUtils {
 
 // File: contracts/sol6/IKyberDao.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 interface IKyberDao is IEpochUtils {
@@ -224,8 +219,7 @@ interface IKyberDao is IEpochUtils {
 
 // File: contracts/sol6/utils/zeppelin/SafeMath.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
  * checks.
@@ -384,8 +378,7 @@ library SafeMath {
 
 // File: contracts/sol6/Dao/EpochUtils.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 contract EpochUtils is IEpochUtils {
@@ -409,8 +402,7 @@ contract EpochUtils is IEpochUtils {
 
 // File: contracts/sol6/Dao/KyberStaking.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 

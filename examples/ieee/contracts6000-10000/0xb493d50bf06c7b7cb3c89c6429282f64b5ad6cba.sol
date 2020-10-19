@@ -2,8 +2,7 @@
  * Verification for Global Golden Chain
 */
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.4.26 <0.7.0;
-
+pragma solidity ^0.4.26;
 contract GlobalGoldenChain{
     string  public name = "GlobalGoldenChainToken";
     string  public symbol = "GGCT";

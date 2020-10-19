@@ -1,7 +1,6 @@
 // File: @ensdomains/buffer/contracts/Buffer.sol
 
-pragma solidity >0.4.18;
-
+pragma solidity ^0.4.18;
 /**
 * @dev A library for working with mutable byte buffers in Solidity.
 *
@@ -377,8 +376,7 @@ library CBOR {
 
 // File: chainlink/contracts/Chainlink.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Library for common Chainlink functions
@@ -504,8 +502,7 @@ library Chainlink {
 
 // File: chainlink/contracts/ENSResolver.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 contract ENSResolver {
   function addr(bytes32 node) public view returns (address);
 }
@@ -541,8 +538,7 @@ interface ENSInterface {
 
 // File: chainlink/contracts/interfaces/LinkTokenInterface.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 interface LinkTokenInterface {
   function allowance(address owner, address spender) external returns (bool success);
   function approve(address spender, uint256 value) external returns (bool success);
@@ -560,8 +556,7 @@ interface LinkTokenInterface {
 
 // File: chainlink/contracts/interfaces/ChainlinkRequestInterface.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 interface ChainlinkRequestInterface {
   function oracleRequest(
     address sender,
@@ -584,8 +579,7 @@ interface ChainlinkRequestInterface {
 
 // File: chainlink/contracts/interfaces/PointerInterface.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 interface PointerInterface {
   function getAddress() external view returns (address);
 }
@@ -647,8 +641,7 @@ library SafeMath {
 
 // File: chainlink/contracts/ChainlinkClient.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -978,8 +971,7 @@ contract Ownable {
 
 // File: contracts/AmpleforthInterface.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 interface AmpleforthInterface {
   function pushReport(uint256 payload) external;
   function purgeReports() external;
@@ -987,8 +979,7 @@ interface AmpleforthInterface {
 
 // File: contracts/AmpleforthConsumer.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 

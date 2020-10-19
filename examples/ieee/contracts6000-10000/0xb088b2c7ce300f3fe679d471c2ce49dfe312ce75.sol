@@ -1004,8 +1004,7 @@ contract Ownable is Context {
 
 // File: contracts/util/Whitelist.sol
 
-pragma solidity 0.5.15;
-
+pragma solidity ^0.5.15;
 
 contract Whitelist is Ownable {
 	mapping(address => bool) whitelist;
@@ -1029,8 +1028,7 @@ contract Whitelist is Ownable {
 
 // File: contracts/interface/IKyberNetworkProxy.sol
 
-pragma solidity 0.5.15;
-
+pragma solidity ^0.5.15;
 
 contract IKyberNetworkProxy {
     function getExpectedRate(ERC20 src, ERC20 dest, uint srcQty) external view returns (uint expectedRate, uint slippageRate);
@@ -1041,8 +1039,7 @@ contract IKyberNetworkProxy {
 
 // File: contracts/interface/IKyberStaking.sol
 
-pragma solidity 0.5.15;
-
+pragma solidity ^0.5.15;
 contract IKyberStaking {
     function deposit(uint256 amount) external;
     function withdraw(uint256 amount) external;
@@ -1051,16 +1048,14 @@ contract IKyberStaking {
 
 // File: contracts/interface/IKyberDAO.sol
 
-pragma solidity 0.5.15;
-
+pragma solidity ^0.5.15;
 contract IKyberDAO {
     function vote(uint256 campaignID, uint256 option) external;
 }
 
 // File: contracts/interface/IKyberFeeHandler.sol
 
-pragma solidity 0.5.15;
-
+pragma solidity ^0.5.15;
 contract IKyberFeeHandler {
     function claimStakerReward(
         address staker,
@@ -1070,8 +1065,7 @@ contract IKyberFeeHandler {
 
 // File: contracts/xKNC.sol
 
-pragma solidity 0.5.15;
-
+pragma solidity ^0.5.15;
 
 
 

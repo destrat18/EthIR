@@ -349,8 +349,7 @@ library SafeMath {
 
 // File: contracts/TokenDistributor.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

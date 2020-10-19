@@ -1,5 +1,4 @@
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 /**
   * @title INexus
   * @dev Basic interface for interacting with the Nexus i.e. SystemKernel

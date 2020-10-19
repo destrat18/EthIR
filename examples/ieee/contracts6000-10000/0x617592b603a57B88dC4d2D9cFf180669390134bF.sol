@@ -1211,8 +1211,7 @@ contract Ownable is Context {
 
 // File: interface/IStormXToken.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract IStormXToken is ERC20 {
   function unlockedBalanceOf(address account) public view returns (uint256);
@@ -1220,8 +1219,7 @@ contract IStormXToken is ERC20 {
 
 // File: contracts/StormXGSNRecipient.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 
@@ -1470,8 +1468,7 @@ contract StormXGSNRecipient is GSNRecipient, Ownable {
 
 // File: contracts/StormXToken.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 
@@ -1750,8 +1747,7 @@ contract StormXToken is
  * current solidity version
 */
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 contract ItokenRecipient {
@@ -2015,8 +2011,7 @@ contract StormToken is Token {
 
 // File: contracts/Swap.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

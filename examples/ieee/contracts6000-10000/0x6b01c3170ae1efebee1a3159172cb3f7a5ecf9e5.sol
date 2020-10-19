@@ -1,5 +1,4 @@
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 // File: contracts/BytesLib.sol
 
 library BytesLib {
@@ -403,8 +402,7 @@ library BytesLib {
 
 // Abstract contract for the full ERC 20 Token standard
 // https://github.com/ethereum/EIPs/issues/20
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 contract Token {
     /* This is a slight change to the ERC20 base standard.
     function totalSupply() constant returns (uint256 supply);
@@ -460,8 +458,7 @@ If you deploy this, you won't have anything useful.)
 
 Implements ERC 20 Token standard: https://github.com/ethereum/EIPs/issues/20
 .*/
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 contract StandardToken is Token {
@@ -524,8 +521,7 @@ Machine-based, rapid creation of many tokens would not necessarily need these ex
 
 
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 contract HumanStandardToken is StandardToken {
 
     /* Public variables of the token */

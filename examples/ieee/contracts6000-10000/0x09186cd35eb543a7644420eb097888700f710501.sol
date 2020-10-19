@@ -20,8 +20,7 @@ contract ChiGasSaver {
 
 // File: contracts/GasSaverDeployerV1.sol
 
-pragma solidity >=0.5.0 <0.6.0;
-
+pragma solidity ^0.5.0;
 
 /// @title Gas Saver Deployer - Allows to deploy a contract saving gas.
 /// @author Emiliano Bonassi - <bonassi.emiliano@gmail.com>

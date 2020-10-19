@@ -722,8 +722,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: browser/dac.sol
 
-pragma solidity 0.6.2;
-
+pragma solidity ^0.6.2;
 
 contract ERC20FixedSupply is ERC20 {
     constructor() public ERC20("DAC", "DAC") {

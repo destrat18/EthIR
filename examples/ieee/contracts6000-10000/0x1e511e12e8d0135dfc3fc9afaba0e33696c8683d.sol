@@ -635,8 +635,7 @@ contract ERC20Detailed is IERC20 {
 
 // File: contracts/Matrix.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

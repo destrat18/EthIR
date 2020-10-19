@@ -8,8 +8,7 @@
 Copy righted in Australia.
 */
 
-pragma solidity 0.5.11;
-
+pragma solidity ^0.5.11;
 contract ERC20Interface{
         function transfer(address _address, uint _value) public returns (bool success){}
         function balanceOf(address _address)view public returns(uint);

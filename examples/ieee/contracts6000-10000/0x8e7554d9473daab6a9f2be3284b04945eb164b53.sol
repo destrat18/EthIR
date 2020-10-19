@@ -1,7 +1,6 @@
 // File: contracts/lib/math/SafeMath.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
  * checks.
@@ -151,8 +150,7 @@ contract ReentrancyGuard {
 
 // File: contracts/extensions/BrokerExtension.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 interface Broker {
     function owner() external returns (address);
@@ -182,8 +180,7 @@ contract BrokerExtension is ReentrancyGuard {
 
 // File: contracts/Utils.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 interface ERC20 {
     function balanceOf(address account) external view returns (uint256);
@@ -1501,8 +1498,7 @@ library Utils {
 
 // File: contracts/extensions/UniswapDappV2.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 

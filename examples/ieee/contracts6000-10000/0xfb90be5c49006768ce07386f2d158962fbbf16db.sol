@@ -1,5 +1,4 @@
-pragma solidity >=0.5.12 <0.7.0;
-
+pragma solidity ^0.5.12;
 contract way2eth {
 
     struct User {

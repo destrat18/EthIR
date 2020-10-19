@@ -1,7 +1,6 @@
 // File: contracts/sol6/IERC20.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 interface IERC20 {
     event Approval(address indexed _owner, address indexed _spender, uint256 _value);
@@ -33,8 +32,7 @@ abstract contract ERC20 is IERC20 {
 
 // File: contracts/sol6/IKyberFeeHandler.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 interface IKyberFeeHandler {
@@ -64,8 +62,7 @@ interface IKyberFeeHandler {
 
 // File: contracts/sol6/RewardsClaimer.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 contract RewardsClaimer {

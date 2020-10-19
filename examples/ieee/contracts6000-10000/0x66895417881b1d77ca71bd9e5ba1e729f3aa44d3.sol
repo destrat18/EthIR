@@ -478,8 +478,7 @@ contract ReentrancyGuard {
 
 // File: contracts/Curve-pool/Uni_Curve_Pipe.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 // Copyright (C) 2019, 2020 dipeshsukhani, nodarjanashia, suhailg, apoorvlathey, seb, sumit
 

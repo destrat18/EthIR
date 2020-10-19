@@ -1,5 +1,4 @@
-pragma solidity 0.6.4;
-/**
+pragma solidity ^0.6.4;/**
  * @title Manage the owner for the BulkSender contract.
  */
 contract Ownable {

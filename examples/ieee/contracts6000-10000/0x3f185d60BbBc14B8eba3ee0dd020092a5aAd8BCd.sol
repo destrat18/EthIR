@@ -346,8 +346,7 @@ contract Ownable is Context {
 
 // File: contracts\TrustlessFundV2.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 contract TrustlessFundV2 is Ownable {
   using SafeMath for uint;
 
@@ -504,8 +503,7 @@ contract TrustlessFundV2 is Ownable {
 
 // File: contracts\TrustlessFundFactoryV2.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 contract TrustlessFundFactoryV2 {
   /*** STORAGE VARIABLES ***/
 

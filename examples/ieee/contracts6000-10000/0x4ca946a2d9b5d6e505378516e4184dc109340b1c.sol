@@ -1,5 +1,4 @@
-pragma solidity 0.6.2;
-interface HistoricAggregatorInterface {
+pragma solidity ^0.6.2;interface HistoricAggregatorInterface {
   function latestAnswer() external returns (int256);
   function latestTimestamp() external returns (uint256);
   function latestRound() external returns (uint256);

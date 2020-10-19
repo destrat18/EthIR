@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: GPLv3
 
-pragma solidity 0.6.11;
-
+pragma solidity ^0.6.11;
 
 // This is the source code for TRIATIC native token (TRA)
 // This comment is used to verify and authenticate that this contract

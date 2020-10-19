@@ -722,8 +722,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/HodlTreeToken.sol
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 
 
 contract HodlTreeToken is ERC20 {

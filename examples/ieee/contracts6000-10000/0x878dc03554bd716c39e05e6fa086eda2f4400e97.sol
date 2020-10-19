@@ -1,5 +1,4 @@
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 
 interface DharmaGasReserveInterface {
     event Pulled(address indexed gasAccount, uint256 amount);

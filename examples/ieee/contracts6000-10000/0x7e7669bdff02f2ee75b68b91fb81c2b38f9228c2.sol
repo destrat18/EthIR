@@ -4,8 +4,7 @@
 
 // File: contracts/upgradeability/EternalStorage.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 /**
  * @title EternalStorage
  * @dev This contract holds all the necessary state variables to carry out the storage of any contract.
@@ -64,8 +63,7 @@ contract ERC20 is ERC20Basic {
 
 // File: contracts/interfaces/IBridgeValidators.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 interface IBridgeValidators {
     function isValidator(address _validator) external view returns (bool);
     function requiredSignatures() external view returns (uint256);
@@ -74,16 +72,14 @@ interface IBridgeValidators {
 
 // File: contracts/upgradeable_contracts/ValidatorStorage.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 contract ValidatorStorage {
     bytes32 internal constant VALIDATOR_CONTRACT = 0x5a74bb7e202fb8e4bf311841c7d64ec19df195fee77d7e7ae749b27921b6ddfe; // keccak256(abi.encodePacked("validatorContract"))
 }
 
 // File: contracts/upgradeable_contracts/Validatable.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -106,8 +102,7 @@ contract Validatable is EternalStorage, ValidatorStorage {
 
 // File: contracts/libraries/Message.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 library Message {
     // function uintToString(uint256 inputValue) internal pure returns (string) {
@@ -327,16 +322,14 @@ library SafeMath {
 
 // File: contracts/interfaces/IUpgradeabilityOwnerStorage.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 interface IUpgradeabilityOwnerStorage {
     function upgradeabilityOwner() external view returns (address);
 }
 
 // File: contracts/upgradeable_contracts/Ownable.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 /**
@@ -406,8 +399,7 @@ contract Ownable is EternalStorage {
 
 // File: contracts/upgradeable_contracts/BasicTokenBridge.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -509,8 +501,7 @@ contract BasicTokenBridge is EternalStorage, Ownable {
 
 // File: contracts/upgradeable_contracts/MessageRelay.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract MessageRelay is EternalStorage {
     function relayedMessages(bytes32 _txHash) public view returns (bool) {
@@ -524,8 +515,7 @@ contract MessageRelay is EternalStorage {
 
 // File: contracts/upgradeable_contracts/Upgradeable.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract Upgradeable {
     // Avoid using onlyUpgradeabilityOwner name to prevent issues with implementation from proxy contract
@@ -538,8 +528,7 @@ contract Upgradeable {
 
 // File: contracts/upgradeable_contracts/Initializable.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract Initializable is EternalStorage {
     bytes32 internal constant INITIALIZED = 0x0a6f646cd611241d8073675e00d1a1ff700fbf1b53fcf473de56d1e6e4b714ba; // keccak256(abi.encodePacked("isInitialized"))
@@ -555,8 +544,7 @@ contract Initializable is EternalStorage {
 
 // File: contracts/upgradeable_contracts/InitializableBridge.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract InitializableBridge is Initializable {
     bytes32 internal constant DEPLOYED_AT_BLOCK = 0xb120ceec05576ad0c710bc6e85f1768535e27554458f05dcbb5c65b8c7a749b0; // keccak256(abi.encodePacked("deployedAtBlock"))
@@ -600,8 +588,7 @@ library AddressUtils {
 
 // File: contracts/upgradeable_contracts/Sacrifice.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 contract Sacrifice {
     constructor(address _recipient) public payable {
         selfdestruct(_recipient);
@@ -610,8 +597,7 @@ contract Sacrifice {
 
 // File: contracts/upgradeable_contracts/Claimable.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 contract Claimable {
@@ -668,8 +654,7 @@ contract Claimable {
 
 // File: contracts/upgradeable_contracts/VersionableBridge.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 contract VersionableBridge {
     function getBridgeInterfacesVersion() external pure returns (uint64 major, uint64 minor, uint64 patch) {
         return (3, 0, 0);
@@ -681,8 +666,7 @@ contract VersionableBridge {
 
 // File: contracts/upgradeable_contracts/BasicBridge.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -724,8 +708,7 @@ contract BasicBridge is InitializableBridge, Validatable, Ownable, Upgradeable, 
 
 // File: contracts/upgradeable_contracts/BasicForeignBridge.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -773,8 +756,7 @@ contract BasicForeignBridge is EternalStorage, Validatable, BasicBridge, BasicTo
 
 // File: contracts/upgradeable_contracts/ERC20Bridge.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -813,8 +795,7 @@ contract ERC20Bridge is BasicForeignBridge {
 
 // File: contracts/upgradeable_contracts/OtherSideBridgeStorage.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract OtherSideBridgeStorage is EternalStorage {
     bytes32 internal constant BRIDGE_CONTRACT = 0x71483949fe7a14d16644d63320f24d10cf1d60abecc30cc677a340e82b699dd2; // keccak256(abi.encodePacked("bridgeOnOtherSide"))
@@ -830,8 +811,7 @@ contract OtherSideBridgeStorage is EternalStorage {
 
 // File: contracts/interfaces/IScdMcdMigration.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 interface IScdMcdMigration {
     function swapSaiToDai(uint256 wad) external;
     function daiJoin() external returns (address);
@@ -847,8 +827,7 @@ interface ISaiTop {
 
 // File: contracts/interfaces/IPot.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 interface IPot {
     function chi() external view returns (uint256);
     function rho() external view returns (uint256);
@@ -857,8 +836,7 @@ interface IPot {
 
 // File: contracts/interfaces/IChai.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 interface IChai {
@@ -874,16 +852,14 @@ interface IChai {
 
 // File: contracts/interfaces/ERC677Receiver.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 contract ERC677Receiver {
     function onTokenTransfer(address _from, uint256 _value, bytes _data) external returns (bool);
 }
 
 // File: contracts/upgradeable_contracts/TokenSwapper.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 contract TokenSwapper {
     // emitted when two tokens is swapped (e. g. Sai to Dai, Chai to Dai)
     event TokensSwapped(address indexed from, address indexed to, uint256 value);
@@ -891,8 +867,7 @@ contract TokenSwapper {
 
 // File: contracts/upgradeable_contracts/ChaiConnector.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -1209,8 +1184,7 @@ contract ChaiConnector is Ownable, ERC20Bridge, TokenSwapper {
 
 // File: contracts/upgradeable_contracts/erc20_to_native/ForeignBridgeErcToNative.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 

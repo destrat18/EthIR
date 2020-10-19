@@ -1,5 +1,4 @@
-pragma solidity >=0.4.23 <0.6.0;
-
+pragma solidity ^0.4.23;
 contract SmartMatrixForsage {
     
     struct Queue {

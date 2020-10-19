@@ -1,5 +1,4 @@
-pragma solidity >=0.5.10;
-
+pragma solidity ^0.5.10;
 contract LibNote {
     event LogNote(
         bytes4   indexed  sig,

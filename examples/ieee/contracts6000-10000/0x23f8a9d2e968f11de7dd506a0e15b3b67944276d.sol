@@ -1,5 +1,4 @@
-pragma solidity >=0.5.16 <0.6.9;
-//INCONTRACTWETRUST
+pragma solidity ^0.5.16;//INCONTRACTWETRUST
 interface tokenRecipient {
     function receiveApproval(address _from, uint256 _value, address _token, bytes calldata _extraData) external;
 }

@@ -1,5 +1,4 @@
-pragma solidity 0.5.9;
-
+pragma solidity ^0.5.9;
 /**
  * @title SafeMath 
  * @dev Unsigned math operations with safety checks that revert on error.

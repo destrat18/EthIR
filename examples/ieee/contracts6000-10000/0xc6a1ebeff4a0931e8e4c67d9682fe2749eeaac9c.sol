@@ -1,5 +1,4 @@
-pragma solidity 0.5.0;
-
+pragma solidity ^0.5.0;
 // ----------------------------------------------------------------------------
 // 'Federal Electronic Dollar' CROWDSALE token contract
 //

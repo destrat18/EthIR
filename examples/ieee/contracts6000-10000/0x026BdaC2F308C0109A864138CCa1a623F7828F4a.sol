@@ -399,8 +399,7 @@ contract ReentrancyGuard {
 
 // File: contracts/UniswapV2/UniswapV2Router.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 interface IUniswapV2Router02 {
     function factory() external pure returns (address);
 
@@ -607,8 +606,7 @@ interface IUniswapV2Router02 {
 
 // File: contracts/UniswapV2/UniswapV2Zapin.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 

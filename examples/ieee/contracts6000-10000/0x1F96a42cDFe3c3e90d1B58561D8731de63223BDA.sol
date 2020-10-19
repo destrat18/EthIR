@@ -171,8 +171,7 @@ library SafeMath {
 
 // File: contracts/upgradeable_contracts/BaseMediatorFeeManager.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 /**
@@ -357,8 +356,7 @@ contract BaseMediatorFeeManager is Ownable {
 
 // File: contracts/upgradeable_contracts/amb_native_to_erc20/ForeignFeeManagerAMBNativeToErc20.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 

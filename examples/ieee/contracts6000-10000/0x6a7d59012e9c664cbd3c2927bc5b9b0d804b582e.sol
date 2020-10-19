@@ -2,8 +2,7 @@
  *Submitted for verification at Etherscan.io on 2020-06-01
 */
 
-pragma solidity 0.5.17; // optimization runs: 200, evm version: istanbul
-
+pragma solidity ^0.5.17;
 
 interface DharmaTradeReserveV2Interface {
   event RoleModified(Role indexed role, address account);

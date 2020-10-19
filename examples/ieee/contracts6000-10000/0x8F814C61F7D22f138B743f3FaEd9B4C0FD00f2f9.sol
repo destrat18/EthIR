@@ -159,8 +159,7 @@ library SafeMath {
 
 // File: contracts/Event.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract Event {
 
@@ -255,8 +254,7 @@ contract Event {
 
 // File: contracts/ProxyEvent.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract ProxyEvent is Event {
 

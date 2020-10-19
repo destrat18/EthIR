@@ -1,5 +1,4 @@
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 pragma experimental ABIEncoderV2;
 
 /// @title Docs interface for registering files
@@ -46,8 +45,7 @@ interface IDocs {
 
 // File: contracts/models/Document.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 struct Document {
     bytes32 hash;
     uint128 createdAt;
@@ -55,8 +53,7 @@ struct Document {
 
 // File: contracts/interface/IOwnable.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 interface IOwnable {
     event OwnershipTransferred(
         address indexed currentOwner,
@@ -72,8 +69,7 @@ interface IOwnable {
 
 // File: contracts/library/Ownable.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 contract Ownable is IOwnable{
     address private _owner;
@@ -123,8 +119,7 @@ contract Ownable is IOwnable{
 
 // File: contracts/Docs.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 

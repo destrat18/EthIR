@@ -1,5 +1,4 @@
-pragma solidity 0.6.0;
-
+pragma solidity ^0.6.0;
 /**
  * @title Dividend logic
  * @dev Some operations about dividend,logic and asset separation

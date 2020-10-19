@@ -22,8 +22,7 @@
  * SOFTWARE.
  */
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 contract FiatTokenUtil {
     // (address,address,uint256,uint256,uint256,bytes32) = 20*2 + 32*4 = 168
     uint256 private constant _TRANSFER_PARAM_SIZE = 168;

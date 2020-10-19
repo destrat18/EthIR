@@ -79,8 +79,7 @@ interface IERC20 {
 
 // File: contracts/spec_interfaces/IContractRegistry.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface IContractRegistry {
 
 	event ContractAddressUpdated(string contractName, address addr);
@@ -94,12 +93,10 @@ interface IContractRegistry {
 
 // File: contracts/spec_interfaces/IProtocolWallet.sol
 
-pragma solidity 0.5.16;
+pragma solidity ^0.5.16;
 
 
-
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 /// @title Protocol Wallet interface
 interface IProtocolWallet {
     event FundsAddedToPool(uint256 added, uint256 total);
@@ -168,8 +165,7 @@ contract Context {
 
 // File: contracts/WithClaimableMigrationOwnership.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 /**
  * @title Claimable
@@ -259,8 +255,7 @@ contract WithClaimableMigrationOwnership is Context{
 
 // File: contracts/WithClaimableFunctionalOwnership.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 /**
  * @title Claimable
@@ -509,8 +504,7 @@ library SafeMath {
 
 // File: ../contracts/ProtocolWallet.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

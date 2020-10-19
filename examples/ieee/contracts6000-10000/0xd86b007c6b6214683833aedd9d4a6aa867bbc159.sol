@@ -1,5 +1,4 @@
-pragma solidity 0.5.17; // optimization runs: 200, evm version: istanbul
-
+pragma solidity ^0.5.17;
 
 interface IERC20 {
     function transfer(address, uint256) external returns (bool);

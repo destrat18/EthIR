@@ -1,5 +1,4 @@
-pragma solidity 0.6.2;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.6.2;pragma experimental ABIEncoderV2;
 
 /*
  * @dev Provides information about the current execution context, including the

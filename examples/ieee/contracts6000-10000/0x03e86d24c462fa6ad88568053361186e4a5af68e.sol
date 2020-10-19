@@ -493,8 +493,7 @@ library SafeMath {
 ///@author Zapper
 ///@notice this contract adds liquidity to Balancer liquidity pools in one transaction
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 interface IBFactory_Balancer_ZapIn_General_V1 {
     function isBPool(address b) external view returns (bool);

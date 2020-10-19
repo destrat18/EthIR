@@ -230,8 +230,7 @@ library SafeMath {
 
 // File: @openzeppelin/upgrades/contracts/Initializable.sol
 
-pragma solidity >=0.4.24 <0.7.0;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Initializable
@@ -295,8 +294,7 @@ contract Initializable {
 
 // File: contracts/NoLossDao_v0.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 // import "./interfaces/IERC20.sol";
 
 

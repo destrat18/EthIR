@@ -1,7 +1,6 @@
 // File: contracts/sol6/IERC20.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 interface IERC20 {
     event Approval(address indexed _owner, address indexed _spender, uint256 _value);
@@ -33,8 +32,7 @@ abstract contract ERC20 is IERC20 {
 
 // File: contracts/sol6/IKyberReserve.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 interface IKyberReserve {
@@ -57,8 +55,7 @@ interface IKyberReserve {
 
 // File: contracts/sol6/IKyberNetwork.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 interface IKyberNetwork {
@@ -125,8 +122,7 @@ interface IKyberNetwork {
 
 // File: contracts/sol6/IKyberNetworkProxy.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 interface IKyberNetworkProxy {
@@ -195,8 +191,7 @@ interface IKyberNetworkProxy {
 
 // File: contracts/sol6/IKyberStorage.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 
@@ -297,8 +292,7 @@ interface IKyberStorage {
 
 // File: contracts/sol6/IKyberMatchingEngine.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 
@@ -337,8 +331,7 @@ interface IKyberMatchingEngine {
 
 // File: contracts/sol6/wrappers/IKyberRateHelper.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 interface IKyberRateHelper {
@@ -398,8 +391,7 @@ interface IKyberRateHelper {
 
 // File: contracts/sol6/Dao/IEpochUtils.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 interface IEpochUtils {
     function epochPeriodInSeconds() external view returns (uint256);
 
@@ -412,8 +404,7 @@ interface IEpochUtils {
 
 // File: contracts/sol6/IKyberDao.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 interface IKyberDao is IEpochUtils {
@@ -466,8 +457,7 @@ interface IKyberDao is IEpochUtils {
 
 // File: contracts/sol6/utils/Utils5.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 /**
@@ -619,8 +609,7 @@ contract Utils5 {
 
 // File: contracts/sol6/utils/PermissionGroupsNoModifiers.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 contract PermissionGroupsNoModifiers {
     address public admin;
@@ -741,8 +730,7 @@ contract PermissionGroupsNoModifiers {
 
 // File: contracts/sol6/utils/WithdrawableNoModifiers.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 
@@ -775,8 +763,7 @@ contract WithdrawableNoModifiers is PermissionGroupsNoModifiers {
 
 // File: contracts/sol6/wrappers/KyberRateHelper.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 

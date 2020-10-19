@@ -347,8 +347,7 @@ library SafeMath {
 
 // File: contracts/Wrapper.sol
 
-pragma solidity 0.5.2;
-
+pragma solidity ^0.5.2;
 
 
 

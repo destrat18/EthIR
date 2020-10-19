@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 contract KabazonPoints {
     // Track how many tokens are owned by each address.
     mapping (address => uint256) public balanceOf;

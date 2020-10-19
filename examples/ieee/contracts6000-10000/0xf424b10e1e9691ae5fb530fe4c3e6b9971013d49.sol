@@ -704,8 +704,7 @@ contract ERC20Detailed is IERC20 {
 
 // File: contracts/interfaces/DyDxStructs.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 contract DyDxStructs {
   enum ActionType {
     Deposit,   // supply tokens
@@ -752,8 +751,7 @@ contract DyDxStructs {
 
 // File: contracts/interfaces/DyDx.sol
 
-pragma solidity 0.5.16;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.5.16;pragma experimental ABIEncoderV2;
 
 
 contract DyDx is DyDxStructs {
@@ -775,8 +773,7 @@ contract DyDx is DyDxStructs {
  * @author: Idle Labs Inc., idle.finance
  */
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

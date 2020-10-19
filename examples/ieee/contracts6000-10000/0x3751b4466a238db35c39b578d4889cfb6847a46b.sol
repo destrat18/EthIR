@@ -494,8 +494,7 @@ contract Ownable is Context {
 
 // File: contracts/interfaces/CERC20.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface CERC20 {
   function mint(uint256 mintAmount) external returns (uint256);
   function comptroller() external view returns (address);
@@ -513,8 +512,7 @@ interface CERC20 {
 
 // File: contracts/interfaces/ILendingProtocol.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface ILendingProtocol {
   function mint() external returns (uint256);
   function redeem(address account) external returns (uint256);
@@ -529,8 +527,7 @@ interface ILendingProtocol {
 
 // File: contracts/interfaces/WhitePaperInterestRateModel.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface WhitePaperInterestRateModel {
   function getBorrowRate(uint256 cash, uint256 borrows, uint256 _reserves) external view returns (uint256, uint256);
   function getSupplyRate(uint256 cash, uint256 borrows, uint256 reserves, uint256 reserveFactorMantissa) external view returns (uint256);
@@ -549,8 +546,7 @@ interface WhitePaperInterestRateModel {
  *           This contract holds assets only during a tx, after tx it should be empty
  * @author: Idle Labs Inc., idle.finance
  */
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

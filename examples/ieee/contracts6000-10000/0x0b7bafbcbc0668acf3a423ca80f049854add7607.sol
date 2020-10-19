@@ -4,8 +4,7 @@
 
 // File: contracts/libraries/openzeppelin-upgradeability/VersionedInitializable.sol
 
-pragma solidity >=0.4.24 <0.6.0;
-
+pragma solidity ^0.4.24;
 /**
  * @title VersionedInitializable
  *

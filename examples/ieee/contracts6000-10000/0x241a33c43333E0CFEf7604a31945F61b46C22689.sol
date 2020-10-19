@@ -571,8 +571,7 @@ interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
-pragma solidity >=0.6.0 <0.7.0;
-
+pragma solidity ^0.6.0;
 interface ICryptoPunksMarket {
 
     struct Offer {
@@ -615,8 +614,7 @@ interface ICryptoPunksMarket {
     function punkIndexToAddress(uint punkIndex) external returns (address);
 }
 
-pragma solidity >=0.6.0 <0.7.0;
-
+pragma solidity ^0.6.0;
 contract Punkology is Ownable {
 
   using SafeMath for uint256;

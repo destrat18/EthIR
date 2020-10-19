@@ -499,8 +499,7 @@ library SafeMath {
 ///@author DeFiZap
 ///@notice this contract helps in investing in balancer pools through ETH or ERC20 tokens
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 

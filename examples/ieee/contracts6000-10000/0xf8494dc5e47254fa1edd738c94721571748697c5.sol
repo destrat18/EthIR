@@ -743,8 +743,7 @@ contract Pausable is Context, PauserRole {
 
 // File: contracts/interfaces/IAuthorization.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 interface IAuthorization {
     function getKycAddress() external view returns (address);
 
@@ -761,8 +760,7 @@ interface IAuthorization {
 
 // File: contracts/ReferralTracker.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 

@@ -5,8 +5,7 @@
 
 */
 
-pragma solidity 0.6.9;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.6.9;pragma experimental ABIEncoderV2;
 
 contract MultiSigWalletWithTimelock {
     uint256 public constant MAX_OWNER_COUNT = 50;

@@ -2,8 +2,7 @@
  *Submitted for verification at Etherscan.io on 2020-07-09
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 /* Copyright (C) 2017 NexusMutual.io
 

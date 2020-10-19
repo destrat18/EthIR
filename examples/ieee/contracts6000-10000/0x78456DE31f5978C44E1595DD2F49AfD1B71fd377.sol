@@ -16,8 +16,7 @@
 
 */
 
-pragma solidity 0.5.16;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.5.16;pragma experimental ABIEncoderV2;
 
 // File: contracts/external/chainlink/I_Aggregator.sol
 

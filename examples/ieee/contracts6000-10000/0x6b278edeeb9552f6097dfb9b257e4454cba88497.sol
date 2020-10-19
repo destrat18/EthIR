@@ -2,8 +2,7 @@
  *Submitted for verification at Etherscan.io on 2019-10-06
 */
 
-pragma solidity 0.5.7;
-// produced by the Solididy File Flattener (c) David Appleton 2018
+pragma solidity ^0.5.7;// produced by the Solididy File Flattener (c) David Appleton 2018
 // contact : dave@akomba.com
 // released under Apache 2.0 licence
 interface IERC20 {

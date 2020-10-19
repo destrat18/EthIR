@@ -1,7 +1,6 @@
 //Website hack.redanbu.tech
 
-pragma solidity 0.4.25;
-
+pragma solidity ^0.4.25;
 
 // File: openzeppelin-solidity/contracts/token/ERC20/IERC20.sol
 

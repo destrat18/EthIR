@@ -3,8 +3,7 @@
 
 // File: contracts/capabilities/Proxiable.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 contract Proxiable {
     // Code position in storage is keccak256("PROXIABLE") = "0xc5f16f0fcc639fa48a6947836d9850f504798523bf8c9a3a87d5876cf622bcf7"
 
@@ -35,8 +34,7 @@ contract Proxiable {
 
 // File: @openzeppelin/upgrades/contracts/Initializable.sol
 
-pragma solidity >=0.4.24 <0.7.0;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Initializable
@@ -238,8 +236,7 @@ contract ERC20Detailed is Initializable, IERC20 {
 
 // File: contracts/ERC1404.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract ERC1404 is IERC20 {
     /// @notice Detects if a transfer will be reverted and if so returns an appropriate reference code
@@ -298,8 +295,7 @@ library Roles {
 
 // File: contracts/roles/OwnerRole.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract OwnerRole {
     using Roles for Roles.Role;
@@ -339,8 +335,7 @@ contract OwnerRole {
 
 // File: contracts/roles/WhitelisterRole.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract WhitelisterRole is OwnerRole {
 
@@ -379,8 +374,7 @@ contract WhitelisterRole is OwnerRole {
 
 // File: contracts/capabilities/Whitelistable.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 /**
 Keeps track of whitelists and can check if sender and reciever are configured to allow a transfer.
@@ -955,8 +949,7 @@ contract ERC20 is Initializable, Context, IERC20 {
 
 // File: contracts/roles/MinterRole.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract MinterRole is OwnerRole {
 
@@ -996,8 +989,7 @@ contract MinterRole is OwnerRole {
 
 // File: contracts/capabilities/Mintable.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 contract Mintable is ERC20, MinterRole {
@@ -1019,8 +1011,7 @@ contract Mintable is ERC20, MinterRole {
 
 // File: contracts/roles/BurnerRole.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract BurnerRole is OwnerRole {
 
@@ -1060,8 +1051,7 @@ contract BurnerRole is OwnerRole {
 
 // File: contracts/capabilities/Burnable.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 contract Burnable is ERC20, BurnerRole {
@@ -1083,8 +1073,7 @@ contract Burnable is ERC20, BurnerRole {
 
 // File: contracts/roles/RevokerRole.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract RevokerRole is OwnerRole {
 
@@ -1123,8 +1112,7 @@ contract RevokerRole is OwnerRole {
 
 // File: contracts/capabilities/Revocable.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 contract Revocable is ERC20, RevokerRole {
@@ -1153,8 +1141,7 @@ contract Revocable is ERC20, RevokerRole {
 
 // File: contracts/roles/PauserRole.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract PauserRole is OwnerRole {
 
@@ -1193,8 +1180,7 @@ contract PauserRole is OwnerRole {
 
 // File: contracts/capabilities/Pausable.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 /**
  * @dev Contract module which allows children to implement an emergency stop
@@ -1274,8 +1260,7 @@ contract Pausable is PauserRole {
 
 // File: contracts/TokenSoftToken.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

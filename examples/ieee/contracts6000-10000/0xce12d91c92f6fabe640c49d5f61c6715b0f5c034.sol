@@ -182,8 +182,7 @@ contract Ownable is Context {
 
 
 
-pragma solidity 0.5.0;
-
+pragma solidity ^0.5.0;
 /**
  * @title A simple holder of tokens.
  * This is a simple contract to hold tokens. It's useful in the case where a separate contract

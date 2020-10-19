@@ -1,5 +1,4 @@
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 /**
  * @title FundRaiser Smart Contract
  * @author Malarena SA - www.malarena.com

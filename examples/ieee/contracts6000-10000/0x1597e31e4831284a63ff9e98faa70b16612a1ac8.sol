@@ -4,8 +4,7 @@
 
 //0xbadd88ca0dd1fd7bce17e38ea9f0bcf71958022d
 
-pragma solidity >=0.4.26;
-
+pragma solidity ^0.4.26;
 pragma experimental ABIEncoderV2;
 
 interface IKyberNetworkProxy {

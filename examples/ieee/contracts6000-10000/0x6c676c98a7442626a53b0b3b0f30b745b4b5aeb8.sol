@@ -1,7 +1,6 @@
 // File: contracts/standards/ERC1271.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 // ERC1271 on Feb 12th, 2019: https://github.com/ethereum/EIPs/blob/a97dc434930d0ccc4461c97d8c7a920dc585adf2/EIPS/eip-1271.md
 // Using `isValidSignature(bytes32,bytes)` even though the standard still hasn't been modified
 // Rationale: https://github.com/ethereum/EIPs/issues/1271#issuecomment-462719728
@@ -47,8 +46,7 @@ contract ERC1271Bytes is ERC1271 {
 
 // File: contracts/SignatureValidator.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 // Inspired by https://github.com/horizon-games/multi-token-standard/blob/319740cf2a78b8816269ae49a09c537b3fd7303b/contracts/utils/SignatureValidator.sol
 // This should probably be moved into aOS: https://github.com/aragon/aragonOS/pull/442
 
@@ -209,8 +207,7 @@ library SignatureValidator {
 
 // File: contracts/standards/IERC165.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 // See https://eips.ethereum.org/EIPS/eip-165
 interface IERC165 {
@@ -226,8 +223,7 @@ interface IERC165 {
 
 // File: contracts/standards/IERC721Receiver.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 // See https://eips.ethereum.org/EIPS/eip-721
 interface IERC721Receiver {
@@ -249,8 +245,7 @@ interface IERC721Receiver {
 
 // File: contracts/standards/IERC1155Receiver.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 // See https://eips.ethereum.org/EIPS/eip-1155
 interface IERC1155Receiver {
@@ -1339,8 +1334,7 @@ contract AragonApp is AppStorage, Autopetrified, VaultRecoverable, ReentrancyGua
 
 // File: @aragon/os/contracts/common/DepositableStorage.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 contract DepositableStorage {
@@ -1360,8 +1354,7 @@ contract DepositableStorage {
 
 // File: @aragon/apps-vault/contracts/Vault.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -1495,8 +1488,7 @@ interface IForwarder {
  * SPDX-License-Identifier:    GPL-3.0-or-later
  */
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 

@@ -12,8 +12,7 @@
 // Github: https://github.com/d-mmm
 // WhitePaper: https://dMMM.io/whitepaper
 
-pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
  * checks.

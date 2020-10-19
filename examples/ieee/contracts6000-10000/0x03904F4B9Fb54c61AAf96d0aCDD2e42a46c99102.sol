@@ -1,5 +1,4 @@
-pragma solidity 0.6.0;
-
+pragma solidity ^0.6.0;
 /**
  * @title NEST and NToken lock-up contract
  * @dev NEST and NToken deposit and withdrawal

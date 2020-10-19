@@ -1,5 +1,4 @@
-pragma solidity 0.6.0;
-
+pragma solidity ^0.6.0;
 /**
  * @title ETH bonus pool
  * @dev ETH collection and inquiry

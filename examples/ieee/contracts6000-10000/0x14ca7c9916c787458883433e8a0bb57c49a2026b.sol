@@ -1,7 +1,6 @@
 // File: contracts/library/SafeMath.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
  * checks.
@@ -171,8 +170,7 @@ library SafeMath {
 
 // File: contracts/erc20/ERC20.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 abstract contract ERC20 {
     using SafeMath for uint256;
@@ -285,8 +283,7 @@ abstract contract ERC20 {
 
 // File: contracts/library/Ownable.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 contract Ownable {
     address internal _owner;
 
@@ -334,8 +331,7 @@ contract Ownable {
 
 // File: contracts/erc20/ERC20Lockable.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 
 abstract contract ERC20Lockable is ERC20, Ownable {
@@ -431,8 +427,7 @@ abstract contract ERC20Lockable is ERC20, Ownable {
 
 // File: contracts/library/Pausable.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 contract Pausable is Ownable {
     bool internal _paused;
@@ -469,8 +464,7 @@ contract Pausable is Ownable {
 
 // File: contracts/erc20/ERC20Burnable.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 
 abstract contract ERC20Burnable is ERC20, Pausable {
@@ -506,8 +500,7 @@ abstract contract ERC20Burnable is ERC20, Pausable {
 
 // File: contracts/erc20/ERC20Mintable.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 
 abstract contract ERC20Mintable is ERC20, Pausable {
@@ -566,8 +559,7 @@ abstract contract ERC20Mintable is ERC20, Pausable {
 
 // File: contracts/library/Freezable.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 contract Freezable is Ownable {
     mapping(address => bool) private _frozen;
@@ -607,8 +599,7 @@ contract Freezable is Ownable {
 
 // File: contracts/ESCToken.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 
 

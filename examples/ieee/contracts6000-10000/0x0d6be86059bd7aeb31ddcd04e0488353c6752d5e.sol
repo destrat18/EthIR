@@ -10,8 +10,7 @@ Play now : https://fomopool.com
 
 */
 
-pragma solidity 0.6.0;
-
+pragma solidity ^0.6.0;
 contract FOMOPOOL {
      address public ownerWallet = 0x2fF324915A980c8C82a0062a6B0f724249F3176d;
      address public feesWallet = 0x6eC27978a98AfA20daA6B85B44De4653853a4816;

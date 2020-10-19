@@ -14,8 +14,7 @@
  * limitations under the License.
  */
 
-pragma solidity 0.5.7;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.5.7;pragma experimental ABIEncoderV2;
 
 interface IDepositContractRegistry {
   function operatorOf(address owner, address operator) external returns (bool);

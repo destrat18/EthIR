@@ -1,5 +1,4 @@
-pragma solidity 0.5.14;
-
+pragma solidity ^0.5.14;
 contract SwapProxyInterface {
     function name() public view returns(string memory);
     function getSwapQuantity(address src, address dst, uint256 srcQty) public view returns(uint256);

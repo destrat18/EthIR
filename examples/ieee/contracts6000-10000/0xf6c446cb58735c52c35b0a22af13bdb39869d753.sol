@@ -1435,8 +1435,7 @@ contract Ownable {
 
 // File: contracts/PreCoordinator.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 

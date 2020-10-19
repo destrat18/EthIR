@@ -1474,8 +1474,7 @@ contract Ownable is Context {
 
 // File: contracts/keyV2/DozerDollKeyBaseV2.sol
 
-pragma solidity 0.5.15;
-
+pragma solidity ^0.5.15;
 
 
 
@@ -1551,8 +1550,7 @@ contract DozerDollKeyBaseV2 is ERC721Full, ERC721Mintable, ERC721MetadataMintabl
 
 // File: contracts/keyV2/DozerDollKeyV2.sol
 
-pragma solidity 0.5.15;
-
+pragma solidity ^0.5.15;
 
 contract DozerDollKeyV2 is DozerDollKeyBaseV2 {
     using SafeMath for uint256;

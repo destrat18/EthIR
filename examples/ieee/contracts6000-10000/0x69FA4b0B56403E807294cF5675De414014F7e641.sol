@@ -5,8 +5,7 @@
   there are still limitations when using this contract.
  */
 
-pragma solidity 0.6.11;
-
+pragma solidity ^0.6.11;
 // This contract defines the staking functionality for use within Triatic with the Triatic native token (TRA)
 // You are not authorized to use this contract with proper attribution.
 // If you see this comment in another project, it means that that project has yet to request permission to use this contract.

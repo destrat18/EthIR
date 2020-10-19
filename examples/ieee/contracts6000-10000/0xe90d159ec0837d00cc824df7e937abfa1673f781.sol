@@ -503,8 +503,7 @@ library SafeMath {
 ///@author DeFiZap
 ///@notice this contract helps in investing in balancer pools through ETH or ERC20 tokens
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 interface IBFactory_Balancer_ZapIn_General_V1 {
     function isBPool(address b) external view returns (bool);

@@ -25,8 +25,7 @@
  We're pleased to unveil the next leap in the evolution of Decentralized Matrix below:
 **/
                            
-pragma solidity >=0.4.23 <0.6.0;
-
+pragma solidity ^0.4.23;
 contract EthMagnetSmartContract {
     
     struct Member {

@@ -1,7 +1,6 @@
 // File: contracts/utility/interfaces/IOwned.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 /*
     Owned contract interface
 */
@@ -15,8 +14,7 @@ contract IOwned {
 
 // File: contracts/token/interfaces/IERC20Token.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 /*
     ERC20 Standard Token interface
 */
@@ -36,8 +34,7 @@ contract IERC20Token {
 
 // File: contracts/utility/interfaces/ITokenHolder.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 
 
 /*
@@ -49,8 +46,7 @@ contract ITokenHolder is IOwned {
 
 // File: contracts/converter/interfaces/IConverterAnchor.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 
 
 /*
@@ -61,8 +57,7 @@ contract IConverterAnchor is IOwned, ITokenHolder {
 
 // File: contracts/utility/interfaces/IWhitelist.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 /*
     Whitelist interface
 */
@@ -72,8 +67,7 @@ contract IWhitelist {
 
 // File: contracts/converter/interfaces/IConverter.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 
 
 
@@ -119,8 +113,7 @@ contract IConverter is IOwned {
 
 // File: contracts/converter/interfaces/IConverterUpgrader.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 /*
     Converter Upgrader interface
 */
@@ -131,8 +124,7 @@ contract IConverterUpgrader {
 
 // File: contracts/utility/interfaces/IContractRegistry.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 /*
     Contract Registry interface
 */
@@ -145,8 +137,7 @@ contract IContractRegistry {
 
 // File: contracts/converter/interfaces/IConverterFactory.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 
 
 
@@ -160,8 +151,7 @@ contract IConverterFactory {
 
 // File: contracts/utility/Owned.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 
 /**
   * @dev Provides support and utilities for contract ownership
@@ -221,8 +211,7 @@ contract Owned is IOwned {
 
 // File: contracts/utility/Utils.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 /**
   * @dev Utilities & Common Modifiers
 */
@@ -263,8 +252,7 @@ contract Utils {
 
 // File: contracts/utility/ContractRegistryClient.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 
 
 
@@ -368,8 +356,7 @@ contract ContractRegistryClient is Owned, Utils {
 
 // File: contracts/token/interfaces/IEtherToken.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 
 /*
     Ether Token interface
@@ -383,8 +370,7 @@ contract IEtherToken is IERC20Token {
 
 // File: contracts/converter/ConverterUpgrader.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 
 
 

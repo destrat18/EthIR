@@ -78,8 +78,7 @@ contract DSMath {
 // required for copyright to apply.  As a result, this is free and
 // unencumbered software belonging to the public domain.
 
-//pragma solidity >0.4.20;
-
+pragma solidity ^0.4.20;
 contract ERC20Events {
     event Approval(address indexed src, address indexed guy, uint wad);
     event Transfer(address indexed src, address indexed dst, uint wad);
@@ -112,8 +111,7 @@ contract ERC20 is ERC20Events {
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-//pragma solidity >=0.4.23;
-
+pragma solidity ^0.4.23;
 contract DSNote {
     event LogNote(
         bytes4   indexed  sig,
@@ -154,8 +152,7 @@ contract DSNote {
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity >=0.4.23;
-
+pragma solidity ^0.4.23;
 interface DSAuthority {
     function canCall(
         address src, address dst, bytes4 sig
@@ -227,8 +224,7 @@ contract DSAuth is DSAuthEvents {
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-//pragma solidity >=0.4.23;
-
+pragma solidity ^0.4.23;
 //import "ds-auth/auth.sol";
 //import "ds-note/note.sol";
 
@@ -265,8 +261,7 @@ contract DSStop is DSNote, DSAuth {
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-//pragma solidity >=0.4.23;
-
+pragma solidity ^0.4.23;
 //import "erc20/erc20.sol";
 //import "ds-math/math.sol";
 
@@ -338,8 +333,7 @@ contract DSTokenBase is ERC20, DSMath {
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-//pragma solidity >=0.4.23;
-
+pragma solidity ^0.4.23;
 //import "ds-stop/stop.sol";
 
 //import "./base.sol";

@@ -1,5 +1,4 @@
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 contract AbsGoldenMatrix1{
     struct Level {
         uint256 price;

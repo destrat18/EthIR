@@ -1,7 +1,6 @@
 // File: contracts/AmpleforthInterface.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 interface AmpleforthInterface {
   function pushReport(uint256 payload) external;
   function purgeReports() external;
@@ -9,8 +8,7 @@ interface AmpleforthInterface {
 
 // File: contracts/MockAmpleforth.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract MockAmpleforth is AmpleforthInterface {
   event PushReport(uint256 payload);

@@ -388,8 +388,7 @@ library SafeERC20 {
 
 // File: @openzeppelin/upgrades/contracts/Initializable.sol
 
-pragma solidity >=0.4.24 <0.7.0;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Initializable
@@ -1075,8 +1074,7 @@ contract Pausable is Initializable, Context, PauserRole {
 
 // File: contracts/interfaces/iERC20Fulcrum.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface iERC20Fulcrum {
   function mint(
     address receiver,
@@ -1174,8 +1172,7 @@ interface iERC20Fulcrum {
 
 // File: contracts/interfaces/ILendingProtocol.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface ILendingProtocol {
   function mint() external returns (uint256);
   function redeem(address account) external returns (uint256);
@@ -1190,8 +1187,7 @@ interface ILendingProtocol {
 
 // File: contracts/interfaces/IGovToken.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface IGovToken {
   function redeemGovTokens() external;
 }
@@ -1202,8 +1198,7 @@ interface IGovToken {
  * @title: Idle Token interface
  * @author: Idle Labs Inc., idle.finance
  */
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface IIdleTokenV3_1 {
   // view
   /**
@@ -1273,8 +1268,7 @@ interface IIdleTokenV3_1 {
  * @title: Idle Rebalancer interface
  * @author: Idle Labs Inc., idle.finance
  */
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface IIdleRebalancerV3 {
   function getAllocations() external view returns (uint256[] memory _allocations);
   function setAllocations(uint256[] calldata _allocations, address[] calldata _addresses) external;
@@ -1282,8 +1276,7 @@ interface IIdleRebalancerV3 {
 
 // File: contracts/interfaces/Comptroller.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface Comptroller {
   function claimComp(address) external;
   function compSpeeds(address _cToken) external view returns (uint256);
@@ -1292,8 +1285,7 @@ interface Comptroller {
 
 // File: contracts/interfaces/CERC20.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface CERC20 {
   function mint(uint256 mintAmount) external returns (uint256);
   function comptroller() external view returns (address);
@@ -1311,8 +1303,7 @@ interface CERC20 {
 
 // File: contracts/interfaces/GasToken.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface GasToken {
   function freeUpTo(uint256 value) external returns (uint256 freed);
   function freeFromUpTo(address from, uint256 value) external returns (uint256 freed);
@@ -1321,8 +1312,7 @@ interface GasToken {
 
 // File: contracts/GST2ConsumerV2.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 contract GST2ConsumerV2 is Initializable {
@@ -1370,8 +1360,7 @@ contract GST2ConsumerV2 is Initializable {
  *           and with each token user have the right to redeem a portion of these pools
  * @author: Idle Labs Inc., idle.finance
  */
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

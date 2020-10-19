@@ -1,5 +1,4 @@
-pragma solidity 0.5.11;
-
+pragma solidity ^0.5.11;
 contract XoXoNetwork {
      address public ownerWallet;
       uint public currUserID = 0;

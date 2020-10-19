@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: GPLv3
 
-pragma solidity 0.6.11;
-
+pragma solidity ^0.6.11;
 // This is the funding contract for use within TRIATICS with the TRIATICS Native Token (TRA).
 // All licensing issues are covered in the standard GPLv3 licensing terms
 // Proper attribution has to be provided when using this code for other projects other than TRIATICS

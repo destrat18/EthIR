@@ -209,8 +209,7 @@ interface IUniswapV2Router02 {
 
 // File: localhost/contracts/handlers/uniswapv2/IUniswapV2Pair.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IUniswapV2Pair {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -264,8 +263,7 @@ interface IUniswapV2Pair {
 
 // File: localhost/contracts/handlers/uniswapv2/libraries/UniswapV2Library.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 

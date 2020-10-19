@@ -1,6 +1,5 @@
 // hevm: flattened sources of src/LoihiExchange.sol
-pragma solidity >0.4.13 >=0.4.23 >=0.5.0 <0.6.0 >=0.5.6 <0.6.0 >=0.5.12 <0.6.0 >=0.5.15 <0.6.0;
-
+pragma solidity ^0.4.13;
 ////// lib/openzeppelin-contracts/src/contracts/token/ERC20/IERC20.sol
 /* pragma solidity ^0.5.0; */
 
@@ -166,8 +165,7 @@ contract LoihiDelegators {
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-/* pragma solidity >0.4.13; */
-
+pragma solidity ^0.4.13;
 contract LoihiMath {
 
     function add(uint x, uint y) internal pure returns (uint z) {

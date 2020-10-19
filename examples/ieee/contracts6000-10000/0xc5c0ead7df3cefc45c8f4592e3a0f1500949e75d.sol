@@ -1,5 +1,4 @@
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 interface ConfigurationRegistryInterface {
   event ConfigurationModified(bytes32 indexed key, bytes32 value);

@@ -1,7 +1,6 @@
 // File: contracts/sol4/ERC20Interface.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 // https://github.com/ethereum/EIPs/issues/20
 interface ERC20 {
@@ -17,8 +16,7 @@ interface ERC20 {
 
 // File: contracts/sol4/PermissionGroups.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 contract PermissionGroups {
 
@@ -145,8 +143,7 @@ contract PermissionGroups {
 
 // File: contracts/sol4/Withdrawable.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 
 
@@ -182,8 +179,7 @@ contract Withdrawable is PermissionGroups {
 
 // File: contracts/sol4/wrappers/WrapperBase.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 
 
@@ -227,8 +223,7 @@ contract WrapperBase is Withdrawable {
 
 // File: contracts/sol4/Utils.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 
 /// @title Kyber constants contract
@@ -293,8 +288,7 @@ contract Utils {
 
 // File: contracts/sol4/ConversionRatesInterface.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 
 interface ConversionRatesInterface {
@@ -312,8 +306,7 @@ interface ConversionRatesInterface {
 
 // File: contracts/sol4/reserves/VolumeImbalanceRecorder.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 
 
@@ -523,8 +516,7 @@ contract VolumeImbalanceRecorder is Withdrawable {
 
 // File: contracts/sol4/reserves/fprConversionRate/ConversionRates.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 
 
@@ -899,8 +891,7 @@ contract ConversionRates is ConversionRatesInterface, VolumeImbalanceRecorder, U
 
 // File: contracts/sol4/wrappers/WrapConversionRate.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 
 

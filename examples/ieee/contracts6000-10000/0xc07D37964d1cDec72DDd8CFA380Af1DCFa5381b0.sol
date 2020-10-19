@@ -1,5 +1,4 @@
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 // https://github.com/dapphub/ds-pause
 contract DSPauseAbstract {
     function delay() public view returns (uint256);

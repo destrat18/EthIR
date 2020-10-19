@@ -4,8 +4,7 @@
   * telegram: https://t.me/fastcash_official
   * /**/
 
-pragma solidity 0.5.11 - 0.6.4;
-
+pragma solidity ^0.5.11;
 contract fastcashpool {
      address public ownerWallet;
       uint public currUserID = 0;

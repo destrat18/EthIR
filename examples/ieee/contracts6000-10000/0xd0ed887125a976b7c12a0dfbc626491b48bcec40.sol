@@ -1,5 +1,4 @@
-pragma solidity 0.6.7; // optimization runs: 200, evm version: istanbul
-
+pragma solidity ^0.6.7;
 
 interface ERC1271Interface {
   function isValidSignature(

@@ -1,5 +1,4 @@
-pragma solidity 0.6.0;
-
+pragma solidity ^0.6.0;
 /**
  * @title Auction NToken contract 
  * @dev Auction for listing and generating NToken

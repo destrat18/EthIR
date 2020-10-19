@@ -1,5 +1,4 @@
-pragma solidity 0.5.14;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.5.14;pragma experimental ABIEncoderV2;
 
 library Account {
     struct Info {

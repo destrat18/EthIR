@@ -2,8 +2,7 @@
 
 // File: contracts/interfaces/IUniswapV2Factory.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 interface IUniswapV2Factory {
@@ -24,8 +23,7 @@ interface IUniswapV2Factory {
 
 // File: contracts/interfaces/IUniswapV2Pair.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 interface IUniswapV2Pair {
@@ -81,8 +79,7 @@ interface IUniswapV2Pair {
 
 // File: contracts/interfaces/IUniswapV2ERC20.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 interface IUniswapV2ERC20 {
@@ -109,8 +106,7 @@ interface IUniswapV2ERC20 {
 
 // File: contracts/libraries/SafeMath.sol
 
-pragma solidity 0.7.0;
-
+pragma solidity ^0.7.0;
 
 
 // a library for performing overflow-safe math, courtesy of DappHub (https://github.com/dapphub/ds-math)
@@ -131,8 +127,7 @@ library SafeMath {
 
 // File: contracts/UnipompERC20.sol
 
-pragma solidity 0.7.0;
-
+pragma solidity ^0.7.0;
 
 
 
@@ -232,8 +227,7 @@ contract UnipompERC20  {
 
 // File: contracts/libraries/Math.sol
 
-pragma solidity 0.7.0;
-
+pragma solidity ^0.7.0;
 // a library for performing various math operations
 
 library Math {
@@ -258,8 +252,7 @@ library Math {
 
 // File: contracts/libraries/UQ112x112.sol
 
-pragma solidity 0.7.0;
-
+pragma solidity ^0.7.0;
 
 
 // a library for handling binary fixed point numbers (https://en.wikipedia.org/wiki/Q_(number_format))
@@ -283,8 +276,7 @@ library UQ112x112 {
 
 // File: contracts/interfaces/IERC20.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 interface IERC20 {
@@ -305,8 +297,7 @@ interface IERC20 {
 
 // File: contracts/interfaces/IUniswapV2Callee.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 interface IUniswapV2Callee {
@@ -315,8 +306,7 @@ interface IUniswapV2Callee {
 
 // File: contracts/UnipompPair.sol
 
-pragma solidity 0.7.0;
-
+pragma solidity ^0.7.0;
 
 
 
@@ -521,8 +511,7 @@ contract UnipompPair is UnipompERC20 {
 
 // File: contracts/UnipompFactory.sol
 
-pragma solidity 0.7.0;
-
+pragma solidity ^0.7.0;
 
 
 

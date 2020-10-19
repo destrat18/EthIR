@@ -494,8 +494,7 @@ contract Ownable is Context {
 
 // File: contracts/interfaces/iERC20Fulcrum.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface iERC20Fulcrum {
   function mint(
     address receiver,
@@ -593,8 +592,7 @@ interface iERC20Fulcrum {
 
 // File: contracts/interfaces/ILendingProtocol.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface ILendingProtocol {
   function mint() external returns (uint256);
   function redeem(address account) external returns (uint256);
@@ -616,8 +614,7 @@ interface ILendingProtocol {
  *           This contract holds assets only during a tx, after tx it should be empty
  * @author: Idle Labs Inc., idle.finance
  */
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

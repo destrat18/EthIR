@@ -2,8 +2,7 @@
  *Submitted for verification at Etherscan.io on 2020-07-30
 */
 
-pragma solidity >=0.4.23 <0.6.0;
-contract EthHash {
+pragma solidity ^0.4.23;contract EthHash {
     
     struct User {
         uint id;

@@ -14,8 +14,7 @@
 * ==========================================================
 **/
 
-pragma solidity >=0.5.12 <0.7.0;
-
+pragma solidity ^0.5.12;
 contract TheFriendsTree2 {
 
     struct Tree {

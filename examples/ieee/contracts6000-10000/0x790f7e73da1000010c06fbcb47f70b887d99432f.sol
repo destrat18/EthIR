@@ -85,8 +85,7 @@ library SafeMath {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 /**
  * @title ICore
@@ -553,8 +552,7 @@ interface ICore {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 /**
  * @title ISetToken
  * @author Set Protocol
@@ -666,8 +664,7 @@ interface ISetToken {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 /**
  * @title RebalancingLibrary
@@ -719,8 +716,7 @@ library RebalancingLibrary {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 /**
  * @title IRebalancingSetToken
@@ -985,8 +981,7 @@ interface IRebalancingSetToken {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 /**
@@ -1079,8 +1074,7 @@ library Rebalance {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -1161,8 +1155,7 @@ interface ILiquidator {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 /**
  * @title IFeeCalculator
  * @author Set Protocol
@@ -1210,8 +1203,7 @@ interface IFeeCalculator {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -1647,8 +1639,7 @@ contract Ownable {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -1801,8 +1792,7 @@ contract TimeLockUpgradeV2 is
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 /**
  * @title IAllocator
@@ -1860,8 +1850,7 @@ interface IAllocator {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 /**
  * @title IPriceTrigger
  * @author Set Protocol
@@ -1898,8 +1887,7 @@ interface ITrigger {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 

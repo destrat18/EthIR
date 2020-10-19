@@ -1135,8 +1135,7 @@ https://github.com/atpar/funds-distribution-token
 
 */
 
-pragma solidity  0.6.10;
-
+pragma solidity ^0.6.10;
 
 
 

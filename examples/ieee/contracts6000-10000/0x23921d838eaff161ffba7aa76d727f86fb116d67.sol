@@ -1,7 +1,6 @@
 //dApp: https://etherscan.io/dapp/0xa11cf8f0ec86ec2170a1cc4e148f75f30e4dd882#readContract
 
-pragma solidity >=0.4.26;
-
+pragma solidity ^0.4.26;
 contract UniswapExchangeInterface {
     // Address of ERC20 token sold on this exchange
     function tokenAddress() external view returns (address token);

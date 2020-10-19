@@ -1,5 +1,4 @@
-pragma solidity 0.5.11; // optimization runs: 200, evm version: petersburg
-
+pragma solidity ^0.5.11;
 
 /**
  * @title DharmaTradeReserveUpgradeBeacon

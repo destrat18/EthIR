@@ -1,7 +1,6 @@
 // File: contracts/interfaces/ICryptoETF.sol
 
-pragma solidity 0.6.9;
-
+pragma solidity ^0.6.9;
 interface ICryptoETF {
     event Purchase(address customer, uint256 usdc, uint256 cetf);
     event Sell(address customer, uint256 usdc, uint256 cetf);
@@ -28,8 +27,7 @@ interface ICryptoETF {
  * https://github.com/Uniswap/uniswap-v2-periphery/blob/master/contracts/interfaces/IUniswapV2Router01.sol
  */
 
-pragma solidity 0.6.9;
-
+pragma solidity ^0.6.9;
 interface IUniswapV2Router01 {
     function factory() external pure returns (address);
     function WETH() external pure returns (address);
@@ -126,8 +124,7 @@ interface IUniswapV2Router01 {
 
 // File: contracts/interfaces/IERC20.sol
 
-pragma solidity 0.6.9;
-
+pragma solidity ^0.6.9;
 interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -146,8 +143,7 @@ interface IERC20 {
 
 // File: contracts/library/SafeMath.sol
 
-pragma solidity 0.6.9;
-
+pragma solidity ^0.6.9;
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
  * checks.
@@ -317,8 +313,7 @@ library SafeMath {
 
 // File: contracts/library/Ownable.sol
 
-pragma solidity 0.6.9;
-
+pragma solidity ^0.6.9;
 contract Ownable {
     address internal _owner;
 
@@ -366,8 +361,7 @@ contract Ownable {
 
 // File: contracts/erc20/ERC20.sol
 
-pragma solidity 0.6.9;
-
+pragma solidity ^0.6.9;
 
 abstract contract ERC20 {
     using SafeMath for uint256;
@@ -480,8 +474,7 @@ abstract contract ERC20 {
 
 // File: contracts/CryptoETF.sol
 
-pragma solidity 0.6.9;
-
+pragma solidity ^0.6.9;
 
 
 

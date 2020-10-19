@@ -712,8 +712,7 @@ interface AggregatorInterface {
 
 // File: @uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router01.sol
 
-pragma solidity >=0.6.2;
-
+pragma solidity ^0.6.2;
 interface IUniswapV2Router01 {
     function factory() external pure returns (address);
     function WETH() external pure returns (address);
@@ -828,8 +827,7 @@ interface IUniswapV2Router01 {
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 
 
@@ -903,8 +901,7 @@ interface IETHLiquidityPool is ILiquidityPool {
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 
 /**
@@ -1101,8 +1098,7 @@ contract HegicERCPool is
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 
 /**
@@ -1285,8 +1281,7 @@ contract HegicETHPool is
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 
 
@@ -1585,8 +1580,7 @@ contract HegicOptions is Ownable {
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 
 /**
@@ -1687,8 +1681,7 @@ contract HegicCallOptions is HegicOptions {
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 
 /**

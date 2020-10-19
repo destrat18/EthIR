@@ -1,7 +1,6 @@
 // File: zos-lib/contracts/Initializable.sol
 
-pragma solidity >=0.4.24 <0.6.0;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Initializable
@@ -241,8 +240,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title SafeMathInt
@@ -324,8 +322,7 @@ library SafeMathInt {
 
 // File: contracts/lib/UInt256Lib.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Various utilities useful for uint256.
@@ -434,8 +431,7 @@ contract ERC20Detailed is Initializable, IERC20 {
 
 // File: contracts/UFragments.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title uFragments ERC20 token
@@ -756,8 +752,7 @@ contract UFragments is ERC20Detailed, Ownable {
 
 // File: contracts/UFragmentsPolicy.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 interface IOracle {
     function getData() external returns (uint256, bool);
@@ -1056,8 +1051,7 @@ contract UFragmentsPolicy is Ownable {
 
 // File: contracts/Orchestrator.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 

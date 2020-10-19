@@ -1,5 +1,4 @@
-pragma solidity 0.6.9;
-
+pragma solidity ^0.6.9;
 // ----------------------------------------------------------------------------
 // 'TokenizeXchange' token contract
 // https://tokenizev1.exchange.com

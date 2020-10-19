@@ -14,8 +14,7 @@
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 /**
  * @title IERC20
  * @author Set Protocol
@@ -82,8 +81,7 @@ interface IERC20 {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 /**
@@ -195,8 +193,7 @@ contract ERC20Viewer {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 /**
  * @title IAssetPairManager
@@ -228,8 +225,7 @@ interface IAssetPairManager {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 /**
  * @title IMACOStrategyManagerV2
@@ -261,8 +257,7 @@ interface IMACOStrategyManagerV2 {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -339,8 +334,7 @@ contract ManagerViewer {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 /**
  * @title IOracle
@@ -380,8 +374,7 @@ interface IOracle {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -481,8 +474,7 @@ contract ERC20Detailed is IERC20 {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 /**
  * @title ISetToken
  * @author Set Protocol
@@ -594,8 +586,7 @@ interface ISetToken {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 /**
  * @title RebalancingLibrary
@@ -647,8 +638,7 @@ library RebalancingLibrary {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 /**
@@ -914,8 +904,7 @@ interface IRebalancingSetToken {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 /**
@@ -1008,8 +997,7 @@ library Rebalance {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -1091,8 +1079,7 @@ interface ILiquidator {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 /**
  * @title PerformanceFeeLibrary
@@ -1134,8 +1121,7 @@ library PerformanceFeeLibrary {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.5.7;pragma experimental ABIEncoderV2;
 
 
 /**
@@ -1181,8 +1167,7 @@ interface IPerformanceFeeCalculator {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 /**
  * @title IFeeCalculator
  * @author Set Protocol
@@ -1230,8 +1215,7 @@ interface IFeeCalculator {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -1561,8 +1545,7 @@ interface IRebalancingSetTokenV2 {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -1923,8 +1906,7 @@ interface IRebalancingSetTokenV3 {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 /**
  * @title ITWAPAuctionGetters
@@ -1965,8 +1947,7 @@ interface ITWAPAuctionGetters {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -2427,8 +2408,7 @@ contract RebalancingSetTokenViewer {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 /**
@@ -2483,8 +2463,7 @@ interface ISocialAllocator {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -2524,8 +2503,7 @@ library SocialTradingLibrary {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -2641,8 +2619,7 @@ interface ISocialTradingManager {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -2928,8 +2905,7 @@ contract TradingPoolViewer is RebalancingSetTokenViewer {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 /**
  * @title ICToken
@@ -2989,8 +2965,7 @@ interface ICToken {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -3042,8 +3017,7 @@ contract CTokenViewer {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 

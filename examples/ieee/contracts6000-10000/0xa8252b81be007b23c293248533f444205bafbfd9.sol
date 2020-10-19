@@ -1,5 +1,4 @@
-pragma solidity 0.5.11;
-
+pragma solidity ^0.5.11;
 contract MultiSendETH {
   using SafeMath for uint256;
 

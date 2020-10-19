@@ -1,5 +1,4 @@
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 interface Token {
     function balanceOf(address) external view returns (uint);
 }

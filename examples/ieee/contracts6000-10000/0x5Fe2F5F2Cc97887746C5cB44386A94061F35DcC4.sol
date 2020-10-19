@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // solhint-disable const-name-snakecase
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 /**
  * @title OwnedUpgradeabilityProxy
  * @dev This contract combines an upgradeability proxy with basic authorization control functionalities

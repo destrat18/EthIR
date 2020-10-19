@@ -1,7 +1,6 @@
 // File: contracts/sol4/ERC20Interface.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 // https://github.com/ethereum/EIPs/issues/20
 interface ERC20 {
@@ -17,8 +16,7 @@ interface ERC20 {
 
 // File: contracts/sol4/PermissionGroups.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 contract PermissionGroups {
 
@@ -145,8 +143,7 @@ contract PermissionGroups {
 
 // File: contracts/sol4/Withdrawable.sol
 
-pragma solidity 0.4.18;
-
+pragma solidity ^0.4.18;
 
 
 

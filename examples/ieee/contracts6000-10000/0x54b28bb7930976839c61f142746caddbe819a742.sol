@@ -11,8 +11,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 contract ERC20 {
     function balanceOf(address whom) external view returns (uint);
     function approve(address spender, uint amount) external returns (bool);

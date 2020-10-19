@@ -1,5 +1,4 @@
-pragma solidity 0.6.0;
-
+pragma solidity ^0.6.0;
 /**
  * @title Leveling contract
  * @dev ETH transfer in and transfer out

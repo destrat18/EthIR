@@ -68,8 +68,7 @@ library SafeMath {
 
 // File: contracts/interfaces/IBridgeValidators.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 interface IBridgeValidators {
     function initialize(uint256 _requiredSignatures, address[] _initialValidators, address _owner) external returns(bool);
     function isValidator(address _validator) external view returns(bool);
@@ -79,16 +78,14 @@ interface IBridgeValidators {
 
 // File: contracts/interfaces/IOwnedUpgradeabilityProxy.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 interface IOwnedUpgradeabilityProxy {
     function proxyOwner() external view returns (address);
 }
 
 // File: contracts/upgradeable_contracts/OwnedUpgradeability.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract OwnedUpgradeability {
 
@@ -105,8 +102,7 @@ contract OwnedUpgradeability {
 
 // File: contracts/upgradeability/EternalStorage.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 /**
  * @title EternalStorage
  * @dev This contract holds all the necessary state variables to carry out the storage of any contract.
@@ -132,8 +128,7 @@ contract EternalStorage {
 
 // File: contracts/upgradeable_contracts/EternalOwnable.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title EternalOwnable
@@ -220,8 +215,7 @@ interface IERC20 {
 
 // File: contracts/upgradeable_contracts/BasicBridge.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -370,16 +364,14 @@ contract BasicBridge is EternalStorage, EternalOwnable, OwnedUpgradeability {
 
 // File: contracts/ERC677Receiver.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 contract ERC677Receiver {
   function onTokenTransfer(address _from, uint _value, bytes _data) external returns(bool);
 }
 
 // File: contracts/interfaces/IForeignBridgeValidators.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 interface IForeignBridgeValidators {
     function isValidator(address _validator) external view returns(bool);
     function requiredSignatures() external view returns(uint256);
@@ -388,8 +380,7 @@ interface IForeignBridgeValidators {
 
 // File: contracts/libraries/Message.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 library Message {
@@ -639,8 +630,7 @@ library Message {
 
 // File: contracts/upgradeable_contracts/BasicForeignBridge.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -675,8 +665,7 @@ contract BasicForeignBridge is EternalStorage {
 
 // File: contracts/upgradeable_contracts/native_to_erc20/ForeignValidatable.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 contract ForeignValidatable is EternalStorage {
@@ -909,8 +898,7 @@ contract ERC20 is IERC20 {
 
 // File: contracts/ERC677.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract ERC677 is ERC20 {
     event Transfer(address indexed from, address indexed to, uint value, bytes data);
@@ -920,8 +908,7 @@ contract ERC677 is ERC20 {
 
 // File: contracts/interfaces/IBurnableMintableERC677Token.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract IBurnableMintableERC677Token is ERC677 {
     function mint(address, uint256) public returns (bool);
@@ -931,8 +918,7 @@ contract IBurnableMintableERC677Token is ERC677 {
 
 // File: contracts/upgradeable_contracts/ERC677Bridge.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 contract ERC677Bridge is BasicBridge {
@@ -963,8 +949,7 @@ contract ERC677Bridge is BasicBridge {
 
 // File: contracts/upgradeable_contracts/native_to_erc20/ForeignBridgeNativeToErc.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 

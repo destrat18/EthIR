@@ -1,6 +1,5 @@
 //file: Context.sol
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 /*
  * @dev Provides information about the current execution context, including the
  * sender of the transaction and its data. While these are generally available
@@ -29,8 +28,7 @@ contract Context {
 
 //file: IERC20.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP. Does not include
  * the optional functions; to access them see {ERC20Detailed}.
@@ -107,8 +105,7 @@ interface IERC20 {
 }
 
 //file: ERC20.sol
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 /**
  * @dev Implementation of the {IERC20} interface.
  *
@@ -493,8 +490,7 @@ library SafeMath {
     }
 }
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 // ----------------------------------------------------------------------------
 // 'DECA' DEcentralized CArbon tokens - ITDE (initial token distribution event)
 //

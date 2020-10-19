@@ -1,5 +1,4 @@
-pragma solidity 0.5.13;
-library SafeMath{
+pragma solidity ^0.5.13;library SafeMath{
 	function div(uint256 a,uint256 b)internal pure returns(uint256){require(b>0);uint256 c=a/b;return c;}
 	function mul(uint256 a,uint256 b)internal pure returns(uint256){if(a==0){return 0;}uint256 c=a*b;require(c/a==b);return c;}}
 interface Out{

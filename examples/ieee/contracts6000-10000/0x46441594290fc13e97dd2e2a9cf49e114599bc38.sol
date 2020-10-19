@@ -251,8 +251,7 @@ library SafeMath {
 
 // File: contracts/PoolDeposits.sol
 
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 
 
 

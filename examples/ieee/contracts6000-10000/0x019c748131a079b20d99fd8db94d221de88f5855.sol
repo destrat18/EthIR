@@ -1,8 +1,7 @@
 //No Colored Allowed by DappVinci
 //The 'tokenURI' function returns SVG
 // SPDX-License-Identifier: MIT
-pragma solidity 0.7.0;
-
+pragma solidity ^0.7.0;
 contract Ownable {
 string public constant NOT_CUR_OWNER = "018001";
 string public constant NO_XFER_2_0 = "018002";

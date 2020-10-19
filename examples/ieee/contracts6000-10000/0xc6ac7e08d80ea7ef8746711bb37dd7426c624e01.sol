@@ -1,7 +1,6 @@
 // File: @openzeppelin/contracts-ethereum-package/contracts/Initializable.sol
 
-pragma solidity >=0.4.24 <0.7.0;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Initializable
@@ -799,8 +798,7 @@ contract OwnableUpgradeSafe is Initializable, ContextUpgradeSafe {
 
 // File: contracts/p.sol
 
-pragma solidity 0.6.2;
-
+pragma solidity ^0.6.2;
 
 
 contract P is ERC20UpgradeSafe, OwnableUpgradeSafe {

@@ -1,7 +1,6 @@
 // File: contracts/interfaces/IDeerfiV1Pair.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDeerfiV1Pair {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -61,8 +60,7 @@ interface IDeerfiV1Pair {
 
 // File: contracts/interfaces/IDeerfiV1ERC20.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDeerfiV1ERC20 {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -87,8 +85,7 @@ interface IDeerfiV1ERC20 {
 
 // File: contracts/libraries/SafeMath.sol
 
-pragma solidity =0.5.16;
-
+pragma solidity ^0.5.16;
 // a library for performing overflow-safe math, courtesy of DappHub (https://github.com/dapphub/ds-math)
 
 library SafeMath {
@@ -107,8 +104,7 @@ library SafeMath {
 
 // File: contracts/DeerfiV1ERC20.sol
 
-pragma solidity =0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 contract DeerfiV1ERC20 is IDeerfiV1ERC20 {
@@ -203,8 +199,7 @@ contract DeerfiV1ERC20 is IDeerfiV1ERC20 {
 
 // File: contracts/libraries/Math.sol
 
-pragma solidity =0.5.16;
-
+pragma solidity ^0.5.16;
 // a library for performing various math operations
 
 library Math {
@@ -215,8 +210,7 @@ library Math {
 
 // File: contracts/interfaces/IERC20.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -235,8 +229,7 @@ interface IERC20 {
 
 // File: contracts/interfaces/IDeerfiV1Factory.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDeerfiV1Factory {
     event PairCreated(address indexed tradeToken, address indexed fromToken, address indexed toToken, address pair, address longToken, uint);
     event FeedPairCreated(address indexed tokenA, address indexed tokenB, address indexed feedPair, uint);
@@ -261,8 +254,7 @@ interface IDeerfiV1Factory {
 
 // File: contracts/interfaces/IDeerfiV1FeedPair.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDeerfiV1FeedPair {
     function factory() external view returns (address);
     function tokenA() external view returns (address);
@@ -281,8 +273,7 @@ interface IDeerfiV1FeedPair {
 
 // File: contracts/interfaces/IDeerfiV1SwapToken.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDeerfiV1SwapToken {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -306,8 +297,7 @@ interface IDeerfiV1SwapToken {
 
 // File: contracts/libraries/Ownable.sol
 
-pragma solidity =0.5.16;
-
+pragma solidity ^0.5.16;
 /**
  * @title Ownable contract
  * @dev The Ownable contract has an owner address, and provides basic authorization control functions.
@@ -344,8 +334,7 @@ contract Ownable {
 
 // File: contracts/DeerfiV1SwapToken.sol
 
-pragma solidity =0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 
@@ -411,8 +400,7 @@ contract DeerfiV1SwapToken is IDeerfiV1SwapToken, Ownable {
 
 // File: contracts/DeerfiV1Pair.sol
 
-pragma solidity =0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

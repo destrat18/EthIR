@@ -17,8 +17,7 @@
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.5.7;pragma experimental ABIEncoderV2;
 
 
 /**
@@ -62,8 +61,7 @@ library Monetary {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 /**
  * @title IDydxPriceOracle
@@ -98,8 +96,7 @@ contract IDydxPriceOracle {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 

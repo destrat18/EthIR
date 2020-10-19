@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity 0.6.11;
-
+pragma solidity ^0.6.11;
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
  */

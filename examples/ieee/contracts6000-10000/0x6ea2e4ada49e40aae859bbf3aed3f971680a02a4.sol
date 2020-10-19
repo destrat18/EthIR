@@ -85,8 +85,7 @@ library SafeMath {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 /**
  * @title ICore
@@ -553,8 +552,7 @@ interface ICore {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 /**
  * @title ISetToken
  * @author Set Protocol
@@ -666,8 +664,7 @@ interface ISetToken {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 /**
  * @title RebalancingLibrary
@@ -719,8 +716,7 @@ library RebalancingLibrary {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 /**
  * @title IRebalancingSetToken
@@ -985,8 +981,7 @@ interface IRebalancingSetToken {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 /**
@@ -1079,8 +1074,7 @@ library Rebalance {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -1161,8 +1155,7 @@ interface ILiquidator {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 /**
  * @title IOracleWhiteList
  * @author Set Protocol
@@ -1259,8 +1252,7 @@ library Math {
 // Pulled in from Cryptofin Solidity package in order to control Solidity compiler version
 // https://github.com/cryptofinlabs/cryptofin-solidity/blob/master/contracts/array-utils/AddressArrayUtils.sol
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 library AddressArrayUtils {
 
@@ -1489,8 +1481,7 @@ library AddressArrayUtils {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 /**
  * @title IOracle
@@ -1530,8 +1521,7 @@ interface IOracle {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 /**
@@ -1591,8 +1581,7 @@ library SetMath {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -1945,8 +1934,7 @@ contract Auction {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -2211,8 +2199,7 @@ contract ERC20Detailed is IERC20 {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 library CommonMath {
@@ -2424,8 +2411,7 @@ library CommonMath {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 
@@ -2815,8 +2801,7 @@ contract TwoAssetPriceBoundedLinearAuction is LinearAuction {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 

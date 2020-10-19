@@ -844,8 +844,7 @@ abstract contract ERC20Pausable is ERC20, Pausable {
 
 // File: contracts/Decentr.sol
 
-pragma solidity >=0.5.0 <0.7.0;
-
+pragma solidity ^0.5.0;
 
 
 /**

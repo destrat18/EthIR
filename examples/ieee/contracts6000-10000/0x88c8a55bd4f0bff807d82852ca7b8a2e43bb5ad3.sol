@@ -1,7 +1,6 @@
 // File: @openzeppelin/upgrades/contracts/Initializable.sol
 
-pragma solidity >=0.4.24 <0.7.0;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Initializable
@@ -1016,8 +1015,7 @@ interface IPublicLockV7Sol6
 
 // File: contracts/mixins/LockRoles.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 /**
@@ -1050,8 +1048,7 @@ contract LockRoles
 
 // File: contracts/KeyPurchaser.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 

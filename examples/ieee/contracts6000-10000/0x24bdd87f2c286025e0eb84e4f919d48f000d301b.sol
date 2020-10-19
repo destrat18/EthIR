@@ -1,5 +1,4 @@
-pragma solidity 0.5.13;
-
+pragma solidity ^0.5.13;
 //https://www.yineu.me
 
 interface Callable {

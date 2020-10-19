@@ -1,7 +1,6 @@
 // File: UniswapV2Router.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 interface IUniswapV2Router02 {
     function factory() external pure returns (address);
 
@@ -597,8 +596,7 @@ library SafeMath {
 }
 // File: browser/UniswapV2_ETH_ERC_Zap_In_V2.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 

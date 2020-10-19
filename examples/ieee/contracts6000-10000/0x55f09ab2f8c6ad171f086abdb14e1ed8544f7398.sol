@@ -1,7 +1,6 @@
 // File: contracts/converter/interfaces/IBancorFormula.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 /*
     Bancor Formula interface
 */
@@ -40,8 +39,7 @@ contract IBancorFormula {
 
 // File: contracts/utility/SafeMath.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 /**
   * @dev Library for basic math operations with overflow/underflow protection
 */
@@ -108,8 +106,7 @@ library SafeMath {
 
 // File: contracts/converter/BancorFormula.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 
 
 contract BancorFormula is IBancorFormula {

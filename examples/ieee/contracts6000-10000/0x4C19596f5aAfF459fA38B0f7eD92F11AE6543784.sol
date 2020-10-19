@@ -1,7 +1,6 @@
 // File: @trusttoken/trusttokens/contracts/Proxy/OwnedUpgradeabilityProxy.sol
 
-pragma solidity 0.5.13;
-
+pragma solidity ^0.5.13;
 /**
  * @title OwnedUpgradeabilityProxy
  * @dev This contract combines an upgradeability proxy with basic authorization control functionalities
@@ -164,8 +163,7 @@ contract OwnedUpgradeabilityProxy {
 
 // File: @trusttoken/trusttokens/contracts/Proxy/TimeOwnedUpgradeabilityProxy.sol
 
-pragma solidity 0.5.13;
-
+pragma solidity ^0.5.13;
 
 /**
  * @title TimeOwnedUpgradeabilityProxy

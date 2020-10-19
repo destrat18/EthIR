@@ -1,5 +1,4 @@
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 library SafeMath {
     
     function add(uint256 a, uint256 b) internal pure returns (uint256) {

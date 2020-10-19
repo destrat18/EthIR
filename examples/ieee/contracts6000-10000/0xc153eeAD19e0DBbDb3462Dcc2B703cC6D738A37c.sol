@@ -1,7 +1,6 @@
 // File: contracts/sol6/IERC20.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 interface IERC20 {
     event Approval(address indexed _owner, address indexed _spender, uint256 _value);
@@ -33,8 +32,7 @@ abstract contract ERC20 is IERC20 {
 
 // File: contracts/sol6/utils/PermissionGroupsNoModifiers.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 contract PermissionGroupsNoModifiers {
     address public admin;
@@ -155,8 +153,7 @@ contract PermissionGroupsNoModifiers {
 
 // File: contracts/sol6/utils/WithdrawableNoModifiers.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 
@@ -189,8 +186,7 @@ contract WithdrawableNoModifiers is PermissionGroupsNoModifiers {
 
 // File: contracts/sol6/utils/Utils5.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 /**
@@ -342,8 +338,7 @@ contract Utils5 {
 
 // File: contracts/sol6/utils/zeppelin/SafeMath.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
  * checks.
@@ -502,8 +497,7 @@ library SafeMath {
 
 // File: contracts/sol6/utils/zeppelin/Address.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 /**
  * @dev Collection of functions related to the address type
  */
@@ -563,8 +557,7 @@ library Address {
 
 // File: contracts/sol6/utils/zeppelin/SafeERC20.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 
@@ -640,8 +633,7 @@ library SafeERC20 {
 
 // File: contracts/sol6/IKyberNetwork.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 interface IKyberNetwork {
@@ -708,8 +700,7 @@ interface IKyberNetwork {
 
 // File: contracts/sol6/IKyberNetworkProxy.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 interface IKyberNetworkProxy {
@@ -778,8 +769,7 @@ interface IKyberNetworkProxy {
 
 // File: contracts/sol6/ISimpleKyberProxy.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 /*
@@ -808,8 +798,7 @@ interface ISimpleKyberProxy {
 
 // File: contracts/sol6/IKyberReserve.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 interface IKyberReserve {
@@ -832,8 +821,7 @@ interface IKyberReserve {
 
 // File: contracts/sol6/IKyberHint.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 interface IKyberHint {
@@ -913,8 +901,7 @@ interface IKyberHint {
 
 // File: contracts/sol6/KyberNetworkProxy.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 

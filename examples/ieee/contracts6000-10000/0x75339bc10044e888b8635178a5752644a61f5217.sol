@@ -964,8 +964,7 @@ interface IERC1820Registry {
 
 // File: contracts/Receiver.sol
 
-pragma solidity >=0.6.2 <0.7.0;
-
+pragma solidity ^0.6.2;
 
 
 
@@ -1036,8 +1035,7 @@ interface IERC777Sender {
 
 // File: contracts/tokens/Granularity.sol
 
-pragma solidity >=0.6.2 <0.7.0;
-
+pragma solidity ^0.6.2;
 contract Granularity {
   uint256 internal _decimals;
 
@@ -1553,8 +1551,7 @@ contract ERC777WithGranularity is Context, IERC777, IERC20, Granularity {
 
 // File: contracts/tokens/IWrapped777.sol
 
-pragma solidity >=0.6.2 <0.7.0;
-
+pragma solidity ^0.6.2;
 
 
 interface IWrapped777 is IERC777 {
@@ -1567,8 +1564,7 @@ interface IWrapped777 is IERC777 {
 
 // File: contracts/tokens/Wrapped777.sol
 
-pragma solidity >=0.6.2 <0.7.0;
-
+pragma solidity ^0.6.2;
 
 
 
@@ -1689,8 +1685,7 @@ contract Wrapped777 is ERC777WithGranularity, Receiver, IWrapped777 {
 
 // File: contracts/protocols/uniswap/IUniswapV2Router01.sol
 
-pragma solidity >=0.6.2;
-
+pragma solidity ^0.6.2;
 // import './IUniswapV2Library.sol';
 
 interface IUniswapV2Router01 /*is IUniswapV2Library*/ {
@@ -1782,8 +1777,7 @@ interface IUniswapV2Router01 /*is IUniswapV2Library*/ {
 
 // File: contracts/protocols/uniswap/UniswapWrapper.sol
 
-pragma solidity >=0.6.2 <0.7.0;
-
+pragma solidity ^0.6.2;
 
 
 

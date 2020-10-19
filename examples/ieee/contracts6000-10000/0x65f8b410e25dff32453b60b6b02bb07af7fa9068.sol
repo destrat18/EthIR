@@ -1,7 +1,6 @@
 // File: contracts/libraries/SafeMath.sol
 
-pragma solidity =0.5.16;
-
+pragma solidity ^0.5.16;
 // a library for performing overflow-safe math, courtesy of DappHub (https://github.com/dapphub/ds-math)
 
 library SafeMath {
@@ -20,8 +19,7 @@ library SafeMath {
 
 // File: contracts/interfaces/IDeerfiV1FeedPair.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDeerfiV1FeedPair {
     function factory() external view returns (address);
     function tokenA() external view returns (address);
@@ -40,8 +38,7 @@ interface IDeerfiV1FeedPair {
 
 // File: contracts/interfaces/AggregatorInterface.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface AggregatorInterface {
   event AnswerUpdated(int256 indexed current, uint256 indexed roundId, uint256 timestamp);
   event NewRound(uint256 indexed roundId, address indexed startedBy, uint256 startedAt);
@@ -81,8 +78,7 @@ interface AggregatorInterface {
 
 // File: contracts/DeerfiV1FeedPair.sol
 
-pragma solidity =0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

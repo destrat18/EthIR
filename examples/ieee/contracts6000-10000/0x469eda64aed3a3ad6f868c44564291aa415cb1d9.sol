@@ -1227,8 +1227,7 @@ library Math {
 
 // File: contracts/FluxToken.sol
 
-pragma solidity 0.6.9;
-
+pragma solidity ^0.6.9;
 
 
 

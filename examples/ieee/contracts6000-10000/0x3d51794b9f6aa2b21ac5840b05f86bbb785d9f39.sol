@@ -14,8 +14,7 @@ I am Fenix,
 Global One line AutoPool Smart contract.
 
 */
-pragma solidity 0.5.11;
-
+pragma solidity ^0.5.11;
 contract Fenix {
      address public ownerWallet;
       uint public currUserID = 0;

@@ -1240,8 +1240,7 @@ contract ReentrancyGuard {
 
 // File: contracts/marketplace/Position.sol
 
-pragma solidity 0.5.10;
-
+pragma solidity ^0.5.10;
 
 
 
@@ -1404,8 +1403,7 @@ contract Position is ReentrancyGuard {
 
 // File: contracts/marketplace/PositionDispatcher.sol
 
-pragma solidity 0.5.10;
-
+pragma solidity ^0.5.10;
 
 
 

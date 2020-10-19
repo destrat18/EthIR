@@ -1,5 +1,4 @@
-pragma solidity 0.5.13;
-
+pragma solidity ^0.5.13;
 interface Callable {
 	function tokenCallback(address _from, uint256 _tokens, bytes calldata _data) external returns (bool);
 }

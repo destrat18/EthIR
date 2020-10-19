@@ -2,8 +2,7 @@
  *Submitted for verification at Etherscan.io on 2020-07-28
 */
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 interface AggregatorInterface {
   function latestAnswer() external view returns (int256);

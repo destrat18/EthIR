@@ -1,5 +1,4 @@
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 /**
   * @title  ModuleKeys
   * @author Stability Labs Pty. Ltd.

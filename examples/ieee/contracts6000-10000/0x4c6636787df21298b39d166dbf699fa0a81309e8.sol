@@ -482,8 +482,7 @@ contract Pausable is PauserRole {
 
 // File: contracts/src/Token/TokenContract.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 
 

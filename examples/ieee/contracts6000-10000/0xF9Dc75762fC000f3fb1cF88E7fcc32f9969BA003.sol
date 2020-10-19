@@ -1,5 +1,4 @@
-pragma solidity 0.6.0;
-
+pragma solidity ^0.6.0;
 /**
  * @title NToken mapping contract
  * @dev Add, modify and check offering token mapping

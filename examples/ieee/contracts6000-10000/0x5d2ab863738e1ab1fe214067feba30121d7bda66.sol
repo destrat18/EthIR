@@ -1,5 +1,4 @@
-pragma solidity >=0.5.12;
-
+pragma solidity ^0.5.12;
 library Date {
     struct _Date {
         uint16 year;

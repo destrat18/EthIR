@@ -723,8 +723,7 @@ contract ERC20 is Context, IERC20 {
 
 // File contracts/EVAN.sol
 
-pragma solidity >=0.6.0 <0.7.0;
-
+pragma solidity ^0.6.0;
 
 contract EVAN is ERC20 {
   constructor() ERC20("EVAN","EVAN") public {

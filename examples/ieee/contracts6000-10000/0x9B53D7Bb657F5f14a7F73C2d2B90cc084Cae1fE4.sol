@@ -1,7 +1,6 @@
 // File: contracts/sol6/IKyberHistory.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 interface IKyberHistory {
     function saveContract(address _contract) external;
@@ -10,8 +9,7 @@ interface IKyberHistory {
 
 // File: contracts/sol6/utils/PermissionGroupsNoModifiers.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 contract PermissionGroupsNoModifiers {
     address public admin;
@@ -132,8 +130,7 @@ contract PermissionGroupsNoModifiers {
 
 // File: contracts/sol6/KyberHistory.sol
 
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 
 
 

@@ -1,7 +1,6 @@
 // File: contracts/interfaces/IDeerfiV1Router01.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDeerfiV1Router01 {
     function factory() external pure returns (address);
     function WETH() external pure returns (address);
@@ -129,8 +128,7 @@ interface IDeerfiV1Router01 {
 
 // File: contracts/interfaces/IDeerfiV1Pair.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDeerfiV1Pair {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -190,8 +188,7 @@ interface IDeerfiV1Pair {
 
 // File: contracts/interfaces/IDeerfiV1Factory.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDeerfiV1Factory {
     event PairCreated(address indexed tradeToken, address indexed fromToken, address indexed toToken, address pair, address longToken, uint);
     event FeedPairCreated(address indexed tokenA, address indexed tokenB, address indexed feedPair, uint);
@@ -216,8 +213,7 @@ interface IDeerfiV1Factory {
 
 // File: contracts/libraries/SafeMath.sol
 
-pragma solidity =0.5.16;
-
+pragma solidity ^0.5.16;
 // a library for performing overflow-safe math, courtesy of DappHub (https://github.com/dapphub/ds-math)
 
 library SafeMath {
@@ -236,8 +232,7 @@ library SafeMath {
 
 // File: contracts/libraries/DeerfiV1Library.sol
 
-pragma solidity =0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 contract DeerfiV1Library {
@@ -303,8 +298,7 @@ contract DeerfiV1Library {
 
 // File: contracts/interfaces/IWETH.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IWETH {
     function deposit() external payable;
     function transfer(address to, uint value) external returns (bool);
@@ -314,8 +308,7 @@ interface IWETH {
 
 // File: contracts/interfaces/IDeerfiV1FeedPair.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDeerfiV1FeedPair {
     function factory() external view returns (address);
     function tokenA() external view returns (address);
@@ -334,8 +327,7 @@ interface IDeerfiV1FeedPair {
 
 // File: contracts/DeerfiV1Router01.sol
 
-pragma solidity =0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

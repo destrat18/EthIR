@@ -391,8 +391,7 @@ contract ERC20Burnable is ERC20 {
 
 // File: contracts/ETHLimited.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 contract ETHLimited is ERC20, ERC20Detailed, ERC20Burnable {
 
     uint256 constant public INITIAL_SUPPLY = 2000000000 * 10**18;

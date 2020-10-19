@@ -79,8 +79,7 @@ interface IERC20 {
 
 // File: @trusttoken/trusttokens/contracts/ValSafeMath.sol
 
-pragma solidity 0.5.13;
-
+pragma solidity ^0.5.13;
 /**
  * Forked subset of Openzeppelin SafeMath allowing custom underflow/overflow messages
  * Useful for debugging, replaceable with standard SafeMath
@@ -109,8 +108,7 @@ library ValSafeMath {
 
 // File: @trusttoken/trusttokens/contracts/ILiquidator.sol
 
-pragma solidity 0.5.13;
-
+pragma solidity ^0.5.13;
 
 /**
  * @title Liquidator Interface
@@ -317,8 +315,7 @@ contract Registry {
 
 // File: @trusttoken/trusttokens/contracts/ALiquidatorUniswap.sol
 
-pragma solidity 0.5.13;
-
+pragma solidity ^0.5.13;
 //pragma experimental ABIEncoderV2;
 
 
@@ -570,8 +567,7 @@ contract ALiquidatorUniswap is ILiquidator {
 
 // File: @trusttoken/trusttokens/contracts/Liquidator.sol
 
-pragma solidity 0.5.13;
-
+pragma solidity ^0.5.13;
 //pragma experimental ABIEncoderV2;
 
 

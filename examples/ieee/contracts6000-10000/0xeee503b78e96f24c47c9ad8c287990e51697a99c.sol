@@ -1,7 +1,6 @@
 // File: localhost/zapper-smart-contracts/contracts/UniswapV2/UniswapV2Router.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 interface IUniswapV2Router01 {
   function factory() external pure returns (address);
   function WETH() external pure returns (address);
@@ -496,8 +495,7 @@ library SafeMath {
 
 // File: localhost/zapper-smart-contracts/contracts/UniswapV2/UniswapZapinV2.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 

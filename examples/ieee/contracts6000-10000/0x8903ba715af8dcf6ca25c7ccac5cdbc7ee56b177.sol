@@ -1,7 +1,6 @@
 /*! oris.share.sol | (c) 2020 Develop by BelovITLab LLC (smartcontract.ru), author @stupidlovejoy | SPDX-License-Identifier: MIT License */
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 abstract contract Context {
     function _msgSender() internal view virtual returns (address payable) {
         return msg.sender;

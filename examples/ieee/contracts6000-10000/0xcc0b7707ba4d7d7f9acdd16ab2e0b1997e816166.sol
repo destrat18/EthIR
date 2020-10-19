@@ -172,8 +172,7 @@ library SafeMath {
 
 // File: contracts/v2/artist-controls/ArtistEditionBurner.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 

@@ -73,8 +73,7 @@ library SafeMath {
 
 // File: zos-lib/contracts/Initializable.sol
 
-pragma solidity >=0.4.24 <0.6.0;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Initializable
@@ -331,8 +330,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title SafeMathInt
@@ -414,8 +412,7 @@ library SafeMathInt {
 
 // File: uFragments/contracts/UFragments.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 

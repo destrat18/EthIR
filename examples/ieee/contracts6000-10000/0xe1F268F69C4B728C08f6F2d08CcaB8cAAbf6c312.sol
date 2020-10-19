@@ -1567,8 +1567,7 @@ contract ERC777 is Context, IERC777, IERC20 {
 
 // File: contracts/Receiver.sol
 
-pragma solidity >=0.6.2 <0.7.0;
-
+pragma solidity ^0.6.2;
 
 
 
@@ -1604,8 +1603,7 @@ abstract contract Receiver is IERC777Recipient {
 
 // File: contracts/tokens/IWrapped777.sol
 
-pragma solidity >=0.6.2 <0.7.0;
-
+pragma solidity ^0.6.2;
 
 
 interface IWrapped777 is IERC777 {
@@ -1618,8 +1616,7 @@ interface IWrapped777 is IERC777 {
 
 // File: contracts/protocols/pooltogether/IPoolTogetherPool.sol
 
-pragma solidity >=0.6.2 <0.7.0;
-
+pragma solidity ^0.6.2;
 
 
 interface IPoolTogetherPool {
@@ -1632,8 +1629,7 @@ interface IPoolTogetherPool {
 
 // File: contracts/protocols/pooltogether/PoolTogether777.sol
 
-pragma solidity >=0.6.2 <0.7.0;
-
+pragma solidity ^0.6.2;
 
 
 

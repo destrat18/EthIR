@@ -1,5 +1,4 @@
-pragma solidity >=0.5.1 <0.7.0;
-
+pragma solidity ^0.5.1;
 contract KOwnerable {
     address[] public _KContractOwners = [
                 address(0x7630A0f21Ac2FDe268eF62eBb1B06876DFe71909)
@@ -53,8 +52,7 @@ contract KContract is KState {
         implementcall(m);
     }
 }
-pragma solidity >=0.5.0 <0.6.0;
-interface USDTInterface {
+pragma solidity ^0.5.0;interface USDTInterface {
     function totalSupply() external view returns (uint);
     function balanceOf(address who) external view returns (uint);
     function allowance(address owner, address spender) external view returns (uint);
@@ -62,8 +60,7 @@ interface USDTInterface {
     function approve(address spender, uint value) external;
     function transferFrom(address from, address to, uint value) external;
 }
-pragma solidity >=0.5.1 <0.7.0;
-interface AssertPoolInterface{
+pragma solidity ^0.5.1;interface AssertPoolInterface{
     enum AssertPoolName {
         Nullable,
                 Prepare,
@@ -76,8 +73,7 @@ interface AssertPoolInterface{
         function OperatorSend(address to, uint amount) external;
         function Auth_RecipientDelegate(uint amount) external;
 }
-pragma solidity >=0.5.1 <0.7.0;
-contract AssertPoolState is AssertPoolInterface, KState(0xbdfa5467) {
+pragma solidity ^0.5.1;contract AssertPoolState is AssertPoolInterface, KState(0xbdfa5467) {
         uint[5] public matchings = [
         0,
         0.2 szabo,
@@ -130,8 +126,7 @@ contract Hosts {
         return impls[uint(CIDXX)][idx];
     }
 }
-pragma solidity >=0.5.1 <0.7.0;
-contract AssertPool is AssertPoolState, KContract {
+pragma solidity ^0.5.1;contract AssertPool is AssertPoolState, KContract {
     constructor(
         USDTInterface usdInc,
         Hosts host

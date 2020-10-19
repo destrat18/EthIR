@@ -101,8 +101,7 @@ interface AggregatorInterface {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 

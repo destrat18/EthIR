@@ -550,8 +550,7 @@ contract Ownable is Context {
 
 // File: contracts/interfaces/ILendingProtocol.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface ILendingProtocol {
   function mint() external returns (uint256);
   function redeem(address account) external returns (uint256);
@@ -566,8 +565,7 @@ interface ILendingProtocol {
 
 // File: contracts/interfaces/AaveLendingPoolProvider.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface AaveLendingPoolProvider {
   function getLendingPool() external view returns (address);
   function getLendingPoolCore() external view returns (address);
@@ -575,8 +573,7 @@ interface AaveLendingPoolProvider {
 
 // File: contracts/interfaces/AaveLendingPool.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface AaveLendingPool {
   function deposit(address _reserve, uint256 _amount, uint16 _referralCode) external;
   function getReserveData(address _reserve)
@@ -599,8 +596,7 @@ interface AaveLendingPool {
 
 // File: contracts/interfaces/AaveLendingPoolCore.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface AaveLendingPoolCore {
   function getReserveCurrentLiquidityRate(address _reserve) external view returns (uint256);
   function getReserveInterestRateStrategyAddress(address _reserve) external view returns (address);
@@ -612,16 +608,14 @@ interface AaveLendingPoolCore {
 
 // File: contracts/interfaces/AToken.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface AToken {
   function redeem(uint256 amount) external;
 }
 
 // File: contracts/interfaces/AaveInterestRateStrategy.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface AaveInterestRateStrategy {
   function getBaseVariableBorrowRate() external view returns (uint256);
   function calculateInterestRates(
@@ -642,8 +636,7 @@ interface AaveInterestRateStrategy {
  *           This contract holds assets only during a tx, after tx it should be empty
  * @author: Idle Labs Inc., idle.finance
  */
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

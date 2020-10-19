@@ -265,8 +265,7 @@ contract ChiGasSaver {
 
 // File: @gnosis.pm/safe-contracts/contracts/common/SelfAuthorized.sol
 
-pragma solidity >=0.5.0 <0.7.0;
-
+pragma solidity ^0.5.0;
 
 /// @title SelfAuthorized - authorizes current contract to perform actions
 /// @author Richard Meissner - <richard@gnosis.pm>
@@ -279,8 +278,7 @@ contract SelfAuthorized {
 
 // File: @gnosis.pm/safe-contracts/contracts/common/MasterCopy.sol
 
-pragma solidity >=0.5.0 <0.7.0;
-
+pragma solidity ^0.5.0;
 
 
 /// @title MasterCopy - Base for master copy contracts (should always be first super contract)
@@ -309,8 +307,7 @@ contract MasterCopy is SelfAuthorized {
 
 // File: @gnosis.pm/safe-contracts/contracts/common/Enum.sol
 
-pragma solidity >=0.5.0 <0.7.0;
-
+pragma solidity ^0.5.0;
 
 /// @title Enum - Collection of enums
 /// @author Richard Meissner - <richard@gnosis.pm>
@@ -323,8 +320,7 @@ contract Enum {
 
 // File: @gnosis.pm/safe-contracts/contracts/base/Executor.sol
 
-pragma solidity >=0.5.0 <0.7.0;
-
+pragma solidity ^0.5.0;
 
 
 /// @title Executor - A contract that can execute transactions
@@ -366,8 +362,7 @@ contract Executor {
 
 // File: @gnosis.pm/safe-contracts/contracts/base/ModuleManager.sol
 
-pragma solidity >=0.5.0 <0.7.0;
-
+pragma solidity ^0.5.0;
 
 
 
@@ -513,8 +508,7 @@ contract ModuleManager is SelfAuthorized, Executor {
 
 // File: @gnosis.pm/safe-contracts/contracts/base/Module.sol
 
-pragma solidity >=0.5.0 <0.7.0;
-
+pragma solidity ^0.5.0;
 
 
 
@@ -542,8 +536,7 @@ contract Module is MasterCopy {
 
 // File: @gnosis.pm/safe-contracts/contracts/base/OwnerManager.sol
 
-pragma solidity >=0.5.0 <0.7.0;
-
+pragma solidity ^0.5.0;
 
 /// @title OwnerManager - Manages a set of owners and a threshold to perform actions.
 /// @author Stefan George - <stefan@gnosis.pm>

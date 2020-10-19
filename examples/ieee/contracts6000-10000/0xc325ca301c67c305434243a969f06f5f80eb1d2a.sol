@@ -1,5 +1,4 @@
-pragma solidity >=0.6.0 <0.7.0;
-
+pragma solidity ^0.6.0;
 contract UnchainedIndex {
   constructor () public {
       owner = msg.sender;

@@ -108,8 +108,7 @@ contract Ownable is Context {
 
 // File: contracts/marketplace/interfaces/IPosition.sol
 
-pragma solidity 0.5.10;
-
+pragma solidity ^0.5.10;
 interface IPosition {
     event PositionCreated(
         address indexed position,
@@ -149,8 +148,7 @@ interface IPosition {
 
 // File: contracts/marketplace/interfaces/IPositionDispatcher.sol
 
-pragma solidity 0.5.10;
-
+pragma solidity ^0.5.10;
 interface IPositionDispatcher {
     event PositionDispatcherCreated(
         address indexed positionDispatcher,
@@ -191,8 +189,7 @@ interface IPositionDispatcher {
 
 // File: contracts/marketplace/library/Wrapper721.sol
 
-pragma solidity 0.5.10;
-
+pragma solidity ^0.5.10;
 interface I721Kitty {
     function ownerOf(uint256 _tokenId) external view returns (address owner);
     function transfer(address _to, uint256 _tokenId) external;
@@ -244,8 +241,7 @@ library Wrapper721 {
 
 // File: contracts/marketplace/CloneFactory.sol
 
-pragma solidity 0.5.10;
-
+pragma solidity ^0.5.10;
 /*
 The MIT License (MIT)
 Copyright (c) 2018 Murray Software, LLC.
@@ -307,8 +303,7 @@ contract CloneFactory {
 
 // File: contracts/marketplace/PositionDispatcher.sol
 
-pragma solidity 0.5.10;
-
+pragma solidity ^0.5.10;
 
 
 

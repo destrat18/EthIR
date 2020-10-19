@@ -1,5 +1,4 @@
-pragma solidity 0.6.9;
-
+pragma solidity ^0.6.9;
 // ----------------------------------------------------------------------------
 // 'Remark' token contract
 // Symbol      : RMK

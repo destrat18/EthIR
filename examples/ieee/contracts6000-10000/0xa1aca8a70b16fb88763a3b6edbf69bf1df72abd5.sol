@@ -1,5 +1,4 @@
-pragma solidity 0.6.6;
-
+pragma solidity ^0.6.6;
 /**
  * @title The Owned contract
  * @notice A contract with helpers for basic contract ownership.

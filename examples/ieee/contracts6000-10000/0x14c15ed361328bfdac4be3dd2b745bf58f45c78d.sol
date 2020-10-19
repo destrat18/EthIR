@@ -2,8 +2,7 @@
  *Submitted for verification at Etherscan.io on 2020-02-26
 */
 
-pragma solidity 0.4.25;
-contract ISynth {
+pragma solidity ^0.4.25;contract ISynth {
     bytes32 public currencyKey;
     function balanceOf(address owner) external view returns (uint);
     function totalSupply() external view returns (uint);

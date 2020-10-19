@@ -1,7 +1,6 @@
 /*! absgoldenmatrix.sol | (c) 2020 Develop by BelovITLab LLC (smartcontract.ru), author @stupidlovejoy | SPDX-License-Identifier: MIT License */
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 contract AbsGoldenMatrix {
     struct Level {
         uint256 price;

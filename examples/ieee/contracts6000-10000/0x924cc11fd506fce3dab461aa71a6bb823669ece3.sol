@@ -515,8 +515,7 @@ interface yERC20 {
     function deposit(uint256 _amount) external;
 }
 
-pragma solidity 0.5.13;
-
+pragma solidity ^0.5.13;
 
 contract ETH_ERC20_Curve_General_Zap_V1 is ReentrancyGuard, Ownable {
     using SafeMath for uint256;

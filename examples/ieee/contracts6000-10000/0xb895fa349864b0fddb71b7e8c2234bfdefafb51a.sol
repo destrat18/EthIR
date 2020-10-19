@@ -1,5 +1,4 @@
-pragma solidity 0.5.13;
-
+pragma solidity ^0.5.13;
 contract Yangue {
 
 	uint256 constant private initial_supply = 1e3;

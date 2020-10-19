@@ -532,8 +532,7 @@ contract TokenTimelock {
 
 // File: contracts/MostTokenTimelock.sol
 
-pragma solidity =0.6.6;
-
+pragma solidity ^0.6.6;
 
 contract MostTokenTimelock is TokenTimelock {
     constructor() public TokenTimelock(

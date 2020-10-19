@@ -1,7 +1,6 @@
 // File: contracts/spec_interfaces/IContractRegistry.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface IContractRegistry {
 
 	event ContractAddressUpdated(string contractName, address addr);
@@ -45,8 +44,7 @@ contract Context {
 
 // File: contracts/WithClaimableMigrationOwnership.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 /**
  * @title Claimable
@@ -136,8 +134,7 @@ contract WithClaimableMigrationOwnership is Context{
 
 // File: contracts/WithClaimableFunctionalOwnership.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 /**
  * @title Claimable
@@ -227,8 +224,7 @@ contract WithClaimableFunctionalOwnership is Context{
 
 // File: ../contracts/ContractRegistry.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

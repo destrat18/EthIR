@@ -56,8 +56,7 @@
 */
 
 
-pragma solidity >=0.4.24;
-
+pragma solidity ^0.4.24;
 
 interface IERC20 {
     // ERC20 Optional Views

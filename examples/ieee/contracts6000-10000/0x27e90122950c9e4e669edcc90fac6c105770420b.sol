@@ -1,7 +1,6 @@
 // File: contracts/interfaces/IWETH9.sol
 
-pragma solidity >=0.4.0;
-
+pragma solidity ^0.4.0;
 interface IWETH9 {
     function name() external view returns (string memory);
 
@@ -32,8 +31,7 @@ interface IWETH9 {
 
 // File: contracts/interfaces/IAdvancedWETH.sol
 
-pragma solidity >=0.4.0;
-
+pragma solidity ^0.4.0;
 /// @title Advanced WETH Interface
 /// @author Moody Salem
 /// @notice Unlocks additional features for Wrapped Ether, or WETH, that allow you to interact with contracts that
@@ -65,8 +63,7 @@ interface IAdvancedWETH {
 
 // File: contracts/AdvancedWETH.sol
 
-pragma solidity =0.6.7;
-
+pragma solidity ^0.6.7;
 
 
 // See interface for documentation.

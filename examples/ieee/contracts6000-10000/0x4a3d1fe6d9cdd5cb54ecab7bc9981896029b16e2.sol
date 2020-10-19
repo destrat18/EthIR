@@ -1,7 +1,5 @@
-pragma solidity >= 0.5.0 < 0.7.0;
-
-pragma solidity 0.6.7;
-
+pragma solidity ^0.5.0;
+pragma solidity ^0.6.7;
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
  * checks.

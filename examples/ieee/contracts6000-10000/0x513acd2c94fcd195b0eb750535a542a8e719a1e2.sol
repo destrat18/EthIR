@@ -1,7 +1,6 @@
 // File: @openzeppelin\upgrades\contracts\Initializable.sol
 
-pragma solidity >=0.4.24 <0.6.0;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Initializable
@@ -750,8 +749,7 @@ contract ERC20Detailed is Initializable, IERC20 {
 
 // File: contracts\UnlockDiscountToken.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 /**
 * @title The Unlock Discount Token

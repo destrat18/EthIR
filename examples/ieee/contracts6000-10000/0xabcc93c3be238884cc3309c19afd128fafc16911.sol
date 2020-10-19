@@ -2,8 +2,7 @@
  *Submitted for verification at Etherscan.io on 2020-06-18
  */
 
-pragma solidity 0.5.16;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.5.16;pragma experimental ABIEncoderV2;
 
 library SafeMath {
     /**

@@ -1,5 +1,4 @@
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 interface UniswapFactory {
     function getExchange(address token) external view returns(address exchange);
 }

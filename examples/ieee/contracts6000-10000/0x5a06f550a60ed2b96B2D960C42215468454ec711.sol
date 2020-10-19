@@ -16,8 +16,7 @@
 
 */
 
-pragma solidity 0.5.7;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.5.7;pragma experimental ABIEncoderV2;
 
 // File: openzeppelin-solidity/contracts/math/SafeMath.sol
 

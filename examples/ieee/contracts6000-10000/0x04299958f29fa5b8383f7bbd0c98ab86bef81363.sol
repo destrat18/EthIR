@@ -3,8 +3,7 @@
   * I AM A ONE LINE GLOBAL SMARTCONTRACT MY NAME IS CYBERBULL.
   * /**/
 
-pragma solidity 0.5.11 - 0.6.4;
-
+pragma solidity ^0.5.11;
 contract  cyberbull {
      address public ownerWallet;
       uint public currUserID = 0;

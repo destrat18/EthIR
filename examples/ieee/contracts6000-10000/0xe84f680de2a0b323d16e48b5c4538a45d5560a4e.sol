@@ -159,8 +159,7 @@ library SafeMath {
 
 // File: contracts/interfaces/IDAIProxy.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 interface IDAIProxy {
     function fund(address loanAddress, uint256 fundingAmount) external;
     function repay(address loanAddress, uint256 repaymentAmount) external;
@@ -168,8 +167,7 @@ interface IDAIProxy {
 
 // File: contracts/interfaces/ILoanContract.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 interface ILoanContract {
     function onFundingReceived(address lender, uint256 amount) external returns (bool);
     function withdrawRepayment() external;
@@ -185,8 +183,7 @@ interface ILoanContract {
 
 // File: contracts/interfaces/ISwapAndDeposit.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 interface ISwapAndDeposit {
     event SwapDeposit(address loan, address guy);
@@ -204,8 +201,7 @@ interface ISwapAndDeposit {
 
 // File: contracts/interfaces/ISwapAndDepositFactory.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 interface ISwapAndDepositFactory {
     event SwapContract(address newSwap);
 
@@ -220,8 +216,7 @@ interface ISwapAndDepositFactory {
 
 // File: contracts/libs/ERC20Wrapper.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 interface IERC20NotStandard {
     function transfer(address _to, uint256 _quantity) external;
@@ -359,8 +354,7 @@ library ERC20Wrapper {
 
 // File: contracts/LoanContract.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 

@@ -23,8 +23,7 @@ My URL : https://etherair.github.io/.gold/
 Telegram Channel: https://t.me/bullrunv8
 Hashtag: #bullrunv8
 */
-pragma solidity 0.5.11 - 0.6.4;
-
+pragma solidity ^0.5.11;
 contract EtherAir {
      address public ownerWallet;
       uint public currUserID = 0;

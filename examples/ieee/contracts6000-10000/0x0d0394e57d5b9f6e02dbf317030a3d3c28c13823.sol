@@ -1,5 +1,4 @@
-pragma solidity 0.4.25;
-
+pragma solidity ^0.4.25;
 /**
 * 
 * The DEFI-ETHERFUND is a hedge fund based on the cryptocurrencies that helps to all investors in our fund 

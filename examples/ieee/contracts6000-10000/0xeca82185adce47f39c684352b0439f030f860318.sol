@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity 0.6.8;
-//ERC20 Interface
+pragma solidity ^0.6.8;//ERC20 Interface
 interface ERC20 {
     function totalSupply() external view returns (uint256);
     function balanceOf(address account) external view returns (uint256);

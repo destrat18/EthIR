@@ -2,8 +2,7 @@
  *Submitted for verification at Etherscan.io on 2019-04-13
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 /**
  * @title SafeMath
  * @dev Unsigned math operations with safety checks that revert on error

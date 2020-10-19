@@ -126,8 +126,7 @@ contract Ownable is Context {
   limitations under the License.
 
 */
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 
 contract FiatPasser is Ownable {
     event Pass(address indexed _from, address indexed _to, uint256 _value);

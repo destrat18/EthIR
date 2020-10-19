@@ -1,5 +1,4 @@
-pragma solidity >=0.6.8;
-//vip exchange coin 
+pragma solidity ^0.6.8;//vip exchange coin 
 // vipex.co
 // SPDX-License-Identifier: MIT
 

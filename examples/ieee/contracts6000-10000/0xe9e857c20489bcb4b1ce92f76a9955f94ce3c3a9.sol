@@ -1,5 +1,4 @@
-pragma solidity ~0.4.25;
-
+pragma solidity ^0.4.25;
 contract BCSC {
      
     mapping(address => uint256[]) public records;

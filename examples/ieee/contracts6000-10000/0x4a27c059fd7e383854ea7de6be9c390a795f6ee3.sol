@@ -1,5 +1,4 @@
-pragma solidity 0.5.17;
-
+pragma solidity ^0.5.17;
 contract Create2Deployer {
   event Deployed(address addr, uint256 salt);
 

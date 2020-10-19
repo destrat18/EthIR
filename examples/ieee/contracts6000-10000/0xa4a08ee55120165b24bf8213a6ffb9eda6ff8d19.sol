@@ -714,8 +714,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/interfaces/IDerivativeToken.sol
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 interface ICompatibleDerivativeToken {
     event Issue(
         address indexed operator,
@@ -769,8 +768,7 @@ interface IDerivativeToken is ICompatibleDerivativeToken {
 
 // File: contracts/Campl.sol
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 
 
 

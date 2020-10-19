@@ -1,5 +1,4 @@
-pragma solidity >=0.4.22 <0.7.0;
-
+pragma solidity ^0.4.22;
 /**
  * @title Get Time
  * @dev Get the current Timestamp. Usefull for non-deterministic determinism for The Graph based subgraphs.

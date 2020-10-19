@@ -1,5 +1,4 @@
-pragma solidity 0.5.17; // optimization runs: 200
-
+pragma solidity ^0.5.17;
 
 interface DharmaTradeReserveV1Interface {
   event RoleModified(Role indexed role, address account);

@@ -904,8 +904,7 @@ contract DepositContract is IDepositContract, ERC165 {
 
 // File: @uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router01.sol
 
-pragma solidity >=0.6.2;
-
+pragma solidity ^0.6.2;
 interface IUniswapV2Router01 {
     function factory() external pure returns (address);
     function WETH() external pure returns (address);
@@ -1002,8 +1001,7 @@ interface IUniswapV2Router01 {
 
 // File: @uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol
 
-pragma solidity >=0.6.2;
-
+pragma solidity ^0.6.2;
 
 interface IUniswapV2Router02 is IUniswapV2Router01 {
     function removeLiquidityETHSupportingFeeOnTransferTokens(
@@ -1190,8 +1188,7 @@ contract BloxStaking {
 
 // File: contracts/Migrations.sol
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 contract Migrations {
   address public owner;
   uint public last_completed_migration;

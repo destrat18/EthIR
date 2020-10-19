@@ -2,8 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 // solhint-disable-next-line compiler-fixed
-pragma solidity >=0.5.1 <0.7.0;
-interface ERC777Interface {
+pragma solidity ^0.5.1;interface ERC777Interface {
     function name() external view returns (string memory);
     function symbol() external view returns (string memory);
     function totalSupply() external view returns (uint256);
@@ -61,8 +60,7 @@ interface ERC777Interface {
     );
     event RevokedOperator(address indexed operator, address indexed holder);
 }
-pragma solidity >=0.5.0 <0.6.0;
-interface USDTInterface {
+pragma solidity ^0.5.0;interface USDTInterface {
     function totalSupply() external view returns (uint);
     function balanceOf(address who) external view returns (uint);
     function allowance(address owner, address spender) external view returns (uint);
@@ -70,8 +68,7 @@ interface USDTInterface {
     function approve(address spender, uint value) external;
     function transferFrom(address from, address to, uint value) external;
 }
-pragma solidity >=0.5.1 <0.7.0;
-contract Hosts {
+pragma solidity ^0.5.1;contract Hosts {
     address public owner;
     mapping(uint => mapping(uint => address)) internal impls;
     mapping(uint => uint) internal time;
@@ -99,8 +96,7 @@ contract Hosts {
         return impls[uint(CIDXX)][idx];
     }
 }
-pragma solidity >=0.5.1 <0.7.0;
-contract KOwnerable {
+pragma solidity ^0.5.1;contract KOwnerable {
     address[] public _KContractOwners = [
                 address(0x7630A0f21Ac2FDe268eF62eBb1B06876DFe71909)
     ];
@@ -153,8 +149,7 @@ contract KContract is KState {
         implementcall(m);
     }
 }
-pragma solidity >=0.5.1 <0.7.0;
-interface OrderInterface {
+pragma solidity ^0.5.1;interface OrderInterface {
         event Log_HelpTo(address indexed owner, OrderInterface indexed order, uint amount, uint time);
         event Log_HelpGet(address indexed other, OrderInterface indexed order, uint amount, uint time);
         enum OrderType {
@@ -213,8 +208,7 @@ interface OrderInterface {
         function CTL_ToHelp(OrderInterface who, uint amount) external returns (bool);
         function CTL_SetNextOrderVaild() external;
 }
-pragma solidity >=0.5.1 <0.7.0;
-library OrderArrExt {
+pragma solidity ^0.5.1;library OrderArrExt {
     using OrderArrExt for OrderInterface[];
     function isEmpty(OrderInterface[] storage self) internal view returns (bool) {
         return self.length == 0;
@@ -238,8 +232,7 @@ library Uint32ArrExt {
         return self[self.length - 1];
     }
 }
-pragma solidity >=0.5.1 <0.7.0;
-interface CounterModulesInterface {
+pragma solidity ^0.5.1;interface CounterModulesInterface {
     enum AwardType {
                 Recommend,
                 Admin,
@@ -264,8 +257,7 @@ interface CounterInterface {
     function AddSubModule(CounterModulesInterface moduleInterface) external;
     function RemoveSubModule(CounterModulesInterface moduleInterface) external;
 }
-pragma solidity >=0.5.1 <0.7.0;
-interface ControllerInterface_User_Write {
+pragma solidity ^0.5.1;interface ControllerInterface_User_Write {
     enum CreateOrderError {
                 NoError,
                 LessThanMinimumLimit,
@@ -326,8 +318,7 @@ interface ControllerInterface_Onwer {
     function OwnerUpdateOrdersTime(OrderInterface[] calldata orders, uint targetTimes) external;
 }
 contract ControllerInterface is ControllerInterface_User_Write, ControllerInterface_User_Read, ControllerInterface_Onwer {}
-pragma solidity >=0.5.1 <0.7.0;
-interface ConfigInterface {
+pragma solidity ^0.5.1;interface ConfigInterface {
     enum Keys {
                 WaitTime,
                 PaymentCountDownSec,
@@ -365,8 +356,7 @@ interface ConfigInterface {
     function DepositedUSDMaxLimit() external view returns (uint);
     function ResolveBreakerDTAmount() external view returns (uint);
 }
-pragma solidity >=0.5.1 <0.7.0;
-contract OrderState is OrderInterface, KState(0xcb150bf5) {
+pragma solidity ^0.5.1;contract OrderState is OrderInterface, KState(0xcb150bf5) {
         mapping(uint8 => uint) public times;
         OrderInterface.OrderType public orderType;
         uint public totalAmount;
@@ -384,8 +374,7 @@ contract OrderState is OrderInterface, KState(0xcb150bf5) {
     ControllerDelegate internal _CTL;
     CounterModulesInterface internal _counterInteface;
 }
-pragma solidity >=0.5.1 <0.7.0;
-contract Order is OrderState, KContract {
+pragma solidity ^0.5.1;contract Order is OrderState, KContract {
     constructor(
                 address owner,
                 OrderType ortype,
@@ -461,8 +450,7 @@ contract Order is OrderState, KContract {
         super.implementcall();
     }
 }
-pragma solidity >=0.5.1 <0.7.0;
-interface RewardInterface {
+pragma solidity ^0.5.1;interface RewardInterface {
     struct DepositedInfo {
                 uint rewardAmount;
                 uint totalDeposit;
@@ -476,8 +464,7 @@ interface RewardInterface {
         function CTL_CreatedOrderDelegate(address owner, uint amount) external;
         function CTL_CreatedAwardOrderDelegate(address owner, uint amount) external returns (bool);
 }
-pragma solidity >=0.5.1 <0.7.0;
-interface PhoenixInterface {
+pragma solidity ^0.5.1;interface PhoenixInterface {
     struct InoutTotal {
         uint totalIn;
         uint totalOut;
@@ -498,8 +485,7 @@ interface PhoenixInterface {
     function SetCompensateRelaseProp(uint p) external;
     function SetCompensateProp(uint p) external;
 }
-pragma solidity >=0.5.1 <0.7.0;
-interface AssertPoolAwardsInterface {
+pragma solidity ^0.5.1;interface AssertPoolAwardsInterface {
     struct LuckyDog {
         uint award;
         uint time;
@@ -522,8 +508,7 @@ interface AssertPoolAwardsInterface {
     function SetSpecialProp(uint n, uint p) external;
     function SetSpecialPropMaxLimit(uint n, uint p) external;
 }
-pragma solidity >=0.5.1 <0.7.0;
-interface RelationshipInterface {
+pragma solidity ^0.5.1;interface RelationshipInterface {
     enum AddRelationError {
                 NoError,
                 CannotBindYourSelf,
@@ -544,8 +529,7 @@ interface RelationshipInterface {
     function AddRelation(address recommer ) external returns (AddRelationError);
     function AddRelationEx(address recommer, bytes6 shortCode, bytes16 nickname ) external returns (AddRelationError);
 }
-pragma solidity >=0.5.1 <0.7.0;
-library OrderManager {
+pragma solidity ^0.5.1;library OrderManager {
     using OrderManager for OrderManager.MainStruct;
     struct MainStruct {
                 OrderInterface[] _orders;
@@ -648,8 +632,7 @@ library OrderManager {
         }
     }
 }
-pragma solidity >=0.5.1 <0.7.0;
-contract ControllerState is ControllerInterface_User_Read, ControllerInterface_User_Write, ControllerInterface_Onwer, ControllerDelegate, KState(0x54015ff9) {
+pragma solidity ^0.5.1;contract ControllerState is ControllerInterface_User_Read, ControllerInterface_User_Write, ControllerInterface_Onwer, ControllerDelegate, KState(0x54015ff9) {
         OrderManager.MainStruct _orderManager;
         mapping(address => bool) public blackList;
             mapping(uint => uint) public depositedLimitMapping;
@@ -662,8 +645,7 @@ contract ControllerState is ControllerInterface_User_Read, ControllerInterface_U
     PhoenixInterface phoenixInterface;
     RelationshipInterface relationInterface;
 }
-pragma solidity >=0.5.1 <0.7.0;
-contract Controller is ControllerState, KContract {
+pragma solidity ^0.5.1;contract Controller is ControllerState, KContract {
     constructor(
         ERC777Interface dtInc,
         USDTInterface usdInc,

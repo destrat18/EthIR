@@ -1,5 +1,4 @@
-pragma solidity 0.4.25;
-
+pragma solidity ^0.4.25;
 contract ISynth {
     bytes32 public currencyKey;
     function balanceOf(address owner) external view returns (uint);

@@ -6,8 +6,7 @@
  *Submitted for verification at Etherscan.io on 2020-05-26
 */
 
-pragma solidity 0.4.23;
-
+pragma solidity ^0.4.23;
 // File: contracts/token/ERC20Basic.sol
 
 contract ERC20Basic {

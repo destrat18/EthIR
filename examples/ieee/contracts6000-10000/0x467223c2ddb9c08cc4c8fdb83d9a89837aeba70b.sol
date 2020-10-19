@@ -554,8 +554,7 @@ contract ERC20Detailed is IERC20 {
 
 // File: contracts/StandardToken.sol
 
-pragma solidity >= 0.5.0 < 0.7.0;
-
+pragma solidity ^0.5.0;
 
 
 contract StandardToken is ERC20, ERC20Detailed {

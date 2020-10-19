@@ -84,8 +84,7 @@ library SafeMath {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 /**
  * @title ICore
@@ -552,8 +551,7 @@ interface ICore {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 /**
  * @title IWhiteList
  * @author Set Protocol
@@ -606,8 +604,7 @@ interface IWhiteList {
   limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 library LibBytes {
 
     using LibBytes for bytes;
@@ -831,8 +828,7 @@ library LibBytes {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 /**
  * @title ISetToken
  * @author Set Protocol
@@ -944,8 +940,7 @@ interface ISetToken {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-pragma experimental "ABIEncoderV2";
+pragma solidity ^0.5.7;pragma experimental "ABIEncoderV2";
 
 
 
@@ -1068,8 +1063,7 @@ library SetTokenLibrary {
     limitations under the License.
 */
 
-pragma solidity 0.5.7;
-
+pragma solidity ^0.5.7;
 
 
 

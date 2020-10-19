@@ -1,7 +1,6 @@
 // File: contracts/upgradeability/EternalStorage.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 /**
  * @title EternalStorage
  * @dev This contract holds all the necessary state variables to carry out the storage of any contract.
@@ -27,8 +26,7 @@ contract EternalStorage {
 
 // File: contracts/upgradeable_contracts/EternalOwnable.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title EternalOwnable
@@ -78,8 +76,7 @@ contract EternalOwnable is EternalStorage {
 
 // File: contracts/interfaces/IForeignBridgeValidators.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 interface IForeignBridgeValidators {
     function isValidator(address _validator) external view returns(bool);
     function requiredSignatures() external view returns(uint256);
@@ -156,8 +153,7 @@ library SafeMath {
 
 // File: contracts/upgradeable_contracts/native_to_erc20/ForeignBridgeValidators.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 

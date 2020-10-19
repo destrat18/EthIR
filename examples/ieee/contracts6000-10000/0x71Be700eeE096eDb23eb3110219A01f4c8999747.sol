@@ -3,8 +3,7 @@ SPEEDBULL PRO V3
 Includes speerunv2 fixes
 */
 
-pragma solidity 0.5.11;
-
+pragma solidity ^0.5.11;
 contract SPEEDBULLPROV3 {
      address public ownerWallet;
       uint public currUserID = 0;

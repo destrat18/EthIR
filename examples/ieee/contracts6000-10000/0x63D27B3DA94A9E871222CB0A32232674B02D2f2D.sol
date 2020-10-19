@@ -984,8 +984,7 @@ library SafeERC20 {
 
 // File: contracts/interfaces/iERC20Fulcrum.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface iERC20Fulcrum {
   function mint(
     address receiver,
@@ -1083,8 +1082,7 @@ interface iERC20Fulcrum {
 
 // File: contracts/interfaces/ILendingProtocol.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface ILendingProtocol {
   function mint() external returns (uint256);
   function redeem(address account) external returns (uint256);
@@ -1103,8 +1101,7 @@ interface ILendingProtocol {
  * @title: Idle Token interface
  * @author: Idle Labs Inc., idle.finance
  */
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface IIdleTokenV3 {
   // view
   /**
@@ -1182,8 +1179,7 @@ interface IIdleTokenV3 {
 
 // File: contracts/interfaces/USDT.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface USDT {
   function basisPointsRate() external returns (uint256);
 }
@@ -1194,8 +1190,7 @@ interface USDT {
  * @title: Idle Rebalancer interface
  * @author: Idle Labs Inc., idle.finance
  */
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface IIdleRebalancerV3 {
   function getAllocations() external view returns (uint256[] memory _allocations);
 }
@@ -1209,8 +1204,7 @@ interface IIdleRebalancerV3 {
  *           when a new protocol will be added this should be replaced
  * @author: Idle Labs Inc., idle.finance
  */
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 
@@ -1321,8 +1315,7 @@ contract IdleRebalancerV3 is IIdleRebalancerV3, Ownable {
  * @title: Idle Token interface
  * @author: Idle Labs Inc., idle.finance
  */
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface IIdleToken {
   // view
   /**
@@ -1436,8 +1429,7 @@ interface IIdleToken {
  *          price is: Net Asset Value / totalSupply
  * @author: Idle Labs Inc., idle.finance
  */
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 
@@ -1481,8 +1473,7 @@ contract IdlePriceCalculator {
 
 // File: contracts/interfaces/GasToken.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 interface GasToken {
   function freeUpTo(uint256 value) external returns (uint256 freed);
   function freeFromUpTo(address from, uint256 value) external returns (uint256 freed);
@@ -1491,8 +1482,7 @@ interface GasToken {
 
 // File: contracts/GST2Consumer.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 contract GST2Consumer {
   GasToken public constant gst2 = GasToken(0x0000000000b3F879cb30FE243b4Dfee438691c04);
@@ -1540,8 +1530,7 @@ contract GST2Consumer {
  *           and with each token user have the right to redeem a portion of these pools
  * @author: Idle Labs Inc., idle.finance
  */
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

@@ -1,5 +1,4 @@
-pragma solidity 0.5.8;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.5.8;pragma experimental ABIEncoderV2;
 
 contract MultiSigWalletWithTimelock {
 

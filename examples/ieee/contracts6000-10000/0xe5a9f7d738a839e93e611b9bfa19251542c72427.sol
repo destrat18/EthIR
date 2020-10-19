@@ -583,8 +583,7 @@ contract ERC20Detailed is IERC20 {
     based on the contracts of OpenZeppelin:
     https://github.com/OpenZeppelin/zeppelin-solidity/tree/master/contracts
 **/
-pragma solidity 0.5.13;
-
+pragma solidity ^0.5.13;
 
 
 /**

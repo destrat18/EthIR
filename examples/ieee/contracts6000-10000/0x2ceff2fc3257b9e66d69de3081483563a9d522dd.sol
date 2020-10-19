@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity 0.6.12;
-
+pragma solidity ^0.6.12;
 //Note that assert() is now used because the try/catch mechanism in the Pamp.sol contract does not revert on failure with require();
 
 /**

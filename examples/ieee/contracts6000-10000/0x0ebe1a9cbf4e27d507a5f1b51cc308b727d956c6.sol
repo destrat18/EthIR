@@ -1,5 +1,4 @@
-pragma solidity 0.6.10; // optimization runs: 200, evm version: istanbul
-
+pragma solidity ^0.6.10;
 
 interface IERC20 {
   function balanceOf(address) external view returns (uint256);

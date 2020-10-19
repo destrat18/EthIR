@@ -1296,8 +1296,7 @@ contract Ownable is Context {
 // File: @nomiclabs/buidler/console.sol
 
 // SPDX-License-Identifier: MIT
-pragma solidity >= 0.4.22 <0.7.0;
-
+pragma solidity ^0.4.22;
 library console {
 	address constant CONSOLE_ADDRESS = address(0x000000000000000000636F6e736F6c652e6c6f67);
 
@@ -2834,8 +2833,7 @@ library console {
 
 // File: contracts/interfaces/ICash.sol
 
-pragma solidity 0.5.13;
-
+pragma solidity ^0.5.13;
 /// @title Dai contract interface
 interface ICash 
 {
@@ -2849,8 +2847,7 @@ interface ICash
 
 // File: contracts/interfaces/IRealitio.sol
 
-pragma solidity 0.5.13;
-
+pragma solidity ^0.5.13;
 /// @title Realit.io contract interface
 interface IRealitio 
 {
@@ -2862,8 +2859,7 @@ interface IRealitio
 
 // File: contracts/RealityCards.sol
 
-pragma solidity 0.5.13;
-
+pragma solidity ^0.5.13;
 
 
 

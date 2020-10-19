@@ -326,8 +326,7 @@ library SafeMath {
 
 // File: contracts/payment/BuyItemV2.sol
 
-pragma solidity 0.5.15;
-
+pragma solidity ^0.5.15;
 
 
 

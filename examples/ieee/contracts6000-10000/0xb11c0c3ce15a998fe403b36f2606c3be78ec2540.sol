@@ -1,7 +1,6 @@
 // File: contracts/upgradeability/EternalStorage.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 /**
  * @title EternalStorage
  * @dev This contract holds all the necessary state variables to carry out the storage of any contract.
@@ -18,8 +17,7 @@ contract EternalStorage {
 
 // File: contracts/upgradeable_contracts/Initializable.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract Initializable is EternalStorage {
     bytes32 internal constant INITIALIZED = 0x0a6f646cd611241d8073675e00d1a1ff700fbf1b53fcf473de56d1e6e4b714ba; // keccak256(abi.encodePacked("isInitialized"))
@@ -35,16 +33,14 @@ contract Initializable is EternalStorage {
 
 // File: contracts/interfaces/IUpgradeabilityOwnerStorage.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 interface IUpgradeabilityOwnerStorage {
     function upgradeabilityOwner() external view returns (address);
 }
 
 // File: contracts/upgradeable_contracts/Upgradeable.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract Upgradeable {
     // Avoid using onlyUpgradeabilityOwner name to prevent issues with implementation from proxy contract
@@ -99,8 +95,7 @@ contract ERC20 is ERC20Basic {
 
 // File: contracts/upgradeable_contracts/Sacrifice.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 contract Sacrifice {
     constructor(address _recipient) public payable {
         selfdestruct(_recipient);
@@ -109,8 +104,7 @@ contract Sacrifice {
 
 // File: contracts/libraries/Address.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 /**
  * @title Address
@@ -131,8 +125,7 @@ library Address {
 
 // File: contracts/upgradeable_contracts/Claimable.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 contract Claimable {
@@ -187,8 +180,7 @@ contract Claimable {
 
 // File: contracts/upgradeable_contracts/VersionableBridge.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 contract VersionableBridge {
     function getBridgeInterfacesVersion() external pure returns (uint64 major, uint64 minor, uint64 patch) {
         return (5, 0, 0);
@@ -200,8 +192,7 @@ contract VersionableBridge {
 
 // File: contracts/upgradeable_contracts/Ownable.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 /**
@@ -271,8 +262,7 @@ contract Ownable is EternalStorage {
 
 // File: contracts/interfaces/IAMB.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 interface IAMB {
     function messageSender() external view returns (address);
     function maxGasPerTx() external view returns (uint256);
@@ -288,8 +278,7 @@ interface IAMB {
 
 // File: contracts/libraries/Bytes.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 /**
  * @title Bytes
  * @dev Helper methods to transform bytes to other solidity types.
@@ -358,8 +347,7 @@ library AddressUtils {
 
 // File: contracts/upgradeable_contracts/BasicAMBMediator.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -532,8 +520,7 @@ library SafeMath {
 
 // File: contracts/upgradeable_contracts/BasicTokenBridge.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -635,8 +622,7 @@ contract BasicTokenBridge is EternalStorage, Ownable {
 
 // File: contracts/upgradeable_contracts/TokenBridgeMediator.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 /**
@@ -780,16 +766,14 @@ contract TokenBridgeMediator is BasicAMBMediator, BasicTokenBridge {
 
 // File: contracts/interfaces/IMediatorFeeManager.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 interface IMediatorFeeManager {
     function calculateFee(uint256) external view returns (uint256);
 }
 
 // File: contracts/upgradeable_contracts/RewardableMediator.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -838,8 +822,7 @@ contract RewardableMediator is Ownable {
 
 // File: contracts/upgradeable_contracts/amb_native_to_erc20/BasicAMBNativeToErc20.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -947,8 +930,7 @@ contract BasicAMBNativeToErc20 is
 
 // File: contracts/interfaces/ERC677.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract ERC677 is ERC20 {
     event Transfer(address indexed from, address indexed to, uint256 value, bytes data);
@@ -961,24 +943,21 @@ contract ERC677 is ERC20 {
 
 // File: contracts/interfaces/ERC677Receiver.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 contract ERC677Receiver {
     function onTokenTransfer(address _from, uint256 _value, bytes _data) external returns (bool);
 }
 
 // File: contracts/upgradeable_contracts/ERC677Storage.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 contract ERC677Storage {
     bytes32 internal constant ERC677_TOKEN = 0xa8b0ade3e2b734f043ce298aca4cc8d19d74270223f34531d0988b7d00cba21d; // keccak256(abi.encodePacked("erc677token"))
 }
 
 // File: contracts/upgradeable_contracts/BaseERC677Bridge.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 
@@ -1023,8 +1002,7 @@ contract BaseERC677Bridge is BasicTokenBridge, ERC677Receiver, ERC677Storage {
 
 // File: contracts/interfaces/IBurnableMintableERC677Token.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract IBurnableMintableERC677Token is ERC677 {
     function mint(address _to, uint256 _amount) public returns (bool);
@@ -1034,8 +1012,7 @@ contract IBurnableMintableERC677Token is ERC677 {
 
 // File: contracts/upgradeable_contracts/ReentrancyGuard.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 contract ReentrancyGuard is EternalStorage {
     bytes32 internal constant LOCK = 0x6168652c307c1e813ca11cfb3a601f1cf3b22452021a5052d8b05f1f1f8a3e92; // keccak256(abi.encodePacked("lock"))
@@ -1051,8 +1028,7 @@ contract ReentrancyGuard is EternalStorage {
 
 // File: contracts/upgradeable_contracts/MediatorMessagesGuard.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 /**
 * @title MediatorMessagesGuard
@@ -1121,8 +1097,7 @@ contract MediatorMessagesGuard is EternalStorage {
 
 // File: contracts/upgradeable_contracts/amb_native_to_erc20/ForeignAMBNativeToErc20.sol
 
-pragma solidity 0.4.24;
-
+pragma solidity ^0.4.24;
 
 
 

@@ -1,5 +1,4 @@
-pragma solidity 0.5.11;
-
+pragma solidity ^0.5.11;
 contract SafeMath {
 	uint256 constant public MAX_UINT256 = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF;
 

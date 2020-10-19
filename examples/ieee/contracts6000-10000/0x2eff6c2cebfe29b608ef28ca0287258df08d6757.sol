@@ -5,8 +5,7 @@
  * 
  */
 
-pragma solidity 0.5.10;
-
+pragma solidity ^0.5.10;
 contract MileWallet {
     address public ownerWallet;
 

@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity >=0.4.23 <0.7.0;
-
+pragma solidity ^0.4.23;
 interface IERC20 {
     function totalSupply() external view returns (uint256);
 
@@ -27,8 +26,7 @@ interface IERC20 {
     );
 }
 
-pragma solidity >=0.4.23 <0.7.0;
-
+pragma solidity ^0.4.23;
 library SafeMath {
   function mul(uint256 a, uint256 b) internal pure returns (uint256) {
     if (a == 0) {
@@ -62,8 +60,7 @@ library SafeMath {
   }
 }
 
-pragma solidity >=0.4.23 <0.7.0;
-
+pragma solidity ^0.4.23;
 
 /*
 --------------------------------------------------------------------------

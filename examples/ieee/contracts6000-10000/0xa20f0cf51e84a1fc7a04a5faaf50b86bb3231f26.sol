@@ -200,8 +200,7 @@ contract ReentrancyGuard {
 
 // File: contracts/marketplace/interfaces/IPosition.sol
 
-pragma solidity 0.5.10;
-
+pragma solidity ^0.5.10;
 interface IPosition {
     event PositionCreated(
         address indexed position,
@@ -241,8 +240,7 @@ interface IPosition {
 
 // File: contracts/marketplace/library/Wrapper721.sol
 
-pragma solidity 0.5.10;
-
+pragma solidity ^0.5.10;
 interface I721Kitty {
     function ownerOf(uint256 _tokenId) external view returns (address owner);
     function transfer(address _to, uint256 _tokenId) external;
@@ -294,8 +292,7 @@ library Wrapper721 {
 
 // File: contracts/marketplace/Position.sol
 
-pragma solidity 0.5.10;
-
+pragma solidity ^0.5.10;
 
 
 

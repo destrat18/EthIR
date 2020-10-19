@@ -1474,8 +1474,7 @@ contract Ownable is Context {
 
 // File: contracts/tokenV2/DozerDollV2.sol
 
-pragma solidity >=0.5.0 <0.6.0;
-
+pragma solidity ^0.5.0;
 
 
 

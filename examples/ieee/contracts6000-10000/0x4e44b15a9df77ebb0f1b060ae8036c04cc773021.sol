@@ -2,8 +2,7 @@
  *Submitted for verification at Etherscan.io on 2020-01-22
 */
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 contract Ownable {
     address private _owner;
 

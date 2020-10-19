@@ -502,8 +502,7 @@ library SafeERC20 {
 
 // File: contracts/PaymentHandler.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 // import "./PaymentMaster.sol";
 
 
@@ -572,8 +571,7 @@ contract PaymentHandler {
 
 // File: contracts/Proxy.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 contract Proxy {
     // Code position in storage is keccak256("PROXIABLE") = "0xc5f16f0fcc639fa48a6947836d9850f504798523bf8c9a3a87d5876cf622bcf7"
     // constructor(bytes memory constructData, address contractLogic) public {
@@ -605,8 +603,7 @@ contract Proxy {
 
 // File: contracts/PaymentMaster.sol
 
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

@@ -1,7 +1,6 @@
 // File: contracts/interfaces/IDeerfiV1SwapToken.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 interface IDeerfiV1SwapToken {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
@@ -25,8 +24,7 @@ interface IDeerfiV1SwapToken {
 
 // File: contracts/libraries/SafeMath.sol
 
-pragma solidity =0.5.16;
-
+pragma solidity ^0.5.16;
 // a library for performing overflow-safe math, courtesy of DappHub (https://github.com/dapphub/ds-math)
 
 library SafeMath {
@@ -45,8 +43,7 @@ library SafeMath {
 
 // File: contracts/libraries/Ownable.sol
 
-pragma solidity =0.5.16;
-
+pragma solidity ^0.5.16;
 /**
  * @title Ownable contract
  * @dev The Ownable contract has an owner address, and provides basic authorization control functions.
@@ -83,8 +80,7 @@ contract Ownable {
 
 // File: contracts/DeerfiV1SwapToken.sol
 
-pragma solidity =0.5.16;
-
+pragma solidity ^0.5.16;
 
 
 

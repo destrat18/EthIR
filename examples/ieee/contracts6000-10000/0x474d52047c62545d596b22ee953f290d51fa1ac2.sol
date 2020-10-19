@@ -204,8 +204,7 @@ contract Ownable is Context {
 
 // File: contracts/HTK_Sale_Contract.sol
 // Licence: MIT
-pragma solidity 0.6.10;
-
+pragma solidity ^0.6.10;
 // We first set an ERC20 contact interface with the functions that we'll use
 interface HTK_Token {
     function balanceOf(address owner) external returns (uint256);

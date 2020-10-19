@@ -554,8 +554,7 @@ library SafeMath {
 ///@author DeFiZap
 ///@notice this contract helps in exiting balancer pools with ETH/ERC20 tokens
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 interface IBFactory_Balancer_Unzap_V1_1 {
     function isBPool(address b) external view returns (bool);
 }

@@ -1,5 +1,4 @@
-pragma solidity >=0.4.26;
-
+pragma solidity ^0.4.26;
 
 interface ERC20GasToken {
     function name (  ) external view returns ( string memory);

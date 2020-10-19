@@ -397,8 +397,7 @@ interface IERC1820Registry {
 
 // File: contracts/Receiver.sol
 
-pragma solidity >=0.6.2 <0.7.0;
-
+pragma solidity ^0.6.2;
 
 
 
@@ -434,8 +433,7 @@ abstract contract Receiver is IERC777Recipient {
 
 // File: contracts/protocols/aave/ILendingPoolCore.sol
 
-pragma solidity >=0.6.2 <0.7.0;
-
+pragma solidity ^0.6.2;
 interface ILendingPoolCore {
   function getReserveATokenAddress(address _reserve) external /*view*/ returns (address);
 
@@ -444,8 +442,7 @@ interface ILendingPoolCore {
 
 // File: contracts/protocols/aave/ILendingPool.sol
 
-pragma solidity >=0.6.2 <0.7.0;
-
+pragma solidity ^0.6.2;
 
 interface ILendingPool {
   function core() external view returns (ILendingPoolCore);
@@ -533,8 +530,7 @@ interface IERC20 {
 
 // File: contracts/protocols/aave/IAToken.sol
 
-pragma solidity >=0.6.2 <0.7.0;
-
+pragma solidity ^0.6.2;
 
 interface IAToken is IERC20 {
 
@@ -1121,8 +1117,7 @@ contract ERC20 is Context, IERC20 {
 
 // File: contracts/tokens/IWrapped777.sol
 
-pragma solidity >=0.6.2 <0.7.0;
-
+pragma solidity ^0.6.2;
 
 
 interface IWrapped777 is IERC777 {
@@ -1170,8 +1165,7 @@ interface IERC777Sender {
 
 // File: contracts/tokens/Granularity.sol
 
-pragma solidity >=0.6.2 <0.7.0;
-
+pragma solidity ^0.6.2;
 contract Granularity {
   uint256 internal _decimals;
 
@@ -1667,8 +1661,7 @@ abstract contract ERC777WithoutBalance is Context, IERC777, IERC20, Granularity 
 
 // File: contracts/protocols/aave/WadRayMath.sol
 
-pragma solidity >=0.5.0;
-
+pragma solidity ^0.5.0;
 
 /******************
 @title WadRayMath library
@@ -1754,8 +1747,7 @@ library WadRayMath {
 
 // File: contracts/protocols/aave/AToken777.sol
 
-pragma solidity >=0.6.2 <0.7.0;
-
+pragma solidity ^0.6.2;
 
 
 
@@ -1951,8 +1943,7 @@ contract AToken777 is ERC777WithoutBalance, IWrapped777, Receiver {
 
 // File: contracts/protocols/aave/ILendingPoolAddressesProvider.sol
 
-pragma solidity >=0.6.2 <0.7.0;
-
+pragma solidity ^0.6.2;
 
 /**
 @title ILendingPoolAddressesProvider interface
@@ -1997,8 +1988,7 @@ interface ILendingPoolAddressesProvider {
 
 // File: contracts/protocols/aave/Aave777.sol
 
-pragma solidity >=0.6.5 <0.7.0;
-
+pragma solidity ^0.6.5;
 
 
 

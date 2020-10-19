@@ -28,8 +28,7 @@
 * Get your share, join today!
 */
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 contract LionShare {
 
   struct Account {

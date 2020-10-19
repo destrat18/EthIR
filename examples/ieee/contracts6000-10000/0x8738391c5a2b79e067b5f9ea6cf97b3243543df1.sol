@@ -2,8 +2,7 @@
  *Submitted for verification at Etherscan.io on 2020-06-28
 */
 
-pragma solidity 0.4.25;
-
+pragma solidity ^0.4.25;
 // File: contracts/saga/interfaces/IRateApprover.sol
 
 /**

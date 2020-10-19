@@ -1,5 +1,4 @@
-pragma solidity 0.5.16;
-
+pragma solidity ^0.5.16;
 /**
  * @title   MassetStructs
  * @author  Stability Labs Pty. Ltd.

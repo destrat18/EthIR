@@ -1,7 +1,6 @@
 // File: contracts/token/interfaces/IERC20Token.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 /*
     ERC20 Standard Token interface
 */
@@ -21,8 +20,7 @@ contract IERC20Token {
 
 // File: contracts/IConversionPathFinder.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 
 /*
     Conversion Path Finder interface
@@ -33,8 +31,7 @@ contract IConversionPathFinder {
 
 // File: contracts/utility/interfaces/IOwned.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 /*
     Owned contract interface
 */
@@ -48,8 +45,7 @@ contract IOwned {
 
 // File: contracts/utility/Owned.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 
 /**
   * @dev Provides support and utilities for contract ownership
@@ -109,8 +105,7 @@ contract Owned is IOwned {
 
 // File: contracts/utility/Utils.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 /**
   * @dev Utilities & Common Modifiers
 */
@@ -151,8 +146,7 @@ contract Utils {
 
 // File: contracts/utility/interfaces/IContractRegistry.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 /*
     Contract Registry interface
 */
@@ -165,8 +159,7 @@ contract IContractRegistry {
 
 // File: contracts/utility/ContractRegistryClient.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 
 
 
@@ -270,8 +263,7 @@ contract ContractRegistryClient is Owned, Utils {
 
 // File: contracts/utility/interfaces/ITokenHolder.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 
 
 /*
@@ -283,8 +275,7 @@ contract ITokenHolder is IOwned {
 
 // File: contracts/converter/interfaces/IConverterAnchor.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 
 
 /*
@@ -295,8 +286,7 @@ contract IConverterAnchor is IOwned, ITokenHolder {
 
 // File: contracts/utility/interfaces/IWhitelist.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 /*
     Whitelist interface
 */
@@ -306,8 +296,7 @@ contract IWhitelist {
 
 // File: contracts/converter/interfaces/IConverter.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 
 
 
@@ -353,8 +342,7 @@ contract IConverter is IOwned {
 
 // File: contracts/converter/interfaces/IConverterRegistry.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 contract IConverterRegistry {
     function getAnchorCount() public view returns (uint256);
     function getAnchors() public view returns (address[]);
@@ -376,8 +364,7 @@ contract IConverterRegistry {
 
 // File: contracts/ConversionPathFinder.sol
 
-pragma solidity 0.4.26;
-
+pragma solidity ^0.4.26;
 
 
 

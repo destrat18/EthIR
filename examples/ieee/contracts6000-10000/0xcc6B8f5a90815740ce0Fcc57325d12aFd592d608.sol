@@ -1,7 +1,6 @@
 // File: contracts/math/SafeMath.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 /// @title SafeMath
 /// @dev Math operations with safety checks that throw on error
@@ -45,8 +44,7 @@ library SafeMath {
 
 // File: contracts/ownership/Ownable.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 /// @title Ownable
 /// @dev Provide a simple access control with a single authority: the owner
 contract Ownable {
@@ -118,8 +116,7 @@ contract Ownable {
 
 // File: contracts/whitelist/Whitelist.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 /// @title Whitelist
@@ -208,8 +205,7 @@ contract Whitelist is Ownable {
 
 // File: contracts/whitelist/Whitelisted.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 
@@ -252,8 +248,7 @@ contract Whitelisted is Ownable {
 
 // File: contracts/token/ERC20.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 /// @title ERC20 interface
 /// @dev see https://github.com/ethereum/EIPs/issues/20
@@ -273,8 +268,7 @@ interface ERC20 {
 
 // File: contracts/token/ProfitSharing.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 
@@ -493,8 +487,7 @@ contract ProfitSharing is Ownable {
 
 // File: contracts/token/MintableToken.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 
@@ -564,8 +557,7 @@ contract MintableToken is ERC20, ProfitSharing, Whitelisted {
 
 // File: contracts/crowdsale/RateSourceInterface.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 /// @title RateSource
 /// @author STOKR
@@ -579,8 +571,7 @@ interface RateSource {
 
 // File: contracts/crowdsale/MintingCrowdsale.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 
@@ -904,8 +895,7 @@ contract MintingCrowdsale is Ownable {
 
 // File: contracts/token/TokenRecoverable.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 /// @title TokenRecoverable
@@ -958,8 +948,7 @@ contract TokenRecoverable is Ownable {
 
 // File: contracts/token/StokrToken.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 
@@ -1176,8 +1165,7 @@ contract StokrToken is MintableToken, TokenRecoverable {
 
 // File: contracts/crowdsale/StokrCrowdsale.sol
 
-pragma solidity 0.5.12;
-
+pragma solidity ^0.5.12;
 
 
 

@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity >=0.4.21 <0.7.0;
-
+pragma solidity ^0.4.21;
 interface KyberNetworkProxyInterface {
     function maxGasPrice() external view returns(uint);
     function getUserCapInWei(address user) external view returns(uint);

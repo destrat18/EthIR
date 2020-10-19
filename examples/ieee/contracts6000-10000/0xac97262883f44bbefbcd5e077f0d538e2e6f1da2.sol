@@ -81,8 +81,7 @@ interface IERC20 {
 // File: contracts/P2pSwap.sol
 
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.6.0;
-
+pragma solidity ^0.6.0;
 
 /**
  * @title P2pSwap

@@ -1,8 +1,7 @@
 /*! lionshare.sol | (c) 2020 Develop by BelovITLab LLC (smartcontract.ru), author @edward | SPDX-License-Identifier: MIT License 
 this is lionshare matrix, first multilevel matrix that starts with 0.04eth only*/
 
-pragma solidity 0.6.8;
-
+pragma solidity ^0.6.8;
 contract Lionshare {
     struct User {
         uint256 id;
