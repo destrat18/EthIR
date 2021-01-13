@@ -941,3 +941,15 @@ def find_first_closing_parentheses(string):
                 idx_ini = idx_ini + closing_index + 1
                 filtered_string = filtered_string[closing_index+1:]
     raise ValueError("Parentheses are not consistent")
+
+def get_solc_executable(version):
+    if version == "v4":
+        return "solc"
+    elif version == "v5":
+        return "solcv5"
+    elif version == "v6":
+        return "solcv6"
+    elif version == "v7":
+        return "solcv7"
+    elif version == "v8":
+        return "solcv8"
