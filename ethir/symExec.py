@@ -2604,6 +2604,21 @@ def sym_exec_ins(params, block, instr, func_call,stack_first,instr_index):
             stack.insert(0, new_var)
         else:
             raise ValueError('STACK underflow')
+
+    elif opcode == "CREATE2":
+        if len(stack) > 3:
+            global_state["pc"] += 1
+            stack.pop(0)
+            stack.pop(0)
+            stack.pop(0)
+            stack.pop(0)
+            new_var_name = gen.gen_arbitrary_var()
+            new_var = BitVec(new_var_name, 256)
+            stack.insert(0, new_var)
+        else:
+            raise ValueError('STACK underflow')
+
+
     elif opcode == "CALL":
         # TODO: Need to handle miu_i
         if len(stack) > 6:
@@ -2874,7 +2889,18 @@ def sym_exec_ins(params, block, instr, func_call,stack_first,instr_index):
         else:
             raise ValueError('STACK underflow')
 
+    
+    elif opcode == "CHAINID":
+        global_state["pc"] = global_state["pc"] + 1
+        val = BitVec("chainid", 256)
+        stack.insert(0, val)
 
+    elif opcode == "SELFBALANCE":
+        global_state["pc"] = global_state["pc"] + 1
+        new_var_name = gen.gen_balance_var()
+        new_var = BitVec(new_var_name, 256)
+        stack.insert(0, new_var)
+        
     elif opcode == "EXTCODEHASH":
         if len(stack) > 0:
             global_state["pc"] = global_state["pc"] + 1
