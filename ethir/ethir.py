@@ -201,7 +201,7 @@ def run_solidity_analysis(inputs,hashes):
         function_names = hashes[inp["c_name"]]
         # result, return_code = symExec.run(disasm_file=inp['disasm_file'], source_map=inp['source_map'], source_file=inp['source'],cfg = args.control_flow_graph,saco = args.saco,execution = 0, cname = inp["c_name"],hashes = function_names,debug = args.debug,evm_version = evm_version_modifications,cfile = args.cfile,svc=svc_options,go = args.goto)
         try:
-            result, return_code = symExec.run(disasm_file=inp['disasm_file'], source_map=inp['source_map'], source_file=inp['source'],cfg = args.control_flow_graph,saco = args.saco,execution = 0, cname = inp["c_name"],hashes = function_names,debug = args.debug,evm_version = evm_version_modifications,cfile = args.cfile,svc=svc_options,go = args.goto)
+            result, return_code = symExec.run(disasm_file=inp['disasm_file'], source_map=inp['source_map'], source_file=inp['source'],cfg = args.control_flow_graph,saco = args.saco,execution = 0, cname = inp["c_name"],hashes = function_names,debug = args.debug,evm_version = evm_version_modifications,cfile = args.cfile,svc=svc_options,go = args.goto,opt_bytecode = args.optimize_run)
             
         except Exception as e:
             traceback.print_exc()
@@ -221,7 +221,7 @@ def run_solidity_analysis(inputs,hashes):
             function_names = hashes[inp["c_name"]]
             #logging.info("contract %s:", inp['contract'])
             try:            
-                result, return_code = symExec.run(disasm_file=inp['disasm_file'], source_map=inp['source_map'], source_file=inp['source'],cfg = args.control_flow_graph,saco = args.saco,execution = i,cname = inp["c_name"],hashes = function_names,debug = args.debug,evm_version = evm_version_modifications,cfile = args.cfile,svc=svc_options,go = args.goto)
+                result, return_code = symExec.run(disasm_file=inp['disasm_file'], source_map=inp['source_map'], source_file=inp['source'],cfg = args.control_flow_graph,saco = args.saco,execution = i,cname = inp["c_name"],hashes = function_names,debug = args.debug,evm_version = evm_version_modifications,cfile = args.cfile,svc=svc_options,go = args.goto,opt_bytecode = args.optimize_run)
                 
             except Exception as e:
                 traceback.print_exc()
@@ -328,8 +328,13 @@ def analyze_solidity(input_type='solidity'):
 
     x = dtimer()
 
+    compiler_opt = {}
+    compiler_opt["optimize"] = args.optimize_run
+    compiler_opt["no-yul"] = args.no_yul_opt
+    compiler_opt["runs"] = args.run
+            
     if input_type == 'solidity':
-        helper = InputHelper(InputHelper.SOLIDITY, source=args.source,evm =args.evm)
+        helper = InputHelper(InputHelper.SOLIDITY, source=args.source,evm =args.evm,opt_options = compiler_opt)
     elif input_type == 'standard_json':
         helper = InputHelper(InputHelper.STANDARD_JSON, source=args.source,evm=args.evm, allow_paths=args.allow_paths)
     elif input_type == 'standard_json_output':
@@ -413,6 +418,9 @@ def main():
     parser.add_argument( "-cfg", "--control-flow-graph",    help="Store the CFG", action="store_true")
     # parser.add_argument( "-eop", "--evm-opcodes",           help="Include the EVM opcodes in the translation", action="store_true")
     parser.add_argument( "-saco", "--saco",                 help="Translate EthIR RBR to SACO RBR", action="store_true")
+    parser.add_argument("-optimize-run", "--optimize-run",             help="Enable optimization flag in solc compiler", action="store_true")
+    parser.add_argument("-run", "--run",             help="Set for how many contract runs to optimize (200 by default if --optimize-run)", default=-1,action="store",type=int)
+    parser.add_argument("-no-yul-opt", "--no-yul-opt",             help="Disable yul optimization in solc compiler (when possible)", action="store_true")
     # parser.add_argument( "-c", "--cfile",                 help="Translate EthIR RBR to SACO RBR", choices = ["int","uint"])
     # parser.add_argument("-v", "--verify",             help="Applies abstraction depending on the verifier (CPAchecker, VeryMax or SeaHorn). Use with -c flag", choices = ["cpa","verymax","seahorn"])
     # parser.add_argument("-i", "--invalid",             help="Translate the specified invalid bytecodes into SV-COMP error labels. Use with -c flag", choices = ["array","div0","all"])
