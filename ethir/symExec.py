@@ -1079,30 +1079,30 @@ def sym_exec_block(params, block, pre_block, depth, func_call,level,path):
         scc_unary.append(block)
 
 
-
 # Given a block and current stack, returns all blocks that share same initial name
 # and has the same stack (it's supposed to be at most one)
 def get_all_blocks_with_same_stack(successor, stack):
     global vertices
 
     # We just search for those nodes that share initial name with our successor
-    all_successor_copies = filter(lambda x: get_initial_block_address(x) == get_initial_block_address(successor), vertices)
+    all_successor_copies = list(filter(lambda x: get_initial_block_address(x) == get_initial_block_address(successor), vertices))
     same_stack_successors = []
     
     for found_successor in all_successor_copies:
         list_stacks = vertices[found_successor].get_stacks()
-
+        
         # If there's no stack in the node, we must check if our stack is empty, or doesn't contain jump values info.
-        if list_stacks == [[]]:
-            if filter(lambda x: isinstance(x,tuple) and (x[0] in vertices) and x[0]!=0,stack) == []:
+        # if list_stacks == [[]]:
+        #     if list(filter(lambda x: isinstance(x,tuple) and (x[0] in vertices) and x[0]!=0,stack)) == [] and len(stack) == 0:
+        #         same_stack_successors.append(found_successor)
+        # else:
+        # Otherwise, we check every path to see if they're esentially the same
+        for found_stack in list_stacks:
+            if check_if_same_stack(found_stack,stack,vertices):
                 same_stack_successors.append(found_successor)
-        else:
-            # Otherwise, we check every path to see if they're esentially the same
-            for found_stack in list_stacks:
-                if check_if_same_stack(found_stack,stack,vertices):
-                    same_stack_successors.append(found_successor)
-                    break
+                break
     return same_stack_successors
+
 
 # Given a block, its successor, and another successor already visited that shares same stack,
 # updates info from matching successor and block, to preserve info without cloning.
