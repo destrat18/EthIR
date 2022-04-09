@@ -2,6 +2,6 @@ version: "3"
 services:
 
   eth_ir:
-    image: eth_ir:0.0.1
+    image: eth_ir:0.0.2
     container_name: "eth_ir"
-    command: gunicorn --bind=127.0.0.1:3000 huma_movie.wsgi
+    command: tail -F anything

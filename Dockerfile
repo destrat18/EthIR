@@ -13,8 +13,7 @@ LABEL maintainer "Xiao Liang <https://github.com/yxliang01>, Luong Nguyen <luong
 SHELL ["/bin/bash", "-c", "-l"]
 RUN apt-get update && apt-get -y upgrade
 RUN apt-get install -y wget unzip python-virtualenv git build-essential software-properties-common curl
-RUN curl -s 'https://deb.nodesource.com/gpgkey/nodesource.gpg.key' | apt-key add -
-RUN apt-add-repository "deb https://deb.nodesource.com/${NODEREPO} $(lsb_release -c -s) main"
+
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
 RUN apt-get update
@@ -24,12 +23,10 @@ RUN apt-get install -y musl-dev golang-go python3 python3-pip python-pip \
         libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev nodejs yarn && \
         apt-get clean
 
-RUN update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
-RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.6 2
-RUN update-alternatives --install /usr/bin/pip pip /usr/bin/pip2 1
-RUN update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 2
-RUN pip install requests web3
-RUN npm install npm@latest -g  && npm install n --global && n stable
+RUN update-alternatives --install /usr/bin/python python /usr/bin/python2.7 2
+RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.6 1
+RUN update-alternatives --install /usr/bin/pip pip /usr/bin/pip2 2
+RUN update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 1
 
 RUN mkdir -p /deps/z3/ &&  wget https://github.com/Z3Prover/z3/archive/z3-4.5.0.zip -O /deps/z3/z3.zip && \
         cd /deps/z3/ && unzip /deps/z3/z3.zip && \
@@ -45,3 +42,6 @@ COPY --from=solc /usr/bin/solc /usr/bin/solc
 COPY . /EthIR/
 
 WORKDIR /EthIR/
+
+# RUN pip install requests web3
+# RUN npm install npm@latest -g  && npm install n --global && n stable

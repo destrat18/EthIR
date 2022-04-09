@@ -376,7 +376,7 @@ class InputHelper:
 
 
     def _get_solidity_version(self):
-        f = open(self.source,"r")
+        f = open(self.source.strip(),"r")
         lines = f.readlines()
         pragma = filter(lambda x: x.find("pragma solidity")!=-1, lines)
         if pragma == []:
