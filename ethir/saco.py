@@ -44,9 +44,10 @@ def rbr2saco(rbr,execution,cname):
         end = dtimer()
         print("SACO RBR: "+str(end-begin)+"s")
 
-    except:
+    except Exception as e:
         #print traceback.print_exc()
-        raise Exception("Error in SACO translation",5)
+        raise e
+        # raise Exception("Error in SACO translation",5)
     
 def build_head(rule):
     head = rule.get_rule_name()
@@ -113,8 +114,9 @@ def get_contract_vars(rule):
     return new
 
 def get_field_vars(rule):
-    names, numeric = rule.get_global_arg()
-
+    names = rule.get_global_arg()
+    numeric = []
+    
     if numeric != []:
         new_numeric = map(lambda x: "field(g"+x+")",numeric)
     else:

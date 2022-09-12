@@ -8,7 +8,6 @@ FROM ubuntu:bionic as CLI
 
 ARG NODEREPO=node_8.x
 
-LABEL maintainer "Xiao Liang <https://github.com/yxliang01>, Luong Nguyen <luongnt.58@gmail.com>"
 
 SHELL ["/bin/bash", "-c", "-l"]
 RUN apt-get update && apt-get -y upgrade

@@ -7,8 +7,9 @@ import math
 import sys
 import atexit
 import pickle
-import json
+import json, os
 import traceback
+import pickle
 import signal
 from timeit import default_timer as dtimer
 import logging
@@ -3269,6 +3270,8 @@ def get_scc(edges):
         return scc_multiple
         
 def run(disasm_file=None,disasm_file_init=None, source_map=None , source_file=None, cfg=None, saco = None, execution = None,cname = None, hashes = None, debug = None,ms_unknown=False,evm_version = False,cfile = None,svc = None,go = None,opt = None,source_name = None,opt_bytecode = False):    
+    
+
     global g_disasm_file
     global g_source_file
     global g_src_map
@@ -3407,7 +3410,12 @@ def run(disasm_file=None,disasm_file_init=None, source_map=None , source_file=No
             generate_verify_config_file(cname)
 
         ##Add when both are != None
-  
+    
+    # TODO added by me
+    # print(os.path.basename(source_file).split('.')[0])
+    with open(os.path.join(costabs_path, cname + '.fun_map'), 'wb') as handle:
+        pickle.dump(function_block_map, handle)
+
     return [], 0
 
 def get_evm_block():

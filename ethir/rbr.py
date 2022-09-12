@@ -1605,7 +1605,7 @@ def evm2rbr_compiler(blocks_input = None, stack_info = None, block_unbuild = Non
                     rule.set_invalid_source(inv[1])
 
                 rbr_blocks[rule.get_rule_name()]=[rule]
-            
+
 
             rule_c = create_blocks(block_unbuild)
                
