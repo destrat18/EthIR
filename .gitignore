@@ -141,6 +141,8 @@ temp/*
 test/*
 
 .vscode/*
+.devcontainer/*
+
 
 database/*
 temp/*
