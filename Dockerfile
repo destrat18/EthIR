@@ -42,5 +42,4 @@ COPY . /EthIR/
 
 WORKDIR /EthIR/
 
-# RUN pip install requests web3
-# RUN npm install npm@latest -g  && npm install n --global && n stable
+RUN pip3 install -r requirements.txt
