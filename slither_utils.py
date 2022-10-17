@@ -1,7 +1,7 @@
 from slither.slither import Slither
 import os, csv
 
-def get_init_state_from_contract(sol_file_path):
+def get_init_state_from_contract(sol_file_path, contract_name):
     """
     extract all uint variable from solidity smart contract. for each contract in solidity file,
     first we check state variables then for each func we check parameters and return them
@@ -25,6 +25,9 @@ def get_init_state_from_contract(sol_file_path):
     # for each contract in solidity file first we check state variables then for each func
     # we extract parameters if the are uint vriable
     for contract in slither.contracts:
+
+        if contract.name != contract_name:
+            continue
         
         contract_init_state = {}
 
@@ -34,6 +37,8 @@ def get_init_state_from_contract(sol_file_path):
         state_variables = {}
         for var in contract.state_variables_declared:
             if str(var.type).startswith('uint'):
+                state_variables[var.name] = ">=0"
+            elif str(var.type).startswith('string'):
                 state_variables[var.name] = ">=0"
                 
         # check all parameters for each func in contract
@@ -46,6 +51,8 @@ def get_init_state_from_contract(sol_file_path):
             for var in func.parameters:
                 if str(var.type).startswith('uint'):
                    contract_init_state[func.full_name]['argument'][var.name] = ">=0"
+                elif str(var.type).startswith('string'):
+                   contract_init_state[func.full_name]['argument'][var.name] = ">=0"    
         
         init_state.append(contract_init_state)
 

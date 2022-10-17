@@ -14,7 +14,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     if args.action == 'generate_init_state':
-        init_state = get_init_state_from_contract(args.file_path)
+        init_state = get_init_state_from_contract(args.file_path, args.contract_name)
         init_state_file_path = os.path.join(os.path.dirname(args.file_path), args.contract_name+'.init_state')
         with open(init_state_file_path, 'wb') as handle:
             pickle.dump(init_state[0], handle)
