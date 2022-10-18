@@ -4,7 +4,7 @@ ARG SOLC_VERSION=0.4.25
 FROM ethereum/client-go:${ETHEREUM_VERSION} as geth
 FROM ethereum/solc:${SOLC_VERSION} as solc
 
-FROM ubuntu:bionic as CLI
+FROM ubuntu:bionic
 
 ARG NODEREPO=node_8.x
 
@@ -38,8 +38,12 @@ COPY --from=geth /usr/local/bin/evm /usr/local/bin/evm
 # Install solc from official solc image
 COPY --from=solc /usr/bin/solc /usr/bin/solc
 
-COPY . /EthIR/
 
 WORKDIR /EthIR/
 
+COPY requirements.txt /EthIR/requirements.txt
 RUN pip3 install -r requirements.txt
+
+COPY . /EthIR/
+
+

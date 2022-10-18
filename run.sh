@@ -5,6 +5,7 @@ if [[ `ls -1 /tmp/costabs/ | wc -l` -gt 0 ]]
 then
     cp /tmp/costabs/*.rbr samples/$name/;
     cp /tmp/costabs/*.fun_map samples/$name/;
+    cp /tmp/costabs/*.call_fun samples/$name/;
     python3 helper.py --action generate_summary -f "samples/$name/$name.sol";
     
     while read -r c_name; do
