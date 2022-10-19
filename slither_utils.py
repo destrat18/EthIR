@@ -22,6 +22,8 @@ def get_init_state_from_contract(sol_file_path, contract_name):
 
     slither = Slither(sol_file_path)  
 
+    unit_list = ['uint', 'string']
+
     # for each contract in solidity file first we check state variables then for each func
     # we extract parameters if the are uint vriable
     for contract in slither.contracts:
@@ -36,10 +38,9 @@ def get_init_state_from_contract(sol_file_path, contract_name):
         # TODO check if we need to be more accurate
         state_variables = {}
         for var in contract.state_variables_declared:
-            if str(var.type).startswith('uint'):
-                state_variables[var.name] = ">=0"
-            elif str(var.type).startswith('string'):
-                state_variables[var.name] = ">=0"
+            for u in unit_list:
+                if u in str(var.type):
+                    state_variables[var.name] = u
                 
         # check all parameters for each func in contract
         for func in contract.functions:
@@ -49,10 +50,9 @@ def get_init_state_from_contract(sol_file_path, contract_name):
 
             contract_init_state[func.full_name] = {'argument': {}, 'contract': state_variables}
             for var in func.parameters:
-                if str(var.type).startswith('uint'):
-                   contract_init_state[func.full_name]['argument'][var.name] = ">=0"
-                elif str(var.type).startswith('string'):
-                   contract_init_state[func.full_name]['argument'][var.name] = ">=0"    
+                for u in unit_list:
+                    if u in str(var.type):
+                        contract_init_state[func.full_name]['argument'][var.name] = u
         
         init_state.append(contract_init_state)
 
