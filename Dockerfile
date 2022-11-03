@@ -44,6 +44,3 @@ WORKDIR /EthIR/
 COPY requirements.txt /EthIR/requirements.txt
 RUN pip3 install -r requirements.txt
 
-COPY . /EthIR/
-
-
