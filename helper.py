@@ -71,10 +71,14 @@ if __name__ == '__main__':
             logging.error(e)
 
     # copy source file
-    shutil.copy(
-        args.source,
-        os.path.join(args.output, os.path.basename(args.source))
-    )
+    try:
+        shutil.copy(
+            args.source,
+            os.path.join(args.output, os.path.basename(args.source))
+        )
+    except shutil.SameFileError:
+        print("Don't need to copy source file!")
+
     # copy rbr files
     for f in os.listdir(COSTABS_PATH):
         if f.endswith('.rbr'):
