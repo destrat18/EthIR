@@ -1,1 +1,0 @@
-pragma solidity ^0.5.12;\n\n\nlibrary

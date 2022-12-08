@@ -1,17 +1,12 @@
-name="$1";
-# rm -r /tmp/costabs/*;
-./ethir/ethir.py -e -s samples/$name/$name.sol;
-if [[ `ls -1 /tmp/costabs/ | wc -l` -gt 0 ]]
-then
-    cp /tmp/costabs/*.rbr samples/$name/;
-    cp /tmp/costabs/*.fun_map samples/$name/;
-    cp /tmp/costabs/*.call_fun samples/$name/;
-    python3 helper.py --action generate_summary -f "samples/$name/$name.sol";
-    
-    while read -r c_name; do
-        python3 helper.py --action generate_init_state -c $c_name -f "samples/$name/$name.sol";
-        python3 helper.py --action fix_fun_map -c $c_name -f "samples/$name/$name.sol";
-    done <<< "$(awk -F"," 'FNR == 2 {print $2}' samples/$name/$name.summary | uniq)"
+OUTPUT="/workspaces/EthIR/samples/gastap_20k_batch"
 
-    # rm -r /tmp/costabs/*;
-fi
+while read -r contract_address
+do
+    META=$OUTPUT/$contract_address/$contract_address.meta
+    if [ -f $META ]; then
+        echo "$contract_address.meta exists"
+        continue
+    fi
+    echo "Processing $contract_address"
+    python3 helper.py --source "/workspaces/EthIR/examples/gastap_dataset/$contract_address.sol" --output $OUTPUT
+done < "/workspaces/EthIR/samples/gastap_20k_batch/contract_address.txt"
