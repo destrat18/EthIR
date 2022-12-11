@@ -28,7 +28,7 @@ Docker run -v /home/user/Desktop/Asparagus/illustration_examples/voting:/EthIR/s
 The `/home/user/Desktop/Asparagus/illustration_examples/voting` is the path to directory containg solidity file and `voting.sol` is the name of solidity source code.
 
 ### GASTAP Dataset
-To run the code on the whole GASTAP dataset you instead of calling 1 by 1, `run.sh` script can be used.
+To run the code on the whole GASTAP dataset you instead of calling one by one, `run.sh` script can be used.
 
 ```
 Docker run -v /home/user/Desktop/Asparagus/dataset/gastap_dataset:/EthIR/gastap_dataset -it ethir bash /EthIR/run.sh gastap_dataset
