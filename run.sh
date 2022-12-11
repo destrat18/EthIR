@@ -1,5 +1,4 @@
 DATASET="$1"
-OUTPUT="$2"
 
 while read -r contract_address
 do
@@ -9,5 +8,5 @@ do
         continue
     fi
     echo "Processing $contract_address"
-    python3 helper.py --source "$DATASET/$contract_address.sol" --output $OUTPUT
+    python3 helper.py --source "$DATASET/$contract_address/$contract_address.sol" --output "$DATASET/$contract_address"
 done < "$DATASET/contract_address.txt"
