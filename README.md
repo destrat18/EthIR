@@ -1,6 +1,6 @@
 # EthIR
 
-To facilitate generating RBR and meta files for each solidity code using the original EthIR GitHub repository, we create a Dockerfile that installs the exact version of solidity, python2.7, and libraries.
+To facilitate generating RBR and meta files for each solidity code using the original [EthIR GitHub repository](https://github.com/costa-group/EthIR), we create a Dockerfile that installs the exact version of solidity, python2.7, and libraries.
 
 ## Prerequisites
 Install docker using offical [docker documents](https://docs.docker.com/engine/install/).
