@@ -8,5 +8,5 @@ do
         continue
     fi
     echo "Processing $contract_address"
-    python3 helper.py --source "$DATASET/$contract_address/$contract_address.sol" --output "$DATASET/$contract_address"
+    python3 helper.py --source "$DATASET/$contract_address/$contract_address.sol"
 done < "$DATASET/contract_address.txt"

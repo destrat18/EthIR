@@ -31,6 +31,5 @@ The `/home/user/Desktop/Asparagus/illustration_examples/voting` is the path to d
 To run the code on the whole GASTAP dataset you instead of calling 1 by 1, `run.sh` script can be used.
 
 ```
-bash run.sh gastap_dataset 
+Docker run -v /home/user/Desktop/Asparagus/dataset/gastap_dataset:/EthIR/gastap_dataset -it ethir bash /EthIR/run.sh gastap_dataset
 ```
-
