@@ -1,0 +1,28 @@
+# EthIR
+
+To facilitate generating RBR and meta files for each solidity code using the original EthIR GitHub repository, we create a Dockerfile that installs the exact version of solidity, python2.7, and libraries.
+
+## Prerequisites
+Install docker using offical [docker documents](https://docs.docker.com/engine/install/).
+
+
+## Create the docker image
+To generate the docker image use the command below
+```
+docker build -t ethir .
+```
+
+## Generate RBR and meta
+the following command creates and runs the code on the solidity file in the same folder.
+
+```
+Docker run -v PATH_TO_SOLIDITY:/EthIR/samples -it ethir python3 /EthIR/helper.py -s samples/SOLIDITY_SOURCE_CODE_NAME
+```
+
+For example you can generate .rbr and .meta for the voting example with the following command:
+
+```
+Docker run -v /home/user/Desktop/Asparagus/illustration_examples/voting:/EthIR/samples -it ethir python3 /EthIR/helper.py -s samples/voting.sol
+```
+
+The `/home/user/Desktop/Asparagus/illustration_examples/voting` is the path to directory containg solidity file and `voting.sol` is the name of solidity source code.

@@ -1,4 +1,5 @@
-OUTPUT="/workspaces/EthIR/samples/gastap_20k_batch"
+DATASET="$1"
+OUTPUT="$2"
 
 while read -r contract_address
 do
@@ -8,5 +9,5 @@ do
         continue
     fi
     echo "Processing $contract_address"
-    python3 helper.py --source "/workspaces/EthIR/examples/gastap_dataset/$contract_address.sol" --output $OUTPUT
-done < "/workspaces/EthIR/samples/gastap_20k_batch/contract_address.txt"
+    python3 helper.py --source "$DATASET/$contract_address.sol" --output $OUTPUT
+done < "$DATASET/contract_address.txt"
