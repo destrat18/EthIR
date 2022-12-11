@@ -16,13 +16,13 @@ docker build -t ethir .
 the following command creates and runs the code on the solidity file in the same folder.
 
 ```
-Docker run -v PATH_TO_SOLIDITY:/EthIR/samples -it ethir python3 /EthIR/helper.py -s samples/SOLIDITY_SOURCE_CODE_NAME
+docker run -v PATH_TO_SOLIDITY:/EthIR/samples -it ethir python3 /EthIR/helper.py -s samples/SOLIDITY_SOURCE_CODE_NAME
 ```
 
 For example you can generate .rbr and .meta for the voting example with the following command:
 
 ```
-Docker run -v /home/user/Desktop/Asparagus/illustration_examples/voting:/EthIR/samples -it ethir python3 /EthIR/helper.py -s samples/voting.sol
+docker run -v /home/user/Desktop/Asparagus/illustration_examples/voting:/EthIR/samples -it ethir python3 /EthIR/helper.py -s samples/voting.sol
 ```
 
 The `/home/user/Desktop/Asparagus/illustration_examples/voting` is the path to directory containg solidity file and `voting.sol` is the name of solidity source code.
@@ -31,5 +31,5 @@ The `/home/user/Desktop/Asparagus/illustration_examples/voting` is the path to d
 To run the code on the whole GASTAP dataset you instead of calling one by one, `run.sh` script can be used.
 
 ```
-Docker run -v /home/user/Desktop/Asparagus/dataset/gastap_dataset:/EthIR/gastap_dataset -it ethir bash /EthIR/run.sh gastap_dataset
+docker run -v /home/user/Desktop/Asparagus/dataset/gastap_dataset:/EthIR/gastap_dataset -it ethir bash /EthIR/run.sh gastap_dataset
 ```
