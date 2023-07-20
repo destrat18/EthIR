@@ -1,5 +1,5 @@
 #Pablo Gordillo
-
+import re
 from utils import toInt
 '''
 RBRRule class. It represents the rules of the transaction system.
@@ -343,13 +343,14 @@ class RBRRule:
         
         new_instr = filter(lambda x: x !="",self.instr) #clean instructions ""
         new_instr = ["skip"] if new_instr == [] else new_instr
-        in_aux = self.build_input_vars()
+        in_aux = self.build_input_vars() 
         local_vars = self.build_local_vars()
         
         in_vars = self.vars_to_string("input")
+        
         gv = self.vars_to_string("global")
         bc_input = self.vars_to_string("data")
-        
+  
         if (in_vars == ""):
             if(gv == ""):
                 d_vars = ""
@@ -370,14 +371,94 @@ class RBRRule:
 
         elif d_vars == "" and bc_input !="":
             d_vars = bc_input
-            
+
+        in_aux = self.build_input_vars()
+        gv_aux = self.build_field_vars()
+        local_vars = self.build_local_vars()
+        bc_input = filter(lambda x: x!="",sorted(self.bc))
+        
         rule = rule + self.rule_name+"("+d_vars+")=>\n"
 
         if self.guard != "" :
+            print("self guard", self.guard)
             rule = rule + "\t"+self.guard+"\n"
 
         for instr in new_instr:
             rule = rule + "\t"+instr+"\n"
+
+
+        return rule
+    
+    def rule2json(self):
+
+        rule = {}
+        
+        new_instr = filter(lambda x: x !="",self.instr) #clean instructions ""
+        new_instr = ["skip"] if new_instr == [] else new_instr
+
+        s_vars = self.build_input_vars()
+        g_vars = self.build_field_vars()
+        l_vars = self.build_local_vars()
+        bc_input = filter(lambda x: x!="",sorted(self.bc))
+
+        d_vars = []
+
+        if not s_vars:
+            if not g_vars:
+                d_vars = []
+            else:
+                for var in g_vars:
+                    d_vars.append(var)
+        else:
+            for var in s_vars:
+                d_vars.append(var)
+            if g_vars:
+                for var in g_vars:
+                    d_vars.append(var)
+        
+        if not d_vars and l_vars:
+            d_vars = []
+            for var in l_vars:
+                d_vars.append(var)
+        elif d_vars and l_vars:
+            for var in l_vars:
+                d_vars.append(var)
+        
+        if d_vars and bc_input:
+            for var in bc_input:
+                d_vars.append(var)
+        elif not d_vars and bc_input:
+            d_vars = []
+            for var in bc_input:
+                d_vars.append(var)
+            
+        rule["name"] = self.rule_name
+        rule["input_vars"] = d_vars
+        rule["instructions"] = []
+        rule["instr_inf_flow"] = {}
+
+        if self.guard != "" :
+            rule["instructions"].append(self.guard)
+
+        for instr in new_instr:
+            rule["instructions"].append(instr)
+
+            if "=" in instr:
+                instr =  re.split(' = ', instr)
+                print("instr_regex", instr)
+                instr_dict = {}
+                left_var = instr[0]
+                right_var = instr[1]
+                if left_var not in rule["instr_inf_flow"]:
+                    rule["instr_inf_flow"][left_var] = []
+
+                right_var_list = re.split('\+|-|/|\*', right_var)
+
+                if len(right_var_list)==1:
+                    rule["instr_inf_flow"][left_var].append(right_var_list[0])
+                else:
+                    for var in right_var_list:
+                        rule["instr_inf_flow"][left_var].append(var)
 
         return rule
 

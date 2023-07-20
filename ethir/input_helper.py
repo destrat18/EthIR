@@ -77,6 +77,7 @@ class InputHelper:
             empty = self._prepare_disasm_file(self.source, bytecode)
 
             disasm_file = self._get_temporary_files(self.source)['disasm']
+    
             if not empty:
                 inputs.append({'disasm_file': disasm_file})
         else:
@@ -297,6 +298,7 @@ class InputHelper:
     def _get_temporary_files(self, target):
         return {
             "evm": target + ".evm",
+            # "evm": target,
             "disasm": target + ".evm.disasm",
             "evm_init": target + "_init.evm",
             "disasm_init": target + "_init.evm.disasm",
@@ -325,13 +327,18 @@ class InputHelper:
 
         disasm_out = ""
         try:
-
+            
             if self.solc_version == "v4":
+                print "here1"
                 disasm_p = subprocess.Popen(
                     ["evm", "disasm", evm_file], stdout=subprocess.PIPE)
             else:
+                print "here2"
+                # disasm_p = subprocess.Popen(
+                #     ["evm1.9.20", "disasm", evm_file], stdout=subprocess.PIPE)
                 disasm_p = subprocess.Popen(
-                    ["evm1.9.20", "disasm", evm_file], stdout=subprocess.PIPE)
+                    ["evm", "disasm", evm_file], stdout=subprocess.PIPE)
+                
 
             disasm_out = disasm_p.communicate()[0].decode()
 
@@ -376,7 +383,7 @@ class InputHelper:
 
 
     def _get_solidity_version(self):
-        f = open(self.source.strip(),"r")
+        f = open(self.source,"r")
         lines = f.readlines()
         pragma = filter(lambda x: x.find("pragma solidity")!=-1, lines)
         if pragma == []:
