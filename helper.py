@@ -71,11 +71,10 @@ if __name__ == '__main__':
             logging.error(e)
 
     # copy source file
-    if not os.path.exists(os.path.join(args.output, os.path.basename(args.source))):
-        shutil.copy(
-            args.source,
-            os.path.join(args.output, os.path.basename(args.source))
-        )
+    shutil.copy(
+        args.source,
+        os.path.join(args.output, os.path.basename(args.source))
+    )
     # copy rbr files
     for f in os.listdir(COSTABS_PATH):
         if f.endswith('.rbr'):
