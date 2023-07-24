@@ -1,0 +1,1334 @@
+{
+    "list": [
+        {
+            "instr_inf_flow": {
+                "l(l0)": [
+                    "s(0)"
+                ],
+                "s(1)": [
+                    "64",
+                    "calldatasize"
+                ],
+                "s(0)": [
+                    "128",
+                    "4"
+                ]
+            },
+            "input_vars": [
+                "l(l1)",
+                "l(l0)",
+                "calldataload",
+                "calldatasize",
+                "callvalue",
+                "x"
+            ],
+            "name": "block0",
+            "instructions": [
+                "s(0) = 128",
+                "nop(PUSH1)",
+                "s(1) = 64",
+                "nop(PUSH1)",
+                "l(l0) = s(0)",
+                "nop(MSTORE)",
+                "s(0) = 4",
+                "nop(PUSH1)",
+                "s(1) = calldatasize",
+                "nop(CALLDATASIZE)",
+                "call(jump0(s(1),s(0), l(l1), l(l0), calldataload, calldatasize, callvalue, x))",
+                "nop(LT)",
+                "nop(PUSH2)",
+                "nop(JUMPI)"
+            ]
+        },
+        {
+            "instr_inf_flow": {},
+            "input_vars": [
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)",
+                "calldataload",
+                "calldatasize",
+                "callvalue",
+                "x"
+            ],
+            "name": "jump0",
+            "instructions": [
+                "lt(s(1), s(0))",
+                "call(block76())"
+            ]
+        },
+        {
+            "instr_inf_flow": {},
+            "input_vars": [
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)",
+                "calldataload",
+                "calldatasize",
+                "callvalue",
+                "x"
+            ],
+            "name": "jump0",
+            "instructions": [
+                "geq(s(1), s(0))",
+                "call(block13(l(l1), l(l0), calldataload, calldatasize, callvalue, x))"
+            ]
+        },
+        {
+            "instr_inf_flow": {
+                "s(1)": [
+                    "26959946667150639794667015087019630673637144422540572481103610249216",
+                    "s(2)",
+                    "4294967295",
+                    "s(0)"
+                ],
+                "s(0)": [
+                    "0",
+                    "calldataload",
+                    "s(1)",
+                    "s(1)",
+                    "s(0)",
+                    "and(s(1), s(0))"
+                ],
+                "s(2)": [
+                    "s(0)",
+                    "801029432"
+                ]
+            },
+            "input_vars": [
+                "l(l1)",
+                "l(l0)",
+                "calldataload",
+                "calldatasize",
+                "callvalue",
+                "x"
+            ],
+            "name": "block13",
+            "instructions": [
+                "s(0) = 0",
+                "nop(PUSH1)",
+                "s(0) = calldataload",
+                "nop(CALLDATALOAD)",
+                "s(1) = 26959946667150639794667015087019630673637144422540572481103610249216",
+                "nop(PUSH29)",
+                "s(2) = s(0)",
+                "s(0) = s(1)",
+                "s(1) = s(2)",
+                "nop(SWAP1)",
+                "s(0) = s(1)/s(0)",
+                "nop(DIV)",
+                "s(1) = 4294967295",
+                "nop(PUSH4)",
+                "s(0) = and(s(1), s(0))",
+                "nop(AND)",
+                "s(1) = s(0)",
+                "nop(DUP1)",
+                "s(2) = 801029432",
+                "nop(PUSH4)",
+                "call(jump13(s(2),s(1),s(0), l(l1), l(l0), calldataload, calldatasize, callvalue, x))",
+                "nop(EQ)",
+                "nop(PUSH2)",
+                "nop(JUMPI)"
+            ]
+        },
+        {
+            "instr_inf_flow": {},
+            "input_vars": [
+                "s(2)",
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)",
+                "calldataload",
+                "calldatasize",
+                "callvalue",
+                "x"
+            ],
+            "name": "jump13",
+            "instructions": [
+                "eq(s(2), s(1))",
+                "call(block81(s(0), l(l1), l(l0), calldatasize, callvalue, x))"
+            ]
+        },
+        {
+            "instr_inf_flow": {},
+            "input_vars": [
+                "s(2)",
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)",
+                "calldataload",
+                "calldatasize",
+                "callvalue",
+                "x"
+            ],
+            "name": "jump13",
+            "instructions": [
+                "neq(s(2), s(1))",
+                "call(block65(s(0), l(l1), l(l0), calldatasize, callvalue, x))"
+            ]
+        },
+        {
+            "instr_inf_flow": {},
+            "input_vars": [
+                "s(2)",
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)",
+                "calldatasize",
+                "callvalue",
+                "x"
+            ],
+            "name": "jump65",
+            "instructions": [
+                "eq(s(2), s(1))",
+                "call(block146(s(0), l(l1), l(l0), calldatasize, callvalue, x))"
+            ]
+        },
+        {
+            "instr_inf_flow": {},
+            "input_vars": [
+                "s(2)",
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)",
+                "calldatasize",
+                "callvalue",
+                "x"
+            ],
+            "name": "jump65",
+            "instructions": [
+                "neq(s(2), s(1))",
+                "call(block76_0(s(0)))"
+            ]
+        },
+        {
+            "instr_inf_flow": {
+                "s(1)": [
+                    "s(0)"
+                ],
+                "s(2)": [
+                    "1428655195"
+                ]
+            },
+            "input_vars": [
+                "s(0)",
+                "l(l1)",
+                "l(l0)",
+                "calldatasize",
+                "callvalue",
+                "x"
+            ],
+            "name": "block65",
+            "instructions": [
+                "s(1) = s(0)",
+                "nop(DUP1)",
+                "s(2) = 1428655195",
+                "nop(PUSH4)",
+                "call(jump65(s(2),s(1),s(0), l(l1), l(l0), calldatasize, callvalue, x))",
+                "nop(EQ)",
+                "nop(PUSH2)",
+                "nop(JUMPI)"
+            ]
+        },
+        {
+            "instr_inf_flow": {
+                "s(1)": [
+                    "s(0)"
+                ],
+                "s(0)": [
+                    "0"
+                ]
+            },
+            "input_vars": [],
+            "name": "block76",
+            "instructions": [
+                "nop(JUMPDEST)",
+                "s(0) = 0",
+                "nop(PUSH1)",
+                "s(1) = s(0)",
+                "nop(DUP1)",
+                "nop(REVERT)"
+            ]
+        },
+        {
+            "instr_inf_flow": {},
+            "input_vars": [
+                "s(2)",
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)",
+                "calldatasize",
+                "callvalue",
+                "x"
+            ],
+            "name": "jump81",
+            "instructions": [
+                "eq(s(2), 0)",
+                "call(block93(s(1), s(0), l(l1), l(l0), calldatasize, x))"
+            ]
+        },
+        {
+            "instr_inf_flow": {},
+            "input_vars": [
+                "s(2)",
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)",
+                "calldatasize",
+                "callvalue",
+                "x"
+            ],
+            "name": "jump81",
+            "instructions": [
+                "neq(s(2), 0)",
+                "call(block89(s(1), s(0)))"
+            ]
+        },
+        {
+            "instr_inf_flow": {
+                "s(1)": [
+                    "callvalue"
+                ],
+                "s(2)": [
+                    "s(1)"
+                ]
+            },
+            "input_vars": [
+                "s(0)",
+                "l(l1)",
+                "l(l0)",
+                "calldatasize",
+                "callvalue",
+                "x"
+            ],
+            "name": "block81",
+            "instructions": [
+                "nop(JUMPDEST)",
+                "s(1) = callvalue",
+                "nop(CALLVALUE)",
+                "s(2) = s(1)",
+                "nop(DUP1)",
+                "call(jump81(s(2),s(1),s(0), l(l1), l(l0), calldatasize, callvalue, x))",
+                "nop(ISZERO)",
+                "nop(PUSH2)",
+                "nop(JUMPI)"
+            ]
+        },
+        {
+            "instr_inf_flow": {
+                "s(3)": [
+                    "s(2)"
+                ],
+                "s(2)": [
+                    "0"
+                ]
+            },
+            "input_vars": [
+                "s(1)",
+                "s(0)"
+            ],
+            "name": "block89",
+            "instructions": [
+                "s(2) = 0",
+                "nop(PUSH1)",
+                "s(3) = s(2)",
+                "nop(DUP1)",
+                "nop(REVERT)"
+            ]
+        },
+        {
+            "instr_inf_flow": {
+                "s(6)": [
+                    "s(4)",
+                    "32",
+                    "s(4)",
+                    "s(2)",
+                    "s(3)",
+                    "s(4)"
+                ],
+                "s(1)": [
+                    "124"
+                ],
+                "s(3)": [
+                    "s(2)",
+                    "s(4)",
+                    "s(3)",
+                    "s(4)",
+                    "s(3)",
+                    "s(4)",
+                    "s(5)",
+                    "211"
+                ],
+                "s(2)": [
+                    "4",
+                    "s(3)",
+                    "s(5)"
+                ],
+                "s(4)": [
+                    "calldatasize",
+                    "s(2)",
+                    "s(2)",
+                    "s(3)",
+                    "s(5)",
+                    "s(5)",
+                    "s(5)"
+                ],
+                "s(5)": [
+                    "s(4)",
+                    "x",
+                    "s(6)",
+                    "s(6)",
+                    "s(5)",
+                    "s(6)",
+                    "s(6)",
+                    "s(6)",
+                    "s(6)"
+                ]
+            },
+            "input_vars": [
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)",
+                "calldatasize",
+                "x"
+            ],
+            "name": "block93",
+            "instructions": [
+                "nop(JUMPDEST)",
+                "nop(POP)",
+                "s(1) = 124",
+                "nop(PUSH2)",
+                "s(2) = 4",
+                "nop(PUSH1)",
+                "s(3) = s(2)",
+                "nop(DUP1)",
+                "s(4) = calldatasize",
+                "nop(CALLDATASIZE)",
+                "s(3) = s(4)-s(3)",
+                "nop(SUB)",
+                "s(4) = s(2)",
+                "nop(DUP2)",
+                "s(3) = s(4)+s(3)",
+                "nop(ADD)",
+                "s(4) = s(2)",
+                "s(2) = s(3)",
+                "s(3) = s(4)",
+                "nop(SWAP1)",
+                "s(4) = s(3)",
+                "nop(DUP1)",
+                "s(5) = s(4)",
+                "nop(DUP1)",
+                "s(5) = x",
+                "nop(CALLDATALOAD)",
+                "s(6) = s(4)",
+                "s(4) = s(5)",
+                "s(5) = s(6)",
+                "nop(SWAP1)",
+                "s(6) = 32",
+                "nop(PUSH1)",
+                "s(5) = s(6)+s(5)",
+                "nop(ADD)",
+                "s(6) = s(4)",
+                "s(4) = s(5)",
+                "s(5) = s(6)",
+                "nop(SWAP1)",
+                "s(6) = s(2)",
+                "s(2) = s(5)",
+                "s(5) = s(6)",
+                "nop(SWAP3)",
+                "s(6) = s(3)",
+                "s(3) = s(5)",
+                "s(5) = s(6)",
+                "nop(SWAP2)",
+                "s(6) = s(4)",
+                "s(4) = s(5)",
+                "s(5) = s(6)",
+                "nop(SWAP1)",
+                "nop(POP)",
+                "nop(POP)",
+                "nop(POP)",
+                "s(3) = 211",
+                "nop(PUSH2)",
+                "call(block211(s(2),s(1),s(0), l(l1), l(l0)))",
+                "nop(JUMP)"
+            ]
+        },
+        {
+            "instr_inf_flow": {
+                "s(1)": [
+                    "s(3)",
+                    "s(3)",
+                    "s(2)"
+                ],
+                "s(3)": [
+                    "s(2)",
+                    "s(4)",
+                    "s(3)",
+                    "s(4)",
+                    "s(2)",
+                    "s(4)",
+                    "s(1)"
+                ],
+                "s(2)": [
+                    "64",
+                    "l(l0)",
+                    "64",
+                    "l(l0)",
+                    "s(3)",
+                    "s(2)",
+                    "s(3)"
+                ],
+                "l(l1)": [
+                    "s(4)"
+                ],
+                "s(4)": [
+                    "s(1)",
+                    "32",
+                    "s(1)",
+                    "s(1)"
+                ],
+                "s(5)": [
+                    "s(3)"
+                ]
+            },
+            "input_vars": [
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)"
+            ],
+            "name": "block124",
+            "instructions": [
+                "nop(JUMPDEST)",
+                "s(2) = 64",
+                "nop(PUSH1)",
+                "s(2) = l(l0)",
+                "nop(MLOAD)",
+                "s(3) = s(2)",
+                "nop(DUP1)",
+                "s(4) = s(1)",
+                "nop(DUP3)",
+                "s(5) = s(3)",
+                "nop(DUP2)",
+                "l(l1) = s(4)",
+                "nop(MSTORE)",
+                "s(4) = 32",
+                "nop(PUSH1)",
+                "s(3) = s(4)+s(3)",
+                "nop(ADD)",
+                "s(4) = s(1)",
+                "s(1) = s(3)",
+                "s(3) = s(4)",
+                "nop(SWAP2)",
+                "nop(POP)",
+                "nop(POP)",
+                "s(2) = 64",
+                "nop(PUSH1)",
+                "s(2) = l(l0)",
+                "nop(MLOAD)",
+                "s(3) = s(2)",
+                "nop(DUP1)",
+                "s(4) = s(1)",
+                "s(1) = s(3)",
+                "s(3) = s(4)",
+                "nop(SWAP2)",
+                "s(2) = s(3)-s(2)",
+                "nop(SUB)",
+                "s(3) = s(1)",
+                "s(1) = s(2)",
+                "s(2) = s(3)",
+                "nop(SWAP1)",
+                "nop(RETURN)"
+            ]
+        },
+        {
+            "instr_inf_flow": {},
+            "input_vars": [
+                "s(2)",
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)",
+                "calldatasize",
+                "callvalue",
+                "x"
+            ],
+            "name": "jump146",
+            "instructions": [
+                "eq(s(2), 0)",
+                "call(block158(s(1), s(0), l(l1), l(l0), calldatasize, x))"
+            ]
+        },
+        {
+            "instr_inf_flow": {},
+            "input_vars": [
+                "s(2)",
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)",
+                "calldatasize",
+                "callvalue",
+                "x"
+            ],
+            "name": "jump146",
+            "instructions": [
+                "neq(s(2), 0)",
+                "call(block154(s(1), s(0)))"
+            ]
+        },
+        {
+            "instr_inf_flow": {
+                "s(1)": [
+                    "callvalue"
+                ],
+                "s(2)": [
+                    "s(1)"
+                ]
+            },
+            "input_vars": [
+                "s(0)",
+                "l(l1)",
+                "l(l0)",
+                "calldatasize",
+                "callvalue",
+                "x"
+            ],
+            "name": "block146",
+            "instructions": [
+                "nop(JUMPDEST)",
+                "s(1) = callvalue",
+                "nop(CALLVALUE)",
+                "s(2) = s(1)",
+                "nop(DUP1)",
+                "call(jump146(s(2),s(1),s(0), l(l1), l(l0), calldatasize, callvalue, x))",
+                "nop(ISZERO)",
+                "nop(PUSH2)",
+                "nop(JUMPI)"
+            ]
+        },
+        {
+            "instr_inf_flow": {
+                "s(3)": [
+                    "s(2)"
+                ],
+                "s(2)": [
+                    "0"
+                ]
+            },
+            "input_vars": [
+                "s(1)",
+                "s(0)"
+            ],
+            "name": "block154",
+            "instructions": [
+                "s(2) = 0",
+                "nop(PUSH1)",
+                "s(3) = s(2)",
+                "nop(DUP1)",
+                "nop(REVERT)"
+            ]
+        },
+        {
+            "instr_inf_flow": {
+                "s(6)": [
+                    "s(4)",
+                    "32",
+                    "s(4)",
+                    "s(2)",
+                    "s(3)",
+                    "s(4)"
+                ],
+                "s(1)": [
+                    "189"
+                ],
+                "s(3)": [
+                    "s(2)",
+                    "s(4)",
+                    "s(3)",
+                    "s(4)",
+                    "s(3)",
+                    "s(4)",
+                    "s(5)",
+                    "259"
+                ],
+                "s(2)": [
+                    "4",
+                    "s(3)",
+                    "s(5)"
+                ],
+                "s(4)": [
+                    "calldatasize",
+                    "s(2)",
+                    "s(2)",
+                    "s(3)",
+                    "s(5)",
+                    "s(5)",
+                    "s(5)"
+                ],
+                "s(5)": [
+                    "s(4)",
+                    "x",
+                    "s(6)",
+                    "s(6)",
+                    "s(5)",
+                    "s(6)",
+                    "s(6)",
+                    "s(6)",
+                    "s(6)"
+                ]
+            },
+            "input_vars": [
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)",
+                "calldatasize",
+                "x"
+            ],
+            "name": "block158",
+            "instructions": [
+                "nop(JUMPDEST)",
+                "nop(POP)",
+                "s(1) = 189",
+                "nop(PUSH2)",
+                "s(2) = 4",
+                "nop(PUSH1)",
+                "s(3) = s(2)",
+                "nop(DUP1)",
+                "s(4) = calldatasize",
+                "nop(CALLDATASIZE)",
+                "s(3) = s(4)-s(3)",
+                "nop(SUB)",
+                "s(4) = s(2)",
+                "nop(DUP2)",
+                "s(3) = s(4)+s(3)",
+                "nop(ADD)",
+                "s(4) = s(2)",
+                "s(2) = s(3)",
+                "s(3) = s(4)",
+                "nop(SWAP1)",
+                "s(4) = s(3)",
+                "nop(DUP1)",
+                "s(5) = s(4)",
+                "nop(DUP1)",
+                "s(5) = x",
+                "nop(CALLDATALOAD)",
+                "s(6) = s(4)",
+                "s(4) = s(5)",
+                "s(5) = s(6)",
+                "nop(SWAP1)",
+                "s(6) = 32",
+                "nop(PUSH1)",
+                "s(5) = s(6)+s(5)",
+                "nop(ADD)",
+                "s(6) = s(4)",
+                "s(4) = s(5)",
+                "s(5) = s(6)",
+                "nop(SWAP1)",
+                "s(6) = s(2)",
+                "s(2) = s(5)",
+                "s(5) = s(6)",
+                "nop(SWAP3)",
+                "s(6) = s(3)",
+                "s(3) = s(5)",
+                "s(5) = s(6)",
+                "nop(SWAP2)",
+                "s(6) = s(4)",
+                "s(4) = s(5)",
+                "s(5) = s(6)",
+                "nop(SWAP1)",
+                "nop(POP)",
+                "nop(POP)",
+                "nop(POP)",
+                "s(3) = 259",
+                "nop(PUSH2)",
+                "call(block259(s(2),s(1),s(0), l(l1), l(l0)))",
+                "nop(JUMP)"
+            ]
+        },
+        {
+            "instr_inf_flow": {
+                "s(1)": [
+                    "s(3)",
+                    "s(3)",
+                    "s(2)"
+                ],
+                "s(3)": [
+                    "s(2)",
+                    "s(4)",
+                    "s(3)",
+                    "s(4)",
+                    "s(2)",
+                    "s(4)",
+                    "s(1)"
+                ],
+                "s(2)": [
+                    "64",
+                    "l(l0)",
+                    "64",
+                    "l(l0)",
+                    "s(3)",
+                    "s(2)",
+                    "s(3)"
+                ],
+                "l(l1)": [
+                    "s(4)"
+                ],
+                "s(4)": [
+                    "s(1)",
+                    "32",
+                    "s(1)",
+                    "s(1)"
+                ],
+                "s(5)": [
+                    "s(3)"
+                ]
+            },
+            "input_vars": [
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)"
+            ],
+            "name": "block189",
+            "instructions": [
+                "nop(JUMPDEST)",
+                "s(2) = 64",
+                "nop(PUSH1)",
+                "s(2) = l(l0)",
+                "nop(MLOAD)",
+                "s(3) = s(2)",
+                "nop(DUP1)",
+                "s(4) = s(1)",
+                "nop(DUP3)",
+                "s(5) = s(3)",
+                "nop(DUP2)",
+                "l(l1) = s(4)",
+                "nop(MSTORE)",
+                "s(4) = 32",
+                "nop(PUSH1)",
+                "s(3) = s(4)+s(3)",
+                "nop(ADD)",
+                "s(4) = s(1)",
+                "s(1) = s(3)",
+                "s(3) = s(4)",
+                "nop(SWAP2)",
+                "nop(POP)",
+                "nop(POP)",
+                "s(2) = 64",
+                "nop(PUSH1)",
+                "s(2) = l(l0)",
+                "nop(MLOAD)",
+                "s(3) = s(2)",
+                "nop(DUP1)",
+                "s(4) = s(1)",
+                "s(1) = s(3)",
+                "s(3) = s(4)",
+                "nop(SWAP2)",
+                "s(2) = s(3)-s(2)",
+                "nop(SUB)",
+                "s(3) = s(1)",
+                "s(1) = s(2)",
+                "s(2) = s(3)",
+                "nop(SWAP1)",
+                "nop(RETURN)"
+            ]
+        },
+        {
+            "instr_inf_flow": {},
+            "input_vars": [
+                "s(5)",
+                "s(4)",
+                "s(3)",
+                "s(2)",
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)"
+            ],
+            "name": "jump211",
+            "instructions": [
+                "geq(s(5), s(4))",
+                "call(block231(s(3), s(2), s(1), s(0), l(l1), l(l0)))"
+            ]
+        },
+        {
+            "instr_inf_flow": {},
+            "input_vars": [
+                "s(5)",
+                "s(4)",
+                "s(3)",
+                "s(2)",
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)"
+            ],
+            "name": "jump211",
+            "instructions": [
+                "lt(s(5), s(4))",
+                "call(block223(s(3), s(2), s(1), s(0), l(l1), l(l0)))"
+            ]
+        },
+        {
+            "instr_inf_flow": {
+                "s(4)": [
+                    "10"
+                ],
+                "s(3)": [
+                    "0"
+                ],
+                "s(5)": [
+                    "s(2)"
+                ]
+            },
+            "input_vars": [
+                "s(2)",
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)"
+            ],
+            "name": "block211",
+            "instructions": [
+                "nop(JUMPDEST)",
+                "s(3) = 0",
+                "nop(PUSH1)",
+                "s(4) = 10",
+                "nop(PUSH1)",
+                "s(5) = s(2)",
+                "nop(DUP3)",
+                "call(jump211(s(5),s(4),s(3),s(2),s(1),s(0), l(l1), l(l0)))",
+                "nop(LT)",
+                "nop(ISZERO)",
+                "nop(PUSH2)",
+                "nop(JUMPI)"
+            ]
+        },
+        {
+            "instr_inf_flow": {
+                "s(4)": [
+                    "0",
+                    "s(5)",
+                    "254"
+                ],
+                "s(3)": [
+                    "s(4)"
+                ],
+                "s(5)": [
+                    "s(3)"
+                ]
+            },
+            "input_vars": [
+                "s(3)",
+                "s(2)",
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)"
+            ],
+            "name": "block223",
+            "instructions": [
+                "s(4) = 0",
+                "nop(PUSH1)",
+                "s(5) = s(3)",
+                "s(3) = s(4)",
+                "s(4) = s(5)",
+                "nop(SWAP1)",
+                "nop(POP)",
+                "s(4) = 254",
+                "nop(PUSH2)",
+                "call(block254(s(3),s(2),s(1),s(0), l(l1), l(l0)))",
+                "nop(JUMP)"
+            ]
+        },
+        {
+            "instr_inf_flow": {},
+            "input_vars": [
+                "s(5)",
+                "s(4)",
+                "s(3)",
+                "s(2)",
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)"
+            ],
+            "name": "jump231",
+            "instructions": [
+                "geq(s(5), s(4))",
+                "call(block249(s(3), s(2), s(1), s(0), l(l1), l(l0)))"
+            ]
+        },
+        {
+            "instr_inf_flow": {},
+            "input_vars": [
+                "s(5)",
+                "s(4)",
+                "s(3)",
+                "s(2)",
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)"
+            ],
+            "name": "jump231",
+            "instructions": [
+                "lt(s(5), s(4))",
+                "call(block241(s(3), s(2), s(1), s(0), l(l1), l(l0)))"
+            ]
+        },
+        {
+            "instr_inf_flow": {
+                "s(4)": [
+                    "20"
+                ],
+                "s(5)": [
+                    "s(2)"
+                ]
+            },
+            "input_vars": [
+                "s(3)",
+                "s(2)",
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)"
+            ],
+            "name": "block231",
+            "instructions": [
+                "nop(JUMPDEST)",
+                "s(4) = 20",
+                "nop(PUSH1)",
+                "s(5) = s(2)",
+                "nop(DUP3)",
+                "call(jump231(s(5),s(4),s(3),s(2),s(1),s(0), l(l1), l(l0)))",
+                "nop(LT)",
+                "nop(ISZERO)",
+                "nop(PUSH2)",
+                "nop(JUMPI)"
+            ]
+        },
+        {
+            "instr_inf_flow": {
+                "s(4)": [
+                    "1",
+                    "s(5)",
+                    "254"
+                ],
+                "s(3)": [
+                    "s(4)"
+                ],
+                "s(5)": [
+                    "s(3)"
+                ]
+            },
+            "input_vars": [
+                "s(3)",
+                "s(2)",
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)"
+            ],
+            "name": "block241",
+            "instructions": [
+                "s(4) = 1",
+                "nop(PUSH1)",
+                "s(5) = s(3)",
+                "s(3) = s(4)",
+                "s(4) = s(5)",
+                "nop(SWAP1)",
+                "nop(POP)",
+                "s(4) = 254",
+                "nop(PUSH2)",
+                "call(block254(s(3),s(2),s(1),s(0), l(l1), l(l0)))",
+                "nop(JUMP)"
+            ]
+        },
+        {
+            "instr_inf_flow": {
+                "s(4)": [
+                    "2",
+                    "s(5)"
+                ],
+                "s(3)": [
+                    "s(4)"
+                ],
+                "s(5)": [
+                    "s(3)"
+                ]
+            },
+            "input_vars": [
+                "s(3)",
+                "s(2)",
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)"
+            ],
+            "name": "block249",
+            "instructions": [
+                "nop(JUMPDEST)",
+                "s(4) = 2",
+                "nop(PUSH1)",
+                "s(5) = s(3)",
+                "s(3) = s(4)",
+                "s(4) = s(5)",
+                "nop(SWAP1)",
+                "nop(POP)",
+                "call(block254(s(3),s(2),s(1),s(0), l(l1), l(l0)))"
+            ]
+        },
+        {
+            "instr_inf_flow": {
+                "s(4)": [
+                    "s(1)",
+                    "s(2)"
+                ],
+                "s(1)": [
+                    "s(3)"
+                ],
+                "s(3)": [
+                    "s(4)",
+                    "s(4)"
+                ],
+                "s(2)": [
+                    "s(3)"
+                ]
+            },
+            "input_vars": [
+                "s(3)",
+                "s(2)",
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)"
+            ],
+            "name": "block254",
+            "instructions": [
+                "nop(JUMPDEST)",
+                "s(4) = s(1)",
+                "s(1) = s(3)",
+                "s(3) = s(4)",
+                "nop(SWAP2)",
+                "s(4) = s(2)",
+                "s(2) = s(3)",
+                "s(3) = s(4)",
+                "nop(SWAP1)",
+                "nop(POP)",
+                "call(block124(s(1),s(0), l(l1), l(l0)))",
+                "nop(JUMP)"
+            ]
+        },
+        {
+            "instr_inf_flow": {
+                "s(4)": [
+                    "10"
+                ],
+                "s(3)": [
+                    "0"
+                ],
+                "s(5)": [
+                    "s(2)"
+                ]
+            },
+            "input_vars": [
+                "s(2)",
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)"
+            ],
+            "name": "block259",
+            "instructions": [
+                "nop(JUMPDEST)",
+                "s(3) = 0",
+                "nop(PUSH1)",
+                "s(4) = 10",
+                "nop(PUSH1)",
+                "s(5) = s(2)",
+                "nop(DUP3)",
+                "call(jump259(s(5),s(4),s(3),s(2),s(1),s(0), l(l1), l(l0)))",
+                "nop(LT)",
+                "nop(PUSH2)",
+                "nop(JUMPI)"
+            ]
+        },
+        {
+            "instr_inf_flow": {},
+            "input_vars": [
+                "s(5)",
+                "s(4)",
+                "s(3)",
+                "s(2)",
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)"
+            ],
+            "name": "jump259",
+            "instructions": [
+                "lt(s(5), s(4))",
+                "call(block276(s(3), s(2), s(1), s(0), l(l1), l(l0)))"
+            ]
+        },
+        {
+            "instr_inf_flow": {},
+            "input_vars": [
+                "s(5)",
+                "s(4)",
+                "s(3)",
+                "s(2)",
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)"
+            ],
+            "name": "jump259",
+            "instructions": [
+                "geq(s(5), s(4))",
+                "call(block270(s(3), s(2), s(1), s(0), l(l1), l(l0)))"
+            ]
+        },
+        {
+            "instr_inf_flow": {
+                "s(4)": [
+                    "2"
+                ],
+                "s(5)": [
+                    "279"
+                ]
+            },
+            "input_vars": [
+                "s(3)",
+                "s(2)",
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)"
+            ],
+            "name": "block270",
+            "instructions": [
+                "s(4) = 2",
+                "nop(PUSH1)",
+                "s(5) = 279",
+                "nop(PUSH2)",
+                "call(block279(s(4),s(3),s(2),s(1),s(0), l(l1), l(l0)))",
+                "nop(JUMP)"
+            ]
+        },
+        {
+            "instr_inf_flow": {
+                "s(4)": [
+                    "1"
+                ]
+            },
+            "input_vars": [
+                "s(3)",
+                "s(2)",
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)"
+            ],
+            "name": "block276",
+            "instructions": [
+                "nop(JUMPDEST)",
+                "s(4) = 1",
+                "nop(PUSH1)",
+                "call(block279(s(4),s(3),s(2),s(1),s(0), l(l1), l(l0)))"
+            ]
+        },
+        {
+            "instr_inf_flow": {
+                "s(4)": [
+                    "and(s(5), s(4))",
+                    "s(5)",
+                    "s(1)",
+                    "s(2)"
+                ],
+                "s(1)": [
+                    "s(3)"
+                ],
+                "s(3)": [
+                    "s(4)",
+                    "s(4)",
+                    "s(4)"
+                ],
+                "s(2)": [
+                    "s(3)"
+                ],
+                "s(5)": [
+                    "255",
+                    "s(3)"
+                ]
+            },
+            "input_vars": [
+                "s(4)",
+                "s(3)",
+                "s(2)",
+                "s(1)",
+                "s(0)",
+                "l(l1)",
+                "l(l0)"
+            ],
+            "name": "block279",
+            "instructions": [
+                "nop(JUMPDEST)",
+                "s(5) = 255",
+                "nop(PUSH1)",
+                "s(4) = and(s(5), s(4))",
+                "nop(AND)",
+                "s(5) = s(3)",
+                "s(3) = s(4)",
+                "s(4) = s(5)",
+                "nop(SWAP1)",
+                "nop(POP)",
+                "s(4) = s(1)",
+                "s(1) = s(3)",
+                "s(3) = s(4)",
+                "nop(SWAP2)",
+                "s(4) = s(2)",
+                "s(2) = s(3)",
+                "s(3) = s(4)",
+                "nop(SWAP1)",
+                "nop(POP)",
+                "call(block189(s(1),s(0), l(l1), l(l0)))",
+                "nop(JUMP)"
+            ]
+        },
+        {
+            "instr_inf_flow": {
+                "s(1)": [
+                    "0"
+                ],
+                "s(2)": [
+                    "s(1)"
+                ]
+            },
+            "input_vars": [
+                "s(0)"
+            ],
+            "name": "block76_0",
+            "instructions": [
+                "nop(JUMPDEST)",
+                "s(1) = 0",
+                "nop(PUSH1)",
+                "s(2) = s(1)",
+                "nop(DUP1)",
+                "nop(REVERT)"
+            ]
+        }
+    ]
+}

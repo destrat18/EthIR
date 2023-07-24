@@ -11,6 +11,7 @@ import saco
 from timeit import default_timer as dtimer
 from graph_scc import get_entry_scc
 import traceback
+import pickle
 import json
 
 costabs_path = "/tmp/costabs/" 
@@ -1382,7 +1383,7 @@ def compile_block(block,state_vars):
     rule = RBRRule(block_id, "block",is_string_getter,all_state_vars)
     rule.set_index_input(block.get_stack_info()[0])
     l_instr = block.get_instructions()
-    
+
     while not(finish) and cont< len(l_instr):
         if block.get_block_type() == "conditional" and is_conditional(l_instr[cont:]):
             rule1,rule2, instr = create_cond_jump(block.get_start_address(), l_instr[cont:],
@@ -1481,13 +1482,14 @@ def write_rbr(rbr,executions,cname = None):
         name_json = costabs_path+"rbr"+str(executions)+".json"
     else:
         name = costabs_path+cname+".rbr"
-        name = costabs_path+cname+".json"
-    
+        name_json = costabs_path+cname+".json"
+
     with open(name,"w") as f:
         for rules in rbr:
             for r in rules:
                 f.write(r.rule2string()+"\n")
 
+    f.close()
 
     blocks= {}
     blocks["list"] = []
@@ -1496,11 +1498,30 @@ def write_rbr(rbr,executions,cname = None):
             # print(r.rule2json()+"\n")
             blocks["list"].append(r.rule2json())
 
+    print(name)
+    print(name_json) 
     with open(name_json,"w") as f:
         f.write(json.dumps(blocks))
-
+        # f.write("temp")
     f.close()
-        
+
+
+def write_opcode_map(rbr, blocks_dict, source_map, contract_name):
+    opcode_map = {}
+
+    blocks= {}
+    blocks["list"] = []
+
+    for rules in rbr:
+        for r in rules:
+            rbr_block = blocks_dict[r.blockId]
+            for i, inst in enumerate(rbr_block.instructions):
+                if "CALL" == inst:
+                    if r.rule_name not in opcode_map:
+                        opcode_map[r.rule_name] = []     
+                    opcode_map[r.rule_name].append(source_map.get_source_code(int(rbr_block.pcs[i], 16)))
+    pickle.dump(opcode_map, open(os.path.join(costabs_path, "{}.call_fun".format(contract_name)), 'wb'))
+
 def component_update_fields_block(block,data):
     fields, bc, local = data #local
     rule = rbr_blocks.get("block"+str(block),-1)
@@ -1613,7 +1634,7 @@ def evm2rbr_compiler(blocks_input = None, stack_info = None, block_unbuild = Non
             #if block.get_start_address() not in to_clone:
                 forget_memory = False
                 rule = compile_block(block,mapping_state_variables)
-
+                
                 inv = check_invalid_options(block,invalid_options)
                     
                 if inv[0]:
@@ -1621,7 +1642,7 @@ def evm2rbr_compiler(blocks_input = None, stack_info = None, block_unbuild = Non
                     rule.set_invalid_source(inv[1])
 
                 rbr_blocks[rule.get_rule_name()]=[rule]
-            
+
 
             rule_c = create_blocks(block_unbuild)
                
@@ -1649,6 +1670,7 @@ def evm2rbr_compiler(blocks_input = None, stack_info = None, block_unbuild = Non
                     
             rbr = sorted(rbr_blocks.values(),key = orderRBR)
             write_rbr(rbr,exe,contract_name)
+            write_opcode_map(rbr, blocks_dict, source_map, contract_name)
         
             end = dtimer()
             ethir_time = end-begin

@@ -380,7 +380,7 @@ class RBRRule:
         rule = rule + self.rule_name+"("+d_vars+")=>\n"
 
         if self.guard != "" :
-            print("self guard", self.guard)
+            # print("self guard", self.guard)
             rule = rule + "\t"+self.guard+"\n"
 
         for instr in new_instr:
@@ -445,7 +445,7 @@ class RBRRule:
 
             if "=" in instr:
                 instr =  re.split(' = ', instr)
-                print("instr_regex", instr)
+                # print("instr_regex", instr)
                 instr_dict = {}
                 left_var = instr[0]
                 right_var = instr[1]
